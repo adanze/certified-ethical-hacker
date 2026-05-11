@@ -22,7 +22,7 @@ Click a card to reveal the answer. Cards are shuffled on every visit.
     <div class="flashcard-inner">
       <div class="flashcard-front">
         <span class="flashcard-label">Question</span>
-        <p>What does the CIA Triad stand for?</p>
+        <p>What does the CIA Triad stand for? 🎯</p>
       </div>
       <div class="flashcard-back">
         <span class="flashcard-label">Answer</span>

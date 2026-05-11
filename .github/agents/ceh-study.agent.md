@@ -35,6 +35,7 @@ When the user provides an **image** (screenshot, diagram, slide):
 
 - If it shows a diagram, flowchart, or process: convert it to a **Mermaid diagram**.
 - If it shows text content: treat it as source material and summarize plus create flashcards.
+- If the image content is already covered by accompanying text, do not duplicate it — only extract what is new or missing from the text.
 
 If the user explicitly requests only `summary`, `diagram`, or `flashcards`, return only that output.
 
@@ -61,6 +62,7 @@ mkdocs.yml              ← navigation must be updated when adding files
 - Highlight distinctions present in the material: roles, phases, categories, advantages vs disadvantages, detection vs prevention.
 - When useful, add a short `Key exam cues` section with 3–5 memorable points.
 - Keep language precise and exam-oriented — no padding.
+- Only if the user explicitly flags content as exam-critical: add **🎯** after the section heading (`## Title 🎯`). Always mark the whole section, never individual bullets or rows. Never on your own initiative.
 
 ## Mermaid Diagrams
 
@@ -90,6 +92,7 @@ Use the HTML flashcard structure established in the project:
 ```
 
 - Write the front side as a **specific question or term**, the back side as a **short, exam-relevant answer**.
+- Only if the user explicitly flags content as exam-critical: add **🎯** at the end of the question (`<p>Question 🎯</p>`). Never on your own initiative.
 - Decide the number of cards based on density and structure of the provided material. Cover important points without unnecessary micro-cards.
 - If the user explicitly requests a number of cards, follow that number.
 - Keep answers short: **1–3 sentences** or **one compact list**.
