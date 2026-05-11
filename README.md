@@ -1,5 +1,7 @@
 # Certified Ethical Hacker (CEH)
 
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-live-brightgreen?logo=github)](https://adanze.github.io/certified-ethical-hacker) [![Deploy](https://github.com/adanze/certified-ethical-hacker/actions/workflows/deploy.yml/badge.svg)](https://github.com/adanze/certified-ethical-hacker/actions/workflows/deploy.yml)
+
 Study notes and flashcards for the EC-Council CEH v13 certification, built with MkDocs Material and deployed via GitHub Pages.
 
 ## Development

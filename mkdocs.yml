@@ -1,6 +1,6 @@
 site_name: Certified Ethical Hacker (CEH)
 site_description: Study notes and flashcards for the CEH certification
-repo_url: https://github.com/mdada/certified-ethical-hacker
+repo_url: https://github.com/adanze/certified-ethical-hacker
 repo_name: certified-ethical-hacker
 
 theme:
