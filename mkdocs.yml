@@ -33,7 +33,7 @@ markdown_extensions:
 
 plugins:
   - search:
-      lang: de
+      lang: en
 
 nav:
   - Home: index.md
