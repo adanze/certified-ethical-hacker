@@ -57,7 +57,7 @@
 }
 
 /* ── Label ("Question" / "Answer") ─────────────────────── */
-.fc-label {
+.flashcard-label {
   display: block;
   font-size: 0.65rem;
   letter-spacing: 0.12em;
@@ -74,7 +74,7 @@
 }
 
 /* ── Chapter link on the back ───────────────────────────── */
-.fc-link {
+.flashcard-link {
   align-self: flex-start;
   font-size: 0.75rem;
   color: #9575cd;
@@ -84,7 +84,7 @@
   margin-top: 0.5rem;
 }
 
-.fc-link:hover {
+.flashcard-link:hover {
   opacity: 1;
   text-decoration: underline;
 }

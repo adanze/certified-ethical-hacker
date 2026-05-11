@@ -28,5 +28,5 @@ function rerenderShuffled(deck, cards) {
 }
 
 function isChapterLink(eventTarget) {
-  return eventTarget.closest(".fc-link") !== null;
+  return eventTarget.closest(".flashcard-link") !== null;
 }
