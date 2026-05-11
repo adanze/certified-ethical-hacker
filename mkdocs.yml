@@ -1,0 +1,51 @@
+site_name: Certified Ethical Hacker (CEH)
+site_description: Study notes and flashcards for the CEH certification
+repo_url: https://github.com/adanze/certified-ethical-hacker
+repo_name: certified-ethical-hacker
+
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: indigo
+    accent: deep purple
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - search.highlight
+
+extra_css:
+  - stylesheets/flashcards.css
+
+extra_javascript:
+  - javascripts/flashcards.js
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+plugins:
+  - search:
+      lang: en
+
+nav:
+  - Home: index.md
+  - Notes:
+    - Module 01 – Introduction to Ethical Hacking:
+      - ceh/module-01-intro/index.md
+      - Information Security: ceh/module-01-intro/information-security.md
+      - Hacking Concepts: ceh/module-01-intro/hacking-concepts.md
+    - Module 02 – Footprinting and Reconnaissance:
+      - ceh/module-02-footprinting/index.md
+      - Search Engines: ceh/module-02-footprinting/search-engines.md
+      - "WHOIS & DNS": ceh/module-02-footprinting/whois-dns.md
+  - Flashcards:
+    - Module 01 – Introduction to Ethical Hacking: ceh/module-01-intro/flashcards.md
+    - Module 02 – Footprinting and Reconnaissance: ceh/module-02-footprinting/flashcards.md

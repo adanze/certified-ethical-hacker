@@ -1,0 +1,90 @@
+/* ── Flashcard Deck ─────────────────────────────────────── */
+.flashcard-deck {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+/* ── Card wrapper (holds perspective) ───────────────────── */
+.flashcard {
+  height: 220px;
+  cursor: pointer;
+  perspective: 1000px;
+  user-select: none;
+}
+
+/* ── Inner — rotates on flip ────────────────────────────── */
+.flashcard-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.45s ease;
+  transform-style: preserve-3d;
+}
+
+.flashcard.flipped .flashcard-inner {
+  transform: rotateY(180deg);
+}
+
+/* ── Shared face styles ─────────────────────────────────── */
+.flashcard-front,
+.flashcard-back {
+  position: absolute;
+  inset: 0;
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* ── Front ──────────────────────────────────────────────── */
+.flashcard-front {
+  background: var(--md-code-bg-color);
+  border: 1px solid rgba(63, 81, 181, 0.35);
+  justify-content: center;
+}
+
+/* ── Back ───────────────────────────────────────────────── */
+.flashcard-back {
+  background: #1a1f5e;
+  border: 1px solid rgba(149, 117, 205, 0.45);
+  transform: rotateY(180deg);
+  justify-content: space-between;
+}
+
+/* ── Label ("Question" / "Answer") ─────────────────────── */
+.flashcard-label {
+  display: block;
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.45;
+  margin-bottom: 0.75rem;
+}
+
+/* ── Card text ──────────────────────────────────────────── */
+.flashcard-front p,
+.flashcard-back p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* ── Chapter link on the back ───────────────────────────── */
+.flashcard-link {
+  align-self: flex-start;
+  font-size: 0.75rem;
+  color: #9575cd;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.15s;
+  margin-top: 0.5rem;
+}
+
+.flashcard-link:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
