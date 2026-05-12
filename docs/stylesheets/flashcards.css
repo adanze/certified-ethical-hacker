@@ -33,7 +33,7 @@
   position: absolute;
   inset: 0;
   border-radius: 8px;
-  padding: 1.25rem 1.5rem;
+  padding: 2.5rem 1.5rem 1.25rem;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -58,12 +58,13 @@
 
 /* ── Label ("Question" / "Answer") ─────────────────────── */
 .flashcard-label {
-  display: block;
+  position: absolute;
+  top: 1.25rem;
+  left: 1.5rem;
   font-size: 0.65rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   opacity: 0.45;
-  margin-bottom: 0.75rem;
 }
 
 /* ── Card text ──────────────────────────────────────────── */
@@ -87,4 +88,15 @@
 .flashcard-link:hover {
   opacity: 1;
   text-decoration: underline;
+}
+
+/* ── Exam-critical badge ────────────────────────────────── */
+.flashcard.exam-critical .flashcard-front::after {
+  content: "🎯";
+  position: absolute;
+  top: 1.25rem;
+  right: 1.5rem;
+  font-size: 0.85rem;
+  line-height: 1;
+  opacity: 0.85;
 }
