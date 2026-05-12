@@ -5,6 +5,7 @@ repo_name: certified-ethical-hacker
 
 theme:
   name: material
+  favicon: assets/favicon.png
   palette:
     scheme: slate
     primary: indigo
