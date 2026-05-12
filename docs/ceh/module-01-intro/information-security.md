@@ -2,7 +2,7 @@
 
 Information security protects data from unauthorized access, modification, or destruction.
 
-## CIA Triad
+## CIA Triad 🎯
 
 The three pillars every security control maps back to:
 
