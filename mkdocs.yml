@@ -17,11 +17,15 @@ theme:
     - navigation.indexes
     - search.highlight
 
+extra:
+  manifest: manifest.json
+
 extra_css:
   - stylesheets/flashcards.css
 
 extra_javascript:
   - javascripts/flashcards.js
+  - javascripts/pwa.js
 
 markdown_extensions:
   - attr_list
