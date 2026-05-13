@@ -43,7 +43,7 @@ GitHub Actions deploys automatically on every push to `main`.
 Builds the site and force-pushes it to the `gh-pages` branch.
 
 ```bash
-mkdocs gh-deploy
+mkdocs gh-deploy --force
 ```
 
 The live site updates within seconds.
