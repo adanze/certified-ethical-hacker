@@ -4,6 +4,14 @@
 
 Study notes and flashcards for the EC-Council CEH v13 certification, built with MkDocs Material and deployed via GitHub Pages.
 
+## Installation
+
+The site can be installed as an app on Android via Chrome:
+
+1. Open [the site](https://adanze.github.io/certified-ethical-hacker) in Chrome
+2. Tap the **⋮** menu → **"Add to Home screen"**
+3. Confirm – the app appears on your home screen and runs without browser UI
+
 ## Development
 
 ### Setup
