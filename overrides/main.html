@@ -2,10 +2,6 @@
 
 {% block extrahead %}
   <link rel="manifest" href="{{ 'manifest.json' | url }}">
-  <meta name="theme-color" content="#3f51b5">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <link rel="apple-touch-icon" href="{{ 'assets/icon-192.png' | url }}">
   <script>
     if ("serviceWorker" in navigator) {
       navigator.serviceWorker.register("{{ 'sw.js' | url }}");
