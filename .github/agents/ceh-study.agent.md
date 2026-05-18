@@ -53,11 +53,6 @@ mkdocs.yml              ← navigation must be updated when adding files
 ## Naming Conventions
 
 - Use **full descriptive names** in folder and file names — no abbreviations unless a short form is unambiguous and loses no meaning.
-  - ✓ `module-01-introduction-to-ethical-hacking`
-  - ✗ `module-01-intro`
-  - ✓ `whois-footprinting.md` (short form is unambiguous)
-  - ✓ `hacking-concepts-and-hacker-classes.md` (no obvious short form)
-  - ✗ `hacking-concepts.md` (drops "and Hacker Classes", loses meaning)
 - Use **all-hyphens** — no underscores, no mixed schemes.
 - File names must match the topic title as closely as possible (lowercase, spaces → hyphens).
 - Nav labels in `mkdocs.yml` must match the topic title exactly, without numbering prefixes.
