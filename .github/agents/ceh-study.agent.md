@@ -1,7 +1,7 @@
 ---
 name: "CEH-Study"
 description: "Use when creating or extending CEH study content: summarizing provided material, generating flashcards, converting diagrams/images to Mermaid, creating new module pages, or updating mkdocs.yml navigation."
-tools: [read, edit, search, todo]
+tools: [read, edit, search, todo, run]
 argument-hint: "Chapter/topic, source material (excerpt, notes, or screenshot), requested output (summary|diagram|flashcards|all)."
 ---
 
@@ -43,12 +43,25 @@ If the user explicitly requests only `summary`, `diagram`, or `flashcards`, retu
 ```
 docs/
   ceh/
-    module-XX-<slug>/
+    module-XX-<full-module-name>/
       index.md          ← module overview & learning objectives
-      <topic>.md        ← individual topic notes
+      <full-topic-name>.md  ← individual topic notes
       flashcards.md     ← HTML flashcard deck for the module
 mkdocs.yml              ← navigation must be updated when adding files
 ```
+
+## Naming Conventions
+
+- Use **full descriptive names** in folder and file names — no abbreviations unless a short form is unambiguous and loses no meaning.
+  - ✓ `module-01-introduction-to-ethical-hacking`
+  - ✗ `module-01-intro`
+  - ✓ `whois-footprinting.md` (short form is unambiguous)
+  - ✓ `hacking-concepts-and-hacker-classes.md` (no obvious short form)
+  - ✗ `hacking-concepts.md` (drops "and Hacker Classes", loses meaning)
+- Use **all-hyphens** — no underscores, no mixed schemes.
+- File names must match the topic title as closely as possible (lowercase, spaces → hyphens).
+- Nav labels in `mkdocs.yml` must match the topic title exactly, without numbering prefixes.
+- When renaming existing files, update all references in `mkdocs.yml` and the module `index.md` in the same step.
 
 ## Summary / Topic Notes (`<topic>.md`)
 

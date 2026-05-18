@@ -44,13 +44,25 @@ nav:
   - Home: index.md
   - Notes:
     - Module 01 – Introduction to Ethical Hacking:
-      - ceh/module-01-intro/index.md
-      - Information Security: ceh/module-01-intro/information-security.md
-      - Hacking Concepts: ceh/module-01-intro/hacking-concepts.md
+      - ceh/module-01-introduction-to-ethical-hacking/index.md
+      - Information Security Overview: ceh/module-01-introduction-to-ethical-hacking/information-security-overview.md
+      - Hacking Concepts and Hacker Classes: ceh/module-01-introduction-to-ethical-hacking/hacking-concepts-and-hacker-classes.md
+      - Ethical Hacking Concepts: ceh/module-01-introduction-to-ethical-hacking/ethical-hacking-concepts.md
+      - Hacking Methodologies and Frameworks: ceh/module-01-introduction-to-ethical-hacking/hacking-methodologies-and-frameworks.md
+      - Information Security Controls: ceh/module-01-introduction-to-ethical-hacking/information-security-controls.md
+      - Information Security Laws and Standards: ceh/module-01-introduction-to-ethical-hacking/information-security-laws-and-standards.md
     - Module 02 – Footprinting and Reconnaissance:
-      - ceh/module-02-footprinting/index.md
-      - Search Engines: ceh/module-02-footprinting/search-engines.md
-      - "WHOIS & DNS": ceh/module-02-footprinting/whois-dns.md
+      - ceh/module-02-footprinting-and-reconnaissance/index.md
+      - Footprinting Concepts: ceh/module-02-footprinting-and-reconnaissance/footprinting-concepts.md
+      - Footprinting through Search Engines: ceh/module-02-footprinting-and-reconnaissance/footprinting-through-search-engines.md
+      - Footprinting through Internet Research Services: ceh/module-02-footprinting-and-reconnaissance/footprinting-through-internet-research-services.md
+      - Footprinting through Social Networking Sites: ceh/module-02-footprinting-and-reconnaissance/footprinting-through-social-networking-sites.md
+      - Whois Footprinting: ceh/module-02-footprinting-and-reconnaissance/whois-footprinting.md
+      - DNS Footprinting: ceh/module-02-footprinting-and-reconnaissance/dns-footprinting.md
+      - Network and Email Footprinting: ceh/module-02-footprinting-and-reconnaissance/network-and-email-footprinting.md
+      - Footprinting through Social Engineering: ceh/module-02-footprinting-and-reconnaissance/footprinting-through-social-engineering.md
+      - Footprinting Tasks using Advanced Tools and AI: ceh/module-02-footprinting-and-reconnaissance/footprinting-tasks-using-advanced-tools-and-ai.md
+      - Footprinting Countermeasures: ceh/module-02-footprinting-and-reconnaissance/footprinting-countermeasures.md
   - Flashcards:
-    - Module 01 – Introduction to Ethical Hacking: ceh/module-01-intro/flashcards.md
-    - Module 02 – Footprinting and Reconnaissance: ceh/module-02-footprinting/flashcards.md
+    - Module 01 – Introduction to Ethical Hacking: ceh/module-01-introduction-to-ethical-hacking/flashcards.md
+    - Module 02 – Footprinting and Reconnaissance: ceh/module-02-footprinting-and-reconnaissance/flashcards.md
