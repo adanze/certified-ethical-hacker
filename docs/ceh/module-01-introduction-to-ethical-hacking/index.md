@@ -1,6 +1,6 @@
 # Module 01 – Introduction to Ethical Hacking
 
-Foundations of ethical hacking: core terminology, hacker classifications, methodologies, security controls, and governing legal standards.
+Attackers break into systems for various reasons. To defend effectively, security professionals must understand how malicious hackers think and operate — as Sun Tzu wrote: *"If you know yourself but not the enemy, for every victory gained, you will also suffer a defeat."*
 
 ## Topics
 
@@ -14,9 +14,9 @@ Foundations of ethical hacking: core terminology, hacker classifications, method
 
 ## Key Learning Objectives
 
-- Define information security and its core principles
-- Classify hacker types by authorization and intent
-- Describe the ethical hacking process and its legal boundaries
-- Identify major hacking methodologies and frameworks
-- Distinguish types of security controls and defense strategies
-- Know key laws and standards relevant to ethical hacking
+- Describe the elements of information security and information warfare
+- Explain hacking concepts and different hacker classes
+- Explain ethical hacking concepts, scope, and AI-driven ethical hacking
+- Describe various hacking methodologies and frameworks
+- Understand information security controls: information assurance, defense-in-depth, risk management, cyber threat intelligence, threat modeling, incident management, and AI/ML applications
+- Explain the importance of applicable information security acts and laws
