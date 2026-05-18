@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  <link rel="manifest" href="{{ 'manifest.json' | url }}">
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("{{ 'sw.js' | url }}");
+    }
+  </script>
+{% endblock %}

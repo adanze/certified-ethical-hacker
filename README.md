@@ -4,6 +4,16 @@
 
 Study notes and flashcards for the EC-Council CEH v13 certification, built with MkDocs Material and deployed via GitHub Pages.
 
+Prepared modules cover summaries, flashcards, and diagrams, accessible as a PWA. Content is generated using the **CEH-Study** Copilot agent.
+
+## Installation
+
+The site can be installed as an app on Android via Chrome:
+
+1. Open [the site](https://adanze.github.io/certified-ethical-hacker) in Chrome
+2. Tap the **⋮** menu → *Add to Home screen*
+3. Confirm – the app appears on your home screen and runs without browser UI
+
 ## Development
 
 ### Setup
@@ -43,7 +53,7 @@ GitHub Actions deploys automatically on every push to `main`.
 Builds the site and force-pushes it to the `gh-pages` branch.
 
 ```bash
-mkdocs gh-deploy
+mkdocs gh-deploy --force
 ```
 
 The live site updates within seconds.

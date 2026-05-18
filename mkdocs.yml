@@ -5,6 +5,7 @@ repo_name: certified-ethical-hacker
 
 theme:
   name: material
+  custom_dir: overrides
   favicon: assets/favicon.png
   palette:
     scheme: slate
@@ -25,8 +26,7 @@ extra_css:
 
 extra_javascript:
   - javascripts/flashcards.js
-  - javascripts/pwa.js
-
+  
 markdown_extensions:
   - attr_list
   - md_in_html
