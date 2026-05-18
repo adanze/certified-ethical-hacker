@@ -4,13 +4,15 @@ Attackers break into systems for various reasons. To defend effectively, securit
 
 ## Topics
 
-- [Information Security Overview](information-security-overview.md)
-- [Hacking Concepts and Hacker Classes](hacking-concepts-and-hacker-classes.md)
-- [Ethical Hacking Concepts](ethical-hacking-concepts.md)
-- [Hacking Methodologies and Frameworks](hacking-methodologies-and-frameworks.md)
-- [Information Security Controls](information-security-controls.md)
-- [Information Security Laws and Standards](information-security-laws-and-standards.md)
-- [Flashcards](flashcards.md)
+| Topic | Content |
+|---|---|
+| [Information Security Overview](information-security-overview.md) | Elements of information security (CIA+AN), attack formula, motives, classification of attacks, information warfare |
+| [Hacking Concepts and Hacker Classes](hacking-concepts-and-hacker-classes.md) | *TODO* |
+| [Ethical Hacking Concepts](ethical-hacking-concepts.md) | *TODO* |
+| [Hacking Methodologies and Frameworks](hacking-methodologies-and-frameworks.md) | *TODO* |
+| [Information Security Controls](information-security-controls.md) | *TODO* |
+| [Information Security Laws and Standards](information-security-laws-and-standards.md) | *TODO* |
+| [Flashcards](flashcards.md) | HTML flashcard deck for all Module 01 topics |
 
 ## Key Learning Objectives
 

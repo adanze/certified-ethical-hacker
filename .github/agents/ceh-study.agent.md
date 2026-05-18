@@ -111,8 +111,9 @@ Use the HTML flashcard structure established in the project:
 
 - Start with `# Module XX – Full Title`.
 - Include a short paragraph with the module's purpose.
-- Add a `## Topics` section linking to child pages.
+- Add a `## Topics` section as a **two-column Markdown table**: column 1 = topic title as a relative link, column 2 = one-line description of what the page covers. Use `*TODO*` for topics not yet written.
 - Add a `## Key Learning Objectives` section as a bullet list.
+- When a topic page is completed or updated, update its row in the Topics table with an accurate one-line summary.
 
 ## Approach
 
