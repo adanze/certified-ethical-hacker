@@ -120,20 +120,6 @@ Click a card to reveal the answer. Cards are shuffled on every visit.
     <div class="flashcard-inner">
       <div class="flashcard-front">
         <span class="flashcard-label">Question</span>
-        <p>What is the difference between a weakness and a vulnerability?</p>
-      </div>
-      <div class="flashcard-back">
-        <span class="flashcard-label">Answer</span>
-        <p><strong>Weakness:</strong> a flaw that reduces security but is not necessarily exploitable. <strong>Vulnerability:</strong> a weakness that can be exploited by a threat actor via a known method. Every vulnerability is a weakness — not every weakness is a vulnerability.</p>
-        <a class="flashcard-link" href="../information-security-overview/#information-security-attacks-motives-goals-and-objectives">&#x2192; Attacks: Motives, Goals, and Objectives</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="flashcard">
-    <div class="flashcard-inner">
-      <div class="flashcard-front">
-        <span class="flashcard-label">Question</span>
         <p>What is an "attack" in the context of information security?</p>
       </div>
       <div class="flashcard-back">
@@ -168,6 +154,188 @@ Click a card to reveal the answer. Cards are shuffled on every visit.
         <span class="flashcard-label">Answer</span>
         <p>Disrupting business continuity, information theft, financial loss, damaging reputation, demanding ransom, revenge, propagating beliefs, military objectives, disrupting critical infrastructure.</p>
         <a class="flashcard-link" href="../information-security-overview/#motives-behind-information-security-attacks">&#x2192; Motives Behind Attacks</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What does TTP stand for and what does it refer to?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Tactics, Techniques, and Procedures — the patterns of activities and methods associated with specific threat actors or groups.</p>
+        <a class="flashcard-link" href="../information-security-overview/#tactics-techniques-and-procedures-ttps">&#x2192; TTPs</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Distinguish: Tactics vs. Techniques vs. Procedures</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p><strong>Tactics:</strong> the overall strategy from start to finish. <strong>Techniques:</strong> technical methods to achieve intermediate results. <strong>Procedures:</strong> the systematic approach used to launch an attack.</p>
+        <a class="flashcard-link" href="../information-security-overview/#tactics-techniques-and-procedures-ttps">&#x2192; TTPs</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Why is understanding TTPs valuable for defenders?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Tactics → predict/detect threats early. Techniques → identify vulnerabilities and implement countermeasures. Procedures → reveal what the attacker targets in the infrastructure.</p>
+        <a class="flashcard-link" href="../information-security-overview/#tactics-techniques-and-procedures-ttps">&#x2192; TTPs</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is a vulnerability in information security?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>A weakness in the design or implementation of a system that can be exploited to compromise security — often allowing an attacker to bypass authentication. Root causes: misconfiguration and poor programming practices.</p>
+        <a class="flashcard-link" href="../information-security-overview/#vulnerability">&#x2192; Vulnerability</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the difference between a weakness and a vulnerability?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p><strong>Weakness:</strong> a flaw that reduces security but is not necessarily exploitable. <strong>Vulnerability:</strong> a weakness that can be exploited by a threat actor via a known method. Every vulnerability is a weakness — not every weakness is a vulnerability.</p>
+        <a class="flashcard-link" href="../information-security-overview/#weakness-vs-vulnerability">&#x2192; Weakness vs. Vulnerability</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Name the five common reasons for the existence of vulnerabilities.</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>1. Hardware/software misconfiguration 2. Insecure or poor network/application design 3. Inherent technology weaknesses 4. End-user carelessness 5. Intentional end-user acts</p>
+        <a class="flashcard-link" href="../information-security-overview/#common-reasons-for-the-existence-of-vulnerabilities">&#x2192; Common Reasons for Vulnerabilities</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>How does hardware or software misconfiguration create vulnerabilities?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Insecure configs create security loopholes — e.g., unencrypted protocols expose data in transit; misconfigured hardware grants unauthorized network access; misconfigured software exposes applications and data.</p>
+        <a class="flashcard-link" href="../information-security-overview/#common-reasons-for-the-existence-of-vulnerabilities">&#x2192; Common Reasons for Vulnerabilities</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>How does insecure network or application design create vulnerabilities?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Improperly implemented firewalls, IDS, or VPNs expose the network to numerous threats and potential data loss.</p>
+        <a class="flashcard-link" href="../information-security-overview/#common-reasons-for-the-existence-of-vulnerabilities">&#x2192; Common Reasons for Vulnerabilities</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What are inherent technology weaknesses and why are they dangerous?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Hardware or software that cannot defend against certain attack types (e.g., DoS, MitM). Outdated browsers or unpatched systems are prone to distributed attacks and malware.</p>
+        <a class="flashcard-link" href="../information-security-overview/#common-reasons-for-the-existence-of-vulnerabilities">&#x2192; Common Reasons for Vulnerabilities</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>How does end-user carelessness create vulnerabilities?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Sharing credentials, connecting to insecure networks, and falling for social engineering attacks — all leading to data loss or information leakage.</p>
+        <a class="flashcard-link" href="../information-security-overview/#common-reasons-for-the-existence-of-vulnerabilities">&#x2192; Common Reasons for Vulnerabilities</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What are intentional end-user acts and what is an example?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Deliberate misuse by insiders — e.g., ex-employees who retain access to shared drives and leak sensitive company information, causing data and financial loss.</p>
+        <a class="flashcard-link" href="../information-security-overview/#common-reasons-for-the-existence-of-vulnerabilities">&#x2192; Common Reasons for Vulnerabilities</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What are examples of technological vulnerabilities?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>TCP/IP protocols (HTTP, FTP, ICMP, SNMP, SMTP are inherently insecure); unpatched or inherently insecure OSes; network devices lacking authentication, password protection, or using insecure routing protocols.</p>
+        <a class="flashcard-link" href="../information-security-overview/#technological-vulnerabilities">&#x2192; Technological Vulnerabilities</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What are examples of configuration vulnerabilities?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Insecure transmission of user credentials; weak system account passwords; misconfigured internet services (IIS, Apache, FTP); default passwords/settings left unchanged; misconfigured network devices.</p>
+        <a class="flashcard-link" href="../information-security-overview/#configuration-vulnerabilities">&#x2192; Configuration Vulnerabilities</a>
       </div>
     </div>
   </div>
