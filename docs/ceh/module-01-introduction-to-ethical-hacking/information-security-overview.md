@@ -93,3 +93,64 @@ Every vulnerability is a weakness, but not every weakness is a vulnerability. In
 | **Internet service misconfiguration** | Enabling JavaScript insecurely; misconfiguring IIS, Apache, FTP, or Terminal services |
 | **Default passwords/settings** | Leaving devices at factory defaults |
 | **Network device misconfiguration** | Incorrectly configured network devices |
+
+## Classification of Attacks
+
+!!! tip "🎯 Exam-critical"
+
+According to IATF, attacks fall into five categories:
+
+| Type | Description | Examples |
+|---|---|---|
+| **Passive** | Intercept and monitor traffic without tampering — hard to detect, no active interaction | Footprinting, sniffing, eavesdropping, network traffic analysis, decryption of weakly encrypted traffic |
+| **Active** | Tamper with data in transit or disrupt communication — detectable, actively sends traffic | DoS, MitM, session hijacking, spoofing, replay, SQL injection, XSS, malware, privilege escalation, DNS/ARP poisoning |
+| **Close-in** | Attacker in physical proximity to gather, modify, or disrupt access to information | Social engineering, shoulder surfing, eavesdropping, dumpster diving |
+| **Insider** | Trusted persons with physical/privileged access misuse it to violate CIA — difficult to detect | Wiretapping, data theft, pod slurping, planting keyloggers/backdoors/malware |
+| **Distribution** | Hardware or software tampered with **at source or in transit** before installation | Backdoors inserted by vendors during manufacture or manufacture or distribution |
+
+## Information Warfare
+
+**Information warfare (InfoWar)** refers to the use of information and communication technologies (ICT) to gain competitive advantages over an opponent. Weapons include viruses, worms, Trojans, logic bombs, trap doors, electronic jamming, and penetration tools.
+
+### Categories (Libicki)
+
+| Category | Description |
+|---|---|
+| **Command & Control (C2)** | Impact an attacker has over a compromised system or network they control |
+| **Intelligence-based** | Sensor-based technology that corrupts technological systems; design, protection, and denial of knowledge-seeking systems |
+| **Electronic** | Uses radio-electronic and cryptographic techniques to degrade communication |
+| **Psychological** | Propaganda and terror to demoralize adversaries |
+| **Hacker** | System shutdown, data errors, theft of information/services, false messaging — uses viruses, logic bombs, Trojans, sniffers |
+| **Economic** | Blocks information flow to damage the economy of a business or nation |
+| **Cyberwarfare** | Broadest category; includes information terrorism, semantic attacks (taking over systems while appearing normal), and simula-warfare |
+
+### Defensive vs. Offensive Information Warfare
+
+| | Defensive | Offensive |
+|---|---|---|
+| **Goal** | Defend ICT assets against attacks | Attack the ICT assets of an opponent |
+| **Strategies** | Prevention, deterrence, alerts, detection, emergency preparedness, response | Web application attacks, web server attacks, malware attacks, MitM attacks, system hacking |
+
+```mermaid
+flowchart LR
+    subgraph DEF["Defensive Warfare"]
+        direction TB
+        D1[Prevention]
+        D2[Deterrence]
+        D3[Alerts]
+        D4[Detection]
+        D5[Emergency Preparedness]
+        D6[Response]
+    end
+
+    subgraph OFF["Offensive Warfare"]
+        direction TB
+        O1[Web Application Attacks]
+        O2[Web Server Attacks]
+        O3[Malware Attacks]
+        O4[MITM Attacks]
+        O5[System Hacking]
+    end
+
+    DEF -- INFO SECURITY --> OFF
+```

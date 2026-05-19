@@ -340,4 +340,158 @@ Click a card to reveal the answer. Cards are shuffled on every visit.
     </div>
   </div>
 
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>According to IATF, what are the five categories of security attacks?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Passive, Active, Close-in, Insider, Distribution.</p>
+        <a class="flashcard-link" href="../information-security-overview/#classification-of-attacks">&#x2192; Classification of Attacks</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What distinguishes passive attacks from active attacks?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Passive attacks only intercept/monitor traffic without tampering — hard to detect. Active attacks tamper with or disrupt data in transit — detectable because they actively send traffic.</p>
+        <a class="flashcard-link" href="../information-security-overview/#classification-of-attacks">&#x2192; Classification of Attacks</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What are examples of passive attacks?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Footprinting, sniffing, eavesdropping, network traffic analysis, decryption of weakly encrypted traffic.</p>
+        <a class="flashcard-link" href="../information-security-overview/#classification-of-attacks">&#x2192; Classification of Attacks</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What are examples of active attacks?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>DoS, MitM, session hijacking, spoofing, replay attacks, SQL injection, XSS, malware, privilege escalation, DNS/ARP poisoning, cryptography attacks.</p>
+        <a class="flashcard-link" href="../information-security-overview/#classification-of-attacks">&#x2192; Classification of Attacks</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is a close-in attack and what examples does it include?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Attacker in physical proximity gathers, modifies, or disrupts access to information. Examples: shoulder surfing, eavesdropping, dumpster diving.</p>
+        <a class="flashcard-link" href="../information-security-overview/#classification-of-attacks">&#x2192; Classification of Attacks</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is an insider attack and why is it dangerous?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Performed by trusted insiders with privileged/physical access who misuse it to violate CIA. Difficult to detect. Examples: data theft, wiretapping, pod slurping, planting keyloggers or backdoors.</p>
+        <a class="flashcard-link" href="../information-security-overview/#classification-of-attacks">&#x2192; Classification of Attacks</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is a distribution attack?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Hardware or software tampered with at its source or during transit, before installation. Example: backdoors inserted by vendors at manufacture or during distribution.</p>
+        <a class="flashcard-link" href="../information-security-overview/#classification-of-attacks">&#x2192; Classification of Attacks</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is information warfare (InfoWar)?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>The use of ICT to gain competitive advantages over an opponent. Weapons include viruses, worms, Trojans, logic bombs, electronic jamming, and penetration tools.</p>
+        <a class="flashcard-link" href="../information-security-overview/#information-warfare">&#x2192; Information Warfare</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Name Libicki's seven categories of information warfare.</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Command &amp; Control (C2), Intelligence-based, Electronic, Psychological, Hacker, Economic, Cyberwarfare.</p>
+        <a class="flashcard-link" href="../information-security-overview/#categories-libicki">&#x2192; Categories (Libicki)</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is cyberwarfare and what makes it the broadest InfoWar category?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Use of information systems against virtual personas. Includes information terrorism, semantic attacks (taking over systems while appearing normal), and simula-warfare.</p>
+        <a class="flashcard-link" href="../information-security-overview/#categories-libicki">&#x2192; Categories (Libicki)</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Distinguish defensive vs. offensive information warfare.</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p><strong>Defensive:</strong> strategies to defend ICT assets (prevention, detection, response). <strong>Offensive:</strong> attacks against an opponent's ICT assets (web app attacks, malware, MitM, system hacking).</p>
+        <a class="flashcard-link" href="../information-security-overview/#defensive-vs-offensive-information-warfare">&#x2192; Defensive vs. Offensive</a>
+      </div>
+    </div>
+  </div>
+
 </div>
