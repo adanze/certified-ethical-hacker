@@ -494,4 +494,228 @@ Click a card to reveal the answer. Cards are shuffled on every visit.
     </div>
   </div>
 
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Who is a hacker?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>An intelligent individual with excellent computer skills who can create and explore software and hardware. Typically a skilled engineer or programmer who discovers vulnerabilities and breaks into systems without authorization.</p>
+        <a class="flashcard-link" href="../hacking-concepts-and-hacker-classes/#who-is-a-hacker">&#x2192; Who is a Hacker?</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What range of intentions can hackers have?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>From gaining knowledge or treating hacking as a hobby, to illegal activities and malicious acts such as stealing business data, credit card numbers, social security numbers, and email passwords.</p>
+        <a class="flashcard-link" href="../hacking-concepts-and-hacker-classes/#who-is-a-hacker">&#x2192; Who is a Hacker?</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the definition of hacking in computer security?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Exploiting system vulnerabilities and compromising security controls to gain unauthorized or inappropriate access to a system's resources.</p>
+        <a class="flashcard-link" href="../hacking-concepts-and-hacker-classes/#what-is-hacking">&#x2192; What is Hacking?</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the second dimension of hacking beyond exploiting vulnerabilities?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Modifying system or application features to achieve a goal outside the creator's original purpose.</p>
+        <a class="flashcard-link" href="../hacking-concepts-and-hacker-classes/#what-is-hacking">&#x2192; What is Hacking?</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Name six common network hacking techniques.</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Creating viruses/worms, DoS attacks, trojans/backdoors for unauthorized remote access, botnets, packet sniffing, phishing, password cracking.</p>
+        <a class="flashcard-link" href="../hacking-concepts-and-hacker-classes/#common-network-hacking-techniques">&#x2192; Common Network Hacking Techniques</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What are common motives behind hacking?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Financial gain, information theft, thrill/curiosity, intellectual challenge, prestige, power, peer recognition, vengeance, and experimentation.</p>
+        <a class="flashcard-link" href="../hacking-concepts-and-hacker-classes/#motives-behind-hacking">&#x2192; Motives Behind Hacking</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What are Script Kiddies and how do they differ from skilled hackers?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Unskilled hackers who run scripts/tools created by others. Focus on <strong>quantity over quality</strong>, have no specific target, and aim for popularity or recognition.</p>
+        <a class="flashcard-link" href="../hacking-concepts-and-hacker-classes/#hacker-classes-and-their-motivations">&#x2192; Hacker Classes</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What distinguishes White Hat from Black Hat hackers?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p><strong>White Hat:</strong> cybersecurity professionals who hack defensively with the system owner's permission. <strong>Black Hat:</strong> use skills for illegal/malicious purposes without authorization; also called <em>crackers</em>.</p>
+        <a class="flashcard-link" href="../hacking-concepts-and-hacker-classes/#hacker-classes-and-their-motivations">&#x2192; Hacker Classes</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What are Gray Hat hackers?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Hackers who operate both offensively and defensively. They may discover vulnerabilities without permission, but sometimes report them to vendors to improve security.</p>
+        <a class="flashcard-link" href="../hacking-concepts-and-hacker-classes/#hacker-classes-and-their-motivations">&#x2192; Hacker Classes</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is a Hacktivist and what are their typical targets?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Hackers motivated by political or social causes. Typical activities: DDoS, website defacing, data leaks. Targets: government agencies, financial institutions, corporations. Unauthorized access remains a crime regardless of motive.</p>
+        <a class="flashcard-link" href="../hacking-concepts-and-hacker-classes/#hacker-classes-and-their-motivations">&#x2192; Hacker Classes</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>How do State-Sponsored Hackers differ from Cyber Terrorists?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p><strong>State-Sponsored:</strong> employed by governments for espionage, intelligence gathering, and infrastructure sabotage against other nations. <strong>Cyber Terrorists:</strong> extremists motivated by religious/political beliefs, aiming to spread fear via attacks on critical infrastructure.</p>
+        <a class="flashcard-link" href="../hacking-concepts-and-hacker-classes/#hacker-classes-and-their-motivations">&#x2192; Hacker Classes</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What are Corporate (Industrial) Spies and what techniques do they use?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Individuals hired to steal competitor intelligence (blueprints, trade secrets, marketing plans). Use <strong>APTs</strong> to stay undetected for years and may employ social engineering.</p>
+        <a class="flashcard-link" href="../hacking-concepts-and-hacker-classes/#hacker-classes-and-their-motivations">&#x2192; Hacker Classes</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Distinguish Blue Hat, Red Hat, and Green Hat hackers.</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p><strong>Blue Hat:</strong> contract professionals testing systems before release. <strong>Red Hat:</strong> vigilantes who aggressively target and dismantle black hat operations (not bound by ethical rules). <strong>Green Hat:</strong> newcomers learning hacking skills, typically in online communities.</p>
+        <a class="flashcard-link" href="../hacking-concepts-and-hacker-classes/#hacker-classes-and-their-motivations">&#x2192; Hacker Classes</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What are Insider threats and what makes them dangerous?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Trusted employees who misuse privileged/physical access to harm the organization. Dangerous because they can bypass security controls. Common sources: disgruntled, terminated, or undertrained employees.</p>
+        <a class="flashcard-link" href="../hacking-concepts-and-hacker-classes/#hacker-classes-and-their-motivations">&#x2192; Hacker Classes</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What are Suicide Hackers?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Hackers who target critical infrastructure for a cause and are unconcerned with legal consequences or punishment — analogous to suicide bombers.</p>
+        <a class="flashcard-link" href="../hacking-concepts-and-hacker-classes/#hacker-classes-and-their-motivations">&#x2192; Hacker Classes</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>How do Organized Hackers differ from Criminal Syndicates?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p><strong>Organized Hackers:</strong> hierarchical criminal groups using rented devices/botnets; focus on financial theft and IP/trade-secret theft. <strong>Criminal Syndicates:</strong> broader criminal organizations exploiting victims across jurisdictions through sophisticated cyber-attacks and money laundering.</p>
+        <a class="flashcard-link" href="../hacking-concepts-and-hacker-classes/#hacker-classes-and-their-motivations">&#x2192; Hacker Classes</a>
+      </div>
+    </div>
+  </div>
+
 </div>
