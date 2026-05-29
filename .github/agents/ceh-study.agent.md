@@ -67,7 +67,6 @@ mkdocs.yml              ← navigation must be updated when adding files
 - Use bullet lists for unordered facts or definitions.
 - Default length: **120–220 words**, or bullet points if the structure is clearer that way.
 - Highlight distinctions present in the material: roles, phases, categories, advantages vs disadvantages, detection vs prevention.
-- When useful, add a short `Key exam cues` section with 3–5 memorable points.
 - Keep language precise and exam-oriented — no padding.
 - Only if the user explicitly flags content as exam-critical: place `!!! tip "Exam-critical 🎯"` as a blockquote on the line directly below the section heading. This keeps the TOC clean while marking the section visibly in content. Always mark the whole section, never individual bullets or rows. Never on your own initiative.
 
