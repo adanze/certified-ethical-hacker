@@ -7,8 +7,8 @@ Attackers break into systems for various reasons. To defend effectively, securit
 | Topic | Content |
 |---|---|
 | [Information Security Overview](information-security-overview.md) | Elements of information security (CIA+AN), attack formula, motives, classification of attacks, information warfare |
-| [Hacking Concepts and Hacker Classes](hacking-concepts-and-hacker-classes.md) | *TODO* |
-| [Ethical Hacking Concepts](ethical-hacking-concepts.md) | *TODO* |
+| [Hacking Concepts and Hacker Classes](hacking-concepts-and-hacker-classes.md) | Definition of hacking, common techniques, motives, hacker classes (White/Black/Gray Hat, Hacktivist, State-Sponsored, Insider, etc.) |
+| [Ethical Hacking Concepts](ethical-hacking-concepts.md) | Definition, key terminology, why ethical hacking is necessary (3 questions, scope questions), scope and limitations, Tiger Team, audit framework, ethical rules |
 | [Hacking Methodologies and Frameworks](hacking-methodologies-and-frameworks.md) | *TODO* |
 | [Information Security Controls](information-security-controls.md) | *TODO* |
 | [Information Security Laws and Standards](information-security-laws-and-standards.md) | *TODO* |

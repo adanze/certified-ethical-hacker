@@ -718,4 +718,354 @@ Click a card to reveal the answer. Cards are shuffled on every visit.
     </div>
   </div>
 
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is ethical hacking?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>The practice of using hacking tools, tricks, and techniques to identify vulnerabilities and test network security — performed with the owner's permission and without intent to cause harm.</p>
+        <a class="flashcard-link" href="../ethical-hacking-concepts/#definition">&#x2192; Ethical Hacking Concepts</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the key distinction between an ethical hacker and a cracker?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p><strong>Consent.</strong> Crackers attempt unauthorized access and conceal activities. Ethical hackers operate with full permission and are completely transparent — making ethical hacking always legal.</p>
+        <a class="flashcard-link" href="../ethical-hacking-concepts/#ethical-hackers-vs-crackers">&#x2192; Ethical Hackers vs. Crackers</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Define the four key hacking terms: hacker (noun), to hack (verb), cracker/attacker, ethical hacker.</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p><strong>Hacker:</strong> enjoys learning system details and stretching capabilities. <strong>To hack:</strong> rapid development or reverse engineering to improve software. <strong>Cracker/Attacker:</strong> uses skills for offensive/illegal purposes. <strong>Ethical hacker:</strong> uses skills for defensive purposes.</p>
+        <a class="flashcard-link" href="../ethical-hacking-concepts/#key-terminology">&#x2192; Key Terminology</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Why are vulnerability testing and security audits alone insufficient for network security?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Hacking requires creative thinking that audits cannot replicate. Organizations must adopt a defense-in-depth strategy by penetrating their own networks to expose vulnerabilities before attackers do.</p>
+        <a class="flashcard-link" href="../ethical-hacking-concepts/#why-ethical-hacking-is-necessary">&#x2192; Why Ethical Hacking Is Necessary</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Name six reasons organizations recruit ethical hackers.</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>1. Prevent unauthorized access. 2. Uncover vulnerabilities. 3. Strengthen security posture. 4. Provide preventive measures against breaches. 5. Safeguard customer data. 6. Enhance security awareness at all levels.</p>
+        <a class="flashcard-link" href="../ethical-hacking-concepts/#reasons-organizations-recruit-ethical-hackers">&#x2192; Why Ethical Hacking Is Necessary</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What are the three questions an ethical hacker must answer during an assessment?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>1. What can an attacker <strong>see</strong> on the target? 2. What can an intruder <strong>do</strong> with that information? 3. Are the attackers' attempts being <strong>noticed</strong>?</p>
+        <a class="flashcard-link" href="../ethical-hacking-concepts/#three-questions-an-ethical-hacker-must-answer">&#x2192; Why Ethical Hacking Is Necessary</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the scope of ethical hacking in an organizational context?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>A structured security assessment (pen test or audit) used for risk assessment, auditing, counter fraud, and security best practices. It identifies risks, highlights remedial actions, and reduces ICT costs by resolving vulnerabilities.</p>
+        <a class="flashcard-link" href="../ethical-hacking-concepts/#scope">&#x2192; Scope and Limitations</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is a Tiger Team?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>A group of ethical hackers who work together to perform a full-scale security test covering all aspects of the network, as well as physical and system intrusion.</p>
+        <a class="flashcard-link" href="../ethical-hacking-concepts/#scope">&#x2192; Scope and Limitations</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What three rules must an ethical hacker follow before and during an assessment?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>1. Gain <strong>written authorization</strong> (signed legal document). 2. Maintain <strong>confidentiality</strong> via NDA — never disclose test details or sensitive data to third parties. 3. <strong>Stay within agreed limits</strong> — do not exceed the defined scope.</p>
+        <a class="flashcard-link" href="../ethical-hacking-concepts/#rules-ethical-hackers-must-follow">&#x2192; Scope and Limitations</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What are the six steps of the ethical hacking security audit framework?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>1. Discuss client needs / define scope. 2. Sign NDA. 3. Organize team and schedule. 4. Conduct the test. 5. Analyze results and prepare report. 6. Present findings to the client.</p>
+        <a class="flashcard-link" href="../ethical-hacking-concepts/#security-audit-framework-steps">&#x2192; Scope and Limitations</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What are the two limitations of ethical hacking?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>1. The organization must know what they want to find before hiring an outside vendor — otherwise the engagement yields little value. 2. The ethical hacker can only help the organization understand its security; placing the right safeguards remains the organization's responsibility.</p>
+        <a class="flashcard-link" href="../ethical-hacking-concepts/#limitations">&#x2192; Scope and Limitations</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Name the five technical skills of an ethical hacker.</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>1. In-depth knowledge of major OSes (Windows, Unix, Linux, Macintosh). 2. In-depth networking knowledge. 3. Expert-level technical proficiency. 4. Knowledge of security areas and issues. 5. High technical knowledge for launching sophisticated attacks.</p>
+        <a class="flashcard-link" href="../ethical-hacking-concepts/#skills-of-an-ethical-hacker">&#x2192; Skills of an Ethical Hacker</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Name the four non-technical skills of an ethical hacker.</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>1. Ability to learn and adapt new technologies quickly. 2. Strong work ethic and problem-solving/communication skills. 3. Commitment to the organization's security policies. 4. Awareness of local standards and laws.</p>
+        <a class="flashcard-link" href="../ethical-hacking-concepts/#skills-of-an-ethical-hacker">&#x2192; Skills of an Ethical Hacker</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is AI-driven ethical hacking?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>A modern cybersecurity approach that uses AI technologies — algorithms, machine learning models, and automation frameworks — to enhance ethical hackers' capabilities, anticipate threats, and proactively mitigate risks.</p>
+        <a class="flashcard-link" href="../ethical-hacking-concepts/#ai-driven-ethical-hacking">&#x2192; AI-Driven Ethical Hacking</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What are the four benefits of using AI in ethical hacking?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p><strong>Efficiency</strong> — faster data processing. <strong>Accuracy</strong> — fewer human errors. <strong>Scalability</strong> — handles growing threat complexity. <strong>Cost-Effectiveness</strong> — automation reduces overall costs.</p>
+        <a class="flashcard-link" href="../ethical-hacking-concepts/#benefits-of-ai-in-ethical-hacking">&#x2192; AI-Driven Ethical Hacking</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Name the five application domains of AI-driven ethical hacking.</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Network Security, Application Security, Cloud Security, IoT Security, Threat Intelligence.</p>
+        <a class="flashcard-link" href="../ethical-hacking-concepts/#applications">&#x2192; AI-Driven Ethical Hacking</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Name the 10 ways AI-driven ethical hacking helps ethical hackers.</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>1. Automation of Repetitive Tasks 2. Predictive Analysis 3. Advanced Threat Detection 4. Enhanced Decision Making 5. Adaptive Learning 6. Enhanced Reporting 7. Simulation and Testing 8. Scalability 9. Continuous Monitoring 10. Adaptive Defense Mechanisms</p>
+        <a class="flashcard-link" href="../ethical-hacking-concepts/#how-ai-driven-ethical-hacking-helps-ethical-hackers">&#x2192; AI-Driven Ethical Hacking</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>How does AI enable Advanced Threat Detection in ethical hacking?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Using deep learning and anomaly-detection techniques to identify zero-day vulnerabilities and subtle indicators of compromise that traditional methods miss.</p>
+        <a class="flashcard-link" href="../ethical-hacking-concepts/#how-ai-driven-ethical-hacking-helps-ethical-hackers">&#x2192; AI-Driven Ethical Hacking</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Distinguish: Predictive Analysis vs. Adaptive Learning in AI-driven ethical hacking.</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p><strong>Predictive Analysis:</strong> uses ML to analyze past attack data and predict <em>future</em> threats before they occur — proactive, forward-looking. <strong>Adaptive Learning:</strong> continuously updates the AI's knowledge base as <em>new</em> attack types emerge — reactive evolution without manual intervention.</p>
+        <a class="flashcard-link" href="../ethical-hacking-concepts/#how-ai-driven-ethical-hacking-helps-ethical-hackers">&#x2192; AI-Driven Ethical Hacking</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Distinguish: Simulation and Testing vs. Continuous Monitoring in AI-driven ethical hacking.</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p><strong>Simulation and Testing:</strong> simulates real-world attacks at a point in time to test defensive resilience and find weaknesses. <strong>Continuous Monitoring:</strong> always-on real-time assessment of the security posture — identifies and mitigates vulnerabilities as they arise, not just during scheduled tests.</p>
+        <a class="flashcard-link" href="../ethical-hacking-concepts/#how-ai-driven-ethical-hacking-helps-ethical-hackers">&#x2192; AI-Driven Ethical Hacking</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Distinguish: Adaptive Learning vs. Adaptive Defense Mechanisms in AI-driven ethical hacking.</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p><strong>Adaptive Learning:</strong> the AI improves its <em>knowledge base and detection</em> strategies over time as new attack types appear. <strong>Adaptive Defense Mechanisms:</strong> the system updates its <em>algorithms and active response strategies</em> to counteract the latest hacking techniques in operation.</p>
+        <a class="flashcard-link" href="../ethical-hacking-concepts/#how-ai-driven-ethical-hacking-helps-ethical-hackers">&#x2192; AI-Driven Ethical Hacking</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Why will AI not replace ethical hackers?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Ethical hacking requires creativity, critical thinking, domain knowledge, and ethical judgment that AI cannot replicate. AI automates routine tasks, but human oversight is essential to interpret results, validate findings, and craft tailored mitigation strategies.</p>
+        <a class="flashcard-link" href="../ethical-hacking-concepts/#myth-ai-will-replace-ethical-hackers">&#x2192; Myth: AI Will Replace Ethical Hackers</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the ideal relationship between AI and ethical hackers?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Collaboration: AI provides automation and efficiency; humans provide creativity, contextual judgment, and ethical reasoning. Together they strengthen cybersecurity better than either could alone.</p>
+        <a class="flashcard-link" href="../ethical-hacking-concepts/#myth-ai-will-replace-ethical-hackers">&#x2192; Myth: AI Will Replace Ethical Hackers</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What are the three key features of ChatGPT-powered AI tools for ethical hackers?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>1. <strong>Data Collection &amp; Configuration</strong> — collects from social media, forums, websites, public databases. 2. <strong>Real-Time Assistance &amp; Task Automation</strong> — automates scanning, threat analysis, and reporting via NLP/ML. 3. <strong>Threat Intelligence Integration</strong> — provides context on identified threats from intelligence databases.</p>
+        <a class="flashcard-link" href="../ethical-hacking-concepts/#key-features">&#x2192; ChatGPT-Powered AI Tools</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What are the three application benefits of ChatGPT-powered ethical hacking tools?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p><strong>Enhanced Security Posture</strong> — efficient threat identification and mitigation. <strong>Operational Efficiency</strong> — automation enables more comprehensive assessments faster. <strong>Improved Decision-Making</strong> — threat intelligence integration helps prioritize vulnerabilities effectively.</p>
+        <a class="flashcard-link" href="../ethical-hacking-concepts/#applications-and-benefits">&#x2192; ChatGPT-Powered AI Tools</a>
+      </div>
+    </div>
+  </div>
+
 </div>
