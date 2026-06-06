@@ -998,6 +998,146 @@ Click a card to reveal the answer. Cards are shuffled on every visit.
     </div>
   </div>
 
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What are the five phases of the CEH Ethical Hacking Framework in order?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>1. Reconnaissance 2. Vulnerability Scanning 3. Gaining Access 4. Maintaining Access 5. Clearing Tracks</p>
+        <a class="flashcard-link" href="../hacking-methodologies-and-frameworks/#the-five-phases">&#x2192; CEH Framework – Five Phases</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the key difference between an attacker and an ethical hacker in the CEH framework?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Goals and authorization — not methods. Both follow the same process; ethical hackers have permission and operate with defensive intent.</p>
+        <a class="flashcard-link" href="../hacking-methodologies-and-frameworks/#ceh-ethical-hacking-framework">&#x2192; CEH Ethical Hacking Framework</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Distinguish passive vs. active reconnaissance.</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p><strong>Passive:</strong> no direct interaction — uses public sources, news releases, open-source data. <strong>Active:</strong> direct interaction — uses tools to detect open ports, hosts, routers, network maps, OSes, and applications.</p>
+        <a class="flashcard-link" href="../hacking-methodologies-and-frameworks/#phase-1-reconnaissance">&#x2192; Phase 1: Reconnaissance</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the difference between scanning and enumeration within Phase 1?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p><strong>Scanning:</strong> identifies active hosts, open ports, and unnecessary services — deeper probing than passive recon. <strong>Enumeration:</strong> active connections/direct queries to extract user lists, routing tables, shared resources, banners, and security flaws.</p>
+        <a class="flashcard-link" href="../hacking-methodologies-and-frameworks/#phase-1-reconnaissance">&#x2192; Phase 1: Reconnaissance</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the goal of Phase 2: Vulnerability Scanning?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Recognize, measure, and classify security vulnerabilities in systems, networks, and communication channels. Identified vulnerabilities guide further exploitation planning.</p>
+        <a class="flashcard-link" href="../hacking-methodologies-and-frameworks/#phase-2-vulnerability-scanning">&#x2192; Phase 2: Vulnerability Scanning</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What happens during Phase 3: Gaining Access, and what determines success?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Actual hacking occurs — exploiting vulnerabilities (e.g., password cracking, buffer overflows) for OS- or application-level access. Success depends on target architecture/configuration, attacker skill level, and initial access level obtained.</p>
+        <a class="flashcard-link" href="../hacking-methodologies-and-frameworks/#phase-3-gaining-access">&#x2192; Phase 3: Gaining Access</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is privilege escalation and when does it occur?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>After gaining low-privilege access in Phase 3, an attacker exploits known vulnerabilities to raise their privileges to administrator/root level — enabling protected system operations and lateral movement.</p>
+        <a class="flashcard-link" href="../hacking-methodologies-and-frameworks/#phase-3-gaining-access">&#x2192; Phase 3: Gaining Access</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What four actions does an attacker take in Phase 4: Maintaining Access?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>1. Use the compromised system as a launchpad for further attacks. 2. Upload/download/manipulate data, apps, and configs. 3. Deploy malware to harvest credentials. 4. Close existing vulnerabilities to prevent competing attackers from disrupting their access.</p>
+        <a class="flashcard-link" href="../hacking-methodologies-and-frameworks/#phase-4-maintaining-access">&#x2192; Phase 4: Maintaining Access</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>How do attackers clear tracks in Phase 5, and why?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>To remain undetected, attackers modify or delete system logs using log-wiping utilities and remove indicators of compromise. This prevents forensic investigation and extends their undetected presence.</p>
+        <a class="flashcard-link" href="../hacking-methodologies-and-frameworks/#phase-5-clearing-tracks">&#x2192; Phase 5: Clearing Tracks</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Name the eight Ethical Hacking Domains in the CEH framework.</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>System Hacking, Web App Hacking, Network Hacking, Mobile Hacking, Wireless Hacking, OT/IoT Hacking, Cloud Hacking, Hacking AI.</p>
+        <a class="flashcard-link" href="../hacking-methodologies-and-frameworks/#ceh-framework--visual-overview">&#x2192; CEH Framework – Visual Overview</a>
+      </div>
+    </div>
+  </div>
+
   <div class="flashcard">
     <div class="flashcard-inner">
       <div class="flashcard-front">
@@ -1040,6 +1180,230 @@ Click a card to reveal the answer. Cards are shuffled on every visit.
     </div>
   </div>
 
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the Cyber Kill Chain methodology and who developed it?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>A component of <strong>intelligence-driven defense</strong> developed by <strong>Lockheed Martin</strong> for the identification and prevention of malicious intrusion activities. It describes seven sequential attack phases to help defenders understand adversary TTPs and intervene before the attack succeeds.</p>
+        <a class="flashcard-link" href="../hacking-methodologies-and-frameworks/#cyber-kill-chain-methodology">&#x2192; Cyber Kill Chain Methodology</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Name the seven phases of the Cyber Kill Chain in order.</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>1. Reconnaissance 2. Weaponization 3. Delivery 4. Exploitation 5. Installation 6. Command and Control (C2) 7. Actions on Objectives</p>
+        <a class="flashcard-link" href="../hacking-methodologies-and-frameworks/#cyber-kill-chain-methodology">&#x2192; Cyber Kill Chain Methodology</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What does an attacker do during Reconnaissance in the Kill Chain?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Collects public information (Whois, DNS, social networks, open ports, credentials) to identify weak points and potential entry paths before launching an attack.</p>
+        <a class="flashcard-link" href="../hacking-methodologies-and-frameworks/#phase-details">&#x2192; Kill Chain Phase Details</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is Weaponization in the Cyber Kill Chain?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Analyzing reconnaissance data to select or create a tailored malicious payload (e.g., phishing email with a backdoor, exploit kit) targeting identified vulnerabilities — before any delivery to the victim.</p>
+        <a class="flashcard-link" href="../hacking-methodologies-and-frameworks/#phase-details">&#x2192; Kill Chain Phase Details</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the Delivery phase and why is it a key measurement point?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>The payload is transmitted via phishing email, USB, watering hole, or web exploit. It measures the <strong>effectiveness of the target's defenses</strong> — whether the intrusion attempt is blocked or not.</p>
+        <a class="flashcard-link" href="../hacking-methodologies-and-frameworks/#phase-details">&#x2192; Kill Chain Phase Details</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Distinguish: Installation vs. Command and Control in the Kill Chain.</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p><strong>Installation:</strong> deploys malware/backdoor on the victim system for persistent access and lateral spread — hidden via encryption. <strong>C2:</strong> establishes an encrypted two-way channel to the attacker's server for remote control, privilege escalation, and data exfiltration.</p>
+        <a class="flashcard-link" href="../hacking-methodologies-and-frameworks/#phase-details">&#x2192; Kill Chain Phase Details</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What does an attacker accomplish in Actions on Objectives?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Achieves intended goals: data theft, service disruption, operational sabotage, or using the compromised system as a launchpad for further attacks.</p>
+        <a class="flashcard-link" href="../hacking-methodologies-and-frameworks/#phase-details">&#x2192; Kill Chain Phase Details</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Distinguish: Tactics vs. Techniques vs. Procedures (TTPs) in the context of threat actors.</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p><strong>Tactics:</strong> overall strategy across all attack phases (how the actor operates). <strong>Techniques:</strong> specific technical methods to achieve intermediate results at each stage. <strong>Procedures:</strong> ordered sequence of actions executing a technique — more actions = higher success + lower detection.</p>
+        <a class="flashcard-link" href="../hacking-methodologies-and-frameworks/#tactics-techniques-and-procedures-ttps">&#x2192; TTPs</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>How are Tactics used to profile APT groups?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>By analyzing how they gather info (open-source vs. social engineering), how they approach targets (individual vs. group), and their C2 infrastructure (static vs. dynamic). Early-stage tactics reveal the initial profile; later-stage tactics reveal the full campaign picture.</p>
+        <a class="flashcard-link" href="../hacking-methodologies-and-frameworks/#tactics">&#x2192; TTPs – Tactics</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Why are Procedures useful in forensic investigations?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Different threat actors often implement the same features using the same procedure (e.g., malware self-decryption → evasion → persistence → C2). This commonality allows forensic analysts to identify and attribute threat actors across incidents.</p>
+        <a class="flashcard-link" href="../hacking-methodologies-and-frameworks/#procedures">&#x2192; TTPs – Procedures</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is Adversary Behavioral Identification?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>The identification of common methods and techniques attackers use to penetrate networks. It gives defenders insight into upcoming threats and enables proactive hardening of network security infrastructure.</p>
+        <a class="flashcard-link" href="../hacking-methodologies-and-frameworks/#adversary-behavioral-identification">&#x2192; Adversary Behavioral Identification</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Name the nine adversary behaviors used for detection.</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>1. Internal Reconnaissance 2. Use of PowerShell 3. Unspecified Proxy Activities 4. Use of Command-Line Interface 5. HTTP User Agent manipulation 6. Command and Control Server 7. DNS Tunneling 8. Use of Web Shell 9. Data Staging</p>
+        <a class="flashcard-link" href="../hacking-methodologies-and-frameworks/#adversary-behavioral-identification">&#x2192; Adversary Behavioral Identification</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is an Indicator of Compromise (IoC)?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Clues, artifacts, and forensic data found on a network or OS indicating a potential intrusion or malicious activity. IoCs are <strong>not intelligence</strong> themselves — they are data points that feed the intelligence process.</p>
+        <a class="flashcard-link" href="../hacking-methodologies-and-frameworks/#indicators-of-compromise-iocs">&#x2192; Indicators of Compromise</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Distinguish the three types of IoCs: atomic, computed, and behavioral.</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p><strong>Atomic:</strong> indivisible indicators whose meaning is unchanged in intrusion context (e.g., IP/email addresses). <strong>Computed:</strong> derived from incident data (e.g., hash values, regex). <strong>Behavioral:</strong> grouping of atomic + computed indicators combined by logic (e.g., code injection chain).</p>
+        <a class="flashcard-link" href="../hacking-methodologies-and-frameworks/#ioc-types">&#x2192; IoC Types</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What are the four categories of IoCs and what does each cover?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p><strong>Email:</strong> sender address, subject, attachments/links. <strong>Network:</strong> URLs, domain names, IP addresses (C2, malware delivery). <strong>Host-Based:</strong> filenames, hashes, registry keys, DLLs, mutex. <strong>Behavioral:</strong> specific malicious behaviors, e.g., PowerShell from document, remote command execution.</p>
+        <a class="flashcard-link" href="../hacking-methodologies-and-frameworks/#ioc-categories">&#x2192; IoC Categories</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Name six key IoC signals that indicate a potential compromise.</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Unusual outbound network traffic, privileged account anomalies, geographical anomalies, multiple login failures, unusual DNS requests, mismatched port-application traffic. (Also: large HTML response size, DDoS signs, suspicious registry changes, data bundles in wrong places.)</p>
+        <a class="flashcard-link" href="../hacking-methodologies-and-frameworks/#key-ioc-signals">&#x2192; Key IoC Signals</a>
+      </div>
+    </div>
+  </div>
+
   <div class="flashcard">
     <div class="flashcard-inner">
       <div class="flashcard-front">
@@ -1064,6 +1428,146 @@ Click a card to reveal the answer. Cards are shuffled on every visit.
         <span class="flashcard-label">Answer</span>
         <p><strong>Enhanced Security Posture</strong> — efficient threat identification and mitigation. <strong>Operational Efficiency</strong> — automation enables more comprehensive assessments faster. <strong>Improved Decision-Making</strong> — threat intelligence integration helps prioritize vulnerabilities effectively.</p>
         <a class="flashcard-link" href="../ethical-hacking-concepts/#applications-and-benefits">&#x2192; ChatGPT-Powered AI Tools</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is MITRE ATT&CK and what is its purpose?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>A globally accessible knowledge base of <strong>adversary tactics and techniques</strong> based on real-world observations. It serves as the foundation for developing threat models and methodologies in the private sector, government, and cybersecurity communities.</p>
+        <a class="flashcard-link" href="../hacking-methodologies-and-frameworks/#mitre-attatck-framework">&#x2192; MITRE ATT&CK Framework</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What are the three MITRE ATT&CK collections?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p><strong>PRE-ATT&CK</strong> — reconnaissance, resource development, delivery. <strong>ATT&CK for Enterprise</strong> — 14 tactics covering initial access through impact. <strong>Mobile</strong> — iOS and Android-specific tactics and techniques.</p>
+        <a class="flashcard-link" href="../hacking-methodologies-and-frameworks/#collections-and-structure">&#x2192; MITRE ATT&CK Collections</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>How do the 14 Enterprise ATT&CK tactics relate to the Cyber Kill Chain?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>The 14 tactics are <strong>derived from the later stages</strong> (exploit, control, maintain, execute) of the seven-stage Cyber Kill Chain. This provides <strong>finer granularity</strong> in describing what can occur during an intrusion after initial compromise.</p>
+        <a class="flashcard-link" href="../hacking-methodologies-and-frameworks/#the-14-enterprise-attatck-tactics">&#x2192; Enterprise ATT&CK Tactics</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Name the 14 Enterprise ATT&CK tactics in order.</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Reconnaissance, Resource Development, Initial Access, Execution, Persistence, Privilege Escalation, Defense Evasion, Credential Access, Discovery, Lateral Movement, Collection, Command and Control, Exfiltration, Impact.</p>
+        <a class="flashcard-link" href="../hacking-methodologies-and-frameworks/#the-14-enterprise-attatck-tactics">&#x2192; Enterprise ATT&CK Tactics</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What are three use cases of MITRE ATT&CK?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>1. Prioritize development of network defense capabilities. 2. Determine coverage of defense capabilities against known threats. 3. Identify commonalities between threat actors and describe intrusion chains with a common reference.</p>
+        <a class="flashcard-link" href="../hacking-methodologies-and-frameworks/#use-cases-of-mitre-attatck">&#x2192; MITRE ATT&CK Use Cases</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the Diamond Model of Intrusion Analysis and what is the Diamond event?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>A framework for identifying <strong>clusters of events</strong> correlated across an organization's systems. The <strong>Diamond event</strong> is the vital atomic element of any intrusion — consisting of four core features: Adversary, Capability, Infrastructure, and Victim, arranged in a diamond shape.</p>
+        <a class="flashcard-link" href="../hacking-methodologies-and-frameworks/#diamond-model-of-intrusion-analysis">&#x2192; Diamond Model</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What are the four core features of the Diamond Model and what key question does each answer?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p><strong>Adversary</strong> — <em>Who</em> was behind the attack. <strong>Victim</strong> — <em>Where</em> the attack was performed. <strong>Capability</strong> — <em>How</em> the attack was carried out. <strong>Infrastructure</strong> — <em>What</em> the adversary used to reach the victim.</p>
+        <a class="flashcard-link" href="../hacking-methodologies-and-frameworks/#the-four-core-features">&#x2192; Diamond Model – Core Features</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Name the six event meta-features of the Diamond Model.</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Timestamp, Phase, Result, Direction, Methodology, Resource.</p>
+        <a class="flashcard-link" href="../hacking-methodologies-and-frameworks/#additional-event-meta-features">&#x2192; Diamond Model – Meta-Features</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What two meta-features does the Extended Diamond Model add, and what do they describe?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p><strong>Socio-Political</strong> — describes the relationship/motivation between Adversary and Victim (e.g., financial gain, espionage, hacktivism). <strong>Technology</strong> — describes how technology enables Infrastructure and Capability for communication and operation.</p>
+        <a class="flashcard-link" href="../hacking-methodologies-and-frameworks/#extended-diamond-model">&#x2192; Extended Diamond Model</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What does the Result meta-feature represent in the Diamond Model?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>The outcome of the event: success, failure, or unknown. Can also be classified using CIA: <strong>C</strong>onfidentiality compromised, <strong>I</strong>ntegrity compromised, or <strong>A</strong>vailability compromised.</p>
+        <a class="flashcard-link" href="../hacking-methodologies-and-frameworks/#additional-event-meta-features">&#x2192; Diamond Model – Meta-Features</a>
       </div>
     </div>
   </div>
