@@ -8,9 +8,9 @@ Attackers break into systems for various reasons. To defend effectively, securit
 |---|---|
 | [Information Security Overview](information-security-overview.md) | Elements of information security (CIA+AN), attack formula, motives, classification of attacks, information warfare |
 | [Hacking Concepts and Hacker Classes](hacking-concepts-and-hacker-classes.md) | Definition of hacking, common techniques, motives, hacker classes (White/Black/Gray Hat, Hacktivist, State-Sponsored, Insider, etc.) |
-| [Ethical Hacking Concepts](ethical-hacking-concepts.md) | Definition, key terminology, why ethical hacking is necessary (3 questions, scope questions), scope and limitations, Tiger Team, audit framework, ethical rules |
-| [Hacking Methodologies and Frameworks](hacking-methodologies-and-frameworks.md) | CEH Framework (5 phases), Cyber Kill Chain (7 phases), TTPs, Adversary Behavioral Identification, IoCs, MITRE ATT&CK Framework (14 tactics), Diamond Model (4 features) |
-| [Information Security Controls](information-security-controls.md) | *TODO* |
+| [Ethical Hacking Concepts](ethical-hacking-concepts.md) | Definition, key terminology, why ethical hacking is necessary, scope and limitations, Tiger Team, audit framework, ethical rules |
+| [Hacking Methodologies and Frameworks](hacking-methodologies-and-frameworks.md) | CEH Framework, Cyber Kill Chain, TTPs, Adversary Behavioral Identification, IoCs, MITRE ATT&CK Framework, Diamond Model |
+| [Information Security Controls](information-security-controls.md) | Information Assurance, Continual/Adaptive Security Strategy , Defense-in-Depth, Risk Management (definition, formula, levels, matrix), Risk Management Process, Cyber Threat Intelligence, Threat Intelligence Lifecycle |
 | [Information Security Laws and Standards](information-security-laws-and-standards.md) | *TODO* |
 | [Flashcards](flashcards.md) | HTML flashcard deck for all Module 01 topics |
 

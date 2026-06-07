@@ -1572,4 +1572,928 @@ Click a card to reveal the answer. Cards are shuffled on every visit.
     </div>
   </div>
 
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is Information Assurance (IA)?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Assurance of the integrity, availability, confidentiality, and authenticity of information and information systems during usage, processing, storage, and transmission. Achieved through physical, technical, and administrative controls.</p>
+        <a class="flashcard-link" href="../information-security-controls/#information-assurance-ia">&#x2192; Information Assurance</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What do Information Assurance (IA) and Information Risk Management (IRM) ensure?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>That only authorized personnel access and use information. Together they achieve information security and business continuity.</p>
+        <a class="flashcard-link" href="../information-security-controls/#information-assurance-ia">&#x2192; Information Assurance</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Name all eight Information Assurance processes in order.</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>1. Develop local policy, process, and guidance. 2. Design network and user authentication strategies. 3. Identify network vulnerabilities and threats. 4. Identify problems and resource requirements. 5. Create plans for identified resource requirements. 6. Apply appropriate information assurance controls. 7. Perform Certification and Accreditation (C&amp;A). 8. Provide information assurance training.</p>
+        <a class="flashcard-link" href="../information-security-controls/#eight-key-ia-processes">&#x2192; Eight Key IA Processes</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the purpose of designing network and user authentication strategies in IA?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>To secure network infrastructure and protect user credentials, thereby protecting privacy and information on the network.</p>
+        <a class="flashcard-link" href="../information-security-controls/#eight-key-ia-processes">&#x2192; Eight Key IA Processes</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What role do vulnerability assessments play in the IA process?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>They outline the security posture of the network by identifying vulnerabilities and threats, enabling organizations to implement proper countermeasures.</p>
+        <a class="flashcard-link" href="../information-security-controls/#eight-key-ia-processes">&#x2192; Eight Key IA Processes</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What does Certification and Accreditation (C&amp;A) accomplish in IA?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Validates that information systems meet security requirements, traces vulnerabilities, and implements safety measures to nullify them.</p>
+        <a class="flashcard-link" href="../information-security-controls/#eight-key-ia-processes">&#x2192; Eight Key IA Processes</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Why is information assurance training critical in the IA program?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>It brings awareness of information technology security to all personnel in federal and private organizations, building organizational security culture.</p>
+        <a class="flashcard-link" href="../information-security-controls/#eight-key-ia-processes">&#x2192; Eight Key IA Processes</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is Continual/Adaptive Security Strategy?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>A defense approach that prescribes continuous <strong>Predict, Protect, Detect, and Respond</strong> actions to ensure comprehensive computer network defense. It enables organizations to anticipate threats, prevent compromise, identify intrusions, and remediate incidents in real time.</p>
+        <a class="flashcard-link" href="../information-security-controls/#continualadaptive-security-strategy">&#x2192; Continual/Adaptive Security Strategy</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Name the four pillars of adaptive security strategy in order.</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>1. Predict 2. Protect 3. Detect 4. Respond</p>
+        <a class="flashcard-link" href="../information-security-controls/#continualadaptive-security-strategy">&#x2192; Continual/Adaptive Security Strategy</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the purpose of the Predict pillar in adaptive security?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>To identify potential attacks, targets, and methods before they materialize into viable threats. Activities include risk and vulnerability assessments, attack surface analysis, and consumption of threat intelligence data.</p>
+        <a class="flashcard-link" href="../information-security-controls/#continualadaptive-security-strategy">&#x2192; Continual/Adaptive Security Strategy</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the purpose of the Protect pillar in adaptive security?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>To eliminate vulnerabilities and deploy prior countermeasures that prevent unauthorized access and compromise. Measures include security policies, physical security, host security, firewalls, and intrusion detection systems (IDS).</p>
+        <a class="flashcard-link" href="../information-security-controls/#continualadaptive-security-strategy">&#x2192; Continual/Adaptive Security Strategy</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the purpose of the Detect pillar in adaptive security?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>To assess the network for abnormalities such as attacks, damages, unauthorized access attempts, and modifications, and locate them. Includes regular monitoring of network traffic using network monitoring and packet sniffing tools.</p>
+        <a class="flashcard-link" href="../information-security-controls/#continualadaptive-security-strategy">&#x2192; Continual/Adaptive Security Strategy</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the purpose of the Respond pillar in adaptive security?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>To identify incidents, determine root causes, execute containment and eradication, and mitigate impact. Actions include incident response, investigation, impact mitigation, and deciding whether an incident is real or a false positive.</p>
+        <a class="flashcard-link" href="../information-security-controls/#continualadaptive-security-strategy">&#x2192; Continual/Adaptive Security Strategy</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is Defense-in-Depth?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>A security strategy in which multiple <strong>protection layers</strong> are placed throughout an information system. It applies the military principle that a complex, multi-layered defense system is more difficult to defeat than a single barrier.</p>
+        <a class="flashcard-link" href="../information-security-controls/#defense-in-depth">&#x2192; Defense-in-Depth</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What are the three key benefits of Defense-in-Depth?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>1. <strong>Prevents direct attacks</strong> — a break in one layer only leads to the next. 2. <strong>Minimizes impact</strong> — limits scope and severity of damage if accessed. 3. <strong>Provides time for response</strong> — gives time to deploy countermeasures before intrusion spreads.</p>
+        <a class="flashcard-link" href="../information-security-controls/#key-benefits">&#x2192; Defense-in-Depth Benefits</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Name the seven layers of Defense-in-Depth.</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>1. Policies, Procedures, and Awareness 2. Physical Security 3. Perimeter Security 4. Internal Network 5. Host Security 6. Application Security 7. Data Security</p>
+        <a class="flashcard-link" href="../information-security-controls/#layers-of-defense">&#x2192; Defense-in-Depth Layers</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is included in the Policies, Procedures, and Awareness layer of Defense-in-Depth?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Organizational security guidelines, policies, procedures, and user training to establish security culture and behavior standards.</p>
+        <a class="flashcard-link" href="../information-security-controls/#layers-of-defense">&#x2192; Defense-in-Depth Layers</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What does the Physical Security layer of Defense-in-Depth include?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Access controls, CCTV, locks, and environmental controls to prevent unauthorized physical access to systems and infrastructure.</p>
+        <a class="flashcard-link" href="../information-security-controls/#layers-of-defense">&#x2192; Defense-in-Depth Layers</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What security measures are included in the Perimeter Security layer?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Firewalls, boundary protection, and network segmentation to control and monitor traffic entering and leaving the network.</p>
+        <a class="flashcard-link" href="../information-security-controls/#layers-of-defense">&#x2192; Defense-in-Depth Layers</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What measures are included in the Internal Network layer of Defense-in-Depth?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Intrusion detection/prevention systems (IDS/IPS), network monitoring, and access controls to protect traffic and systems within the network perimeter.</p>
+        <a class="flashcard-link" href="../information-security-controls/#layers-of-defense">&#x2192; Defense-in-Depth Layers</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is included in the Host Security layer of Defense-in-Depth?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Operating system hardening, antivirus software, host-based firewalls, and patch management to protect individual systems from compromise.</p>
+        <a class="flashcard-link" href="../information-security-controls/#layers-of-defense">&#x2192; Defense-in-Depth Layers</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is included in the Application Security layer of Defense-in-Depth?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Secure coding practices, input validation, and application-level authentication and authorization to prevent exploitation of application vulnerabilities.</p>
+        <a class="flashcard-link" href="../information-security-controls/#layers-of-defense">&#x2192; Defense-in-Depth Layers</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What measures are used for Data Security in Defense-in-Depth?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Encryption, data classification, access controls, and backup and recovery procedures to protect information at rest and in transit.</p>
+        <a class="flashcard-link" href="../information-security-controls/#layers-of-defense">&#x2192; Defense-in-Depth Layers</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is Risk?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>The degree of uncertainty or expectation that an adverse event may cause damage to the system or its resources. It is the combination of the <strong>probability of a threat</strong> and the <strong>consequence or impact</strong> of that event.</p>
+        <a class="flashcard-link" href="../information-security-controls/#risk-management">&#x2192; Risk Management</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the formula for calculating Risk?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p><strong>Risk = Threat × Vulnerability × Impact</strong> or <strong>Risk = Threat × Vulnerability × Asset Value</strong>. Can also be expressed as <strong>Level of Risk = Consequence × Likelihood</strong>.</p>
+        <a class="flashcard-link" href="../information-security-controls/#what-is-risk">&#x2192; What is Risk?</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the formula for calculating Level of Risk in the context of Risk Levels?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p><strong>Level of Risk = Consequence × Likelihood</strong> — where Consequence is the severity of impact and Likelihood is the probability of occurrence.</p>
+        <a class="flashcard-link" href="../information-security-controls/#risk-levels">&#x2192; Risk Levels</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Name the three main risk levels.</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>1. Extreme or High (Serious or Imminent danger) 2. Medium (Moderate danger) 3. Low (Negligible danger)</p>
+        <a class="flashcard-link" href="../information-security-controls/#risk-levels">&#x2192; Risk Levels</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What action should be taken for Extreme or High risk?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Immediate measures are required to combat the risk. Identify and impose controls to reduce risk to a reasonably low level.</p>
+        <a class="flashcard-link" href="../information-security-controls/#risk-levels">&#x2192; Risk Levels</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What action should be taken for Medium risk?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Immediate action is not required, but action should be implemented quickly. Implement controls as soon as possible to reduce risk to a reasonably low level.</p>
+        <a class="flashcard-link" href="../information-security-controls/#risk-levels">&#x2192; Risk Levels</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What action should be taken for Low risk?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Take preventive steps to mitigate the effects of risk.</p>
+        <a class="flashcard-link" href="../information-security-controls/#risk-levels">&#x2192; Risk Levels</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is a Risk Matrix?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>A graphical representation that scales <strong>likelihood (probability)</strong> against <strong>consequences (impact)</strong> to visualize and compare risks. It helps organizations prioritize risk remediation efforts based on probability and impact severity.</p>
+        <a class="flashcard-link" href="../information-security-controls/#risk-matrix">&#x2192; Risk Matrix</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What are the two key dimensions of a Risk Matrix?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p><strong>Likelihood (Probability):</strong> The chance that a risk event will occur. <strong>Consequence (Impact):</strong> The severity or extent of damage if a risk event occurs.</p>
+        <a class="flashcard-link" href="../information-security-controls/#risk-matrix">&#x2192; Risk Matrix</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Can control measures completely eliminate risk?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>No. Control measures may decrease the level of risk, but do not always entirely eliminate it. Risk management requires ongoing monitoring and adaptation.</p>
+        <a class="flashcard-link" href="../information-security-controls/#key-risk-concepts">&#x2192; Key Risk Concepts</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is Risk Management?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>The process of reducing and maintaining risk at an acceptable level by means of a well-defined and actively employed security program. It is continuous and helps organizations identify, assess, respond to, and control potential effects of risk.</p>
+        <a class="flashcard-link" href="../information-security-controls/#risk-management-process">&#x2192; Risk Management Process</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Name the five key Risk Management Phases in order.</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>1. Risk Identification 2. Risk Assessment 3. Risk Treatment 4. Risk Tracking 5. Risk Review</p>
+        <a class="flashcard-link" href="../information-security-controls/#risk-management-phases">&#x2192; Risk Management Phases</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the main objective of Risk Identification?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>To identify the sources, causes, and consequences of internal and external risks affecting the organization's security <strong>before they cause harm</strong>. The process depends on skill set and differs by organization.</p>
+        <a class="flashcard-link" href="../information-security-controls/#risk-management-phases">&#x2192; Risk Management Phases</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is Risk Assessment and what does it accomplish?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>An ongoing iterative process that assesses the organization's risks and estimates their likelihood and impact. It assigns priorities for mitigation, determines quantitative/qualitative value, and detects and prioritizes risks.</p>
+        <a class="flashcard-link" href="../information-security-controls/#risk-management-phases">&#x2192; Risk Management Phases</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is Risk Treatment?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>The process of selecting and implementing appropriate controls on identified risks to modify them based on severity level. Decisions are based on risk assessment results and aim to address risks outside the organization's risk tolerance.</p>
+        <a class="flashcard-link" href="../information-security-controls/#risk-management-phases">&#x2192; Risk Management Phases</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is Risk Tracking?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Continuous monitoring and observation of implemented controls and risk status. Includes monitoring control effectiveness, tracking risk indicators, maintaining risk registers, and observing for emerging risks.</p>
+        <a class="flashcard-link" href="../information-security-controls/#risk-management-phases">&#x2192; Risk Management Phases</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is Risk Review?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Periodic evaluation and assessment of risk management strategies and control effectiveness. Includes reviewing control performance, verifying procedures are understood and followed, and identifying improvement opportunities.</p>
+        <a class="flashcard-link" href="../information-security-controls/#risk-management-phases">&#x2192; Risk Management Phases</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Name six key considerations before treating a risk.</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>1. The appropriate method of treatment 2. People responsible for implementation 3. Costs involved 4. Benefits of treatment 5. Likelihood of success 6. Ways to measure and assess treatment effectiveness</p>
+        <a class="flashcard-link" href="../information-security-controls/#risk-treatment-considerations">&#x2192; Risk Treatment Considerations</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Define Cyber Threat Intelligence (CTI).</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>The collection and analysis of information about threats and adversaries, including patterns that enable knowledgeable decisions for preparedness, prevention, and response actions against cyber attacks. CTI converts unknown threats into known threats through research and analysis.</p>
+        <a class="flashcard-link" href="../information-security-controls/#definition">&#x2192; Definition</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What are the four types of threat intelligence?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>1. Strategic 2. Tactical 3. Operational 4. Technical. They differ in data collection, analysis, and consumption based on audience and goals.</p>
+        <a class="flashcard-link" href="../information-security-controls/#types-of-threat-intelligence">&#x2192; Types of Threat Intelligence</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Who consumes Strategic Threat Intelligence and what does it focus on?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p><strong>Consumed by:</strong> High-level executives, IT management, CISO<br><strong>Focus:</strong> Long-term issues, high-level cybersecurity posture, attack trends, financial impact, business decisions</p>
+        <a class="flashcard-link" href="../information-security-controls/#strategic-threat-intelligence">&#x2192; Strategic Threat Intelligence</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What information does Strategic Threat Intelligence include?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Financial impact of cyber activity, attribution for breaches, threat actors and attack trends, threat landscape by sector, breach and malware statistics, geopolitical conflicts, changes in adversary TTPs, industry impact analysis</p>
+        <a class="flashcard-link" href="../information-security-controls/#strategic-threat-intelligence">&#x2192; Strategic Threat Intelligence</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Who consumes Tactical Threat Intelligence and what does it provide?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p><strong>Consumed by:</strong> IT service managers, security managers, NOC staff, administrators<br><strong>Provides:</strong> Information on tactics, techniques, and procedures (TTPs) used by threat actors to perform attacks</p>
+        <a class="flashcard-link" href="../information-security-controls/#tactical-threat-intelligence">&#x2192; Tactical Threat Intelligence</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>How do organizations use Tactical Threat Intelligence?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Develop detection and mitigation strategies, update security products with identified indicators, patch vulnerable systems, assess technical capabilities and goals of attackers, analyze security incidents and assess attack vectors</p>
+        <a class="flashcard-link" href="../information-security-controls/#tactical-threat-intelligence">&#x2192; Tactical Threat Intelligence</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Define Operational Threat Intelligence and who consumes it.</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Information about specific threats against the organization with contextual details about security events and incidents. <strong>Consumed by:</strong> Security managers, heads of incident response, network defenders, forensics and fraud detection teams</p>
+        <a class="flashcard-link" href="../information-security-controls/#operational-threat-intelligence">&#x2192; Operational Threat Intelligence</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What sources are used for Operational Threat Intelligence?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Human intelligence, social media, chat rooms, real-world activities and events that result in cyber attacks. Obtained by analyzing human behavior and threat groups. Typically collected by government organizations.</p>
+        <a class="flashcard-link" href="../information-security-controls/#operational-threat-intelligence">&#x2192; Operational Threat Intelligence</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is Technical Threat Intelligence and what does it focus on?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Information about resources (tools, command and control channels) attackers use to perform attacks. <strong>Focuses on:</strong> Specific indicators of compromise (IoCs), has shorter lifespan than tactical intelligence, enables rapid distribution and response</p>
+        <a class="flashcard-link" href="../information-security-controls/#technical-threat-intelligence">&#x2192; Technical Threat Intelligence</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Name examples of Technical Threat Intelligence.</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Specific malware implementations, IP addresses and domains used by malicious endpoints, phishing email headers, hash checksums of malware</p>
+        <a class="flashcard-link" href="../information-security-controls/#technical-threat-intelligence">&#x2192; Technical Threat Intelligence</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>How is Technical Threat Intelligence applied in organizations?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Added to defensive systems (IDS/IPS, firewalls, endpoint security) to enhance detection mechanisms. Directly fed into security devices in digital format to block and identify inbound and outbound malicious traffic.</p>
+        <a class="flashcard-link" href="../information-security-controls/#technical-threat-intelligence">&#x2192; Technical Threat Intelligence</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the Threat Intelligence Lifecycle and why is it important?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>A continuous process of developing intelligence from raw data that supports organizations in developing defensive mechanisms to thwart emerging risks and threats. Higher-level executives provide continuous feedback at every stage to ensure intelligence relevance and accuracy.</p>
+        <a class="flashcard-link" href="../information-security-controls/#threat-intelligence-lifecycle">&#x2192; Threat Intelligence Lifecycle</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Name the five phases of the Threat Intelligence Lifecycle in order.</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>1. Planning and Direction 2. Collection 3. Processing and Exploitation 4. Analysis and Production 5. Dissemination and Integration</p>
+        <a class="flashcard-link" href="../information-security-controls/#threat-intelligence-lifecycle">&#x2192; Threat Intelligence Lifecycle</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the purpose of the Planning and Direction phase?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Develop a proper plan based on strategic intelligence requirements and define the entire intelligence program from data collection to delivery. Forms intelligence team, establishes roles/responsibilities, and sets planning for later cycle phases.</p>
+        <a class="flashcard-link" href="../information-security-controls/#phase-1-planning-and-direction">&#x2192; Phase 1: Planning and Direction</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the purpose of the Collection phase?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Gather desired intelligence from multiple sources using technical and human means. Collect required data that satisfies intelligence goals from HUMINT, IMINT, MASINT, SIGINT, OSINT, IoCs, and third-party sources including critical applications, network infrastructure, and security infrastructure.</p>
+        <a class="flashcard-link" href="../information-security-controls/#phase-2-collection">&#x2192; Phase 2: Collection</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Name the six main collection methods/sources for threat intelligence.</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>1. Human Intelligence (HUMINT) 2. Imagery Intelligence (IMINT) 3. Measurement and Signature Intelligence (MASINT) 4. Signal Intelligence (SIGINT) 5. Open Source Intelligence (OSINT) 6. Indicators of Compromise (IoCs)</p>
+        <a class="flashcard-link" href="../information-security-controls/#phase-2-collection">&#x2192; Phase 2: Collection</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the purpose of the Processing and Exploitation phase?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Transform raw data into meaningful, usable information. Convert raw data into useful information using sophisticated technology and tools, highly trained professionals, and automated processing functions (decryption, parsing, filtering, data correlation, aggregation).</p>
+        <a class="flashcard-link" href="../information-security-controls/#phase-3-processing-and-exploitation">&#x2192; Phase 3: Processing and Exploitation</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the purpose of the Analysis and Production phase?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Analyze processed intelligence to extract refined information and identify threats. Combine information from various sources into a single entity. Apply analysis techniques (qualitative, quantitative, machine-based, statistical) to convert raw data into intelligence and develop appropriate countermeasures to respond to identified threats.</p>
+        <a class="flashcard-link" href="../information-security-controls/#phase-4-analysis-and-production">&#x2192; Phase 4: Analysis and Production</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What four characteristics must threat intelligence analysis have?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p><strong>Objective:</strong> Unbiased and evidence-based<br><strong>Timely:</strong> Delivered when needed<br><strong>Accurate:</strong> Correct and verified<br><strong>Actionable:</strong> Can be directly used for decision-making</p>
+        <a class="flashcard-link" href="../information-security-controls/#phase-4-analysis-and-production">&#x2192; Phase 4: Analysis and Production</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Name four reasoning techniques used in threat intelligence analysis.</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>1. Deduction (general to specific) 2. Induction (specific to general) 3. Abduction (best explanation) 4. Scientific method (confidence-based analysis)</p>
+        <a class="flashcard-link" href="../information-security-controls/#phase-4-analysis-and-production">&#x2192; Phase 4: Analysis and Production</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the purpose of the Dissemination and Integration phase?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Deliver analyzed intelligence to intended consumers at strategic, operational, tactical, and technical levels. Distribute through automated and manual methods. Gather feedback from consumers on intelligence accuracy and relevance. Feedback completes the cycle and provides inputs to refine intelligence requirements for the next iteration.</p>
+        <a class="flashcard-link" href="../information-security-controls/#phase-5-dissemination-and-integration">&#x2192; Phase 5: Dissemination and Integration</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What are the major intelligence information types used for dissemination?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Threat indicators and Indicators of Compromise (IoCs), Adversary Tactics/Techniques/Procedures (TTPs), security alerts, threat intelligence reports, tool configuration information</p>
+        <a class="flashcard-link" href="../information-security-controls/#phase-5-dissemination-and-integration">&#x2192; Phase 5: Dissemination and Integration</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Who consumes strategic threat intelligence and what is the focus?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p><strong>Consumers:</strong> High-level executives and management<br><strong>Focus:</strong> Business strategies and risk-based decisions for organizational security posture</p>
+        <a class="flashcard-link" href="../information-security-controls/#phase-5-dissemination-and-integration">&#x2192; Phase 5: Dissemination and Integration</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Who consumes tactical and operational threat intelligence?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p><strong>Tactical:</strong> IT service and SOC managers, administrators, architects; focus on adversary TTPs<br><strong>Operational:</strong> Security managers and network defenders; focus on specific threats to organization</p>
+        <a class="flashcard-link" href="../information-security-controls/#phase-5-dissemination-and-integration">&#x2192; Phase 5: Dissemination and Integration</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the purpose of the feedback loop in the Threat Intelligence Lifecycle?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Consumers provide assessment on whether extracted intelligence meets their requirements. Feedback describes accuracy and relevance. Cycle repeats with refined requirements and methods to produce more accurate, timely, and relevant intelligence.</p>
+        <a class="flashcard-link" href="../information-security-controls/#phase-5-dissemination-and-integration">&#x2192; Phase 5: Dissemination and Integration</a>
+      </div>
+    </div>
+  </div>
+
 </div>
