@@ -11,7 +11,7 @@ Attackers break into systems for various reasons. To defend effectively, securit
 | [Ethical Hacking Concepts](ethical-hacking-concepts.md) | Definition, key terminology, why ethical hacking is necessary, scope and limitations, Tiger Team, audit framework, ethical rules |
 | [Hacking Methodologies and Frameworks](hacking-methodologies-and-frameworks.md) | CEH Framework, Cyber Kill Chain, TTPs, Adversary Behavioral Identification, IoCs, MITRE ATT&CK Framework, Diamond Model |
 | [Information Security Controls](information-security-controls.md) | Information Assurance, Continual/Adaptive Security Strategy, Defense-in-Depth, Risk Management (definition, formula, levels, matrix), Risk Management Process, Cyber Threat Intelligence, Threat Intelligence Lifecycle, Threat Modeling, Incident Management, Incident Handling and Response, Role of AI and ML in Cyber Security |
-| [Information Security Laws and Standards](information-security-laws-and-standards.md) | *TODO* |
+| [Information Security Laws and Standards](information-security-laws-and-standards.md) | PCI DSS, ISO/IEC Standards, HIPAA, SOX, DMCA, FISMA, GDPR, DPA 2018, Cyber Laws by Country |
 | [Flashcards](flashcards.md) | HTML flashcard deck for all Module 01 topics |
 
 ## Key Learning Objectives
