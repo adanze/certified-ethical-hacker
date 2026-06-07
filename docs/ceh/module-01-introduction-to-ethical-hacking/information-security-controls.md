@@ -67,12 +67,15 @@ Defense-in-depth typically includes multiple layers spanning administrative, tec
 Risk refers to the degree of **uncertainty or expectation** that an adverse event may cause damage to the system or its resources. It is the combination of the **probability of a threat** occurring and the **consequence or impact** of that event.
 
 **Risk Formula:**
+
 $$\text{Risk} = \text{Threat} \times \text{Vulnerability} \times \text{Impact}$$
 
 Or alternatively:
+
 $$\text{Risk} = \text{Threat} \times \text{Vulnerability} \times \text{Asset Value}$$
 
 Risk can be expressed as:
+
 $$\text{Risk} = \text{Threat} \times \text{Vulnerability} \times \text{Impact}$$
 
 ### Risk Levels
@@ -80,6 +83,7 @@ $$\text{Risk} = \text{Threat} \times \text{Vulnerability} \times \text{Impact}$$
 Risks are categorized into different levels according to their estimated impact on the system. Organizations use risk levels to prioritize remediation efforts.
 
 The level of risk is calculated using:
+
 $$\text{Level of Risk} = \text{Consequence} \times \text{Likelihood}$$
 
 | Risk Level | Consequence | Action |
