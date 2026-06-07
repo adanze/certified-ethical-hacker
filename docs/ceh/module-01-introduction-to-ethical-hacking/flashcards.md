@@ -2496,4 +2496,690 @@ Click a card to reveal the answer. Cards are shuffled on every visit.
     </div>
   </div>
 
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is Threat Modeling and what is its primary purpose?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>A risk assessment approach for analyzing the security of an application by capturing, organizing, and analyzing all information that affects it. Purpose is to identify relevant threats, key vulnerabilities, and improve security design through comprehensive threat analysis.</p>
+        <a class="flashcard-link" href="../information-security-controls/#threat-modeling">&#x2192; Threat Modeling</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What are the three benefits of threat modeling?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>1. Identify relevant threats to a particular application scenario 2. Identify key vulnerabilities in an application's design 3. Improve security design through comprehensive analysis and understanding of threats</p>
+        <a class="flashcard-link" href="../information-security-controls/#purpose-and-benefits">&#x2192; Purpose and Benefits</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Name the five steps of the Threat Modeling Process in order.</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>1. Identify Security Objectives 2. Application Overview 3. Decompose the Application 4. Identify Threats 5. Identify Vulnerabilities</p>
+        <a class="flashcard-link" href="../information-security-controls/#threat-modeling-process-5-steps">&#x2192; Threat Modeling Process</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the purpose of Step 1: Identify Security Objectives?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Define goals and constraints related to confidentiality, integrity, and availability. Guide threat modeling efforts and determine how much effort to put toward subsequent steps. Key questions: What data to protect? Compliance requirements? Quality-of-service requirements? Intangible assets?</p>
+        <a class="flashcard-link" href="../information-security-controls/#threat-modeling-process-5-steps">&#x2192; Step 1: Identify Security Objectives</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What does Step 2: Application Overview involve?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Understand application structure by identifying components, data flows, trust boundaries. Includes deployment topology, logical layers, key services/components, communication protocols, roles, usage scenarios, technology stack, and security mechanisms.</p>
+        <a class="flashcard-link" href="../information-security-controls/#threat-modeling-process-5-steps">&#x2192; Step 2: Application Overview</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the purpose of Step 3: Decompose the Application?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Break down the application to identify trust boundaries, data flows, entry points, and exit points. Makes it easier to find more relevant and detailed threats and vulnerabilities by understanding application structure and component interactions.</p>
+        <a class="flashcard-link" href="../information-security-controls/#threat-modeling-process-5-steps">&#x2192; Step 3: Decompose the Application</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>How does Step 4: Identify Threats work and what approach is used?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Identify threats relevant to control scenario and context using information from application overview and decomposition. Bring development and test teams together, start with common threats grouped by vulnerability category, and use a question-driven approach.</p>
+        <a class="flashcard-link" href="../information-security-controls/#threat-modeling-process-5-steps">&#x2192; Step 4: Identify Threats</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the purpose of Step 5: Identify Vulnerabilities?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Find weaknesses in the application that allow attacker exploitation and lead to security breaches. Identify weaknesses related to threats found using vulnerability categories and fix them beforehand to prevent breaches.</p>
+        <a class="flashcard-link" href="../information-security-controls/#threat-modeling-process-5-steps">&#x2192; Step 5: Identify Vulnerabilities</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What are the key elements of a deployment diagram in threat modeling?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>End-to-end deployment topology, logical layers, key components and services, communication ports and protocols, identities, external dependencies, and trust boundaries</p>
+        <a class="flashcard-link" href="../information-security-controls/#application-overview-components">&#x2192; Application Overview Components</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What should be included in Application Security Mechanisms review during threat modeling?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Input/data validation, authorization/authentication, sensitive data handling, configuration management, session management, parameter manipulation, cryptography, exception management, auditing and logging</p>
+        <a class="flashcard-link" href="../information-security-controls/#application-overview-components">&#x2192; Application Overview Components</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What are trust boundaries and why are they important in threat modeling?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Points where trust levels change between different parts of an application. Important because they help administrators focus on relevant areas and identify where extra privileges or specific security controls are needed. Include outer boundaries, access control points, and data flow perspectives.</p>
+        <a class="flashcard-link" href="../information-security-controls/#decomposition-details">&#x2192; Decomposition Details</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the difference between Entry Points and Exit Points in threat modeling?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p><strong>Entry Points:</strong> Where users interact with application or internal components communicate; can serve as attack vectors; focus on critical functionalities. <strong>Exit Points:</strong> Where application transfers data to clients/external systems; prioritize points writing untrusted or client input data.</p>
+        <a class="flashcard-link" href="../information-security-controls/#decomposition-details">&#x2192; Decomposition Details</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is Incident Management and what are its core objectives?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>A set of defined processes to identify, analyze, prioritize, and resolve security incidents to restore normal service operations as quickly as possible. Core objectives include improving service quality, resolving problems proactively, reducing incident impact, meeting availability requirements, and assisting with handling future incidents.</p>
+        <a class="flashcard-link" href="../information-security-controls/#incident-management">&#x2192; Incident Management</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What five components does incident management involve?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>1. Vulnerability Analysis (identifying exploitable software/systems) 2. Artifact Analysis (examining forensic evidence) 3. Security Awareness Training (helping users recognize suspicious events) 4. Intrusion Detection (monitoring unauthorized access) 5. Public/Technology Monitoring (tracking security announcements)</p>
+        <a class="flashcard-link" href="../information-security-controls/#what-incident-management-involves">&#x2192; What Incident Management Involves</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What are the objectives of the incident management process?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>1. Improve service quality 2. Resolve problems proactively 3. Reduce the impact of incidents on the organization or its business operations 4. Meet service availability requirements 5. Increase staff efficiency and productivity 6. Improve user and customer satisfaction 7. Assist in handling future incidents</p>
+        <a class="flashcard-link" href="../information-security-controls/#incident-management-process-objectives">&#x2192; Incident Management Process Objectives</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What role do Human Resources personnel play in incident management?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Take steps to terminate or remove employees suspected of harmful computer activities or security violations. Respond to insider threats and malicious employee behavior identified through incident investigation.</p>
+        <a class="flashcard-link" href="../information-security-controls/#organizational-roles-in-incident-management">&#x2192; Organizational Roles in Incident Management</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the responsibility of Legal Counsel in incident management?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Set rules and regulations for the organization, influence internal security policies and practices, provide legal guidance on compliance and implications of incidents, and advise on handling of insider threats or external attacks involving harmful or malicious activities.</p>
+        <a class="flashcard-link" href="../information-security-controls/#organizational-roles-in-incident-management">&#x2192; Organizational Roles in Incident Management</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What does a Firewall Manager do in incident management?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Maintains and manages firewall filters and security policies. Monitors for denial-of-service (DoS) attacks and suspicious traffic patterns. Firewall filters are frequently where DoS attacks are executed and must be monitored and adjusted during incidents.</p>
+        <a class="flashcard-link" href="../information-security-controls/#organizational-roles-in-incident-management">&#x2192; Organizational Roles in Incident Management</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the role of an Outsourced Service Provider in incident management?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Repairs and remediates systems infected by viruses, malware, and other security threats. Provides technical recovery services and system restoration after malware infections or compromise.</p>
+        <a class="flashcard-link" href="../information-security-controls/#organizational-roles-in-incident-management">&#x2192; Organizational Roles in Incident Management</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What components are included in the Incident Handling branch of Incident Management?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Incident Handling includes: Triage (prioritization), Reporting and Detection (alerting), Incident Response (immediate actions), and Analysis (investigating root cause and impact)</p>
+        <a class="flashcard-link" href="../information-security-controls/#incident-management-structure-and-hierarchy">&#x2192; Incident Management Structure and Hierarchy</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is Incident Handling and Response (IH&R)?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>The process of taking organized and careful steps when reacting to a security incident or cyberattack. It is a set of procedures, actions, and measures taken against unexpected events, involving logging, recording, and resolving incidents while noting when they occurred, their impact, and cause.</p>
+        <a class="flashcard-link" href="../information-security-controls/#incident-handling-and-response">&#x2192; Incident Handling and Response</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Name the nine steps of the IH&R process in order.</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>1. Preparation 2. Incident Recording and Assignment 3. Incident Triage 4. Notification 5. Containment 6. Evidence Gathering and Forensic Analysis 7. Eradication 8. Recovery 9. Post-Incident Activities</p>
+        <a class="flashcard-link" href="../information-security-controls/#the-nine-steps-of-ihr">&#x2192; The Nine Steps of IH&R</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the purpose of Step 1: Preparation in IH&R?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Audit resources and assets to determine security purpose, define rules/policies/procedures, build and train incident response teams, define incident readiness procedures, gather required tools, and train employees on system and account security.</p>
+        <a class="flashcard-link" href="../information-security-controls/#the-nine-steps-of-ihr">&#x2192; Step 1: Preparation</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What happens in Step 2: Incident Recording and Assignment?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Initial reporting and recording of the incident takes place. Identify the incident and define proper incident communication plans for employees. Include communication methods for informing IT support personnel or submitting appropriate tickets.</p>
+        <a class="flashcard-link" href="../information-security-controls/#the-nine-steps-of-ihr">&#x2192; Step 2: Incident Recording and Assignment</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the purpose of Step 3: Incident Triage?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Analyze, validate, categorize, and prioritize identified security incidents. Analyze the compromised device to find details: type of attack, severity, target, impact, propagation method, and vulnerabilities exploited.</p>
+        <a class="flashcard-link" href="../information-security-controls/#the-nine-steps-of-ihr">&#x2192; Step 3: Incident Triage</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the purpose of Step 4: Notification in IH&R?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>IH&R team informs various stakeholders — including management, third-party vendors, and clients — about the identified incident. Ensures proper communication and awareness of the security event.</p>
+        <a class="flashcard-link" href="../information-security-controls/#the-nine-steps-of-ihr">&#x2192; Step 4: Notification</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the purpose of Step 5: Containment?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Prevent spread of infection to other organizational assets. Stop additional damage and limit the incident's scope to minimize overall impact on the organization.</p>
+        <a class="flashcard-link" href="../information-security-controls/#the-nine-steps-of-ihr">&#x2192; Step 5: Containment</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What happens in Step 6: Evidence Gathering and Forensic Analysis?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>IH&R team accumulates all possible evidence related to the incident and submits to forensic department. Forensic analysis reveals attack method, exploited vulnerabilities, averted security mechanisms, infected network devices, and compromised applications.</p>
+        <a class="flashcard-link" href="../information-security-controls/#the-nine-steps-of-ihr">&#x2192; Step 6: Evidence Gathering and Forensic Analysis</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the purpose of Step 7: Eradication?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Remove or eliminate the root cause of the incident. Close all attack vectors to prevent similar incidents in the future. Ensures complete removal of the threat.</p>
+        <a class="flashcard-link" href="../information-security-controls/#the-nine-steps-of-ihr">&#x2192; Step 7: Eradication</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the purpose of Step 8: Recovery?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Restore affected systems, services, resources, and data after eliminating incident causes. Incident response team ensures the incident causes no disruption to organizational services or business operations.</p>
+        <a class="flashcard-link" href="../information-security-controls/#the-nine-steps-of-ihr">&#x2192; Step 8: Recovery</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is included in Step 9: Post-Incident Activities?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Conduct final review and analysis before closing the matter. Includes: incident documentation, incident impact assessment, and reviewing and revising policies. Ensures lessons learned are captured.</p>
+        <a class="flashcard-link" href="../information-security-controls/#the-nine-steps-of-ihr">&#x2192; Step 9: Post-Incident Activities</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the relationship between Incident Response, Incident Handling, and Incident Management?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Incident Response is one of the functions performed in Incident Handling. Incident Handling is one of the services provided as part of Incident Management. Incident Management is the overarching framework encompassing all incident-related processes.</p>
+        <a class="flashcard-link" href="../information-security-controls/#incident-response-incident-handling-and-incident-management-relationship">&#x2192; Incident Response, Handling, and Management Relationship</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What role do AI and ML play in modern cybersecurity?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>AI and ML help identify new exploits and weaknesses that can be analyzed to mitigate further attacks. They reduce pressure on security professionals and provide real-time alerts when action is needed.</p>
+        <a class="flashcard-link" href="../information-security-controls/#role-of-ai-and-ml-in-cyber-security">&#x2192; Role of AI and ML in Cyber Security</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is Artificial Intelligence (AI) in the context of cybersecurity?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>AI is a solution to defend networks against attacks that traditional antivirus scans cannot detect. Large amounts of collected data are fed into AI systems, which process and analyze it to understand patterns, details, and trends.</p>
+        <a class="flashcard-link" href="../information-security-controls/#what-are-ai-and-ml">&#x2192; What are AI and ML?</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is Machine Learning (ML) and how does it differ from AI?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>ML is a branch of AI that enables systems to self-learn without explicit programming. It allows systems to define what normal network behavior looks like, then identify and report deviations or anomalies in real-time.</p>
+        <a class="flashcard-link" href="../information-security-controls/#what-are-ai-and-ml">&#x2192; What are AI and ML?</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is Supervised Learning in machine learning?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Supervised learning uses algorithms that input a set of labeled training data to learn the differences between given labels. It is divided into Classification (divided data classes) and Regression (continuous data).</p>
+        <a class="flashcard-link" href="../information-security-controls/#supervised-learning">&#x2192; Supervised Learning</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is Unsupervised Learning and how is it divided?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Unsupervised learning uses algorithms that input unlabeled training data to deduce all categories without guidance. It is divided into Clustering (divides data into clusters based on similarities) and Dimensionality Reduction (reduces data dimensions).</p>
+        <a class="flashcard-link" href="../information-security-controls/#unsupervised-learning">&#x2192; Unsupervised Learning</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the main difference between Classification and Regression in Supervised Learning?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p><strong>Classification:</strong> Data is completely divided into classes; identifies which class a test sample belongs to. <strong>Regression:</strong> Used when data classes are not separated (continuous data) rather than divided into distinct categories.</p>
+        <a class="flashcard-link" href="../information-security-controls/#supervised-learning">&#x2192; Supervised Learning</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Name the two subcategories of Unsupervised Learning techniques.</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>1. Clustering — Divides data into clusters based on similarities 2. Dimensionality Reduction — Reduces the number of dimensions (attributes) in data while preserving relevant information</p>
+        <a class="flashcard-link" href="../information-security-controls/#unsupervised-learning">&#x2192; Unsupervised Learning</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>How does AI improve password protection and authentication?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>AI improves biometric validations and face recognition to prevent credential breaches. It provides the latest models for recognizing individual faces by tracking key correlations and patterns, enhancing authentication security against credential compromise.</p>
+        <a class="flashcard-link" href="../information-security-controls/#how-do-ai-and-ml-prevent-cyber-attacks">&#x2192; How Do AI and ML Prevent Cyber Attacks?</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>How do AI and ML detect and prevent phishing attacks?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>AI and ML scan emails to identify malicious attachments or payloads much faster than humans. They quickly differentiate between malicious and legitimate websites, protecting users from email-based attack vectors.</p>
+        <a class="flashcard-link" href="../information-security-controls/#how-do-ai-and-ml-prevent-cyber-attacks">&#x2192; How Do AI and ML Prevent Cyber Attacks?</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the role of Machine Learning in threat detection?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>ML assists companies in detecting cyber-attacks before systems are compromised. It constantly keeps admins notified of imminent threats through logical data analysis, running algorithms on received data and performing deep learning to comprehend advancements for information system safety.</p>
+        <a class="flashcard-link" href="../information-security-controls/#how-do-ai-and-ml-prevent-cyber-attacks">&#x2192; How Do AI and ML Prevent Cyber Attacks?</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>How do AI and ML-based systems manage vulnerabilities?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>AI and ML-based systems dynamically scan for vulnerabilities and alert admins before exploitation. They provide information about attackers and attack patterns, and can forecast how and when a vulnerability exploitation might occur.</p>
+        <a class="flashcard-link" href="../information-security-controls/#how-do-ai-and-ml-prevent-cyber-attacks">&#x2192; How Do AI and ML Prevent Cyber Attacks?</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is Behavioral Analytics in the context of AI/ML security?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>AI with ML generates specific user patterns based on regular usage. AI software instantly alerts admins if it detects suspicious activity or deviations in regular usage patterns, helping detect and thwart attacks by compromised legitimate user credentials.</p>
+        <a class="flashcard-link" href="../information-security-controls/#how-do-ai-and-ml-prevent-cyber-attacks">&#x2192; How Do AI and ML Prevent Cyber Attacks?</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>How does AI enhance network security operations?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>AI generates comprehensive security policies and maps enterprise network topology. It performs network traffic analysis and proposes efficient security policies by default, overcoming the time-consuming nature of manual network security configuration.</p>
+        <a class="flashcard-link" href="../information-security-controls/#how-do-ai-and-ml-prevent-cyber-attacks">&#x2192; How Do AI and ML Prevent Cyber Attacks?</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the advantage of AI-based antivirus over traditional antivirus?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Traditional antivirus tools perform signature matching against known viruses, requiring frequent updates. AI-based antiviruses use anomaly detection to understand program behavior, detecting suspicious program behavior instead of matching signatures. This enables detection of new and unknown malware threats.</p>
+        <a class="flashcard-link" href="../information-security-controls/#how-do-ai-and-ml-prevent-cyber-attacks">&#x2192; How Do AI and ML Prevent Cyber Attacks?</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>How do AI and ML detect fraudulent transactions?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>AI and ML algorithms carry out anomaly detection to identify payment inconsistencies and fraudulent transactions. They perform automated pattern discovery across transactions, easily differentiating between authentic and illegitimate transactions while blocking fraudulent activity.</p>
+        <a class="flashcard-link" href="../information-security-controls/#how-do-ai-and-ml-prevent-cyber-attacks">&#x2192; How Do AI and ML Prevent Cyber Attacks?</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>How can AI and ML detect botnets that bypass traditional IDS?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Botnets bypass traditional IDS through signature matching ineffectiveness and sophisticated code. AI and ML algorithms alert about suspicious network behavior and detect unauthorized intrusions that traditional IDS implementations would miss.</p>
+        <a class="flashcard-link" href="../information-security-controls/#how-do-ai-and-ml-prevent-cyber-attacks">&#x2192; How Do AI and ML Prevent Cyber Attacks?</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>How can AI defend against AI-augmented attacks?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Attackers can leverage AI technology to compromise organizational networks. AI software can detect such imminent AI-augmented attacks before the network is compromised, providing defense against AI-powered threats.</p>
+        <a class="flashcard-link" href="../information-security-controls/#how-do-ai-and-ml-prevent-cyber-attacks">&#x2192; How Do AI and ML Prevent Cyber Attacks?</a>
+      </div>
+    </div>
+  </div>
+
 </div>
