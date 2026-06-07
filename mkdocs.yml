@@ -27,6 +27,8 @@ extra_css:
 
 extra_javascript:
   - javascripts/flashcards.js
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
   
 markdown_extensions:
   - attr_list
@@ -35,6 +37,8 @@ markdown_extensions:
       permalink: true
   - admonition
   - pymdownx.details
+  - pymdownx.arithmatex:
+      generic: true
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
