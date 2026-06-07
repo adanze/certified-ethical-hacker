@@ -3182,4 +3182,830 @@ Click a card to reveal the answer. Cards are shuffled on every visit.
     </div>
   </div>
 
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is PCI DSS and who does it apply to?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>PCI DSS is a proprietary information security standard for organizations handling cardholder information (debit, credit, prepaid, e-purse, ATM, POS cards). Applies to all entities involved in payment card processing: merchants, processors, acquirers, issuers, service providers, and entities that store, process, or transmit cardholder data.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#payment-card-industry-data-security-standard-pci-dss">&#x2192; PCI DSS</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Name the six key requirements of PCI DSS.</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>1. Build and Maintain a Secure Network. 2. Protect Cardholder Data. 3. Maintain a Vulnerability Management Program. 4. Implement Strong Access Control Measures. 5. Regularly Monitor and Test Networks. 6. Maintain an Information Security Policy.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#pci-dss-requirements-overview">&#x2192; PCI DSS Requirements Overview</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What controls are needed to build and maintain a secure network per PCI DSS?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Install and maintain a firewall configuration to protect cardholder data. Do not use vendor-supplied defaults for system passwords and other security parameters.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#pci-dss-requirements-overview">&#x2192; PCI DSS Requirements Overview</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What are the consequences of failing to meet PCI DSS requirements?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Failure to meet PCI DSS requirements may result in fines or termination of payment card processing privileges.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#compliance-and-penalties">&#x2192; Compliance and Penalties</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>PCI DSS Requirement 1: What does "Build and Maintain a Secure Network" require?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Install and maintain a firewall configuration to protect cardholder data. Do not use vendor-supplied defaults for system passwords and other security parameters.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#pci-dss-requirements-overview">&#x2192; PCI DSS Requirements</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>PCI DSS Requirement 2: What does "Protect Cardholder Data" require?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Protect stored cardholder data. Encrypt transmission of cardholder data across open, public networks.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#pci-dss-requirements-overview">&#x2192; PCI DSS Requirements</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>PCI DSS Requirement 3: What does "Maintain a Vulnerability Management Program" require?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Use and regularly update anti-virus software or programs. Develop and maintain secure systems and applications.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#pci-dss-requirements-overview">&#x2192; PCI DSS Requirements</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>PCI DSS Requirement 4: What does "Implement Strong Access Control Measures" require?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Restrict access to cardholder data by business need to know. Assign a unique ID to each person with computer access. Restrict physical access to cardholder data.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#pci-dss-requirements-overview">&#x2192; PCI DSS Requirements</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>PCI DSS Requirement 5: What does "Regularly Monitor and Test Networks" require?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Track and monitor all access to network resources and cardholder data. Regularly test security systems and processes.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#pci-dss-requirements-overview">&#x2192; PCI DSS Requirements</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>PCI DSS Requirement 6: What does "Maintain an Information Security Policy" require?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Maintain a policy that addresses information security for all personnel.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#pci-dss-requirements-overview">&#x2192; PCI DSS Requirements</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is ISO/IEC 27001:2022 and what is its primary purpose?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>ISO/IEC 27001:2022 is an international standard specifying requirements and framework for establishing, implementing, maintaining, and continually improving an Information Security Management System (ISMS). It ensures confidentiality, integrity, and availability of information and helps organizations manage security risks.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#isoiec-270012022--information-security-management-system-isms">&#x2192; ISO/IEC 27001:2022</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Name five key purposes of implementing ISO/IEC 27001:2022.</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>1. Systematically identify, assess, and manage information security risks. 2. Comply with regulatory, legal, and contractual obligations. 3. Strengthen security posture and reduce breach risk. 4. Continuously enhance security practices. 5. Build stakeholder trust and gain competitive advantage.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#isoiec-270012022--information-security-management-system-isms">&#x2192; ISO/IEC 27001:2022</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the relationship between ISO/IEC 27001 and ISO/IEC 27701?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>ISO/IEC 27701:2019 extends ISO/IEC 27001 to include privacy management, specifically focusing on protecting personally identifiable information (PII) via a Privacy Information Management System (PIMS).</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#other-key-isoiec-standards">&#x2192; Other Key ISO/IEC Standards</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the focus of ISO/IEC 27002:2022?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>ISO/IEC 27002:2022 outlines best practices and control objectives for critical cybersecurity areas including access control, cryptography, and security personnel.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#other-key-isoiec-standards">&#x2192; Other Key ISO/IEC Standards</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What does ISO/IEC 27005:2022 provide?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>ISO/IEC 27005:2022 provides comprehensive guidelines for information security risk management and supports ISMS requirements. It aids organizations in developing a structured framework for conducting thorough information security risk assessments.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#other-key-isoiec-standards">&#x2192; Other Key ISO/IEC Standards</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is ISO/IEC 27018:2019 and what does it address?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>ISO/IEC 27018:2019 offers a code of practice focusing on PII protection in public cloud environments. It provides guidelines for implementing cloud-specific controls designed to safeguard personal data.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#other-key-isoiec-standards">&#x2192; Other Key ISO/IEC Standards</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the scope of ISO/IEC 27032:2023?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>ISO/IEC 27032:2023 explains the relationship among Internet, Web, network security, and cybersecurity, providing an overview of Internet security and identifying key stakeholders and their roles.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#other-key-isoiec-standards">&#x2192; Other Key ISO/IEC Standards</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What does ISO/IEC 27036-3:2023 address?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>ISO/IEC 27036-3:2023 offers detailed guidelines for securing hardware, software, and services supply chains. It helps organizations mitigate supply chain security risks and maintain operational integrity.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#other-key-isoiec-standards">&#x2192; Other Key ISO/IEC Standards</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the purpose of ISO/IEC 27040:2024?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>ISO/IEC 27040:2024 provides technical requirements and guidance for achieving data storage security through planning, design, documentation, and implementation. It helps organizations ensure integrity, confidentiality, and availability of stored data.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#other-key-isoiec-standards">&#x2192; Other Key ISO/IEC Standards</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is HIPAA and who does it apply to?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>HIPAA (Health Insurance Portability and Accountability Act) is a federal law establishing national standards to protect individuals' health information privacy and security. It applies to covered entities (health plans, health care clearinghouses, certain health care providers) and their business associates handling electronic health information.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#health-insurance-portability-and-accountability-act-hipaa">&#x2192; HIPAA</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What does the HIPAA Privacy Rule establish?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>National standards to protect medical records and personal health information. Requires safeguards, sets limits on uses/disclosures without authorization, and grants patients rights: examine records, obtain copies, request corrections.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#hipaa-administrative-simplification-rules">&#x2192; HIPAA Administrative Simplification Rules</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What does the HIPAA Security Rule require?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Establishes national standards for protecting electronically protected health information (ePHI). Requires administrative, physical, and technical safeguards to ensure confidentiality, integrity, and availability of ePHI during creation, receipt, use, and maintenance.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#hipaa-administrative-simplification-rules">&#x2192; HIPAA Administrative Simplification Rules</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the National Provider Identifier (NPI) Standard under HIPAA?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>A unique 10-position, intelligence-free numeric identifier assigned to health care providers. Must be used on all administrative and financial transactions under HIPAA. Does not carry information about state or medical specialty.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#hipaa-administrative-simplification-rules">&#x2192; HIPAA Administrative Simplification Rules</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What are Electronic Transactions and Code Sets Standards in HIPAA?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Require every provider doing business electronically to use the same health care transactions, code sets, and identifiers. Standards adopted from ASC X12N or NCPDP (for pharmacy). Includes claims, eligibility, enrollment, referrals, coordination of benefits, and payment transactions.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#hipaa-administrative-simplification-rules">&#x2192; HIPAA Administrative Simplification Rules</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the purpose of the HIPAA Enforcement Rule?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Contains provisions for compliance and investigation. Establishes civil monetary penalties for violations of HIPAA Administrative Simplification Rules. Defines procedures for hearings and appeals.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#hipaa-administrative-simplification-rules">&#x2192; HIPAA Administrative Simplification Rules</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the Sarbanes-Oxley Act (SOX) and what is its primary goal?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Enacted in 2002, SOX aims to protect the public and investors by increasing accuracy and reliability of corporate disclosures. Specifies what records organizations must store and for how long, and mandates reforms to enhance corporate responsibility, financial disclosures, and combat corporate and accounting fraud.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#sarbanes-oxley-act-sox">&#x2192; SOX</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What does SOX Title I establish?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Establishes the Public Company Accounting Oversight Board (PCAOB) to provide independent oversight of public accounting firms. PCAOB registers audit services, defines compliance audit processes, inspects and polices conduct, and enforces SOX compliance mandates.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#soxs-11-titles">&#x2192; SOX's 11 Titles</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What does SOX Title II address?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Auditor Independence. Establishes standards for external auditor independence to limit conflicts of interest. Requires audit partner rotation and restricts auditing firms from providing non-audit services (consulting) for the same clients.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#soxs-11-titles">&#x2192; SOX's 11 Titles</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What does SOX Title III mandate?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Corporate Responsibility. Mandates senior executives take individual responsibility for accuracy and completeness of financial reports. Defines interaction between auditors and audit committees, specifies officers' responsibility for report accuracy, and enumerates limits on officer behavior with specific penalties for non-compliance.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#soxs-11-titles">&#x2192; SOX's 11 Titles</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What does SOX Title IV require?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Enhanced Financial Disclosures. Requires enhanced reporting of financial transactions including off-balance-sheet transactions and stock transactions of corporate officers. Mandates internal controls to ensure accuracy, audits and reports on controls, and timely reporting of material financial changes.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#soxs-11-titles">&#x2192; SOX's 11 Titles</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What does SOX Title V address?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Analyst Conflicts of Interest. Measures to restore investor confidence in securities analyst reporting. Defines code of conduct for securities analysts and requires disclosure of any knowable conflicts of interest.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#soxs-11-titles">&#x2192; SOX's 11 Titles</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What does SOX Title VI establish?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Commission Resources and Authority. Defines practices to restore investor confidence in securities analysts. Defines SEC authority to censure or bar securities professionals and the conditions to bar persons from practicing as brokers, advisors, or dealers.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#soxs-11-titles">&#x2192; SOX's 11 Titles</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What does SOX Title VII require?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Studies and Reports. Requires Comptroller General and SEC to perform various studies and report findings on accounting firm consolidation, credit rating agencies, securities violations, enforcement actions, and whether investment banks assisted companies to manipulate earnings.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#soxs-11-titles">&#x2192; SOX's 11 Titles</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What does SOX Title VIII address?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Corporate and Criminal Fraud Accountability. Describes criminal penalties for manipulation, destruction, or alteration of financial records and interference with investigations. Provides protections for whistle-blowers.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#soxs-11-titles">&#x2192; SOX's 11 Titles</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What does SOX Title IX address?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>White-Collar Crime Penalty Enhancement. Increases criminal penalties for white-collar crimes and conspiracies. Strengthens sentencing guidelines and adds failure to certify corporate financial reports as a criminal offense.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#soxs-11-titles">&#x2192; SOX's 11 Titles</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What does SOX Title X require?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Corporate Tax Returns. The Chief Executive Officer must sign the company tax return.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#soxs-11-titles">&#x2192; SOX's 11 Titles</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What does SOX Title XI enable?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Corporate Fraud Accountability. Identifies corporate fraud and records tampering as criminal offenses. Revises sentencing guidelines and strengthens penalties. Enables SEC to temporarily freeze "large" or "unusual" transactions or payments.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#soxs-11-titles">&#x2192; SOX's 11 Titles</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the Digital Millennium Copyright Act (DMCA) and what are its primary prohibitions?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>DMCA is an American copyright law implementing two 1996 WIPO treaties. It defines legal prohibitions against: (1) circumvention of technological protection measures used by copyright owners, and (2) removal or alteration of copyright management information.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#the-digital-millennium-copyright-act-dmca">&#x2192; DMCA</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What does DMCA Title I establish?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>WIPO Treaty Implementation. Implements WIPO treaties with technical amendments to US law. Creates prohibitions on circumvention of technological measures protecting copyrighted works and on tampering with copyright management information. Adds civil remedies and criminal penalties for violations.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#dmcas-five-titles">&#x2192; DMCA's Five Titles</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What does DMCA Title II address?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Online Copyright Infringement Liability Limitation. Adds Section 512 to Copyright Act creating four liability limitations for online service providers for: transitory communications, system caching, user-directed storage, and information location tools. Includes special rules for nonprofit educational institutions.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#dmcas-five-titles">&#x2192; DMCA's Five Titles</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What does DMCA Title III allow?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Computer Maintenance or Repair. Allows computer owner to make reproductions or adaptations of programs for use with computer. Permits owner or lessee to make or authorize copies during computer maintenance or repair.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#dmcas-five-titles">&#x2192; DMCA's Five Titles</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What does DMCA Title IV contain?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Miscellaneous Provisions. Six provisions: (1) Copyright Office authority clarification, (2) exemption for ephemeral recordings, (3) distance education study promotion, (4) nonprofit libraries and archives exemption, (5) webcasting amendments to digital performance rights, (6) residual payments for motion picture exploitation.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#dmcas-five-titles">&#x2192; DMCA's Five Titles</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What does DMCA Title V protect?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Protection of Certain Original Designs via Vessel Hull Design Protection Act (VHDPA). Protects original designs of useful articles (vessel hulls up to 200 feet) that make articles attractive or distinctive in appearance.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#dmcas-five-titles">&#x2192; DMCA's Five Titles</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is FISMA and what is its primary purpose?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Federal Information Security Management Act enacted in 2002. Provides comprehensive framework for ensuring effectiveness of information security controls over information resources supporting federal operations and assets. Requires each federal agency to develop and implement agency-wide information security program.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#federal-information-security-management-act-fisma">&#x2192; FISMA</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Name the five key components of the FISMA framework.</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>1. Standards for categorizing information and systems by mission impact. 2. Standards for minimum security requirements. 3. Guidance for selecting appropriate security controls. 4. Guidance for assessing security controls and determining effectiveness. 5. Guidance for security authorization of information systems.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#fisma-framework-components">&#x2192; FISMA Framework Components</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is GDPR and what is its German name?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>GDPR (Datenschutz-Grundverordnung / DSGVO in German) is one of the most stringent privacy and security laws globally. Enacted by European Union on May 25, 2018, it applies to organizations anywhere that target or collect data of EU residents. Levies harsh fines reaching tens of millions of euros for violations.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#general-data-protection-regulation-gdpr">&#x2192; GDPR</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Name the seven GDPR data protection principles.</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>1. Lawfulness, Fairness, and Transparency. 2. Purpose Limitation. 3. Data Minimization. 4. Accuracy. 5. Storage Limitation. 6. Integrity and Confidentiality. 7. Accountability.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#gdpr-data-protection-principles">&#x2192; GDPR Data Protection Principles</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What does the GDPR principle "Lawfulness, Fairness, and Transparency" require?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Processing must be lawful, fair, and transparent to the data subject.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#gdpr-data-protection-principles">&#x2192; GDPR Data Protection Principles</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What does the GDPR principle "Purpose Limitation" require?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Data must be processed for legitimate purposes explicitly specified to data subject when collected.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#gdpr-data-protection-principles">&#x2192; GDPR Data Protection Principles</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What does the GDPR principle "Data Minimization" require?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Collect and process only as much data as necessary for specified purposes.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#gdpr-data-protection-principles">&#x2192; GDPR Data Protection Principles</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What does the GDPR principle "Accuracy" require?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Personal data must be accurate and kept up to date.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#gdpr-data-protection-principles">&#x2192; GDPR Data Protection Principles</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What does the GDPR principle "Storage Limitation" require?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Store personally identifying data only as long as necessary for specified purpose.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#gdpr-data-protection-principles">&#x2192; GDPR Data Protection Principles</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What does the GDPR principle "Integrity and Confidentiality" require?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Processing must ensure appropriate security, integrity, and confidentiality (e.g., encryption).</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#gdpr-data-protection-principles">&#x2192; GDPR Data Protection Principles</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What does the GDPR principle "Accountability" require?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Data controller is responsible for demonstrating GDPR compliance with all principles.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#gdpr-data-protection-principles">&#x2192; GDPR Data Protection Principles</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the Data Protection Act 2018 (DPA) and what does it replace?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>DPA 2018 sets out the framework for data protection law in the UK. It updates and replaces the Data Protection Act 1998, came into effect on 25 May 2018, and was amended 01 January 2021 to reflect UK's status outside the EU.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#data-protection-act-2018-dpa">&#x2192; DPA</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What are the three main ways the DPA protects individuals?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>1. Requiring personal data to be processed lawfully and fairly based on data subject's consent or specified basis. 2. Conferring rights to obtain information about processing and require inaccurate data rectification. 3. Conferring functions on Information Commissioner to monitor and enforce provisions.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#dpa-protection-of-personal-data">&#x2192; DPA Protection of Personal Data</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard exam-critical">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What must the Information Commissioner regard when carrying out DPA, GDPR, and applied GDPR functions?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Regard the importance of securing appropriate protection for personal data. Consider interests of data subjects, controllers, and others. Consider matters of general public interest.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#dpa-protection-of-personal-data">&#x2192; DPA Protection of Personal Data</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is Cyberlaw (Internet law) and what topics does it cover?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Cyberlaw refers to laws protecting Internet and online communication technologies. Covers topics such as Internet access/usage, privacy, freedom of expression, and jurisdiction. Provides assurance of integrity, security, privacy, and confidentiality in governmental and private organizations.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#cyber-law-in-different-countries">&#x2192; Cyber Law in Different Countries</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Why are cyber laws challenging to implement and what are the consequences of violations?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Cyber laws vary by jurisdiction and country, making implementation challenging. Violating cyber laws results in punishments ranging from fines to imprisonment, depending on severity and jurisdiction.</p>
+        <a class="flashcard-link" href="../information-security-laws-and-standards/#cyber-law-in-different-countries">&#x2192; Cyber Law in Different Countries</a>
+      </div>
+    </div>
+  </div>
+
 </div>
