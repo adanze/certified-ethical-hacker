@@ -6,8 +6,8 @@ Summaries and flashcards for the EC-Council Certified Ethical Hacker (CEH) certi
 
 | Module | Topic |
 |--------|-------|
-| 01 | [Introduction to Ethical Hacking](ceh/module-01-intro/index.md) |
-| 02 | [Footprinting and Reconnaissance](ceh/module-02-footprinting/index.md) |
+| 01 | [Introduction to Ethical Hacking](ceh/module-01-introduction-to-ethical-hacking/index.md) |
+| 02 | [Footprinting and Reconnaissance](ceh/module-02-footprinting-and-reconnaissance/index.md) |
 
 ## How to use this site
 
