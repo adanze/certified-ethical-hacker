@@ -1,8 +1,6 @@
 # Information Security Overview
 
-Information security refers to the protection of information and information systems that use, store, and transmit information from unauthorized access, disclosure, alteration, and destruction. Information is a critical asset — if sensitive data falls into the wrong hands, an organization may suffer financial loss, reputational damage, or customer attrition.
-
-This topic covers the **elements of information security**, **classification of attacks**, and **information warfare**.
+Information security protects data and systems from unauthorized access, disclosure, alteration, and destruction. This topic covers core security elements, attack classifications, and information warfare.
 
 ## Elements of Information Security
 

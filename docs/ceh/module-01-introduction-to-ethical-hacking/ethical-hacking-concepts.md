@@ -1,5 +1,7 @@
 # Ethical Hacking Concepts
 
+Ethical hackers employ similar techniques to malicious actors but with explicit authorization and defensive intent. Overview why ethical hacking is necessary, its scope and limitations, and required practitioner skills.
+
 ## Definition
 
 Ethical hacking is the practice of employing computer and network skills to help organizations test their network security for vulnerabilities. It involves using the same hacking tools, tricks, and techniques as malicious attackers — but with **explicit permission** from the system or network owner and **without intent to cause harm**.

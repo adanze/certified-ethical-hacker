@@ -1,5 +1,7 @@
 # Hacking Concepts and Hacker Classes
 
+Basic concepts of hacking: what hacking is, who hackers are, hacker classes and their motivations.
+
 ## What is Hacking?
 
 Hacking refers to **exploiting system vulnerabilities and compromising security controls** to gain unauthorized or inappropriate access to a system's resources. It also involves **modifying system or application features** to achieve a goal outside the creator's original purpose.
