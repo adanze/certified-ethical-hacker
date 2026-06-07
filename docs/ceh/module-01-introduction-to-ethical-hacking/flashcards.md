@@ -1240,7 +1240,7 @@ Click a card to reveal the answer. Cards are shuffled on every visit.
     <div class="flashcard-inner">
       <div class="flashcard-front">
         <span class="flashcard-label">Question</span>
-        <p>What is the Delivery phase and why is it a key measurement point?</p>
+        <p>What is the Delivery phase of the Cyber Kill Chain and why is it a key measurement point?</p>
       </div>
       <div class="flashcard-back">
         <span class="flashcard-label">Answer</span>
@@ -1268,7 +1268,7 @@ Click a card to reveal the answer. Cards are shuffled on every visit.
     <div class="flashcard-inner">
       <div class="flashcard-front">
         <span class="flashcard-label">Question</span>
-        <p>What does an attacker accomplish in Actions on Objectives?</p>
+        <p>What does an attacker accomplish in Actions on Objectives (Cyber Kill Chain)?</p>
       </div>
       <div class="flashcard-back">
         <span class="flashcard-label">Answer</span>
@@ -2332,7 +2332,7 @@ Click a card to reveal the answer. Cards are shuffled on every visit.
     <div class="flashcard-inner">
       <div class="flashcard-front">
         <span class="flashcard-label">Question</span>
-        <p>What is the purpose of the Planning and Direction phase?</p>
+        <p>What is the purpose of the Planning and Direction phase of the Threat Intelligence Lifecycle?</p>
       </div>
       <div class="flashcard-back">
         <span class="flashcard-label">Answer</span>
@@ -2346,7 +2346,7 @@ Click a card to reveal the answer. Cards are shuffled on every visit.
     <div class="flashcard-inner">
       <div class="flashcard-front">
         <span class="flashcard-label">Question</span>
-        <p>What is the purpose of the Collection phase?</p>
+        <p>What is the purpose of the Collection phase of the Threat Intelligence Lifecycle?</p>
       </div>
       <div class="flashcard-back">
         <span class="flashcard-label">Answer</span>
@@ -2374,7 +2374,7 @@ Click a card to reveal the answer. Cards are shuffled on every visit.
     <div class="flashcard-inner">
       <div class="flashcard-front">
         <span class="flashcard-label">Question</span>
-        <p>What is the purpose of the Processing and Exploitation phase?</p>
+        <p>What is the purpose of the Processing and Exploitation phase of the Threat Intelligence Lifecycle?</p>
       </div>
       <div class="flashcard-back">
         <span class="flashcard-label">Answer</span>
@@ -2388,7 +2388,7 @@ Click a card to reveal the answer. Cards are shuffled on every visit.
     <div class="flashcard-inner">
       <div class="flashcard-front">
         <span class="flashcard-label">Question</span>
-        <p>What is the purpose of the Analysis and Production phase?</p>
+        <p>What is the purpose of the Analysis and Production phase of the Threat Intelligence Lifecycle?</p>
       </div>
       <div class="flashcard-back">
         <span class="flashcard-label">Answer</span>
@@ -2430,7 +2430,7 @@ Click a card to reveal the answer. Cards are shuffled on every visit.
     <div class="flashcard-inner">
       <div class="flashcard-front">
         <span class="flashcard-label">Question</span>
-        <p>What is the purpose of the Dissemination and Integration phase?</p>
+        <p>What is the purpose of the Dissemination and Integration phase of the Threat Intelligence Lifecycle?</p>
       </div>
       <div class="flashcard-back">
         <span class="flashcard-label">Answer</span>
@@ -2542,7 +2542,7 @@ Click a card to reveal the answer. Cards are shuffled on every visit.
     <div class="flashcard-inner">
       <div class="flashcard-front">
         <span class="flashcard-label">Question</span>
-        <p>What is the purpose of Step 1: Identify Security Objectives?</p>
+        <p>What is the purpose of Step 1: Identify Security Objectives in the Threat Modeling Process?</p>
       </div>
       <div class="flashcard-back">
         <span class="flashcard-label">Answer</span>
@@ -2556,7 +2556,7 @@ Click a card to reveal the answer. Cards are shuffled on every visit.
     <div class="flashcard-inner">
       <div class="flashcard-front">
         <span class="flashcard-label">Question</span>
-        <p>What does Step 2: Application Overview involve?</p>
+        <p>What does Step 2: Application Overview of the Threat Modeling Process involve?</p>
       </div>
       <div class="flashcard-back">
         <span class="flashcard-label">Answer</span>
@@ -2570,7 +2570,7 @@ Click a card to reveal the answer. Cards are shuffled on every visit.
     <div class="flashcard-inner">
       <div class="flashcard-front">
         <span class="flashcard-label">Question</span>
-        <p>What is the purpose of Step 3: Decompose the Application?</p>
+        <p>What is the purpose of Step 3: Decompose the Application in the Threat Modeling Process?</p>
       </div>
       <div class="flashcard-back">
         <span class="flashcard-label">Answer</span>
@@ -2584,7 +2584,7 @@ Click a card to reveal the answer. Cards are shuffled on every visit.
     <div class="flashcard-inner">
       <div class="flashcard-front">
         <span class="flashcard-label">Question</span>
-        <p>How does Step 4: Identify Threats work and what approach is used?</p>
+        <p>How does Step 4: Identify Threats of the Threat Modeling Process work and what approach is used?</p>
       </div>
       <div class="flashcard-back">
         <span class="flashcard-label">Answer</span>
@@ -2598,7 +2598,7 @@ Click a card to reveal the answer. Cards are shuffled on every visit.
     <div class="flashcard-inner">
       <div class="flashcard-front">
         <span class="flashcard-label">Question</span>
-        <p>What is the purpose of Step 5: Identify Vulnerabilities?</p>
+        <p>What is the purpose of Step 5: Identify Vulnerabilities in the Threat Modeling Process?</p>
       </div>
       <div class="flashcard-back">
         <span class="flashcard-label">Answer</span>
@@ -2822,7 +2822,7 @@ Click a card to reveal the answer. Cards are shuffled on every visit.
     <div class="flashcard-inner">
       <div class="flashcard-front">
         <span class="flashcard-label">Question</span>
-        <p>What happens in Step 2: Incident Recording and Assignment?</p>
+        <p>What happens in Step 2: Incident Recording and Assignment of the IH&R process?</p>
       </div>
       <div class="flashcard-back">
         <span class="flashcard-label">Answer</span>
@@ -2836,7 +2836,7 @@ Click a card to reveal the answer. Cards are shuffled on every visit.
     <div class="flashcard-inner">
       <div class="flashcard-front">
         <span class="flashcard-label">Question</span>
-        <p>What is the purpose of Step 3: Incident Triage?</p>
+        <p>What is the purpose of Step 3: Incident Triage in the IH&R process?</p>
       </div>
       <div class="flashcard-back">
         <span class="flashcard-label">Answer</span>
@@ -2864,7 +2864,7 @@ Click a card to reveal the answer. Cards are shuffled on every visit.
     <div class="flashcard-inner">
       <div class="flashcard-front">
         <span class="flashcard-label">Question</span>
-        <p>What is the purpose of Step 5: Containment?</p>
+        <p>What is the purpose of Step 5: Containment in the IH&R process?</p>
       </div>
       <div class="flashcard-back">
         <span class="flashcard-label">Answer</span>
@@ -2878,7 +2878,7 @@ Click a card to reveal the answer. Cards are shuffled on every visit.
     <div class="flashcard-inner">
       <div class="flashcard-front">
         <span class="flashcard-label">Question</span>
-        <p>What happens in Step 6: Evidence Gathering and Forensic Analysis?</p>
+        <p>What happens in Step 6: Evidence Gathering and Forensic Analysis of the IH&R process?</p>
       </div>
       <div class="flashcard-back">
         <span class="flashcard-label">Answer</span>
@@ -2892,7 +2892,7 @@ Click a card to reveal the answer. Cards are shuffled on every visit.
     <div class="flashcard-inner">
       <div class="flashcard-front">
         <span class="flashcard-label">Question</span>
-        <p>What is the purpose of Step 7: Eradication?</p>
+        <p>What is the purpose of Step 7: Eradication in the IH&R process?</p>
       </div>
       <div class="flashcard-back">
         <span class="flashcard-label">Answer</span>
@@ -2906,7 +2906,7 @@ Click a card to reveal the answer. Cards are shuffled on every visit.
     <div class="flashcard-inner">
       <div class="flashcard-front">
         <span class="flashcard-label">Question</span>
-        <p>What is the purpose of Step 8: Recovery?</p>
+        <p>What is the purpose of Step 8: Recovery in the IH&R process?</p>
       </div>
       <div class="flashcard-back">
         <span class="flashcard-label">Answer</span>
@@ -2920,7 +2920,7 @@ Click a card to reveal the answer. Cards are shuffled on every visit.
     <div class="flashcard-inner">
       <div class="flashcard-front">
         <span class="flashcard-label">Question</span>
-        <p>What is included in Step 9: Post-Incident Activities?</p>
+        <p>What is included in Step 9: Post-Incident Activities of the IH&R process?</p>
       </div>
       <div class="flashcard-back">
         <span class="flashcard-label">Answer</span>
