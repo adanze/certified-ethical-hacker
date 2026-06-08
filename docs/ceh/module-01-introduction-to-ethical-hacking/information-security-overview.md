@@ -1,6 +1,6 @@
 # Information Security Overview
 
-Information security protects data and systems from unauthorized access, disclosure, alteration, and destruction. This topic covers core security elements, attack classifications, and information warfare.
+Information is a critical organizational asset. When it falls into the wrong hands, the consequences are severe—financial losses, damaged reputation, lost customers. Understanding how to secure such vital resources requires knowledge of information security fundamentals. This section introduces the elements of information security, classification of attacks, and information warfare.
 
 ## Elements of Information Security
 
@@ -15,6 +15,22 @@ Information security is *"the state of well-being of information and infrastruct
 | **Non-Repudiation** | Sender cannot deny sending; recipient cannot deny receiving | Digital signatures |
 
 > **Memory aid:** CIA + AN — Confidentiality, Integrity, Availability, Authenticity, Non-Repudiation.
+
+## What are Assets?
+
+An **asset** is any physical device or digital resource belonging to an organization that holds or processes valuable information. Assets are the targets of security threats and attacks — protecting them is the core purpose of information security.
+
+### Types of Assets
+
+| Asset Type | Examples | Value/Risk |
+|---|---|---|
+| **Hardware** | Servers, workstations, routers, firewalls, mobile devices | Physical damage, theft, repurposing |
+| **Software** | Applications, operating systems, firmware, databases | Unauthorized access, data theft, manipulation |
+| **Data** | Databases, files, credentials, intellectual property, customer information | Confidentiality breaches, regulatory violations, financial loss |
+| **Network Resources** | Internet connectivity, cloud services, communication channels | Service disruption, interception, unavailability |
+| **People** | Employees, contractors, users | Social engineering, insider threats, compliance violations |
+
+> **Key insight:** The attack formula is fundamentally about attackers targeting valuable assets. Without assets worth stealing, there is no motive — and therefore no attack.
 
 ## Information Security Attacks: Motives, Goals, and Objectives
 

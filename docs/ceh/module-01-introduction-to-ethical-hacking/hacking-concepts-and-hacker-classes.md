@@ -1,6 +1,6 @@
 # Hacking Concepts and Hacker Classes
 
-Basic concepts of hacking: what hacking is, who hackers are, hacker classes and their motivations.
+This section covers the basic concepts of hacking: what hacking is, who hackers are, and the different hacker classes. Understanding these fundamentals is essential to recognizing threats and defending against them.
 
 ## What is Hacking?
 

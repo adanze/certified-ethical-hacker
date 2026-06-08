@@ -1,6 +1,6 @@
 # Information Security Laws and Standards
 
-Regulations and standards establish mandatory and best-practice requirements for protecting organizational information assets. Overview of laws, compliance frameworks, industry standards, and governance models that guide information security implementation.
+Laws are systems of rules and guidelines enforced by particular countries or communities to govern behavior. Standards are documents established by consensus and approved by recognized bodies to provide rules, guidelines, and characteristics for activities. This section deals with the various laws and standards dealing with information security in different countries.
 
 ## Payment Card Industry Data Security Standard (PCI DSS)
 

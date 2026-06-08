@@ -1,6 +1,6 @@
 # Module 01 – Introduction to Ethical Hacking
 
-Attackers break into systems for various reasons. To defend effectively, security professionals must understand how malicious hackers think and operate — as Sun Tzu wrote: *"If you know yourself but not the enemy, for every victory gained, you will also suffer a defeat."*
+Attackers infiltrate systems for countless reasons and with varying levels of skill. To defend effectively, security professionals must understand the attacker's mindset and methods—as Sun Tzu wisely observed: *"If you know yourself but not the enemy, for every victory gained, you will also suffer a defeat."*
 
 ## Topics
 

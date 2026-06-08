@@ -1,6 +1,6 @@
 # Hacking Methodologies and Frameworks
 
-Understanding attack phases and threat actor tactics, techniques, and procedures enables proactive defense. Overview of key frameworks such as CEH ethical hacking framework, Cyber Kill Chain, MITRE ATT&CK, Diamond Model of Intrusion Analysis.
+Learning the hacking methodologies and frameworks helps ethical hackers understand the phases involved in hacking attempts, along with the tactics, techniques, and procedures used by real hackers. This knowledge strengthens the security infrastructure of organizations. This section discusses the CEH ethical hacking framework, cyber kill chain methodology, MITRE ATT&CK framework, and Diamond Model of Intrusion Analysis.
 
 ## CEH Ethical Hacking Framework
 
