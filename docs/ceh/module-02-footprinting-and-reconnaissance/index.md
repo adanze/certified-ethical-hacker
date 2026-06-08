@@ -4,17 +4,19 @@ Systematically gathering information about a target before an attack or assessme
 
 ## Topics
 
-- [Footprinting Concepts](footprinting-concepts.md)
-- [Footprinting through Search Engines](footprinting-through-search-engines.md)
-- [Footprinting through Internet Research Services](footprinting-through-internet-research-services.md)
-- [Footprinting through Social Networking Sites](footprinting-through-social-networking-sites.md)
-- [Whois Footprinting](whois-footprinting.md)
-- [DNS Footprinting](dns-footprinting.md)
-- [Network and Email Footprinting](network-and-email-footprinting.md)
-- [Footprinting through Social Engineering](footprinting-through-social-engineering.md)
-- [Footprinting Tasks using Advanced Tools and AI](footprinting-tasks-using-advanced-tools-and-ai.md)
-- [Footprinting Countermeasures](footprinting-countermeasures.md)
-- [Flashcards](flashcards.md)
+| Topic | Content |
+|---|---|
+| [Footprinting Concepts](footprinting-concepts.md) | |
+| [Footprinting through Search Engines](footprinting-through-search-engines.md) | |
+| [Footprinting through Internet Research Services](footprinting-through-internet-research-services.md) | |
+| [Footprinting through Social Networking Sites](footprinting-through-social-networking-sites.md) | |
+| [Whois Footprinting](whois-footprinting.md) | |
+| [DNS Footprinting](dns-footprinting.md) | |
+| [Network and Email Footprinting](network-and-email-footprinting.md) | |
+| [Footprinting through Social Engineering](footprinting-through-social-engineering.md) | |
+| [Footprinting Tasks using Advanced Tools and AI](footprinting-tasks-using-advanced-tools-and-ai.md) | |
+| [Footprinting Countermeasures](footprinting-countermeasures.md) | |
+| [Flashcards](flashcards.md) | |
 
 ## Key Learning Objectives
 
