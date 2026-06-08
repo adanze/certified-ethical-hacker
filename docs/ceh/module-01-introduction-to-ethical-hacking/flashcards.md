@@ -22,6 +22,20 @@ Click a card to reveal the answer. Cards are shuffled on every visit.
     <div class="flashcard-inner">
       <div class="flashcard-front">
         <span class="flashcard-label">Question</span>
+        <p>What is an asset in information security?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Any physical device or digital resource belonging to an organization that holds or processes valuable information. Examples include hardware, software, data, network resources, and people.</p>
+        <a class="flashcard-link" href="../information-security-overview/#what-are-assets">&#x2192; What are Assets?</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
         <p>What are the five elements of information security?</p>
       </div>
       <div class="flashcard-back">
