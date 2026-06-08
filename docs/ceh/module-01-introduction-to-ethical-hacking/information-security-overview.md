@@ -1,6 +1,6 @@
 # Information Security Overview
 
-Information security protects data and systems from unauthorized access, disclosure, alteration, and destruction. This topic covers core security elements, attack classifications, and information warfare.
+Information is a critical organizational asset. When it falls into the wrong hands, the consequences are severe—financial losses, damaged reputation, lost customers. Understanding how to secure such vital resources requires knowledge of information security fundamentals. This section introduces the elements of information security, classification of attacks, and information warfare.
 
 ## Elements of Information Security
 

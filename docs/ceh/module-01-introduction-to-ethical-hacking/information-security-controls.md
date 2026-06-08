@@ -1,6 +1,6 @@
 # Information Security Controls
 
-Information security controls prevent unwanted events and reduce organizational risk through policies, awareness, and security mechanisms. Overview of Information Assurance, continual security strategy, defense-in-depth, risk management, cyber threat intelligence, threat modeling, incident management, and AI/ML concepts.
+Information is the greatest asset of an organization and must be secured using policies, creating awareness, and employing security mechanisms. Information security controls prevent unwanted events and reduce risk. The basic security concepts are confidentiality, integrity, and availability; the concepts related to persons accessing information are authentication, authorization, and non-repudiation. This section deals with Information Assurance, continual and adaptive security strategy, defense-in-depth, risk management, cyber threat intelligence, threat modeling, incident management, and AI and ML concepts.
 
 ## Information Security Controls Overview
 

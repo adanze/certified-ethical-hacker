@@ -1,6 +1,6 @@
 # Ethical Hacking Concepts
 
-Ethical hackers employ similar techniques to malicious actors but with explicit authorization and defensive intent. Overview why ethical hacking is necessary, its scope and limitations, and required practitioner skills.
+Ethical hackers follow the same processes as malicious actors, learning to gain and maintain access to systems in identical ways. The difference lies only in authorization and intent. This section provides an overview of ethical hacking, explains why it is necessary, covers its scope and limitations, and details the skills required of ethical hackers.
 
 ## Definition
 
