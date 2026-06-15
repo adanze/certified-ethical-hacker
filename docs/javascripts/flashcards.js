@@ -3,11 +3,12 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function initDeck(deck) {
-  var cards = shuffleCards(Array.from(deck.querySelectorAll(".flashcard")));
-  rerenderShuffled(deck, cards);
+  var cards = Array.from(deck.querySelectorAll(".flashcard"));
   cards.forEach(autoSizeCard);
   cards.forEach(bindFlipOnClick);
+  insertShuffleButton(deck);
 }
+
 
 function autoSizeCard(card) {
   var inner = card.querySelector(".flashcard-inner");
@@ -36,11 +37,37 @@ function autoSizeCard(card) {
   card.style.height = Math.max(frontH, backH, 220) + "px";
 }
 
+
 function bindFlipOnClick(card) {
   card.addEventListener("click", function (e) {
     if (isChapterLink(e.target)) return;
     card.classList.toggle("flipped");
   });
+}
+
+
+function insertShuffleButton(deck) {
+  var shuffleButton = document.createElement("button");
+  shuffleButton.className = "flashcard-shuffle-btn";
+  shuffleButton.textContent = "⇄ Shuffle";
+  shuffleButton.addEventListener("click", function () {
+    onShuffleButtonClick(deck);
+  });
+  deck.parentNode.insertBefore(shuffleButton, deck);
+}
+
+function onShuffleButtonClick(deck) {
+  var currentCards = getCardsFromDeck(deck);
+  resetAllCards(currentCards);
+  rerenderShuffled(deck, shuffleCards(currentCards));
+}
+
+function getCardsFromDeck(deck) {
+  return Array.from(deck.querySelectorAll(".flashcard"));
+}
+
+function resetAllCards(cards) {
+  cards.forEach(function (card) { card.classList.remove("flipped"); });
 }
 
 function shuffleCards(cards) {
