@@ -82,9 +82,8 @@
 }
 
 .flashcard-shuffle-btn {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
+  display: block;
+  width: fit-content;
   margin-bottom: 1rem;
   margin-left: auto;
   padding: 0.4rem 1rem;
