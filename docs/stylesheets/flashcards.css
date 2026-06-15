@@ -1,4 +1,3 @@
-/* ── Flashcard Deck ─────────────────────────────────────── */
 .flashcard-deck {
   display: flex;
   flex-direction: column;
@@ -6,7 +5,6 @@
   margin: 2rem 0;
 }
 
-/* ── Card wrapper (holds perspective) ───────────────────── */
 .flashcard {
   height: 220px;
   cursor: pointer;
@@ -14,7 +12,6 @@
   user-select: none;
 }
 
-/* ── Inner — rotates on flip ────────────────────────────── */
 .flashcard-inner {
   position: relative;
   width: 100%;
@@ -27,7 +24,6 @@
   transform: rotateY(180deg);
 }
 
-/* ── Shared face styles ─────────────────────────────────── */
 .flashcard-front,
 .flashcard-back {
   position: absolute;
@@ -41,14 +37,12 @@
   -webkit-backface-visibility: hidden;
 }
 
-/* ── Front ──────────────────────────────────────────────── */
 .flashcard-front {
   background: var(--md-code-bg-color);
   border: 1px solid rgba(63, 81, 181, 0.35);
   justify-content: center;
 }
 
-/* ── Back ───────────────────────────────────────────────── */
 .flashcard-back {
   background: #1a1f5e;
   border: 1px solid rgba(149, 117, 205, 0.45);
@@ -56,7 +50,6 @@
   justify-content: space-between;
 }
 
-/* ── Label ("Question" / "Answer") ─────────────────────── */
 .flashcard-label {
   position: absolute;
   top: 1.25rem;
@@ -67,14 +60,12 @@
   opacity: 0.45;
 }
 
-/* ── Card text ──────────────────────────────────────────── */
 .flashcard-front p,
 .flashcard-back p {
   margin: 0;
   line-height: 1.6;
 }
 
-/* ── Chapter link on the back ───────────────────────────── */
 .flashcard-link {
   align-self: flex-start;
   font-size: 0.75rem;
@@ -90,7 +81,30 @@
   text-decoration: underline;
 }
 
-/* ── Exam-critical badge ────────────────────────────────── */
+.flashcard-shuffle-btn {
+  display: block;
+  width: fit-content;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  padding: 0.4rem 1rem;
+  border: 1px solid var(--md-primary-fg-color);
+  border-radius: 0.1rem;
+  background: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+  font-family: var(--md-text-font-family);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.flashcard-shuffle-btn:hover {
+  background: var(--md-accent-fg-color);
+  border-color: var(--md-accent-fg-color);
+}
+
 .flashcard.exam-critical .flashcard-front::after {
   content: "🎯";
   position: absolute;

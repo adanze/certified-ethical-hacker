@@ -1,7 +1,5 @@
 # Flashcards – Module 01
 
-Click a card to reveal the answer. Cards are shuffled on every visit.
-
 <div class="flashcard-deck">
 
   <div class="flashcard">
@@ -1012,6 +1010,76 @@ Click a card to reveal the answer. Cards are shuffled on every visit.
     </div>
   </div>
 
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Distinguish: Adaptive Learning vs. Adaptive Defense Mechanisms in AI-driven ethical hacking.</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p><strong>Adaptive Learning:</strong> the AI improves its <em>knowledge base and detection</em> strategies over time as new attack types appear. <strong>Adaptive Defense Mechanisms:</strong> the system updates its <em>algorithms and active response strategies</em> to counteract the latest hacking techniques in operation.</p>
+        <a class="flashcard-link" href="../ethical-hacking-concepts/#how-ai-driven-ethical-hacking-helps-ethical-hackers">&#x2192; AI-Driven Ethical Hacking</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>Why will AI not replace ethical hackers?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Ethical hacking requires creativity, critical thinking, domain knowledge, and ethical judgment that AI cannot replicate. AI automates routine tasks, but human oversight is essential to interpret results, validate findings, and craft tailored mitigation strategies.</p>
+        <a class="flashcard-link" href="../ethical-hacking-concepts/#myth-ai-will-replace-ethical-hackers">&#x2192; Myth: AI Will Replace Ethical Hackers</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What is the ideal relationship between AI and ethical hackers?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>Collaboration: AI provides automation and efficiency; humans provide creativity, contextual judgment, and ethical reasoning. Together they strengthen cybersecurity better than either could alone.</p>
+        <a class="flashcard-link" href="../ethical-hacking-concepts/#myth-ai-will-replace-ethical-hackers">&#x2192; Myth: AI Will Replace Ethical Hackers</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What are the three key features of ChatGPT-powered AI tools for ethical hackers?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p>1. <strong>Data Collection &amp; Configuration</strong> — collects from social media, forums, websites, public databases. 2. <strong>Real-Time Assistance &amp; Task Automation</strong> — automates scanning, threat analysis, and reporting via NLP/ML. 3. <strong>Threat Intelligence Integration</strong> — provides context on identified threats from intelligence databases.</p>
+        <a class="flashcard-link" href="../ethical-hacking-concepts/#key-features">&#x2192; ChatGPT-Powered AI Tools</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <span class="flashcard-label">Question</span>
+        <p>What are the three application benefits of ChatGPT-powered ethical hacking tools?</p>
+      </div>
+      <div class="flashcard-back">
+        <span class="flashcard-label">Answer</span>
+        <p><strong>Enhanced Security Posture</strong> — efficient threat identification and mitigation. <strong>Operational Efficiency</strong> — automation enables more comprehensive assessments faster. <strong>Improved Decision-Making</strong> — threat intelligence integration helps prioritize vulnerabilities effectively.</p>
+        <a class="flashcard-link" href="../ethical-hacking-concepts/#applications-and-benefits">&#x2192; ChatGPT-Powered AI Tools</a>
+      </div>
+    </div>
+  </div>
+
   <div class="flashcard exam-critical">
     <div class="flashcard-inner">
       <div class="flashcard-front">
@@ -1148,48 +1216,6 @@ Click a card to reveal the answer. Cards are shuffled on every visit.
         <span class="flashcard-label">Answer</span>
         <p>System Hacking, Web App Hacking, Network Hacking, Mobile Hacking, Wireless Hacking, OT/IoT Hacking, Cloud Hacking, Hacking AI.</p>
         <a class="flashcard-link" href="../hacking-methodologies-and-frameworks/#ceh-framework--visual-overview">&#x2192; CEH Framework – Visual Overview</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="flashcard">
-    <div class="flashcard-inner">
-      <div class="flashcard-front">
-        <span class="flashcard-label">Question</span>
-        <p>Distinguish: Adaptive Learning vs. Adaptive Defense Mechanisms in AI-driven ethical hacking.</p>
-      </div>
-      <div class="flashcard-back">
-        <span class="flashcard-label">Answer</span>
-        <p><strong>Adaptive Learning:</strong> the AI improves its <em>knowledge base and detection</em> strategies over time as new attack types appear. <strong>Adaptive Defense Mechanisms:</strong> the system updates its <em>algorithms and active response strategies</em> to counteract the latest hacking techniques in operation.</p>
-        <a class="flashcard-link" href="../ethical-hacking-concepts/#how-ai-driven-ethical-hacking-helps-ethical-hackers">&#x2192; AI-Driven Ethical Hacking</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="flashcard">
-    <div class="flashcard-inner">
-      <div class="flashcard-front">
-        <span class="flashcard-label">Question</span>
-        <p>Why will AI not replace ethical hackers?</p>
-      </div>
-      <div class="flashcard-back">
-        <span class="flashcard-label">Answer</span>
-        <p>Ethical hacking requires creativity, critical thinking, domain knowledge, and ethical judgment that AI cannot replicate. AI automates routine tasks, but human oversight is essential to interpret results, validate findings, and craft tailored mitigation strategies.</p>
-        <a class="flashcard-link" href="../ethical-hacking-concepts/#myth-ai-will-replace-ethical-hackers">&#x2192; Myth: AI Will Replace Ethical Hackers</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="flashcard">
-    <div class="flashcard-inner">
-      <div class="flashcard-front">
-        <span class="flashcard-label">Question</span>
-        <p>What is the ideal relationship between AI and ethical hackers?</p>
-      </div>
-      <div class="flashcard-back">
-        <span class="flashcard-label">Answer</span>
-        <p>Collaboration: AI provides automation and efficiency; humans provide creativity, contextual judgment, and ethical reasoning. Together they strengthen cybersecurity better than either could alone.</p>
-        <a class="flashcard-link" href="../ethical-hacking-concepts/#myth-ai-will-replace-ethical-hackers">&#x2192; Myth: AI Will Replace Ethical Hackers</a>
       </div>
     </div>
   </div>
@@ -1414,34 +1440,6 @@ Click a card to reveal the answer. Cards are shuffled on every visit.
         <span class="flashcard-label">Answer</span>
         <p>Unusual outbound network traffic, privileged account anomalies, geographical anomalies, multiple login failures, unusual DNS requests, mismatched port-application traffic. (Also: large HTML response size, DDoS signs, suspicious registry changes, data bundles in wrong places.)</p>
         <a class="flashcard-link" href="../hacking-methodologies-and-frameworks/#key-ioc-signals">&#x2192; Key IoC Signals</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="flashcard">
-    <div class="flashcard-inner">
-      <div class="flashcard-front">
-        <span class="flashcard-label">Question</span>
-        <p>What are the three key features of ChatGPT-powered AI tools for ethical hackers?</p>
-      </div>
-      <div class="flashcard-back">
-        <span class="flashcard-label">Answer</span>
-        <p>1. <strong>Data Collection &amp; Configuration</strong> — collects from social media, forums, websites, public databases. 2. <strong>Real-Time Assistance &amp; Task Automation</strong> — automates scanning, threat analysis, and reporting via NLP/ML. 3. <strong>Threat Intelligence Integration</strong> — provides context on identified threats from intelligence databases.</p>
-        <a class="flashcard-link" href="../ethical-hacking-concepts/#key-features">&#x2192; ChatGPT-Powered AI Tools</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="flashcard">
-    <div class="flashcard-inner">
-      <div class="flashcard-front">
-        <span class="flashcard-label">Question</span>
-        <p>What are the three application benefits of ChatGPT-powered ethical hacking tools?</p>
-      </div>
-      <div class="flashcard-back">
-        <span class="flashcard-label">Answer</span>
-        <p><strong>Enhanced Security Posture</strong> — efficient threat identification and mitigation. <strong>Operational Efficiency</strong> — automation enables more comprehensive assessments faster. <strong>Improved Decision-Making</strong> — threat intelligence integration helps prioritize vulnerabilities effectively.</p>
-        <a class="flashcard-link" href="../ethical-hacking-concepts/#applications-and-benefits">&#x2192; ChatGPT-Powered AI Tools</a>
       </div>
     </div>
   </div>
