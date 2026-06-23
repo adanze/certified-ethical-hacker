@@ -1,12 +1,14 @@
 # Module 02 – Footprinting and Reconnaissance
 
-Systematically gathering information about a target before an attack or assessment.
+Footprinting is the first step in the evaluation of the security posture of the IT infrastructure of a target organization. Through footprinting and reconnaissance, one can gather maximum information about a computer system or a network and about any device connected to that network. In other words, footprinting provides a security profile blueprint for an organization and should be undertaken in a methodological manner.
+
+This module starts with an introduction to footprinting concepts and provides insights into the footprinting methodology. The module ends with an overview of footprinting tools and countermeasures.
 
 ## Topics
 
 | Topic | Content |
 |---|---|
-| [Footprinting Concepts](footprinting-concepts.md) | |
+| [Footprinting Concepts](footprinting-concepts.md) | Definition, passive vs. active reconnaissance, information categories (org/network/system), objectives, threats, and footprinting methodology |
 | [Footprinting through Search Engines](footprinting-through-search-engines.md) | |
 | [Footprinting through Internet Research Services](footprinting-through-internet-research-services.md) | |
 | [Footprinting through Social Networking Sites](footprinting-through-social-networking-sites.md) | |
@@ -20,10 +22,13 @@ Systematically gathering information about a target before an attack or assessme
 
 ## Key Learning Objectives
 
-- Define footprinting and distinguish passive from active reconnaissance
-- Use search engines and internet research services to gather target information
-- Identify information exposed via social networks and social engineering
-- Perform WHOIS and DNS lookups to map target infrastructure
-- Understand network and email footprinting techniques
-- Apply advanced tools and AI-assisted methods for reconnaissance
-- Know countermeasures to detect and limit footprinting exposure
+- Explain footprinting concepts
+- Demonstrate footprinting through search engines and advanced Google hacking techniques
+- Demonstrate footprinting through Internet research services
+- Demonstrate footprinting through social networking sites
+- Use different techniques for Whois footprinting
+- Use different techniques for DNS footprinting
+- Use different techniques for network and email footprinting
+- Demonstrate footprinting through social engineering
+- Automate footprinting tasks using advanced tools and AI
+- Explain footprinting countermeasures
