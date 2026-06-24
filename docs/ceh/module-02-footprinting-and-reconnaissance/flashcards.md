@@ -534,4 +534,466 @@
   </div>
 </div>
 
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What kind of information does a company's TLD (public website) expose?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>Organizational history, services and products, and contact information. The external URL can be located via search engines such as Google and Bing.</p>
+      <a class="flashcard-link" href="../footprinting-through-internet-research-services/#finding-a-companys-top-level-domains-tlds-and-sub-domains">&#x2192; TLDs and Sub-domains</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>Why are sub-domains often more vulnerable than the main domain?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>Admins often create sub-domains for testing before production deployment. These remain in a testing/insecure state, making them more susceptible to exploitation.</p>
+      <a class="flashcard-link" href="../footprinting-through-internet-research-services/#finding-a-companys-top-level-domains-tlds-and-sub-domains">&#x2192; TLDs and Sub-domains</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What critical information can sub-domain enumeration reveal?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>Departmental structure, source code and documents on webservers, access control mechanisms (IP, domain, subnet, credentials), and private organizational functions.</p>
+      <a class="flashcard-link" href="../footprinting-through-internet-research-services/#finding-a-companys-top-level-domains-tlds-and-sub-domains">&#x2192; TLDs and Sub-domains</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What Google advanced search operator is used to find sub-domains while excluding the main www site?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p><code>site:microsoft.com -inurl:www</code> — returns indexed pages under the domain while excluding results containing "www" in the URL.</p>
+      <a class="flashcard-link" href="../footprinting-through-internet-research-services/#finding-a-companys-top-level-domains-tlds-and-sub-domains">&#x2192; TLDs and Sub-domains</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What are the three main tools used for sub-domain discovery, and what does each reveal?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p><strong>Netcraft:</strong> sub-domains, web server OS, hosting provider, SSL data.<br><strong>DNSdumpster:</strong> hosts, sub-domains, IP addresses, DNS servers.<br><strong>Pentest-Tools Find Subdomains:</strong> sub-domains, IPs, OS, server technology, web platform, page titles.</p>
+      <a class="flashcard-link" href="../footprinting-through-internet-research-services/#tools-for-sub-domain-discovery">&#x2192; Tools for Sub-domain Discovery</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>How can AI (e.g., ChatGPT) assist in sub-domain discovery?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>By generating and executing enumeration commands via prompts. Example prompts: <em>"Discover all subdomains of google.com using dig"</em> or <em>"Use Sublist3r to gather subdomains of eccouncil."</em> AI automates what would otherwise be manual command crafting.</p>
+      <a class="flashcard-link" href="../footprinting-through-internet-research-services/#finding-tlds-and-sub-domains-with-ai">&#x2192; TLDs and Sub-domains with AI</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What does the Sublist3r command <code>sublist3r -d eccouncil.org -o eccouncil_subdomains.txt</code> do?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>Enumerates sub-domains of <code>eccouncil.org</code> by searching multiple sources (Bing, Google, Netcraft, VirusTotal, etc.) and saves results to <code>eccouncil_subdomains.txt</code>.</p>
+      <a class="flashcard-link" href="../footprinting-through-internet-research-services/#example-2-sublist3r-via-chatgpt-prompt">&#x2192; Sublist3r Example</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What is the Internet Archive Wayback Machine and why is it useful to attackers?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>archive.org stores snapshots of websites since creation. Attackers can retrieve content removed from the target site — pages, images, audio/video, software — to craft phishing and web application attacks.</p>
+      <a class="flashcard-link" href="../footprinting-through-internet-research-services/#extracting-website-information-from-archiveorg">&#x2192; archive.org</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What does the Photon flag <code>--wayback</code> do, and how does it differ from <code>--only-urls</code>?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p><code>--wayback</code> fetches links from archive.org snapshots of the target.<br><code>--only-urls</code> retrieves archived URLs of the target without full snapshot crawling.</p>
+      <a class="flashcard-link" href="../footprinting-through-internet-research-services/#extracting-website-information-from-archiveorg">&#x2192; archive.org</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>Name four categories of data exposed by online people search services.</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>1. Personal identifiers (name, DOB, address, phone, email)<br>2. Social and family connections (family members, social profiles)<br>3. Professional details (profession, businesses, upcoming projects)<br>4. Background data (property info, criminal records)</p>
+      <a class="flashcard-link" href="../footprinting-through-internet-research-services/#footprinting-through-people-search-services">&#x2192; People Search Services</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>Name four people search services referenced in the CEH material.</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>Spokeo, Intelius, pipl, BeenVerified (also: Whitepages, Instant Checkmate, PeekYou).</p>
+      <a class="flashcard-link" href="../footprinting-through-internet-research-services/#footprinting-through-people-search-services">&#x2192; People Search Services</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What infrastructure details can attackers extract from job postings?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>OS, software versions, firewall and server types, hypervisors, VMs, network appliances, database schema, and key employee email addresses.</p>
+      <a class="flashcard-link" href="../footprinting-through-internet-research-services/#footprinting-through-job-sites">&#x2192; Job Sites</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>Name four job sites attackers use for footprinting and what they target.</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p><strong>Dice, LinkedIn, Glassdoor, Simply Hired</strong> — used to extract infrastructure details from job postings and technical expertise/job history from employee resumes, identifying vulnerabilities in the target IT environment.</p>
+      <a class="flashcard-link" href="../footprinting-through-internet-research-services/#footprinting-through-job-sites">&#x2192; Job Sites</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What is the difference between the surface web, deep web, and dark web?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p><strong>Surface web:</strong> indexed, accessible via standard browsers.<br><strong>Deep web:</strong> unindexed, hidden — government/org databases; accessible via Tor or WWW Virtual Library.<br><strong>Dark web:</strong> subset of the deep web; fully anonymous; accessible only via specialized tools (Tor Browser, ExoneraTor).</p>
+      <a class="flashcard-link" href="../footprinting-through-internet-research-services/#dark-web-footprinting">&#x2192; Dark Web Footprinting</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What is the role of Tor Browser in dark web footprinting?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>Tor Browser acts as a <strong>default VPN</strong>, bouncing the user's IP through multiple servers. Attackers use it to access hidden content, unindexed sites, and encrypted dark web databases to gather confidential target data.</p>
+      <a class="flashcard-link" href="../footprinting-through-internet-research-services/#tor-browser">&#x2192; Tor Browser</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>Name five types of confidential data attackers gather from the dark web.</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>Credit card details · passport information · ID card details · medical records · social media accounts · Social Security Numbers (SSNs)</p>
+      <a class="flashcard-link" href="../footprinting-through-internet-research-services/#dark-web-footprinting">&#x2192; Dark Web Footprinting</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What operator pattern is used to construct dark web search queries?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>Combine: <code>filetype:</code> (target file type) + <code>site:onion</code> (restrict to .onion) + keyword — or use <code>inurl:</code> / <code>intitle:</code> to narrow by URL or page title.<br>Example: <code>filetype:sql site:onion dump</code> finds database dumps; <code>intitle:"login credentials" filetype:docx</code> finds credential documents.</p>
+      <a class="flashcard-link" href="../footprinting-through-internet-research-services/#dark-web-search-queries-table-23">&#x2192; Dark Web Search Queries</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What is OS fingerprinting and which three tools are used for it?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p><strong>OS fingerprinting</strong> is the technique of detecting the operating system running at the target. Tools: <strong>Netcraft</strong> (site OS lookup), <strong>Shodan</strong> (connected devices and known CVEs), <strong>Censys</strong> (full internet-exposed asset inventory).</p>
+      <a class="flashcard-link" href="../footprinting-through-internet-research-services/#determining-the-operating-system">&#x2192; Determining the OS</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What unique capability does Shodan offer beyond OS detection?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>Shodan searches for <strong>known vulnerabilities and exploits</strong> across Exploit-DB, Metasploit, CVE, OSVDB, and Packetstorm in a single interface, alongside device discovery by city, country, hostname, and IP.</p>
+      <a class="flashcard-link" href="../footprinting-through-internet-research-services/#determining-the-operating-system">&#x2192; Determining the OS</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What is competitive intelligence gathering and how does it differ from espionage?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>CI gathering is the process of <strong>identifying, gathering, analyzing, verifying, and using</strong> competitor information from public sources. It is <strong>non-interfering, subtle, and legal</strong> — unlike industrial espionage or direct IP theft via hacking.</p>
+      <a class="flashcard-link" href="../footprinting-through-internet-research-services/#competitive-intelligence-gathering">&#x2192; Competitive Intelligence</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What is the difference between the direct and indirect approach in CI gathering?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p><strong>Direct:</strong> primary source; trade shows, social engineering of employees/customers.<br><strong>Indirect:</strong> online resources; company websites, job ads, press releases, patents, financial filings, legal databases, search engines.</p>
+      <a class="flashcard-link" href="../footprinting-through-internet-research-services/#approaches">&#x2192; CI Approaches</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What four questions does competitive intelligence help answer about a target company?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>1. <strong>When did it begin?</strong> — history and establishment date<br>2. <strong>How did it develop?</strong> — strategies, CRM, advertising<br>3. <strong>Who leads it?</strong> — key decision-makers<br>4. <strong>Where is it located?</strong> — branches and operations</p>
+      <a class="flashcard-link" href="../footprinting-through-internet-research-services/#what-ci-helps-determine">&#x2192; What CI Helps Determine</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What is EDGAR and what kind of information does it provide?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>EDGAR (Electronic Data Gathering, Analysis, and Retrieval) is the SEC's system for automated collection and dissemination of mandatory corporate filings. It provides time-sensitive corporate information to improve transparency in the securities market.</p>
+      <a class="flashcard-link" href="../footprinting-through-internet-research-services/#general-intelligence">&#x2192; CI Information Resources</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>Match these CI tools to their primary purpose: D&amp;B Hoovers, LexisNexis, Factiva.</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p><strong>D&amp;B Hoovers:</strong> 120M+ business records for sales intelligence and prospect targeting.<br><strong>LexisNexis:</strong> Legal, public records, and compliance data for risk/fraud/identity.<br><strong>Factiva:</strong> 33,000+ licensed sources — news, publications, newswires in 28 languages.</p>
+      <a class="flashcard-link" href="../footprinting-through-internet-research-services/#general-intelligence">&#x2192; CI Information Resources</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>Which CI tool is used to research competitor patent and trademark registrations?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p><strong>USPTO</strong> (uspto.gov) — the United States Patent and Trademark Office; provides patent/trademark registration data and search options for both databases.</p>
+      <a class="flashcard-link" href="../footprinting-through-internet-research-services/#company-plans">&#x2192; CI Company Plans</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>Match these CI tools to their purpose: SEMRush, SimilarWeb, SERanking.</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p><strong>SEMRush:</strong> Competitor keyword research; Google keywords, AdWords, organic/paid rankings.<br><strong>SimilarWeb:</strong> Estimates website/app traffic, geography, and referral sources from aggregated data.<br><strong>SERanking:</strong> Traffic dynamics, keyword semantics, PPC competitor research.</p>
+      <a class="flashcard-link" href="../footprinting-through-internet-research-services/#expert-opinions">&#x2192; CI Expert Opinions</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What physical security information can attackers gather using geolocation tools, and which tools are used?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>Building entrances, security cameras, gates, hiding spots, perimeter fence weak points, and utility connections. This enables planning of physical attacks (dumpster diving, surveillance, social engineering).<br>Tools: <strong>Google Earth</strong>, <strong>Google Maps</strong>, <strong>Wikimapia</strong>.</p>
+      <a class="flashcard-link" href="../footprinting-through-internet-research-services/#other-techniques-for-footprinting-through-internet-research-services">&#x2192; Other Techniques</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What information do financial services reveal, and which tools are used to gather it?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>Market value of shares, company profile, competitor details, stock exchange rates, financial reports, press releases, and blog articles.<br>Tools: <strong>Google Finance</strong>, <strong>MSN Money</strong>, <strong>Yahoo! Finance</strong>, <strong>Investing.com</strong>.</p>
+      <a class="flashcard-link" href="../footprinting-through-internet-research-services/#other-techniques-for-footprinting-through-internet-research-services">&#x2192; Other Techniques</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What do business profile sites expose and which three are named in the CEH material?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>Location, addresses, contact information, employee database, department names, and type of industry/service.<br>Tools: <strong>opencorporates</strong>, <strong>Crunchbase</strong>, <strong>corporationwiki</strong>.</p>
+      <a class="flashcard-link" href="../footprinting-through-internet-research-services/#other-techniques-for-footprinting-through-internet-research-services">&#x2192; Other Techniques</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What are alerting services and how do attackers use them for footprinting?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>Content monitoring services that deliver automated notifications (email/SMS) when new content matches a defined search term. Attackers use them to passively track mentions of the target's name, members, website, and projects in real time.<br>Tools: <strong>Google Alerts</strong>, <strong>X Alerts</strong>, <strong>Giga Alerts</strong>.</p>
+      <a class="flashcard-link" href="../footprinting-through-internet-research-services/#other-techniques-for-footprinting-through-internet-research-services">&#x2192; Other Techniques</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What is Online Reputation Management (ORM) and how do attackers exploit it?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>ORM monitors and improves a company's online reputation. The transparency it creates lets attackers collect genuine, up-to-date information — search rankings, mentions, social news, and online conversations about the target.<br>Tools: <strong>Mention</strong>, <strong>ReviewPush</strong>, <strong>Reputology</strong>.</p>
+      <a class="flashcard-link" href="../footprinting-through-internet-research-services/#other-techniques-for-footprinting-through-internet-research-services">&#x2192; Other Techniques</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What employee information can attackers gather from groups, forums, and blogs?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>Full name, workplace/residence, phone numbers, personal and organizational email addresses, and photos (residence, workplace, awards). Attackers search by FQDNs, IP addresses, or usernames and may register with fake profiles in Google Groups or LinkedIn Groups.</p>
+      <a class="flashcard-link" href="../footprinting-through-internet-research-services/#other-techniques-for-footprinting-through-internet-research-services">&#x2192; Other Techniques</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What sensitive data can be found in public source-code repositories, and what tool is used to discover them?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>Configuration files, private SSH and SSL keys, source-code files, dynamic libraries, and software tools. Combined with active footprinting, this enables spear phishing and infrastructure attacks.<br>Sites: GitHub, GitLab, SourceForge, BitBucket.<br>Tool: <strong>Recon-ng</strong> — a full-featured web reconnaissance framework.</p>
+      <a class="flashcard-link" href="../footprinting-through-internet-research-services/#other-techniques-for-footprinting-through-internet-research-services">&#x2192; Other Techniques</a>
+    </div>
+  </div>
+</div>
+
 </div>
