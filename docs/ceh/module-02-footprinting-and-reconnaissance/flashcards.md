@@ -1150,4 +1150,116 @@
   </div>
 </div>
 
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What is Whois and on which port does it operate?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>Whois is a query and response protocol for querying databases that store registered users or assignees of an Internet resource (domain name, IP address block, or autonomous system). It listens on <strong>port 43 (TCP)</strong>.</p>
+      <a class="flashcard-link" href="../whois-footprinting/#whois-lookup">&#x2192; Whois Lookup</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What are the three Whois data models?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p><strong>Thick Whois (Distributed):</strong> stores complete Whois info from all registrars.<br><strong>Thin Whois (Centralized):</strong> stores only the registrar's Whois server name; full details held by that server.<br><strong>Decentralized Whois:</strong> stores complete info with multiple independent entities managing the database.</p>
+      <a class="flashcard-link" href="../whois-footprinting/#whois-data-models">&#x2192; Whois Data Models</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>Name five pieces of information a Whois query returns.</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>Domain name details · domain registrar · contact details of the domain owner · domain name servers · NetRange · creation date · expiry records · last updated record · domain status · IP address information</p>
+      <a class="flashcard-link" href="../whois-footprinting/#what-a-whois-query-returns">&#x2192; What a Whois Query Returns</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>How do attackers use information obtained from a Whois lookup?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>1. Create a map of the organization's network<br>2. Mislead domain owners with social engineering<br>3. Obtain internal details of the network</p>
+      <a class="flashcard-link" href="../whois-footprinting/#how-attackers-use-whois-data">&#x2192; How Attackers Use Whois Data</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>Name the five Regional Internet Registries (RIRs) and their regions.</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p><strong>ARIN</strong> – North America · <strong>AFRINIC</strong> – Africa · <strong>APNIC</strong> – Asia-Pacific · <strong>RIPE NCC</strong> – Europe/Middle East · <strong>LACNIC</strong> – Latin America &amp; Caribbean</p>
+      <a class="flashcard-link" href="../whois-footprinting/#regional-internet-registries-rirs">&#x2192; Regional Internet Registries</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What makes Batch IP Converter useful for Whois footprinting?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>It provides country, state/province, city, phone, fax, network provider, administrator, and technical-support contact info for an IP address, hostname, or domain. It supports <strong>Internationalized Domain Names (IDNs)</strong> and <strong>IPv6</strong>.</p>
+      <a class="flashcard-link" href="../whois-footprinting/#whois-lookup-tools">&#x2192; Whois Lookup Tools</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What types of information does IP geolocation provide about a target?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>Country, region/state, city, latitude/longitude, ZIP/postal code, time zone, connection speed, ISP (hosting company), domain name, IDD country code, area code, weather station code and name, mobile carrier, and elevation.</p>
+      <a class="flashcard-link" href="../whois-footprinting/#finding-ip-geolocation-information">&#x2192; Finding IP Geolocation Information</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>How do attackers leverage IP geolocation data, and which tools provide it?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>Attackers use it to launch social engineering attacks (spamming, phishing), perform surveillance and non-technical attacks (dumpster diving, hoaxing), set up compromised servers near the victim, or deploy location-specific malware.<br>Tools: <strong>IP2Location</strong>, <strong>IP Location Finder</strong>, <strong>IP Address Geographical Location Finder</strong>.</p>
+      <a class="flashcard-link" href="../whois-footprinting/#ip-geolocation-lookup-tools">&#x2192; IP Geolocation Lookup Tools</a>
+    </div>
+  </div>
+</div>
+
 </div>
