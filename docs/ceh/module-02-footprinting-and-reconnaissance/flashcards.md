@@ -1262,4 +1262,186 @@
   </div>
 </div>
 
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What is DNS footprinting and where does it fall in the footprinting methodology?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>DNS footprinting is the phase immediately following Whois footprinting. Attackers query DNS infrastructure to collect information about DNS servers, DNS records, and server types used by the target organization.</p>
+      <a class="flashcard-link" href="../dns-footprinting/#overview">&#x2192; DNS Footprinting</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What attacker value does DNS footprinting provide?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>It allows attackers to identify hosts connected to the target network, forming the basis for further exploitation of the target organization.</p>
+      <a class="flashcard-link" href="../dns-footprinting/#purpose-and-attacker-value">&#x2192; DNS Footprinting – Purpose</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What are the three key techniques used in DNS footprinting?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p><strong>DNS record extraction:</strong> querying for various record types to enumerate infrastructure.<br><strong>Reverse DNS lookups:</strong> resolving IPs back to hostnames to map the network.<br><strong>DNS interrogation tools:</strong> automated tools that systematically query DNS servers at scale.</p>
+      <a class="flashcard-link" href="../dns-footprinting/#key-techniques">&#x2192; DNS Footprinting – Key Techniques</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What does DNS zone data contain, and how do attackers use it?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>DNS zone data includes DNS domain names, computer names, IP addresses, and more. Attackers use it to determine key hosts in the network and then perform social engineering attacks to gather even more information.</p>
+      <a class="flashcard-link" href="../dns-footprinting/#extracting-dns-information">&#x2192; Extracting DNS Information</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What DNS record type maps an IP address to a hostname, and which maps a hostname to an IPv6 address?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p><strong>PTR</strong> maps an IP address to a hostname (reverse lookup).<br><strong>AAAA</strong> maps a hostname to an IPv6 address.</p>
+      <a class="flashcard-link" href="../dns-footprinting/#dns-record-types">&#x2192; DNS Record Types</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What DNS record types should you know for the exam? (List all 11)</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p><strong>A</strong> – host IP | <strong>AAAA</strong> – host IPv6 | <strong>MX</strong> – mail server | <strong>NS</strong> – name server | <strong>CNAME</strong> – alias | <strong>SOA</strong> – domain authority | <strong>SRV</strong> – service records | <strong>PTR</strong> – IP→hostname | <strong>RP</strong> – responsible person | <strong>HINFO</strong> – CPU &amp; OS info | <strong>TXT</strong> – unstructured text</p>
+      <a class="flashcard-link" href="../dns-footprinting/#dns-record-types">&#x2192; DNS Record Types</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>Name five DNS interrogation tools and the condition that makes DNS zone transfer easy for an attacker.</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>Tools: <strong>SecurityTrails, Fierce, DNSChecker, zdns, DNSdumpster.com</strong>.<br>Condition: if the target network allows unknown, unauthorized users to transfer DNS zone data, an attacker can easily obtain DNS information using these tools.</p>
+      <a class="flashcard-link" href="../dns-footprinting/#dns-interrogation-tools">&#x2192; DNS Interrogation Tools</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What does SecurityTrails do and what record types does it enumerate?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>SecurityTrails is an advanced DNS enumeration tool that creates a DNS map of the target domain network. It enumerates current and historical DNS records (A, AAAA, NS, MX, SOA, TXT) and all existing subdomains using brute-force techniques.</p>
+      <a class="flashcard-link" href="../dns-footprinting/#securitytrails">&#x2192; SecurityTrails</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What does the Fierce <code>--traverse 10</code> option do?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>It instructs Fierce to search for contiguous blocks of IPs within a range of 10, scanning domains near the discovered records of the target.</p>
+      <a class="flashcard-link" href="../dns-footprinting/#fierce">&#x2192; Fierce</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>How can attackers use AI to perform DNS enumeration, and what tool does it invoke?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>Attackers can prompt ChatGPT or other generative AI to automate DNS lookup tasks. For example, prompting it to "Install and use DNSRecon to perform DNS enumeration on the target domain" generates a shell command using <strong>dnsrecon</strong> with standard enumeration techniques (<code>-t std</code>).</p>
+      <a class="flashcard-link" href="../dns-footprinting/#dns-lookup-with-ai">&#x2192; DNS Lookup with AI</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What is the difference between a DNS lookup and a reverse DNS lookup?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p><strong>DNS lookup:</strong> converts a domain name into an IP address.<br><strong>Reverse DNS lookup:</strong> obtains the domain name of a given IP address by locating a DNS PTR record.</p>
+      <a class="flashcard-link" href="../dns-footprinting/#reverse-dns-lookup">&#x2192; Reverse DNS Lookup</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What does the DNSRecon <code>-r</code> option do, and what is an example command?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>The <code>-r</code> option specifies the range of IP addresses (first to last) for a reverse lookup by brute force.<br>Example: <code>dnsrecon -r 162.241.216.0-162.241.216.255</code></p>
+      <a class="flashcard-link" href="../dns-footprinting/#dnsrecon">&#x2192; DNSRecon</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>Name five tools used for reverse DNS lookup.</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>DNSRecon, Reverse Lookup (mxtoolbox.com), puredns, Reverse IP Domain Check, and Reverse IP Lookup.</p>
+      <a class="flashcard-link" href="../dns-footprinting/#reverse-dns-lookup">&#x2192; Reverse DNS Lookup</a>
+    </div>
+  </div>
+</div>
+
 </div>

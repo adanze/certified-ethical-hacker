@@ -13,7 +13,7 @@ This module starts with an introduction to footprinting concepts and provides in
 | [Footprinting through Internet Research Services](footprinting-through-internet-research-services.md) | TLD and sub-domain discovery, AI-assisted enumeration, website archiving, people search services, job site footprinting, dark web footprinting, OS fingerprinting, competitive intelligence gathering, and other techniques (geolocation, financial services, alerting, online reputation, groups/forums, source-code repositories) |
 | [Footprinting through Social Networking Sites](footprinting-through-social-networking-sites.md) | SNS vs. social engineering footprinting, people search, information categories, LinkedIn/email harvesting with theHarvester, social media presence analysis, username search tools, and AI-assisted techniques |
 | [Whois Footprinting](whois-footprinting.md) | Whois protocol (port 43), three data models, what a Whois query returns, attacker uses, five RIRs, Whois lookup tools, IP geolocation data, and IP geolocation lookup tools |
-| [DNS Footprinting](dns-footprinting.md) | |
+| [DNS Footprinting](dns-footprinting.md) | DNS zone data, all 11 DNS record types, DNS interrogation tools, AI-assisted DNS lookup, and reverse DNS lookup techniques |
 | [Network and Email Footprinting](network-and-email-footprinting.md) | |
 | [Footprinting through Social Engineering](footprinting-through-social-engineering.md) | |
 | [Footprinting Tasks using Advanced Tools and AI](footprinting-tasks-using-advanced-tools-and-ai.md) | |
