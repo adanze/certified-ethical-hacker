@@ -996,4 +996,158 @@
   </div>
 </div>
 
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>How is theHarvester used to gather information from LinkedIn, and what does each flag mean?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>Command: <code>theHarvester -d microsoft -l 200 -b linkedin</code><br><strong>-d</strong> = target domain/company name · <strong>-l</strong> = number of results · <strong>-b</strong> = data source (linkedin).<br>Returns employee names and job titles for use in social engineering and targeted attacks.</p>
+      <a class="flashcard-link" href="../footprinting-through-social-networking-sites/#gathering-information-from-linkedin">&#x2192; Gathering Information from LinkedIn</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What is the key difference between footprinting through social networking sites and footprinting through social engineering?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p><strong>SNS footprinting:</strong> passively collects information users have already posted publicly — no deception, no interaction required.<br><strong>Social engineering footprinting:</strong> actively tricks people into revealing information through direct manipulation.</p>
+      <a class="flashcard-link" href="../footprinting-through-social-networking-sites/#sns-footprinting-vs-social-engineering-footprinting">&#x2192; SNS vs. Social Engineering Footprinting</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What search inputs can attackers use when searching for people on social networking sites, and what makes it anonymous?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>Attackers search by <strong>name, email address, or physical address</strong>. Many platforms allow searching <strong>without registration</strong>, making people searches easy and anonymous. Some sites also reveal whether an account is active.</p>
+      <a class="flashcard-link" href="../footprinting-through-social-networking-sites/#people-search-on-social-networking-sites">&#x2192; People Search on SNS</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What categories of information can attackers collect from social networking sites like Facebook, LinkedIn, and Twitter?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p><strong>Personal:</strong> name, position, organization, location, educational qualifications.<br><strong>Professional/contact:</strong> company, phone number, email, photos, videos.<br><strong>Behavioral (Twitter):</strong> advice, news, opinions, rumors, facts, announcements, and event details.</p>
+      <a class="flashcard-link" href="../footprinting-through-social-networking-sites/#types-of-information-gathered">&#x2192; Types of Information Gathered</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>How do attackers harvest email lists from a target domain using theHarvester, and what is the purpose of the <code>-f</code> flag?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>Command: <code>theHarvester -d microsoft.com -l 200 -b baidu -f Microsoft_emails.xml</code><br><strong>-d</strong> = target domain · <strong>-l</strong> = result limit · <strong>-b</strong> = search engine source · <strong>-f</strong> = output file name (XML format).<br>Harvested emails are used for social engineering and brute-force attacks.</p>
+      <a class="flashcard-link" href="../footprinting-through-social-networking-sites/#harvesting-email-lists">&#x2192; Harvesting Email Lists</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>How can AI assist in email harvesting footprinting, and what is an example prompt?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>AI tools like ChatGPT generate ready-to-run theHarvester commands from natural-language prompts. Example: <em>"Use theHarvester to gather email accounts associated with 'microsoft.com', limiting results to 200, and leveraging 'baidu' as a data source."</em> AI automates command crafting, lowering the attacker's skill requirement.</p>
+      <a class="flashcard-link" href="../footprinting-through-social-networking-sites/#harvesting-email-lists-with-ai">&#x2192; Harvesting Email Lists with AI</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What is BuzzSumo and how do attackers use it during social media footprinting?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>BuzzSumo is an advanced social search engine that finds the <strong>most shared content</strong> for a topic, author, or domain across Twitter, Facebook, LinkedIn, Pinterest, and Google Plus. Attackers use it to track shared content related to a target domain and collect social media accounts, URLs, and email addresses for phishing and social engineering.</p>
+      <a class="flashcard-link" href="../footprinting-through-social-networking-sites/#analyzing-target-social-media-presence">&#x2192; Analyzing Target Social Media Presence</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>Name four tools used to analyze a target's social media presence and what each does.</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p><strong>BuzzSumo:</strong> most shared content by domain/topic/author.<br><strong>Google Trends:</strong> search term popularity over time.<br><strong>Hashatit:</strong> real-time hashtag tracking across social networks.<br><strong>Ubersuggest:</strong> keyword and top content research for a target domain.</p>
+      <a class="flashcard-link" href="../footprinting-through-social-networking-sites/#analyzing-target-social-media-presence">&#x2192; Analyzing Target Social Media Presence</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What does the Sherlock tool do and what does its output reveal?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>Sherlock searches a large number of social networking sites for a target <strong>username</strong> and returns the full profile URL on every site where that username exists — enabling rapid cross-platform profiling of an individual.<br>Command: <code>sherlock 'Elon Musk'</code></p>
+      <a class="flashcard-link" href="../footprinting-through-social-networking-sites/#tools-for-footprinting-through-social-networking-sites">&#x2192; SNS Footprinting Tools</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What is Social Searcher and what attacker-relevant data does it expose?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>Social Searcher performs <strong>real-time content searches</strong> across social networks and provides deep analytics. Attackers use it to track a target's profile URLs, postings, and personal information across platforms.</p>
+      <a class="flashcard-link" href="../footprinting-through-social-networking-sites/#tools-for-footprinting-through-social-networking-sites">&#x2192; SNS Footprinting Tools</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>How can AI assist in SNS footprinting with Sherlock, and what does the <code>--output</code> flag do?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>AI (e.g., ChatGPT) generates Sherlock commands from natural-language prompts. Example prompt: <em>"Use Sherlock to gather personal information about Sundar Pichai and save the result in recon2.txt."</em><br>Command: <code>sherlock SundarPichai --output recon2</code><br><strong>--output recon2</strong> saves all discovered profile URLs to a file named <code>recon2</code>.</p>
+      <a class="flashcard-link" href="../footprinting-through-social-networking-sites/#footprinting-through-social-networking-sites-with-ai">&#x2192; SNS Footprinting with AI</a>
+    </div>
+  </div>
+</div>
+
 </div>

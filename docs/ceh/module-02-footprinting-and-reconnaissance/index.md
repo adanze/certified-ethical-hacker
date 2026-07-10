@@ -11,7 +11,7 @@ This module starts with an introduction to footprinting concepts and provides in
 | [Footprinting Concepts](footprinting-concepts.md) | Definition, passive vs. active reconnaissance, information categories (org/network/system), objectives, threats, and footprinting methodology |
 | [Footprinting through Search Engines](footprinting-through-search-engines.md) | Google hacking, advanced search operators, GHDB, Google Dorks for VPN/FTP footprinting, SHODAN, AI-assisted techniques, video/meta/FTP/IoT search engines |
 | [Footprinting through Internet Research Services](footprinting-through-internet-research-services.md) | TLD and sub-domain discovery, AI-assisted enumeration, website archiving, people search services, job site footprinting, dark web footprinting, OS fingerprinting, competitive intelligence gathering, and other techniques (geolocation, financial services, alerting, online reputation, groups/forums, source-code repositories) |
-| [Footprinting through Social Networking Sites](footprinting-through-social-networking-sites.md) | |
+| [Footprinting through Social Networking Sites](footprinting-through-social-networking-sites.md) | SNS vs. social engineering footprinting, people search, information categories, LinkedIn/email harvesting with theHarvester, social media presence analysis, username search tools, and AI-assisted techniques |
 | [Whois Footprinting](whois-footprinting.md) | |
 | [DNS Footprinting](dns-footprinting.md) | |
 | [Network and Email Footprinting](network-and-email-footprinting.md) | |
