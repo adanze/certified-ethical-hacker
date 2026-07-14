@@ -15,7 +15,7 @@ This module starts with an introduction to footprinting concepts and provides in
 | [Whois Footprinting](whois-footprinting.md) | Whois protocol (port 43), three data models, what a Whois query returns, attacker uses, five RIRs, Whois lookup tools, IP geolocation data, and IP geolocation lookup tools |
 | [DNS Footprinting](dns-footprinting.md) | DNS zone data, all 11 DNS record types, DNS interrogation tools, AI-assisted DNS lookup, and reverse DNS lookup techniques |
 | [Network and Email Footprinting](network-and-email-footprinting.md) | Network range discovery via ARIN, IANA private IP ranges, DNS misconfiguration, traceroute (ICMP/TCP/UDP), TTL mechanism, traceroute analysis, traceroute tools, AI-assisted tracerouting, email tracking, email header analysis, and email tracking tools |
-| [Footprinting through Social Engineering](footprinting-through-social-engineering.md) | |
+| [Footprinting through Social Engineering](footprinting-through-social-engineering.md) | Social engineering definition, goals, information gathered, technique overview table, social networking site-based collection (user and organizational activity), and detailed descriptions of eavesdropping, shoulder surfing, dumpster diving, and impersonation |
 | [Footprinting Tasks using Advanced Tools and AI](footprinting-tasks-using-advanced-tools-and-ai.md) | |
 | [Footprinting Countermeasures](footprinting-countermeasures.md) | |
 | [Flashcards](flashcards.md) | |

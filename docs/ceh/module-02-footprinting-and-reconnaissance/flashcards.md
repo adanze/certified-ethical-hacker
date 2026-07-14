@@ -1654,4 +1654,186 @@
   </div>
 </div>
 
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What is social engineering in the context of footprinting?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>A <strong>non-technical process</strong> in which an attacker misleads a person into providing confidential information inadvertently. The target is unaware that someone is stealing confidential data. Attackers exploit the gullible nature of people and their willingness to share information.</p>
+      <a class="flashcard-link" href="../footprinting-through-social-engineering/#overview">&#x2192; Social Engineering Overview</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What is the two-step process an attacker follows when performing social engineering footprinting?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>1. Gain the <strong>confidence</strong> of an authorized user.<br>2. <strong>Mislead</strong> that user into revealing confidential information.</p>
+      <a class="flashcard-link" href="../footprinting-through-social-engineering/#overview">&#x2192; Social Engineering Overview</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What categories of information do social engineers attempt to gather during footprinting?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>Credit card details and social security numbers · usernames and passwords · security products in use · OS and software versions · IP addresses and names of servers · network layout information · other personal information</p>
+      <a class="flashcard-link" href="../footprinting-through-social-engineering/#information-gathered">&#x2192; Information Gathered</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>Name the social engineering techniques used in footprinting.</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>Eavesdropping · shoulder surfing · dumpster diving · impersonation · tailgating · piggybacking · third-party authorization · reverse social engineering</p>
+      <a class="flashcard-link" href="../footprinting-through-social-engineering/#techniques">&#x2192; Techniques</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What malicious purposes does an attacker pursue using information obtained through social engineering?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>Gaining unauthorized access to systems · identity theft · industrial espionage · network intrusion · fraud</p>
+      <a class="flashcard-link" href="../footprinting-through-social-engineering/#goals-and-malicious-uses">&#x2192; Goals and Malicious Uses</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>How do attackers use social networking sites to gather information through social engineering?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>By <strong>browsing public profiles</strong> (no barrier to access) or by <strong>creating fake profiles</strong> to pose as genuine users and lure victims. If a victim accepts a friend request from a fake account, the attacker gains access to restricted pages as well.</p>
+      <a class="flashcard-link" href="../footprinting-through-social-engineering/#collecting-information-via-social-networking-sites">&#x2192; Collecting Information via SNS</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What does an attacker learn when a user shares photos and videos on a social networking site?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>Identity of family members, interests, and related information — especially when the user has not set appropriate privacy settings for their albums.</p>
+      <a class="flashcard-link" href="../footprinting-through-social-engineering/#what-attackers-get-from-user-activity">&#x2192; What Attackers Get from User Activity</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What attacker-relevant information does an organization's recruitment activity on social networking sites reveal?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p><strong>Platform/technology information</strong> — job postings and recruitment content often disclose the technologies and platforms the organization uses.</p>
+      <a class="flashcard-link" href="../footprinting-through-social-engineering/#what-attackers-get-from-organizational-activity">&#x2192; What Attackers Get from Organizational Activity</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What five types of information can an attacker obtain by monitoring organizational activity on social networking sites?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>Business strategies (user surveys) · product profile (product promotion) · social engineering opportunities (user support) · platform/technology information (recruitment) · type of business (background checks to hire employees)</p>
+      <a class="flashcard-link" href="../footprinting-through-social-engineering/#what-attackers-get-from-organizational-activity">&#x2192; What Attackers Get from Organizational Activity</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What is eavesdropping and what forms of communication can it target?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>The unauthorized interception of communication — in any form: <strong>audio, video, or text</strong> — without the consent of the communicating parties. Includes tapping phone conversations and reading messages from instant messaging or fax transmissions.</p>
+      <a class="flashcard-link" href="../footprinting-through-social-engineering/#eavesdropping">&#x2192; Eavesdropping</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What is shoulder surfing and what types of data does it target?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>Secretly observing the target to capture critical information. The attacker stands behind the victim and watches keystrokes or screen activity. Effective for capturing <strong>passwords, PINs, security codes, account numbers, and credit card information</strong>. Easiest to perform in crowded places.</p>
+      <a class="flashcard-link" href="../footprinting-through-social-engineering/#shoulder-surfing">&#x2192; Shoulder Surfing</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What is dumpster diving (trashing) and what sources does an attacker target?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>Rummaging through garbage to find sensitive information. Sources: trash bins, printer waste bins, sticky notes at desks, and ATM trash bins. Yields phone bills, contact info, financial info, operations-related info, and printouts of source code or sensitive data.</p>
+      <a class="flashcard-link" href="../footprinting-through-social-engineering/#dumpster-diving">&#x2192; Dumpster Diving</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What is impersonation as a social engineering technique, and what roles might an attacker assume?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>Pretending to be a legitimate or authorized person — courier, janitor, technician, client, or visitor — and using phones or other media to mislead targets. The attacker then scans terminals for passwords, searches documents on desks, rummages bins, or shoulder surfs.</p>
+      <a class="flashcard-link" href="../footprinting-through-social-engineering/#impersonation">&#x2192; Impersonation</a>
+    </div>
+  </div>
+</div>
+
 </div>
