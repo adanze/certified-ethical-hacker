@@ -1,0 +1,2872 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Study notes and flashcards for the CEH certification">
+      
+      
+      
+      
+        <link rel="prev" href="../footprinting-through-search-engines/">
+      
+      
+        <link rel="next" href="../footprinting-through-social-networking-sites/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Footprinting through Internet Research Services - Certified Ethical Hacker (CEH)</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/flashcards.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link rel="manifest" href="../../../manifest.json">
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("../../../sw.js");
+    }
+  </script>
+
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#footprinting-through-internet-research-services" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Certified Ethical Hacker (CEH)" class="md-header__button md-logo" aria-label="Certified Ethical Hacker (CEH)" data-md-component="logo">
+      
+  <img src="../../../assets/android-chrome-192x192.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Certified Ethical Hacker (CEH)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Footprinting through Internet Research Services
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/adanze/certified-ethical-hacker" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    certified-ethical-hacker
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../module-01-introduction-to-ethical-hacking/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Notes
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../module-01-introduction-to-ethical-hacking/flashcards/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Flashcards
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Certified Ethical Hacker (CEH)" class="md-nav__button md-logo" aria-label="Certified Ethical Hacker (CEH)" data-md-component="logo">
+      
+  <img src="../../../assets/android-chrome-192x192.png" alt="logo">
+
+    </a>
+    Certified Ethical Hacker (CEH)
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/adanze/certified-ethical-hacker" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    certified-ethical-hacker
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Notes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Notes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../module-01-introduction-to-ethical-hacking/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Module 01 – Introduction to Ethical Hacking
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1" id="__nav_2_1_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Module 01 – Introduction to Ethical Hacking
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-01-introduction-to-ethical-hacking/information-security-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Information Security Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-01-introduction-to-ethical-hacking/hacking-concepts-and-hacker-classes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hacking Concepts and Hacker Classes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-01-introduction-to-ethical-hacking/ethical-hacking-concepts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ethical Hacking Concepts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-01-introduction-to-ethical-hacking/hacking-methodologies-and-frameworks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hacking Methodologies and Frameworks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-01-introduction-to-ethical-hacking/information-security-controls/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Information Security Controls
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-01-introduction-to-ethical-hacking/information-security-laws-and-standards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Information Security Laws and Standards
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Module 02 – Footprinting and Reconnaissance
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Module 02 – Footprinting and Reconnaissance
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../footprinting-concepts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footprinting Concepts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../footprinting-through-search-engines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footprinting through Search Engines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footprinting through Internet Research Services
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footprinting through Internet Research Services
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#finding-a-companys-top-level-domains-tlds-and-sub-domains" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Finding a Company's Top-Level Domains (TLDs) and Sub-domains
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Finding a Company&#39;s Top-Level Domains (TLDs) and Sub-domains">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tools-for-sub-domain-discovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tools for Sub-domain Discovery
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#finding-tlds-and-sub-domains-with-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Finding TLDs and Sub-domains with AI
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Finding TLDs and Sub-domains with AI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-1-dig-via-chatgpt-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 1 — dig via ChatGPT prompt
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2-sublist3r-via-chatgpt-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 2 — Sublist3r via ChatGPT prompt
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extracting-website-information-from-archiveorg" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Extracting Website Information from archive.org
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#footprinting-through-people-search-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Footprinting through People Search Services
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#footprinting-through-job-sites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Footprinting through Job Sites
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dark-web-footprinting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dark Web Footprinting
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dark Web Footprinting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#surface-web-vs-deep-web-vs-dark-web" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Surface Web vs. Deep Web vs. Dark Web
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tor-browser" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tor Browser
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advanced-dark-web-search-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Advanced Dark Web Search Parameters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dark-web-search-queries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dark Web Search Queries
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#determining-the-operating-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Determining the Operating System
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#competitive-intelligence-gathering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Competitive Intelligence Gathering
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Competitive Intelligence Gathering">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#approaches" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Approaches
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sources-of-competitive-intelligence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sources of Competitive Intelligence
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-ci-helps-determine" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What CI Helps Determine
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#information-resource-sites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Information Resource Sites
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Information Resource Sites">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#general-intelligence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        General Intelligence
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#company-plans" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Company Plans
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expert-opinions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Expert Opinions
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-techniques-for-footprinting-through-internet-research-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Other Techniques for Footprinting through Internet Research Services
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Other Techniques for Footprinting through Internet Research Services">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#finding-the-geographical-location" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Finding the Geographical Location
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gathering-information-from-financial-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gathering Information from Financial Services
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gathering-information-from-business-profile-sites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gathering Information from Business Profile Sites
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monitoring-targets-using-alerts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Monitoring Targets Using Alerts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tracking-the-online-reputation-of-the-target" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tracking the Online Reputation of the Target
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gathering-information-from-groups-forums-and-blogs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gathering Information from Groups, Forums, and Blogs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gathering-information-from-public-source-code-repositories" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gathering Information from Public Source-Code Repositories
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../footprinting-through-social-networking-sites/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footprinting through Social Networking Sites
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../whois-footprinting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Whois Footprinting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dns-footprinting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DNS Footprinting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../network-and-email-footprinting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Network and Email Footprinting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../footprinting-through-social-engineering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footprinting through Social Engineering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../footprinting-tasks-using-advanced-tools-and-ai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footprinting Tasks using Advanced Tools and AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../footprinting-countermeasures/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footprinting Countermeasures
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Flashcards
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Flashcards
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-01-introduction-to-ethical-hacking/flashcards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Module 01 – Introduction to Ethical Hacking
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../flashcards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Module 02 – Footprinting and Reconnaissance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#finding-a-companys-top-level-domains-tlds-and-sub-domains" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Finding a Company's Top-Level Domains (TLDs) and Sub-domains
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Finding a Company&#39;s Top-Level Domains (TLDs) and Sub-domains">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tools-for-sub-domain-discovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tools for Sub-domain Discovery
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#finding-tlds-and-sub-domains-with-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Finding TLDs and Sub-domains with AI
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Finding TLDs and Sub-domains with AI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-1-dig-via-chatgpt-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 1 — dig via ChatGPT prompt
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2-sublist3r-via-chatgpt-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 2 — Sublist3r via ChatGPT prompt
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extracting-website-information-from-archiveorg" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Extracting Website Information from archive.org
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#footprinting-through-people-search-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Footprinting through People Search Services
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#footprinting-through-job-sites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Footprinting through Job Sites
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dark-web-footprinting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dark Web Footprinting
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dark Web Footprinting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#surface-web-vs-deep-web-vs-dark-web" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Surface Web vs. Deep Web vs. Dark Web
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tor-browser" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tor Browser
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advanced-dark-web-search-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Advanced Dark Web Search Parameters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dark-web-search-queries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dark Web Search Queries
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#determining-the-operating-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Determining the Operating System
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#competitive-intelligence-gathering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Competitive Intelligence Gathering
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Competitive Intelligence Gathering">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#approaches" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Approaches
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sources-of-competitive-intelligence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sources of Competitive Intelligence
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-ci-helps-determine" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What CI Helps Determine
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#information-resource-sites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Information Resource Sites
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Information Resource Sites">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#general-intelligence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        General Intelligence
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#company-plans" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Company Plans
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expert-opinions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Expert Opinions
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-techniques-for-footprinting-through-internet-research-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Other Techniques for Footprinting through Internet Research Services
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Other Techniques for Footprinting through Internet Research Services">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#finding-the-geographical-location" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Finding the Geographical Location
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gathering-information-from-financial-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gathering Information from Financial Services
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gathering-information-from-business-profile-sites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gathering Information from Business Profile Sites
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monitoring-targets-using-alerts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Monitoring Targets Using Alerts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tracking-the-online-reputation-of-the-target" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tracking the Online Reputation of the Target
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gathering-information-from-groups-forums-and-blogs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gathering Information from Groups, Forums, and Blogs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gathering-information-from-public-source-code-repositories" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gathering Information from Public Source-Code Repositories
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="footprinting-through-internet-research-services">Footprinting through Internet Research Services<a class="headerlink" href="#footprinting-through-internet-research-services" title="Permanent link">&para;</a></h1>
+<p>Internet research services — including people search, alerting, financial services, and job sites — expose sensitive target information such as infrastructure details, physical location, and employee data. Attackers use this to build targeted hacking strategies against an organization's network.</p>
+<p>Key activities covered here: discovering top-level domains and sub-domains, geolocation, people search services, job site intelligence, financial services, third-party data repositories, dark web footprinting, and competitive intelligence gathering.</p>
+<h2 id="finding-a-companys-top-level-domains-tlds-and-sub-domains">Finding a Company's Top-Level Domains (TLDs) and Sub-domains<a class="headerlink" href="#finding-a-companys-top-level-domains-tlds-and-sub-domains" title="Permanent link">&para;</a></h2>
+<p>A company's <strong>TLDs</strong> represent its public-facing web presence — designed for customers and partners, and locatable via search engines such as Google and Bing. They may expose organizational history, services, products, and contact information.</p>
+<p><strong>Sub-domains</strong> are typically restricted to employees or specific departments. Administrators often create sub-domains for testing before production deployment; these are frequently insecure and more vulnerable to exploitation. Sub-domains can reveal:</p>
+<ul>
+<li>Departmental structure and business units</li>
+<li>Source code or documents hosted on webservers</li>
+<li>Private organizational functions</li>
+<li>Access controls based on IP, domain, subnet, or credentials</li>
+</ul>
+<p>Because most organizations use predictable sub-domain formats, an attacker who knows the external URL can discover sub-domains by <strong>trial and error</strong> or by using dedicated tools.</p>
+<p><strong>Google Advanced Search Operator:</strong></p>
+<div class="highlight"><pre><span></span><code>site:microsoft.com -inurl:www
+</code></pre></div>
+<h3 id="tools-for-sub-domain-discovery">Tools for Sub-domain Discovery<a class="headerlink" href="#tools-for-sub-domain-discovery" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Source</th>
+<th>What it reveals</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Netcraft</strong></td>
+<td><a href="https://www.netcraft.com">netcraft.com</a></td>
+<td>Sub-domains, web server OS, hosting provider, SSL data</td>
+</tr>
+<tr>
+<td><strong>DNSdumpster</strong></td>
+<td><a href="https://dnsdumpster.com">dnsdumpster.com</a></td>
+<td>Hosts, sub-domains, IP addresses, DNS servers</td>
+</tr>
+<tr>
+<td><strong>Pentest-Tools Find Subdomains</strong></td>
+<td><a href="https://pentest-tools.com">pentest-tools.com</a></td>
+<td>Sub-domains, IPs, OS, server technology, web platform, page titles</td>
+</tr>
+</tbody>
+</table>
+<h2 id="finding-tlds-and-sub-domains-with-ai">Finding TLDs and Sub-domains with AI<a class="headerlink" href="#finding-tlds-and-sub-domains-with-ai" title="Permanent link">&para;</a></h2>
+<p>Attackers can use AI-powered tools (e.g., ChatGPT) to generate and execute sub-domain enumeration commands, automating what would otherwise be a manual process.</p>
+<h3 id="example-1-dig-via-chatgpt-prompt">Example 1 — <code>dig</code> via ChatGPT prompt<a class="headerlink" href="#example-1-dig-via-chatgpt-prompt" title="Permanent link">&para;</a></h3>
+<p><strong>Prompt:</strong> <em>"Discover all the subdomains of 'google.com' using dig command."</em></p>
+<div class="highlight"><pre><span></span><code>dig<span class="w"> </span>+short<span class="w"> </span>google.com<span class="w"> </span>NS<span class="w"> </span><span class="p">|</span><span class="w"> </span>xargs<span class="w"> </span>-I<span class="o">{}</span><span class="w"> </span>dig<span class="w"> </span>+nocmd<span class="w"> </span>+noall<span class="w"> </span>+answer<span class="w"> </span>@<span class="o">{}</span><span class="w"> </span>google.com<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-E<span class="w"> </span><span class="s1">&#39;CNAME|A|AAAA&#39;</span>
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Command part</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>dig +short google.com NS</code></td>
+<td>Retrieves NS records for the domain in shortened format</td>
+</tr>
+<tr>
+<td><code>| xargs -I{}</code></td>
+<td>Passes each name server as an argument to the next command</td>
+</tr>
+<tr>
+<td><code>dig +nocmd +noall +answer @{} google.com</code></td>
+<td>Queries each NS for A records, returning IP addresses of sub-domains</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example-2-sublist3r-via-chatgpt-prompt">Example 2 — Sublist3r via ChatGPT prompt<a class="headerlink" href="#example-2-sublist3r-via-chatgpt-prompt" title="Permanent link">&para;</a></h3>
+<p><strong>Prompt:</strong> <em>"Use Sublist3r to gather a list of subdomains of the target organization eccouncil."</em></p>
+<div class="highlight"><pre><span></span><code>sublist3r<span class="w"> </span>-d<span class="w"> </span>eccouncil.org<span class="w"> </span>-o<span class="w"> </span>eccouncil_subdomains.txt
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Flag</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-d eccouncil.org</code></td>
+<td>Target domain to enumerate</td>
+</tr>
+<tr>
+<td><code>-o eccouncil_subdomains.txt</code></td>
+<td>Output file for the results</td>
+</tr>
+</tbody>
+</table>
+<p>Sublist3r searches multiple sources (Bing, Google, Netcraft, VirusTotal, etc.) and saves discovered sub-domains to the specified file.</p>
+<h2 id="extracting-website-information-from-archiveorg">Extracting Website Information from archive.org<a class="headerlink" href="#extracting-website-information-from-archiveorg" title="Permanent link">&para;</a></h2>
+<p>The <strong>Internet Archive Wayback Machine</strong> (<a href="https://archive.org">archive.org</a>) stores snapshots of websites since their creation, allowing an attacker to retrieve content that has since been removed — including web pages, images, audio/video files, and software programs. This historical data can be used to craft phishing attacks or other web application attacks against the target.</p>
+<p><strong>Photon</strong> is a tool that automates retrieval of archived content from archive.org.</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>photon.py -u &lt;URL&gt; -l 3 -t 200 --wayback</code></td>
+<td>Retrieve archive.org links of the target website</td>
+</tr>
+<tr>
+<td><code>python photon.py -u &lt;URL&gt; -l 3 -t 200 --only-urls</code></td>
+<td>Retrieve archived URLs of the target website</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Flag</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-u &lt;URL&gt;</code></td>
+<td>Target website URL</td>
+</tr>
+<tr>
+<td><code>-l 3</code></td>
+<td>Crawl depth level</td>
+</tr>
+<tr>
+<td><code>-t 200</code></td>
+<td>Number of threads</td>
+</tr>
+<tr>
+<td><code>--wayback</code></td>
+<td>Fetch links from archive.org snapshots</td>
+</tr>
+<tr>
+<td><code>--only-urls</code></td>
+<td>Output URLs only</td>
+</tr>
+</tbody>
+</table>
+<h2 id="footprinting-through-people-search-services">Footprinting through People Search Services<a class="headerlink" href="#footprinting-through-people-search-services" title="Permanent link">&para;</a></h2>
+<p>Online people search services (e.g., <strong>Spokeo</strong>, <strong>Intelius</strong>, <strong>pipl</strong>, BeenVerified, Whitepages, Instant Checkmate, PeekYou) aggregate public records and can expose:</p>
+<ul>
+<li>Names, addresses, phone numbers, date of birth, photographs, videos</li>
+<li>Profession, businesses owned, upcoming projects, operating environment</li>
+<li>Websites and blogs, social networking profiles, property information</li>
+<li>Company email addresses, cell/fax numbers, personal email addresses</li>
+<li>Optional background and criminal check data</li>
+</ul>
+<p>Attackers use this data to attempt to obtain bank details, credit card information, and personal history — enabling targeted social engineering and other attacks.</p>
+<p><strong>Spokeo</strong> (<a href="https://www.spokeo.com">spokeo.com</a>) is a commonly cited example: it returns phone numbers, email addresses, address history, age, family members, social profiles, and court records for individuals associated with a target organization.</p>
+<h2 id="footprinting-through-job-sites">Footprinting through Job Sites<a class="headerlink" href="#footprinting-through-job-sites" title="Permanent link">&para;</a></h2>
+<p>Job postings and employee resumes on sites such as <strong>Dice</strong>, <strong>LinkedIn</strong>, <strong>Glassdoor</strong>, and <strong>Simply Hired</strong> inadvertently disclose infrastructure details. Attackers extract:</p>
+<table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Information revealed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Job postings</td>
+<td>OS, software versions, firewall/server types, hypervisors, VMs, network appliances, database schema</td>
+</tr>
+<tr>
+<td>Employee resumes</td>
+<td>Technical expertise, educational qualifications, job history, technologies used</td>
+</tr>
+<tr>
+<td>Key employee lists</td>
+<td>Email addresses and roles</td>
+</tr>
+</tbody>
+</table>
+<p>This information helps attackers identify underlying vulnerabilities in the target IT infrastructure and tailor attacks accordingly.</p>
+<h2 id="dark-web-footprinting">Dark Web Footprinting<a class="headerlink" href="#dark-web-footprinting" title="Permanent link">&para;</a></h2>
+<h3 id="surface-web-vs-deep-web-vs-dark-web">Surface Web vs. Deep Web vs. Dark Web<a class="headerlink" href="#surface-web-vs-deep-web-vs-dark-web" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Description</th>
+<th>Access</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Surface Web</strong></td>
+<td>Indexed, publicly accessible pages</td>
+<td>Standard browsers (Chrome, Firefox, Opera)</td>
+</tr>
+<tr>
+<td><strong>Deep Web</strong></td>
+<td>Unindexed pages — government/federal databases, organizational data</td>
+<td>Tor Browser, WWW Virtual Library</td>
+</tr>
+<tr>
+<td><strong>Dark Web</strong></td>
+<td>Subset of the deep web; anonymous, untraceable</td>
+<td>Tor Browser, ExoneraTor, OnionLand Search</td>
+</tr>
+</tbody>
+</table>
+<p>The dark web enables anonymous navigation and is used by attackers to gather confidential target data: credit card details, passport and ID information, medical records, social media accounts, Social Security Numbers (SSNs).</p>
+<h3 id="tor-browser">Tor Browser<a class="headerlink" href="#tor-browser" title="Permanent link">&para;</a></h3>
+<p><strong>Source:</strong> <a href="https://www.torproject.org">torproject.org</a></p>
+<p>Tor Browser acts as a <strong>default VPN</strong>, bouncing the user's IP address through multiple servers before reaching the web. Attackers use it to access hidden content, unindexed websites, and encrypted databases on the dark web.</p>
+<h3 id="advanced-dark-web-search-parameters">Advanced Dark Web Search Parameters<a class="headerlink" href="#advanced-dark-web-search-parameters" title="Permanent link">&para;</a></h3>
+<p>Attackers refine dark web searches using specific operators. Common patterns:</p>
+<table>
+<thead>
+<tr>
+<th>Target data</th>
+<th>Description</th>
+<th>Example query</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Personal profiles</td>
+<td>Finds the target's social media presence on specific platforms</td>
+<td><code>"John Doe" site:facebook.com OR site:linkedin.com</code></td>
+</tr>
+<tr>
+<td>Scientific publications</td>
+<td>Locates academic or research papers authored by the target</td>
+<td><code>"John Doe" site:scholar.google.com</code></td>
+</tr>
+<tr>
+<td>Court records</td>
+<td>Surfaces legal cases or judicial documents involving the target</td>
+<td><code>"John Doe" court records</code></td>
+</tr>
+<tr>
+<td>Member directories</td>
+<td>Identifies the target within an organization's staff listing</td>
+<td><code>"John Doe" site:example.com "employee directory"</code></td>
+</tr>
+<tr>
+<td>Medical records</td>
+<td>Searches for exposed health or treatment history of the target</td>
+<td><code>"John Doe" medical records</code></td>
+</tr>
+<tr>
+<td>Location history</td>
+<td>Retrieves GPS data or location-tagged content linked to the target</td>
+<td><code>"John Doe" location history</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="dark-web-search-queries">Dark Web Search Queries<a class="headerlink" href="#dark-web-search-queries" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Information type</th>
+<th>What it finds</th>
+<th>Search query</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sensitive PDFs</td>
+<td>Confidential PDF docs on .onion sites</td>
+<td><code>filetype:pdf site:onion confidential</code></td>
+</tr>
+<tr>
+<td>Passwords in Config Files</td>
+<td>Text config files containing passwords</td>
+<td><code>inurl:config filetype:txt password</code></td>
+</tr>
+<tr>
+<td>Financial Documents</td>
+<td>Excel financial files on .onion sites</td>
+<td><code>filetype:xlsx site:onion financial</code></td>
+</tr>
+<tr>
+<td>Database Dumps</td>
+<td>SQL dump files on .onion sites</td>
+<td><code>filetype:sql site:onion dump</code></td>
+</tr>
+<tr>
+<td>Email Lists</td>
+<td>CSV files with email lists</td>
+<td><code>filetype:csv site:onion email</code></td>
+</tr>
+<tr>
+<td>Login Credentials</td>
+<td>Word docs with credentials in title</td>
+<td><code>intitle:"login credentials" filetype:docx</code></td>
+</tr>
+<tr>
+<td>Server Configurations</td>
+<td>XML server config files</td>
+<td><code>filetype:xml inurl:config server</code></td>
+</tr>
+<tr>
+<td>Private Keys</td>
+<td>Private key files on .onion sites</td>
+<td><code>filetype:key site:onion private</code></td>
+</tr>
+<tr>
+<td>Medical Records</td>
+<td>PDF medical records on .onion sites</td>
+<td><code>filetype:pdf site:onion "medical records"</code></td>
+</tr>
+<tr>
+<td>Business Plans</td>
+<td>PowerPoint business plans on .onion sites</td>
+<td><code>filetype:ppt site:onion "business plan"</code></td>
+</tr>
+<tr>
+<td>Source Code</td>
+<td>Python source code files</td>
+<td><code>filetype:py site:onion "def "</code></td>
+</tr>
+<tr>
+<td>Legal Documents</td>
+<td>Word legal documents on .onion sites</td>
+<td><code>filetype:docx site:onion "legal document"</code></td>
+</tr>
+<tr>
+<td>Bank Statements</td>
+<td>PDF bank statements</td>
+<td><code>filetype:pdf site:onion "bank statement"</code></td>
+</tr>
+<tr>
+<td>Intellectual Property</td>
+<td>Confidential patent PDFs</td>
+<td><code>filetype:pdf inurl:patent confidential</code></td>
+</tr>
+<tr>
+<td>Security Vulnerabilities</td>
+<td>Text files on exploits and vulnerabilities</td>
+<td><code>filetype:txt inurl:exploit "security vulnerability"</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="determining-the-operating-system">Determining the Operating System<a class="headerlink" href="#determining-the-operating-system" title="Permanent link">&para;</a></h2>
+<p>Attackers use OS fingerprinting tools to detect the OS running at the target, along with city, country, lat/long, hostname, and IP address.</p>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Source</th>
+<th>What it reveals</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Netcraft</strong></td>
+<td><a href="https://www.netcraft.com">netcraft.com</a></td>
+<td>OS of all sites associated with a target domain (via "What's that site running?")</td>
+</tr>
+<tr>
+<td><strong>Shodan</strong></td>
+<td><a href="https://www.shodan.io">shodan.io</a></td>
+<td>Connected devices (routers, servers, IoT), OS, location, known Common Vulnerabilities and Exposures (CVEs) across Exploit-DB / Metasploit / Packetstorm</td>
+</tr>
+<tr>
+<td><strong>Censys</strong></td>
+<td><a href="https://censys.io">censys.io</a></td>
+<td>Full view of internet-exposed servers and devices: OS, IP, protocols, geolocation</td>
+</tr>
+</tbody>
+</table>
+<h2 id="competitive-intelligence-gathering">Competitive Intelligence Gathering<a class="headerlink" href="#competitive-intelligence-gathering" title="Permanent link">&para;</a></h2>
+<p><strong>Competitive intelligence (CI) gathering</strong> is the process of identifying, gathering, analyzing, verifying, and using information about competitors from public resources such as the Internet. Key characteristics:</p>
+<ul>
+<li><strong>Non-interfering and subtle</strong> — legal and ethical, unlike industrial espionage or IP theft</li>
+<li>Focuses on the external business environment</li>
+<li>Helps answer: what competitors are doing, how they position products/services, what customers say about their strengths and weaknesses</li>
+</ul>
+<h3 id="approaches">Approaches<a class="headerlink" href="#approaches" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Approach</th>
+<th>Description</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Direct</strong></td>
+<td>Primary source; involves direct contact or observation</td>
+<td>Trade shows, social engineering of employees/customers</td>
+</tr>
+<tr>
+<td><strong>Indirect</strong></td>
+<td>Uses online and published resources</td>
+<td>Company websites, search engines, press releases, patents, job postings, financial filings, legal databases</td>
+</tr>
+</tbody>
+</table>
+<h3 id="sources-of-competitive-intelligence">Sources of Competitive Intelligence<a class="headerlink" href="#sources-of-competitive-intelligence" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Company websites and employment ads</li>
+<li>Search engines, Internet, and online databases</li>
+<li>Press releases and annual reports</li>
+<li>Trade journals, conferences, and newspapers</li>
+<li>Patent and trademarks</li>
+<li>Social engineering employees</li>
+<li>Product catalogs and retail outlets</li>
+<li>Analyst and regulatory reports</li>
+<li>Customer and vendor interviews</li>
+<li>Agents, distributors, and suppliers</li>
+</ul>
+<h3 id="what-ci-helps-determine">What CI Helps Determine<a class="headerlink" href="#what-ci-helps-determine" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Question</th>
+<th>What it reveals</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>When did it begin?</strong></td>
+<td>Company history, establishment date, information not widely available</td>
+</tr>
+<tr>
+<td><strong>How did it develop?</strong></td>
+<td>Advertisement strategies, customer relationship management (CRM), growth tactics</td>
+</tr>
+<tr>
+<td><strong>Who leads it?</strong></td>
+<td>Decision-makers and executives</td>
+</tr>
+<tr>
+<td><strong>Where is it located?</strong></td>
+<td>Branch locations and their operations</td>
+</tr>
+</tbody>
+</table>
+<h3 id="information-resource-sites">Information Resource Sites<a class="headerlink" href="#information-resource-sites" title="Permanent link">&para;</a></h3>
+<h4 id="general-intelligence">General Intelligence<a class="headerlink" href="#general-intelligence" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Source</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>EDGAR</strong></td>
+<td><a href="https://www.sec.gov/edgar">sec.gov/edgar</a></td>
+<td>Electronic Data Gathering, Analysis, and Retrieval — U.S. Securities and Exchange Commission (SEC) system for automated collection and dissemination of mandatory corporate filings</td>
+</tr>
+<tr>
+<td><strong>D&amp;B Hoovers</strong></td>
+<td><a href="https://www.dnb.com">dnb.com</a></td>
+<td>120M+ business records; sales intelligence for targeting prospects</td>
+</tr>
+<tr>
+<td><strong>LexisNexis</strong></td>
+<td><a href="https://www.lexisnexis.com">lexisnexis.com</a></td>
+<td>Legal, news, and public records; compliance, fraud detection, identity solutions</td>
+</tr>
+<tr>
+<td><strong>Business Wire</strong></td>
+<td><a href="https://www.businesswire.com">businesswire.com</a></td>
+<td>Press release distribution; full-text news, photos, multimedia to global media and investors</td>
+</tr>
+<tr>
+<td><strong>Factiva</strong></td>
+<td><a href="https://www.dowjones.com">dowjones.com</a></td>
+<td>33,000+ licensed sources — publications, newswires, blogs, images, videos in 28 languages</td>
+</tr>
+</tbody>
+</table>
+<h4 id="company-plans">Company Plans<a class="headerlink" href="#company-plans" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Source</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>MarketWatch</strong></td>
+<td><a href="https://www.marketwatch.com">marketwatch.com</a></td>
+<td>Business news, personal finance, real-time market commentary and investment data</td>
+</tr>
+<tr>
+<td><strong>The Wall Street Transcript</strong></td>
+<td><a href="https://www.twst.com">twst.com</a></td>
+<td>Industry reports, money manager/analyst views, CEO interviews</td>
+</tr>
+<tr>
+<td><strong>Euromonitor</strong></td>
+<td><a href="https://www.euromonitor.com">euromonitor.com</a></td>
+<td>Consumer market strategy research; industry, consumer, and demographic reports</td>
+</tr>
+<tr>
+<td><strong>Experian</strong></td>
+<td><a href="https://www.experian.com">experian.com</a></td>
+<td>Competitor search/affiliate/display/social marketing metrics; consumer data forecasting</td>
+</tr>
+<tr>
+<td><strong>The Search Monitor</strong></td>
+<td><a href="https://www.thesearchmonitor.com">thesearchmonitor.com</a></td>
+<td>Monitors brand/trademark use, affiliate compliance, competitor ads across paid/organic/social/mobile</td>
+</tr>
+<tr>
+<td><strong>USPTO</strong></td>
+<td><a href="https://www.uspto.gov">uspto.gov</a></td>
+<td>United States Patent and Trademark Office — provides patent and trademark registration data and search options for both databases</td>
+</tr>
+</tbody>
+</table>
+<h4 id="expert-opinions">Expert Opinions<a class="headerlink" href="#expert-opinions" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Source</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>SEMRush</strong></td>
+<td><a href="https://www.semrush.com">semrush.com</a></td>
+<td>Competitor keyword research; Google keywords, AdWords, organic/paid search competitor lists</td>
+</tr>
+<tr>
+<td><strong>ABI/INFORM Global</strong></td>
+<td><a href="https://www.proquest.com">proquest.com</a></td>
+<td>Business/financial database; management techniques, corporate strategy, competitive landscape</td>
+</tr>
+<tr>
+<td><strong>SimilarWeb</strong></td>
+<td><a href="https://www.similarweb.com">similarweb.com</a></td>
+<td>Estimates website/app traffic, geography, and referral data from aggregated multi-source data</td>
+</tr>
+<tr>
+<td><strong>SERanking</strong></td>
+<td><a href="https://seranking.com">seranking.com</a></td>
+<td>Website traffic dynamics, competitor comparison, keyword semantics, pay-per-click (PPC) competitor research</td>
+</tr>
+</tbody>
+</table>
+<h2 id="other-techniques-for-footprinting-through-internet-research-services">Other Techniques for Footprinting through Internet Research Services<a class="headerlink" href="#other-techniques-for-footprinting-through-internet-research-services" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Technique</th>
+<th>Description</th>
+<th>Information Gathered</th>
+<th>Tools</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Finding the Geographical Location</strong></td>
+<td>Obtain the physical location of the target</td>
+<td>Entrances to buildings, security cameras, gates, hiding spots, perimeter fence weak points, utility connections</td>
+<td>Google Earth, Google Maps, Wikimapia</td>
+</tr>
+<tr>
+<td><strong>Gathering Information from Financial Services</strong></td>
+<td>Search for financial data: stock quotes, charts, news, portfolios</td>
+<td>Market value of shares, company profile, competitor details, stock rates, press releases, financial reports</td>
+<td>Google Finance, MSN Money, Yahoo! Finance, Investing.com</td>
+</tr>
+<tr>
+<td><strong>Gathering Information from Business Profile Sites</strong></td>
+<td>Retrieve business information of companies in a particular region</td>
+<td>Location, addresses, contact information, employee database of the target organization</td>
+<td>opencorporates, Crunchbase, corporationwiki</td>
+</tr>
+<tr>
+<td><strong>Monitoring Targets Using Alerts</strong></td>
+<td>Obtain up-to-date information via email or SMS alerts</td>
+<td>Mentions of the organization's name, member names, website, or any of its people or projects</td>
+<td>Google Alerts, X Alerts, Giga Alerts</td>
+</tr>
+<tr>
+<td><strong>Tracking the Online Reputation</strong></td>
+<td>Monitor a company's reputation on the Internet</td>
+<td>Search engine ranking, email notifications when mentioned online, social news about the company</td>
+<td>Mention, ReviewPush, Reputology</td>
+</tr>
+<tr>
+<td><strong>Gathering Information from Groups, Forums, and Blogs</strong></td>
+<td>Join target organization's employee groups to obtain shared information</td>
+<td>Public network information, system information, personal information of employees</td>
+<td>Google Groups, LinkedIn Groups</td>
+</tr>
+<tr>
+<td><strong>Gathering Information from Public Source-Code Repositories</strong></td>
+<td>Identify developers and technologies used</td>
+<td>Configuration files, private Secure Shell (SSH) and Secure Sockets Layer (SSL) keys, source-code files, dynamic libraries, software tools</td>
+<td>Recon-ng</td>
+</tr>
+</tbody>
+</table>
+<h3 id="finding-the-geographical-location">Finding the Geographical Location<a class="headerlink" href="#finding-the-geographical-location" title="Permanent link">&para;</a></h3>
+<p>Attackers use location data to plan physical attacks (dumpster diving, surveillance, social engineering) alongside technical ones.</p>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Source</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Google Earth</strong></td>
+<td><a href="https://earth.google.com">earth.google.com</a></td>
+<td>3D imagery, street views, altitude, and coordinates</td>
+</tr>
+<tr>
+<td><strong>Google Maps</strong></td>
+<td>—</td>
+<td>Driving directions, traffic conditions, landmarks, address/contact details</td>
+</tr>
+<tr>
+<td><strong>Wikimapia</strong></td>
+<td>—</td>
+<td>Interactive maps with community-added location details</td>
+</tr>
+</tbody>
+</table>
+<h3 id="gathering-information-from-financial-services">Gathering Information from Financial Services<a class="headerlink" href="#gathering-information-from-financial-services" title="Permanent link">&para;</a></h3>
+<p>Financial firms rely on web services for transactions; attackers exploit this via malware, authentication bypass, brute force, and phishing.</p>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Source</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Google Finance</strong></td>
+<td><a href="https://www.google.com/finance">google.com/finance</a></td>
+<td>Business headlines, stock charts with major event markers, news and blog articles per company</td>
+</tr>
+<tr>
+<td><strong>MSN Money</strong></td>
+<td><a href="https://www.msn.com/en-us/money">msn.com/money</a></td>
+<td>Financial news, stock data, portfolios</td>
+</tr>
+<tr>
+<td><strong>Yahoo! Finance</strong></td>
+<td><a href="https://finance.yahoo.com">finance.yahoo.com</a></td>
+<td>Market data, company profiles, competitor details</td>
+</tr>
+<tr>
+<td><strong>Investing.com</strong></td>
+<td><a href="https://www.investing.com">investing.com</a></td>
+<td>Stock exchange rates, financial reports</td>
+</tr>
+</tbody>
+</table>
+<h3 id="gathering-information-from-business-profile-sites">Gathering Information from Business Profile Sites<a class="headerlink" href="#gathering-information-from-business-profile-sites" title="Permanent link">&para;</a></h3>
+<p>Publicly accessible databases exposing location, contact info, department names, service type, and employee databases.</p>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>opencorporates</strong></td>
+<td>Corporate registry data</td>
+</tr>
+<tr>
+<td><strong>Crunchbase</strong></td>
+<td>Startup and company profiles, funding, leadership</td>
+</tr>
+<tr>
+<td><strong>corporationwiki</strong></td>
+<td>Company connections, officers, and related entities</td>
+</tr>
+</tbody>
+</table>
+<h3 id="monitoring-targets-using-alerts">Monitoring Targets Using Alerts<a class="headerlink" href="#monitoring-targets-using-alerts" title="Permanent link">&para;</a></h3>
+<p>Alert services automatically notify when new content (news, websites, blogs, videos, discussion groups) matches a user-defined search term. Attackers use these to passively track targets in real time.</p>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Google Alerts</strong></td>
+<td><a href="https://www.google.com/alerts">google.com/alerts</a></td>
+</tr>
+<tr>
+<td><strong>X Alerts</strong></td>
+<td><a href="https://x.com">x.com</a> (formerly Twitter — built-in notification/mention alerts)</td>
+</tr>
+<tr>
+<td><strong>Giga Alerts</strong></td>
+<td><a href="https://www.gigaalert.com">gigaalert.com</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="tracking-the-online-reputation-of-the-target">Tracking the Online Reputation of the Target<a class="headerlink" href="#tracking-the-online-reputation-of-the-target" title="Permanent link">&para;</a></h3>
+<p>Companies use Online Reputation Management (ORM) tools to monitor and improve brand reputation. The transparency this creates allows attackers to collect genuine, up-to-date organizational information. Attackers can obtain: search engine rankings, email notifications on mentions, social news, and online conversations about the target.</p>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Source</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Mention</strong></td>
+<td><a href="https://mention.com">mention.com</a></td>
+<td>Monitors web, social media, forums, and blogs in real time; delivers live reports to email</td>
+</tr>
+<tr>
+<td><strong>ReviewPush</strong></td>
+<td><a href="https://www.reviewpush.com">reviewpush.com</a></td>
+<td>Tracks online reviews across platforms</td>
+</tr>
+<tr>
+<td><strong>Reputology</strong></td>
+<td><a href="https://www.reputology.com">reputology.com</a></td>
+<td>Monitors and analyzes reviews and brand mentions</td>
+</tr>
+</tbody>
+</table>
+<h3 id="gathering-information-from-groups-forums-and-blogs">Gathering Information from Groups, Forums, and Blogs<a class="headerlink" href="#gathering-information-from-groups-forums-and-blogs" title="Permanent link">&para;</a></h3>
+<p>Organizations rarely monitor what employees share in public forums. Attackers can search by Fully Qualified Domain Names (FQDNs), IP addresses, or usernames, or register with fake profiles.</p>
+<table>
+<thead>
+<tr>
+<th>Data type</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Identity</td>
+<td>Full name, workplace, residence</td>
+</tr>
+<tr>
+<td>Contact</td>
+<td>Phone numbers, personal and organizational email addresses</td>
+</tr>
+<tr>
+<td>Visual</td>
+<td>Photos of residence, workplace, awards</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Platform</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Google Groups</strong></td>
+<td>Public and private group discussions</td>
+</tr>
+<tr>
+<td><strong>LinkedIn Groups</strong></td>
+<td>Professional groups with employee discussions</td>
+</tr>
+</tbody>
+</table>
+<h3 id="gathering-information-from-public-source-code-repositories">Gathering Information from Public Source-Code Repositories<a class="headerlink" href="#gathering-information-from-public-source-code-repositories" title="Permanent link">&para;</a></h3>
+<p>Sites such as GitHub, GitLab, SourceForge, and BitBucket may expose confidential files, security flaws, and developer identities. Combined with active footprinting, this enables spear phishing and infrastructure attacks.</p>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Source</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Recon-ng</strong></td>
+<td><a href="https://github.com/lanmaster53/recon-ng">github.com/lanmaster53/recon-ng</a></td>
+<td>Full-featured web reconnaissance framework for discovering public repository data</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.indexes", "search.highlight"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/flashcards.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,2209 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Study notes and flashcards for the CEH certification">
+      
+      
+      
+      
+        <link rel="prev" href="../footprinting-through-social-engineering/">
+      
+      
+        <link rel="next" href="../footprinting-countermeasures/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Footprinting Tasks using Advanced Tools and AI - Certified Ethical Hacker (CEH)</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/flashcards.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link rel="manifest" href="../../../manifest.json">
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("../../../sw.js");
+    }
+  </script>
+
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#footprinting-tasks-using-advanced-tools-and-ai" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Certified Ethical Hacker (CEH)" class="md-header__button md-logo" aria-label="Certified Ethical Hacker (CEH)" data-md-component="logo">
+      
+  <img src="../../../assets/android-chrome-192x192.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Certified Ethical Hacker (CEH)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Footprinting Tasks using Advanced Tools and AI
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/adanze/certified-ethical-hacker" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    certified-ethical-hacker
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../module-01-introduction-to-ethical-hacking/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Notes
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../module-01-introduction-to-ethical-hacking/flashcards/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Flashcards
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Certified Ethical Hacker (CEH)" class="md-nav__button md-logo" aria-label="Certified Ethical Hacker (CEH)" data-md-component="logo">
+      
+  <img src="../../../assets/android-chrome-192x192.png" alt="logo">
+
+    </a>
+    Certified Ethical Hacker (CEH)
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/adanze/certified-ethical-hacker" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    certified-ethical-hacker
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Notes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Notes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../module-01-introduction-to-ethical-hacking/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Module 01 – Introduction to Ethical Hacking
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1" id="__nav_2_1_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Module 01 – Introduction to Ethical Hacking
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-01-introduction-to-ethical-hacking/information-security-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Information Security Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-01-introduction-to-ethical-hacking/hacking-concepts-and-hacker-classes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hacking Concepts and Hacker Classes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-01-introduction-to-ethical-hacking/ethical-hacking-concepts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ethical Hacking Concepts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-01-introduction-to-ethical-hacking/hacking-methodologies-and-frameworks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hacking Methodologies and Frameworks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-01-introduction-to-ethical-hacking/information-security-controls/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Information Security Controls
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-01-introduction-to-ethical-hacking/information-security-laws-and-standards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Information Security Laws and Standards
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Module 02 – Footprinting and Reconnaissance
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Module 02 – Footprinting and Reconnaissance
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../footprinting-concepts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footprinting Concepts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../footprinting-through-search-engines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footprinting through Search Engines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../footprinting-through-internet-research-services/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footprinting through Internet Research Services
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../footprinting-through-social-networking-sites/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footprinting through Social Networking Sites
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../whois-footprinting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Whois Footprinting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dns-footprinting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DNS Footprinting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../network-and-email-footprinting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Network and Email Footprinting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../footprinting-through-social-engineering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footprinting through Social Engineering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footprinting Tasks using Advanced Tools and AI
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footprinting Tasks using Advanced Tools and AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Tools
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tool-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tool Details
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tool Details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#maltego" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Maltego
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recon-ng" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recon-ng
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#foca" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FOCA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subfinder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        subfinder
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#osint-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OSINT Framework
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recon-dog" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recon-Dog
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#billcipher" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        BillCipher
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Additional Tools
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai-powered-osint-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI-Powered OSINT Tools
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AI-Powered OSINT Tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ai-use-cases-in-osint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI Use Cases in OSINT
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#benefits-of-integrating-ai-in-osint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Benefits of Integrating AI in OSINT
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#taranis-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Taranis AI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oss-insight" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OSS Insight
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#additional-ai-powered-osint-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Additional AI-Powered OSINT Tools
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-python-scripts-with-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Custom Python Scripts with AI
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../footprinting-countermeasures/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footprinting Countermeasures
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Flashcards
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Flashcards
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-01-introduction-to-ethical-hacking/flashcards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Module 01 – Introduction to Ethical Hacking
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../flashcards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Module 02 – Footprinting and Reconnaissance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Tools
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tool-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tool Details
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tool Details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#maltego" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Maltego
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recon-ng" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recon-ng
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#foca" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FOCA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subfinder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        subfinder
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#osint-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OSINT Framework
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recon-dog" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recon-Dog
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#billcipher" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        BillCipher
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Additional Tools
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai-powered-osint-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI-Powered OSINT Tools
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AI-Powered OSINT Tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ai-use-cases-in-osint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI Use Cases in OSINT
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#benefits-of-integrating-ai-in-osint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Benefits of Integrating AI in OSINT
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#taranis-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Taranis AI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oss-insight" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OSS Insight
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#additional-ai-powered-osint-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Additional AI-Powered OSINT Tools
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-python-scripts-with-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Custom Python Scripts with AI
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="footprinting-tasks-using-advanced-tools-and-ai">Footprinting Tasks using Advanced Tools and AI<a class="headerlink" href="#footprinting-tasks-using-advanced-tools-and-ai" title="Permanent link">&para;</a></h1>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>Footprinting tools collect basic information about target systems to support exploitation. Information gathered typically includes IP location, routing information, business details, phone numbers, email source data, DNS information, and domain information.</p>
+<h2 id="core-tools">Core Tools<a class="headerlink" href="#core-tools" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Source</th>
+<th>Primary Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Maltego</td>
+<td><a href="https://www.maltego.com">maltego.com</a></td>
+<td>Mapping relationships and real-world links between people, organizations, infrastructure, and documents</td>
+</tr>
+<tr>
+<td>Recon-ng</td>
+<td><a href="https://github.com/lanmaster53/recon-ng">github.com/lanmaster53/recon-ng</a></td>
+<td>Web reconnaissance framework with independent modules for open-source, web-based reconnaissance</td>
+</tr>
+<tr>
+<td>FOCA</td>
+<td><a href="https://github.com/ElevenPaths/FOCA">github.com/ElevenPaths/FOCA</a></td>
+<td>Finding metadata and hidden information in scanned documents</td>
+</tr>
+<tr>
+<td>subfinder</td>
+<td><a href="https://github.com/projectdiscovery/subfinder">github.com/projectdiscovery/subfinder</a></td>
+<td>Passive subdomain discovery for websites</td>
+</tr>
+<tr>
+<td>OSINT Framework</td>
+<td><a href="https://osintframework.com">osintframework.com</a></td>
+<td>Web interface listing free OSINT tools organized as a category tree</td>
+</tr>
+<tr>
+<td>Recon-Dog</td>
+<td><a href="https://github.com/s0md3v/ReconDog">github.com/s0md3v/ReconDog</a></td>
+<td>All-in-one information gathering using APIs</td>
+</tr>
+<tr>
+<td>BillCipher</td>
+<td><a href="https://github.com/GitHackTools/BillCipher">github.com/GitHackTools/BillCipher</a></td>
+<td>Information gathering for a website or IP address</td>
+</tr>
+</tbody>
+</table>
+<h2 id="tool-details">Tool Details<a class="headerlink" href="#tool-details" title="Permanent link">&para;</a></h2>
+<h3 id="maltego">Maltego<a class="headerlink" href="#maltego" title="Permanent link">&para;</a></h3>
+<p>Maltego determines <strong>relationships and real-world links</strong> between people, groups, organizations, websites, Internet infrastructure, and documents. Attackers add a Website entity, rename it with the target's domain, and extract email addresses, phone numbers, DNS names, Netblocks, and IP address information.</p>
+<h3 id="recon-ng">Recon-ng<a class="headerlink" href="#recon-ng" title="Permanent link">&para;</a></h3>
+<p>A <strong>web reconnaissance framework</strong> with independent modules and database interaction, providing an environment for open-source web-based reconnaissance. Attackers use the <code>recon/domains-hosts/brute_hosts</code> module to extract a list of hosts associated with a target URL.</p>
+<h3 id="foca">FOCA<a class="headerlink" href="#foca" title="Permanent link">&para;</a></h3>
+<p><strong>Fingerprinting Organizations with Collected Archives (FOCA)</strong> finds metadata and hidden information in scanned documents (Microsoft Office, Open Office, PDF). Key features:</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>What It Does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Web Search</td>
+<td>Finds hosts and domain names through URLs associated with the main domain</td>
+</tr>
+<tr>
+<td>DNS Search</td>
+<td>Checks NS, MX, and SPF servers to discover new host and domain names</td>
+</tr>
+<tr>
+<td>IP Resolution</td>
+<td>Resolves hostnames via DNS to obtain associated IP addresses</td>
+</tr>
+<tr>
+<td>PTR Scanning</td>
+<td>Scans PTR records to find more servers in the same IP segment</td>
+</tr>
+<tr>
+<td>Bing IP</td>
+<td>Searches for domain names associated with each discovered IP address</td>
+</tr>
+<tr>
+<td>Common Names</td>
+<td>Performs dictionary attacks against DNS</td>
+</tr>
+</tbody>
+</table>
+<p>Attackers search a target domain to obtain file information stored in it, then view network domains, roles, vulnerabilities, and metadata.</p>
+<h3 id="subfinder">subfinder<a class="headerlink" href="#subfinder" title="Permanent link">&para;</a></h3>
+<p>A <strong>subdomain discovery tool</strong> that finds valid subdomains using passive online sources. Supports multiple output formats: JSON, file, and stdout.</p>
+<h3 id="osint-framework">OSINT Framework<a class="headerlink" href="#osint-framework" title="Permanent link">&para;</a></h3>
+<p>An <strong>open-source intelligence gathering framework</strong> focused on free tools and resources. Provides a simple web interface listing OSINT tools as a <strong>tree structure</strong> organized by category.</p>
+<p>Tool indicators used in the framework:</p>
+<table>
+<thead>
+<tr>
+<th>Indicator</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(T)</td>
+<td>Link to a tool that must be installed and run locally</td>
+</tr>
+<tr>
+<td>(D)</td>
+<td>Google Dork</td>
+</tr>
+<tr>
+<td>(R)</td>
+<td>Requires registration</td>
+</tr>
+<tr>
+<td>(M)</td>
+<td>URL that contains the search term and must be edited manually</td>
+</tr>
+</tbody>
+</table>
+<h3 id="recon-dog">Recon-Dog<a class="headerlink" href="#recon-dog" title="Permanent link">&para;</a></h3>
+<p>An all-in-one information gathering tool using APIs. Key features:</p>
+<ul>
+<li><strong>Censys</strong> — gathers information about an IP address via censys.io</li>
+<li><strong>NS lookup</strong> — performs name server lookup</li>
+<li><strong>Port scan</strong> — scans most common TCP ports</li>
+<li><strong>Detect CMS</strong> — detects 400+ content management systems</li>
+<li><strong>Whois lookup</strong> — performs a Whois lookup</li>
+<li><strong>Detect honeypot</strong> — uses shodan.io to check if the target is a honeypot</li>
+<li><strong>Find subdomains</strong> — uses findsubdomains.com</li>
+<li><strong>Reverse IP lookup</strong> — finds domains associated with an IP address</li>
+<li><strong>Detect technologies</strong> — uses wappalyzer.com to detect 1000+ technologies</li>
+<li><strong>All</strong> — runs all utilities against the target</li>
+</ul>
+<h3 id="billcipher">BillCipher<a class="headerlink" href="#billcipher" title="Permanent link">&para;</a></h3>
+<p>An information gathering tool for a website or IP address. Works on any operating system supporting Python 2, Python 3, and Ruby. Includes DNS lookup, Whois lookup, port scanning, zone transfer, host finder, and reverse IP lookup.</p>
+<h2 id="additional-tools">Additional Tools<a class="headerlink" href="#additional-tools" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sudomy</td>
+<td><a href="https://github.com/screetsec/Sudomy">github.com/screetsec/Sudomy</a></td>
+</tr>
+<tr>
+<td>theHarvester</td>
+<td><a href="https://github.com/laramies/theHarvester">github.com/laramies/theHarvester</a></td>
+</tr>
+<tr>
+<td>whatweb</td>
+<td><a href="https://github.com/urbanadventurer/WhatWeb">github.com/urbanadventurer/WhatWeb</a></td>
+</tr>
+<tr>
+<td>Raccoon</td>
+<td><a href="https://github.com/evyatarmeged/Raccoon">github.com/evyatarmeged/Raccoon</a></td>
+</tr>
+<tr>
+<td>Orb</td>
+<td>github.com</td>
+</tr>
+<tr>
+<td>Web Check</td>
+<td><a href="https://web-check.xyz">web-check.xyz</a></td>
+</tr>
+<tr>
+<td>OSINT.SH</td>
+<td><a href="https://osint.sh">osint.sh</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="ai-powered-osint-tools">AI-Powered OSINT Tools<a class="headerlink" href="#ai-powered-osint-tools" title="Permanent link">&para;</a></h2>
+<p>AI has revolutionized OSINT by enhancing data collection, analysis, and prediction. AI automates data processing, extracts relevant insights, and delivers actionable intelligence more efficiently than traditional methods.</p>
+<h3 id="ai-use-cases-in-osint">AI Use Cases in OSINT<a class="headerlink" href="#ai-use-cases-in-osint" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Use Case</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Web Scraping</td>
+<td>Automates extraction of data from social media, blogs, forums, and deep web databases; tracks entities over time</td>
+</tr>
+<tr>
+<td>Pattern Recognition</td>
+<td>ML identifies entities (names, addresses, emails, phone numbers) within large datasets and analyzes relationships</td>
+</tr>
+<tr>
+<td>Content Summarization</td>
+<td>NLP algorithms summarize large volumes of data to extract pertinent information from extensive datasets</td>
+</tr>
+<tr>
+<td>Sentiment Analysis</td>
+<td>Interprets human emotions through text analysis; assesses user sentiment from social media posts and reviews</td>
+</tr>
+<tr>
+<td>Image Recognition</td>
+<td>Computer vision assists with face recognition, metadata extraction, reverse image search, and deepfake detection</td>
+</tr>
+<tr>
+<td>AI Detection</td>
+<td>Identifies content generated by other AI tools — crucial for detecting AI-facilitated malicious activities</td>
+</tr>
+</tbody>
+</table>
+<h3 id="benefits-of-integrating-ai-in-osint">Benefits of Integrating AI in OSINT<a class="headerlink" href="#benefits-of-integrating-ai-in-osint" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Benefit</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Improved Efficiency</td>
+<td>Automates web scraping and data extraction; allows investigators to focus on higher-level analysis</td>
+</tr>
+<tr>
+<td>Greater Scope</td>
+<td>Analyzes data from the surface web, deep web, and dark web; uncovers hidden patterns across large datasets</td>
+</tr>
+<tr>
+<td>Enhanced Visibility</td>
+<td>Connects billions of data points into coherent networks; presents relationships via graphical interfaces</td>
+</tr>
+<tr>
+<td>Increased Investigator Safety</td>
+<td>Enables anonymized and automated investigations; reduces risk of exposing an investigator's identity</td>
+</tr>
+</tbody>
+</table>
+<h3 id="taranis-ai">Taranis AI<a class="headerlink" href="#taranis-ai" title="Permanent link">&para;</a></h3>
+<p>Source: <a href="https://taranis.ai">taranis.ai</a></p>
+<p>An advanced OSINT tool that uses NLP and AI to improve the quality of data collected from sources such as websites, gathering unstructured news articles that analysts transform into organized reports and PDF deliverables.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Advanced OSINT Capabilities</td>
+<td>Searches multiple data sources to collect unstructured news articles; provides enriched intelligence feed</td>
+</tr>
+<tr>
+<td>AI-Enhanced Analysis</td>
+<td>Enhances collected articles for higher content quality and relevance using AI and NLP</td>
+</tr>
+<tr>
+<td>Multi-Format Output</td>
+<td>Creates structured reports and PDF files tailored to specific informational needs</td>
+</tr>
+<tr>
+<td>Seamless Publishing</td>
+<td>Enables easy publication of finalized intelligence products to stakeholders</td>
+</tr>
+</tbody>
+</table>
+<h3 id="oss-insight">OSS Insight<a class="headerlink" href="#oss-insight" title="Permanent link">&para;</a></h3>
+<p>Source: <a href="https://ossinsight.io">ossinsight.io</a></p>
+<p>Leverages AI to analyze over <strong>five billion GitHub events</strong>, providing comprehensive insights into the open-source ecosystem — from repository analytics (stars, forks, commits) to developer productivity and collaboration patterns.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GPT-Powered Data Exploration</td>
+<td>Query GitHub data using natural language; generates SQL and presents results visually — no SQL skills required</td>
+</tr>
+<tr>
+<td>Technical Fields Analytics</td>
+<td>Curates GitHub collections in domains such as web frameworks, AI, and Web3</td>
+</tr>
+<tr>
+<td>Developer Analytics</td>
+<td>Monitors commits, pull requests, and code contributions; analyzes collaboration behavior</td>
+</tr>
+<tr>
+<td>Repository Analytics</td>
+<td>Assesses popularity, update frequency, and community engagement; provides historical trends</td>
+</tr>
+<tr>
+<td>Compare Projects</td>
+<td>Compares activity levels, contributor demographics, issue-handling efficiency, and technical metrics across projects</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Importance for ethical hacking OSINT:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Comprehensive Data Analysis</td>
+<td>Over five billion GitHub events provide intelligence on software vulnerabilities, popular frameworks, and emerging trends — informing vulnerability assessments and attack vector identification</td>
+</tr>
+<tr>
+<td>Real-time and Historical Data</td>
+<td>Integration of real-time updates and GHArchive historical data ensures up-to-date information on ongoing developments and past incidents</td>
+</tr>
+<tr>
+<td>AI-Powered Querying</td>
+<td>The GitHub Data Explorer enables natural language querying of complex datasets, making it easier to extract specific information relevant to an investigation</td>
+</tr>
+</tbody>
+</table>
+<h3 id="additional-ai-powered-osint-tools">Additional AI-Powered OSINT Tools<a class="headerlink" href="#additional-ai-powered-osint-tools" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Source</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DorkGPT</td>
+<td><a href="https://dorkgpt.com">dorkgpt.com</a></td>
+<td>AI-powered Google Dorking — generates and refines advanced search queries using GPT models</td>
+</tr>
+<tr>
+<td>DorkGenius</td>
+<td><a href="https://dorkgenius.com">dorkgenius.com</a></td>
+<td>Automates Google Dorking to find hidden files, directories, and security vulnerabilities</td>
+</tr>
+<tr>
+<td>Google Word Sniper</td>
+<td><a href="https://googlewordsniper.eu">googlewordsniper.eu</a></td>
+<td>Refines search queries; identifies targeted keywords to surface hidden content</td>
+</tr>
+<tr>
+<td>Cylect.io</td>
+<td><a href="https://cylect.io">cylect.io</a></td>
+<td>Integrates multiple databases into one interface for efficient OSINT investigations</td>
+</tr>
+<tr>
+<td>ChatPDF</td>
+<td><a href="https://chatpdf.com">chatpdf.com</a></td>
+<td>Analyzes and extracts information from PDF documents via a conversational interface</td>
+</tr>
+<tr>
+<td>Bardeen.ai</td>
+<td><a href="https://www.bardeen.ai">bardeen.ai</a></td>
+<td>Automates data collection and analysis from various online sources</td>
+</tr>
+<tr>
+<td>DarkGPT</td>
+<td><a href="https://github.com/luijait/DarkGPT">github.com/luijait/DarkGPT</a></td>
+<td>Uses GPT-4-200K to query leaked databases for targeted searches in compromised data</td>
+</tr>
+<tr>
+<td>PenLink Cobwebs</td>
+<td><a href="https://cobwebs.com">cobwebs.com</a></td>
+<td>Gathers, processes, and visualizes data from online sources for cybersecurity investigations</td>
+</tr>
+<tr>
+<td>Explore AI</td>
+<td><a href="https://exploreai.vercel.app">exploreai.vercel.app</a></td>
+<td>AI-powered YouTube search engine — searches for and extracts information from YouTube videos</td>
+</tr>
+<tr>
+<td>AnyPicker</td>
+<td><a href="https://app.anypicker.com">app.anypicker.com</a></td>
+<td>Visual web scraper; extracts data from websites without coding; supports multi-page scraping</td>
+</tr>
+</tbody>
+</table>
+<h2 id="custom-python-scripts-with-ai">Custom Python Scripts with AI<a class="headerlink" href="#custom-python-scripts-with-ai" title="Permanent link">&para;</a></h2>
+<p>Attackers can use AI-powered tools such as ChatGPT to create and run custom footprinting scripts. By providing an appropriate prompt, the AI generates a ready-to-run script that executes a series of footprinting commands against a target domain.</p>
+<p><strong>Example prompt:</strong></p>
+<blockquote>
+<p><em>"Develop a Python script which will accept the domain name www.microsoft.com as input and execute a series of website footprinting commands, including DNS lookups, WHOIS records retrieval, email enumeration, and more, to gather information about the target domain."</em></p>
+</blockquote>
+<p>The generated script defines four functions:</p>
+<details class="note">
+<summary>Full script – website_footprinting.py</summary>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">subprocess</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">dns_lookup</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">getoutput</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;dig </span><span class="si">{</span><span class="n">domain</span><span class="si">}</span><span class="s2"> ANY +noall +answer&quot;</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">whois_lookup</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">getoutput</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;whois </span><span class="si">{</span><span class="n">domain</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">email_enumeration</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">getoutput</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;theHarvester -d </span><span class="si">{</span><span class="n">domain</span><span class="si">}</span><span class="s2"> -b all -l 100&quot;</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">run_footprinting</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Performing DNS Lookup...&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">dns_lookup</span><span class="p">(</span><span class="n">domain</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Performing Whois Lookup...&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">whois_lookup</span><span class="p">(</span><span class="n">domain</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Enumerating Emails...&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">email_enumeration</span><span class="p">(</span><span class="n">domain</span><span class="p">))</span>
+
+<span class="n">domain</span> <span class="o">=</span> <span class="s1">&#39;www.microsoft.com&#39;</span>
+<span class="n">run_footprinting</span><span class="p">(</span><span class="n">domain</span><span class="p">)</span>
+</code></pre></div>
+</details>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Tool Used</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>dns_lookup(domain)</code></td>
+<td><code>dig</code></td>
+<td>Performs a DNS lookup for the specified domain</td>
+</tr>
+<tr>
+<td><code>whois_lookup(domain)</code></td>
+<td><code>whois</code></td>
+<td>Retrieves WHOIS records for the specified domain</td>
+</tr>
+<tr>
+<td><code>email_enumeration(domain)</code></td>
+<td><code>theHarvester</code></td>
+<td>Enumerates email addresses associated with the domain</td>
+</tr>
+<tr>
+<td><code>run_footprinting(domain)</code></td>
+<td>—</td>
+<td>Orchestrates and prints results of all three functions</td>
+</tr>
+</tbody>
+</table>
+<p>The script is run with <code>python3 website_footprinting.py</code> to perform automated footprinting on the target domain.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.indexes", "search.highlight"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/flashcards.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

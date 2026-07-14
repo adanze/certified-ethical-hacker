@@ -1,0 +1,1977 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Study notes and flashcards for the CEH certification">
+      
+      
+      
+      
+        <link rel="prev" href="../dns-footprinting/">
+      
+      
+        <link rel="next" href="../footprinting-through-social-engineering/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Network and Email Footprinting - Certified Ethical Hacker (CEH)</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/flashcards.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link rel="manifest" href="../../../manifest.json">
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("../../../sw.js");
+    }
+  </script>
+
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#network-and-email-footprinting" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Certified Ethical Hacker (CEH)" class="md-header__button md-logo" aria-label="Certified Ethical Hacker (CEH)" data-md-component="logo">
+      
+  <img src="../../../assets/android-chrome-192x192.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Certified Ethical Hacker (CEH)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Network and Email Footprinting
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/adanze/certified-ethical-hacker" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    certified-ethical-hacker
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../module-01-introduction-to-ethical-hacking/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Notes
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../module-01-introduction-to-ethical-hacking/flashcards/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Flashcards
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Certified Ethical Hacker (CEH)" class="md-nav__button md-logo" aria-label="Certified Ethical Hacker (CEH)" data-md-component="logo">
+      
+  <img src="../../../assets/android-chrome-192x192.png" alt="logo">
+
+    </a>
+    Certified Ethical Hacker (CEH)
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/adanze/certified-ethical-hacker" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    certified-ethical-hacker
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Notes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Notes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../module-01-introduction-to-ethical-hacking/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Module 01 – Introduction to Ethical Hacking
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1" id="__nav_2_1_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Module 01 – Introduction to Ethical Hacking
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-01-introduction-to-ethical-hacking/information-security-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Information Security Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-01-introduction-to-ethical-hacking/hacking-concepts-and-hacker-classes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hacking Concepts and Hacker Classes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-01-introduction-to-ethical-hacking/ethical-hacking-concepts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ethical Hacking Concepts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-01-introduction-to-ethical-hacking/hacking-methodologies-and-frameworks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hacking Methodologies and Frameworks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-01-introduction-to-ethical-hacking/information-security-controls/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Information Security Controls
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-01-introduction-to-ethical-hacking/information-security-laws-and-standards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Information Security Laws and Standards
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Module 02 – Footprinting and Reconnaissance
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Module 02 – Footprinting and Reconnaissance
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../footprinting-concepts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footprinting Concepts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../footprinting-through-search-engines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footprinting through Search Engines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../footprinting-through-internet-research-services/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footprinting through Internet Research Services
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../footprinting-through-social-networking-sites/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footprinting through Social Networking Sites
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../whois-footprinting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Whois Footprinting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dns-footprinting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DNS Footprinting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Network and Email Footprinting
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Network and Email Footprinting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#locate-the-network-range" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Locate the Network Range
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Locate the Network Range">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-network-range-reveals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Network Range Reveals
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iana-private-ip-address-ranges" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IANA Private IP Address Ranges
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dns-misconfiguration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DNS Misconfiguration
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#traceroute" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Traceroute
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Traceroute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-ttl-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How TTL Works
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#traceroute-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Traceroute Types
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#traceroute-with-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Traceroute with AI
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#traceroute-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Traceroute Analysis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#traceroute-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Traceroute Tools
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tracking-email-communications" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tracking Email Communications
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tracking Email Communications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#information-gathered-via-email-tracking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Information Gathered via Email Tracking
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#collecting-information-from-email-header" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Collecting Information from Email Header
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#email-tracking-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Email Tracking Tools
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../footprinting-through-social-engineering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footprinting through Social Engineering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../footprinting-tasks-using-advanced-tools-and-ai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footprinting Tasks using Advanced Tools and AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../footprinting-countermeasures/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footprinting Countermeasures
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Flashcards
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Flashcards
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-01-introduction-to-ethical-hacking/flashcards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Module 01 – Introduction to Ethical Hacking
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../flashcards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Module 02 – Footprinting and Reconnaissance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#locate-the-network-range" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Locate the Network Range
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Locate the Network Range">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-network-range-reveals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Network Range Reveals
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iana-private-ip-address-ranges" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IANA Private IP Address Ranges
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dns-misconfiguration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DNS Misconfiguration
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#traceroute" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Traceroute
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Traceroute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-ttl-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How TTL Works
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#traceroute-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Traceroute Types
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#traceroute-with-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Traceroute with AI
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#traceroute-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Traceroute Analysis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#traceroute-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Traceroute Tools
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tracking-email-communications" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tracking Email Communications
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tracking Email Communications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#information-gathered-via-email-tracking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Information Gathered via Email Tracking
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#collecting-information-from-email-header" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Collecting Information from Email Header
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#email-tracking-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Email Tracking Tools
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="network-and-email-footprinting">Network and Email Footprinting<a class="headerlink" href="#network-and-email-footprinting" title="Permanent link">&para;</a></h1>
+<p>After gathering DNS information, an attacker moves to network footprinting and email tracking. This page covers locating the network range, traceroute analysis, and the tools involved.</p>
+<h2 id="locate-the-network-range">Locate the Network Range<a class="headerlink" href="#locate-the-network-range" title="Permanent link">&para;</a></h2>
+<p>To determine a target's <strong>network range</strong>, an attacker enters the server IP address (gathered during Whois footprinting) into the <strong>ARIN Whois database</strong> at <a href="https://www.arin.net/about/welcome/region">arin.net</a>. Detailed IP allocation data is stored in the appropriate <strong>regional registry database</strong>. The result yields the full network range, subnet mask, and route information for the target.</p>
+<h3 id="what-network-range-reveals">What Network Range Reveals<a class="headerlink" href="#what-network-range-reveals" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Information</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Network organization</td>
+<td>Which machines are alive and topology layout</td>
+</tr>
+<tr>
+<td>Access control devices</td>
+<td>Firewalls, routers, and gateways in use</td>
+</tr>
+<tr>
+<td>Operating systems</td>
+<td>OS types running in the target network</td>
+</tr>
+</tbody>
+</table>
+<h3 id="iana-private-ip-address-ranges">IANA Private IP Address Ranges<a class="headerlink" href="#iana-private-ip-address-ranges" title="Permanent link">&para;</a></h3>
+<p>The <strong>Internet Assigned Numbers Authority (IANA)</strong> has reserved three blocks for private internets:</p>
+<table>
+<thead>
+<tr>
+<th>Range</th>
+<th>Prefix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10.0.0.0 – 10.255.255.255</td>
+<td>10/8</td>
+</tr>
+<tr>
+<td>172.16.0.0 – 172.31.255.255</td>
+<td>172.16/12</td>
+</tr>
+<tr>
+<td>192.168.0.0 – 192.168.255.255</td>
+<td>192.168/16</td>
+</tr>
+</tbody>
+</table>
+<p>Obtaining private IP addresses is valuable to attackers, as these addresses reveal the internal network structure.</p>
+<h3 id="dns-misconfiguration">DNS Misconfiguration<a class="headerlink" href="#dns-misconfiguration" title="Permanent link">&para;</a></h3>
+<p>Improperly configured DNS servers offer attackers a chance to obtain a <strong>list of internal machines</strong> in the network. Traceroute can also expose the <strong>internal IP address of the gateway</strong>.</p>
+<blockquote>
+<p>Attackers typically use more than one tool to obtain network information, as no single tool provides all required details.</p>
+</blockquote>
+<h2 id="traceroute">Traceroute<a class="headerlink" href="#traceroute" title="Permanent link">&para;</a></h2>
+<p>Traceroute programs work on the concept of <strong>ICMP (Internet Control Message Protocol)</strong> and use the <strong>TTL (Time to Live) field</strong> in the header of ICMP packets to discover routers on the path to a target host. The utility reveals:</p>
+<ul>
+<li>Number of <strong>routers (hops)</strong> the packets travel through</li>
+<li><strong>Round-trip time (RTT)</strong> between routers</li>
+<li><strong>Names and network affiliation</strong> of routers (if DNS entries exist)</li>
+<li><strong>Geographic locations</strong> of intermediate hops</li>
+</ul>
+<h3 id="how-ttl-works">How TTL Works<a class="headerlink" href="#how-ttl-works" title="Permanent link">&para;</a></h3>
+<p>Each router on the path <strong>decrements the TTL by 1</strong>. When TTL reaches zero, the router discards the packet and returns an <strong>ICMP error message</strong> to the source, revealing its IP address. Traceroute starts with TTL=1 and increments by 1 for each probe until a packet finally reaches the destination, which responds with a normal <strong>ICMP reply</strong>.</p>
+<pre class="mermaid"><code>sequenceDiagram
+    participant S as IP Source
+    participant R1 as Router Hop 1
+    participant R2 as Router Hop 2
+    participant R3 as Router Hop 3
+    participant D as Destination Host
+    S-&gt;&gt;R1: ICMP Echo (TTL=1)
+    R1--&gt;&gt;S: ICMP Error (TTL expired)
+    S-&gt;&gt;R1: ICMP Echo (TTL=2)
+    R1-&gt;&gt;R2: forward (TTL=1)
+    R2--&gt;&gt;S: ICMP Error (TTL expired)
+    S-&gt;&gt;R1: ICMP Echo (TTL=3)
+    R1-&gt;&gt;R2: forward (TTL=2)
+    R2-&gt;&gt;R3: forward (TTL=1)
+    R3--&gt;&gt;S: ICMP Error (TTL expired)
+    S-&gt;&gt;R1: ICMP Echo (TTL=4)
+    R1-&gt;&gt;R2: forward (TTL=3)
+    R2-&gt;&gt;R3: forward (TTL=2)
+    R3-&gt;&gt;D: forward (TTL=1)
+    D--&gt;&gt;S: ICMP Reply</code></pre>
+<h3 id="traceroute-types">Traceroute Types<a class="headerlink" href="#traceroute-types" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Protocol</th>
+<th>Default OS</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ICMP Traceroute</td>
+<td>ICMP</td>
+<td>Windows</td>
+<td><code>tracert &lt;target&gt;</code></td>
+</tr>
+<tr>
+<td>TCP Traceroute</td>
+<td>TCP (Layer 4)</td>
+<td>Linux</td>
+<td><code>sudo tcptraceroute &lt;target&gt;</code></td>
+</tr>
+<tr>
+<td>UDP Traceroute</td>
+<td>UDP (Layer 4)</td>
+<td>Linux</td>
+<td><code>traceroute &lt;target&gt;</code></td>
+</tr>
+</tbody>
+</table>
+<p>TCP and UDP traceroutes (Layer 4) are used when network devices are configured to <strong>block ICMP messages</strong>.</p>
+<h3 id="traceroute-with-ai">Traceroute with AI<a class="headerlink" href="#traceroute-with-ai" title="Permanent link">&para;</a></h3>
+<p>Attackers can use AI-powered tools such as <strong>ChatGPT</strong> to automate tracerouting via a natural-language prompt:</p>
+<blockquote>
+<p><em>"Perform network tracerouting to discover the routers on the path to a target host www.certifiedhacker.com"</em></p>
+</blockquote>
+<p>The AI generates and executes the appropriate shell command: <code>traceroute www.certifiedhacker.com</code></p>
+<h2 id="traceroute-analysis">Traceroute Analysis<a class="headerlink" href="#traceroute-analysis" title="Permanent link">&para;</a></h2>
+<p>By running multiple traceroutes to different hosts in the target network, an attacker can map intermediate devices and reconstruct the network topology. The last few hops before each destination reveal the routers and firewalls protecting it.</p>
+<table>
+<thead>
+<tr>
+<th>Destination</th>
+<th>3rd-to-last hop</th>
+<th>2nd-to-last hop</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.10.10.20 (Bastion Host)</td>
+<td>—</td>
+<td>1.10.10.1 (Router)</td>
+</tr>
+<tr>
+<td>1.10.20.10 (Web Server)</td>
+<td>1.10.10.1 (Router)</td>
+<td>1.10.10.50 (Firewall)</td>
+</tr>
+<tr>
+<td>1.10.20.15 (Mail Server)</td>
+<td>1.10.10.1 (Router)</td>
+<td>1.10.10.50 (Firewall)</td>
+</tr>
+</tbody>
+</table>
+<p>Compiling these results, the attacker identifies the intermediate devices — router, firewall, and DMZ hosts — and their positions in the network path.</p>
+<pre class="mermaid"><code>flowchart LR
+    H[Hacker] --&gt; I[Internet]
+    I --&gt; R["Router\n1.10.10.1"]
+    R --&gt; B["Bastion Host\n1.10.10.20"]
+    R --&gt; FW["Firewall\n1.10.10.50"]
+    FW --&gt; W["Web Server\n1.10.20.10"]
+    FW --&gt; M["Mail Server\n1.10.20.15"]
+    FW --&gt; F2["Firewall\n1.10.20.50"]</code></pre>
+<h2 id="traceroute-tools">Traceroute Tools<a class="headerlink" href="#traceroute-tools" title="Permanent link">&para;</a></h2>
+<p>Traceroute tools extract information about the geographical location of routers, servers, and IP devices in a network. Common features include:</p>
+<ul>
+<li>Hop-by-hop traceroutes, reverse tracing, and historical analysis</li>
+<li>Packet loss reporting, latency monitoring, and performance metrics</li>
+<li>Reverse DNS, port probing, and network problem detection</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Key Capability</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.netscantools.com"><strong>NetScanTools Pro</strong></a></td>
+<td>ICMP, UDP, or TCP traceroute; identifies intermediate devices; maps country per IPv4 hop</td>
+</tr>
+<tr>
+<td><a href="https://www.pingplotter.com"><strong>PingPlotter</strong></a></td>
+<td>ICMP, UDP, and TCP traceroute; tracks latency and packet loss over time; visualizes data in graphs; identifies bandwidth bottlenecks and hardware faults</td>
+</tr>
+<tr>
+<td><strong>Traceroute NG</strong></td>
+<td>Network path analysis with continuous probing</td>
+</tr>
+<tr>
+<td><strong>tracert</strong></td>
+<td>Built-in Windows ICMP traceroute utility</td>
+</tr>
+</tbody>
+</table>
+<h2 id="tracking-email-communications">Tracking Email Communications<a class="headerlink" href="#tracking-email-communications" title="Permanent link">&para;</a></h2>
+<p>Email tracking monitors email messages of a particular user via digitally time-stamped records that reveal when a target receives and opens a specific email. Attackers use this to collect IP addresses, mail servers, and service provider details to build a hacking strategy and perform social engineering.</p>
+<h3 id="information-gathered-via-email-tracking">Information Gathered via Email Tracking<a class="headerlink" href="#information-gathered-via-email-tracking" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>What It Reveals</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Recipient's IP Address</td>
+<td>Tracks the recipient's IP address</td>
+</tr>
+<tr>
+<td>Geolocation</td>
+<td>Estimates location on a map; may calculate distance from attacker</td>
+</tr>
+<tr>
+<td>Email Received and Read</td>
+<td>Notifies attacker when email is received and opened</td>
+</tr>
+<tr>
+<td>Read Duration</td>
+<td>Time spent by recipient reading the email</td>
+</tr>
+<tr>
+<td>Proxy Detection</td>
+<td>Type of server used by the recipient</td>
+</tr>
+<tr>
+<td>Links</td>
+<td>Whether links in the email were clicked</td>
+</tr>
+<tr>
+<td>OS and Browser</td>
+<td>OS and browser version — used to find exploitable vulnerabilities</td>
+</tr>
+<tr>
+<td>Forward Email</td>
+<td>Whether the email was forwarded to another person</td>
+</tr>
+<tr>
+<td>Device Type</td>
+<td>Desktop, mobile, or laptop used to open the email</td>
+</tr>
+<tr>
+<td>Path Travelled</td>
+<td>Route through email transfer agents from source to destination</td>
+</tr>
+</tbody>
+</table>
+<h2 id="collecting-information-from-email-header">Collecting Information from Email Header<a class="headerlink" href="#collecting-information-from-email-header" title="Permanent link">&para;</a></h2>
+<p>An email header contains sender details, routing information, addressing scheme, date, subject, and recipient — and reveals the routing path taken before delivery. Each field is a potential source of attacker intelligence.</p>
+<p><strong>Fields in an email header:</strong></p>
+<ul>
+<li>Sender's mail server</li>
+<li>Date and time received by the originator's email servers</li>
+<li>Authentication system used by the sender's mail server</li>
+<li>Date and time the message was sent</li>
+<li>Unique message ID assigned by the mail server (e.g., mx.google.com)</li>
+<li>Sender's full name</li>
+<li>Sender's IP address and the address from which the message was sent</li>
+</ul>
+<p>Commonly used email programs that expose headers include: eM Client, Mailbird, Hiri, Mozilla Thunderbird, Spike, Claws Mail, SmarterMail Webmail, Outlook, Apple Mail, ProtonMail, AOL Mail, and Tuta.</p>
+<h2 id="email-tracking-tools">Email Tracking Tools<a class="headerlink" href="#email-tracking-tools" title="Permanent link">&para;</a></h2>
+<p>Email tracking tools allow attackers to trace the email path from source to target mail server using IP addresses found in the email header.</p>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Key Capability</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="http://www.emailtrackerpro.com"><strong>eMailTrackerPro</strong></a></td>
+<td>Analyzes email headers; extracts geographical location and IP; saves past traces for later review</td>
+</tr>
+<tr>
+<td><a href="https://www.ip2location.com"><strong>IP2LOCATION Email Header Tracer</strong></a></td>
+<td>Open-source; traces email path and mail servers using IP addresses in the header</td>
+</tr>
+<tr>
+<td><strong>MxToolbox</strong></td>
+<td>DNS and email header analysis</td>
+</tr>
+<tr>
+<td><strong>DNS Checker Email Header Analyzer</strong></td>
+<td>Email header parsing and analysis</td>
+</tr>
+<tr>
+<td><strong>Social Catfish</strong></td>
+<td>Identity verification through email tracking</td>
+</tr>
+<tr>
+<td><strong>Holehe</strong></td>
+<td>Checks email account usage across platforms</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.indexes", "search.highlight"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/flashcards.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

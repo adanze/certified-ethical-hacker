@@ -1,0 +1,2485 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Study notes and flashcards for the CEH certification">
+      
+      
+      
+      
+        <link rel="prev" href="../footprinting-concepts/">
+      
+      
+        <link rel="next" href="../footprinting-through-internet-research-services/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Footprinting through Search Engines - Certified Ethical Hacker (CEH)</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/flashcards.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link rel="manifest" href="../../../manifest.json">
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("../../../sw.js");
+    }
+  </script>
+
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#footprinting-through-search-engines" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Certified Ethical Hacker (CEH)" class="md-header__button md-logo" aria-label="Certified Ethical Hacker (CEH)" data-md-component="logo">
+      
+  <img src="../../../assets/android-chrome-192x192.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Certified Ethical Hacker (CEH)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Footprinting through Search Engines
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/adanze/certified-ethical-hacker" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    certified-ethical-hacker
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../module-01-introduction-to-ethical-hacking/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Notes
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../module-01-introduction-to-ethical-hacking/flashcards/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Flashcards
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Certified Ethical Hacker (CEH)" class="md-nav__button md-logo" aria-label="Certified Ethical Hacker (CEH)" data-md-component="logo">
+      
+  <img src="../../../assets/android-chrome-192x192.png" alt="logo">
+
+    </a>
+    Certified Ethical Hacker (CEH)
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/adanze/certified-ethical-hacker" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    certified-ethical-hacker
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Notes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Notes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../module-01-introduction-to-ethical-hacking/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Module 01 – Introduction to Ethical Hacking
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1" id="__nav_2_1_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Module 01 – Introduction to Ethical Hacking
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-01-introduction-to-ethical-hacking/information-security-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Information Security Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-01-introduction-to-ethical-hacking/hacking-concepts-and-hacker-classes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hacking Concepts and Hacker Classes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-01-introduction-to-ethical-hacking/ethical-hacking-concepts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ethical Hacking Concepts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-01-introduction-to-ethical-hacking/hacking-methodologies-and-frameworks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hacking Methodologies and Frameworks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-01-introduction-to-ethical-hacking/information-security-controls/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Information Security Controls
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-01-introduction-to-ethical-hacking/information-security-laws-and-standards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Information Security Laws and Standards
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Module 02 – Footprinting and Reconnaissance
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Module 02 – Footprinting and Reconnaissance
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../footprinting-concepts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footprinting Concepts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footprinting through Search Engines
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footprinting through Search Engines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#footprinting-using-advanced-google-hacking-techniques" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Footprinting Using Advanced Google Hacking Techniques
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Footprinting Using Advanced Google Hacking Techniques">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#operator-syntax" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operator Syntax
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#popular-google-advanced-search-operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Popular Google Advanced Search Operators
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-attackers-extract-with-google-hacking-ghdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Attackers Extract with Google Hacking (GHDB)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-query" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example Query
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#footprinting-using-advanced-google-hacking-techniques-with-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Footprinting Using Advanced Google Hacking Techniques with AI
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Footprinting Using Advanced Google Hacking Techniques with AI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#generated-shell-command" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Generated Shell Command
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#command-breakdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Command Breakdown
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#google-hacking-database-ghdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Google Hacking Database (GHDB)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Google Hacking Database (GHDB)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-ghdb-queries-uncover" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What GHDB Queries Uncover
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ghdb-categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GHDB Categories
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-attackers-leverage-the-ghdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How Attackers Leverage the GHDB
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#searchsploit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SearchSploit
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vpn-footprinting-through-google-hacking-database" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VPN Footprinting through Google Hacking Database
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="VPN Footprinting through Google Hacking Database">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#google-dorks-for-vpn-footprinting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Google Dorks for VPN Footprinting
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vpn-footprinting-through-ghdb-with-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VPN Footprinting through GHDB with AI
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="VPN Footprinting through GHDB with AI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#generated-shell-command_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Generated Shell Command
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#command-breakdown_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Command Breakdown
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#footprinting-through-shodan-search-engine" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Footprinting through SHODAN Search Engine
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-techniques-for-footprinting-through-search-engines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Other Techniques for Footprinting through Search Engines
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Other Techniques for Footprinting through Search Engines">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#google-advanced-search-advanced-image-search-and-reverse-image-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Google Advanced Search, Advanced Image Search, and Reverse Image Search
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gathering-information-from-video-search-engines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gathering Information from Video Search Engines
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gathering-information-from-meta-search-engines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gathering Information from Meta Search Engines
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gathering-information-from-ftp-search-engines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gathering Information from FTP Search Engines
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gathering Information from FTP Search Engines">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#google-dorks-for-ftp-servers-table-22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Google Dorks for FTP Servers (Table 2.2)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gathering-information-from-iot-search-engines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gathering Information from IoT Search Engines
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../footprinting-through-internet-research-services/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footprinting through Internet Research Services
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../footprinting-through-social-networking-sites/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footprinting through Social Networking Sites
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../whois-footprinting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Whois Footprinting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dns-footprinting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DNS Footprinting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../network-and-email-footprinting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Network and Email Footprinting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../footprinting-through-social-engineering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footprinting through Social Engineering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../footprinting-tasks-using-advanced-tools-and-ai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footprinting Tasks using Advanced Tools and AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../footprinting-countermeasures/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footprinting Countermeasures
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Flashcards
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Flashcards
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-01-introduction-to-ethical-hacking/flashcards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Module 01 – Introduction to Ethical Hacking
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../flashcards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Module 02 – Footprinting and Reconnaissance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#footprinting-using-advanced-google-hacking-techniques" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Footprinting Using Advanced Google Hacking Techniques
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Footprinting Using Advanced Google Hacking Techniques">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#operator-syntax" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operator Syntax
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#popular-google-advanced-search-operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Popular Google Advanced Search Operators
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-attackers-extract-with-google-hacking-ghdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Attackers Extract with Google Hacking (GHDB)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-query" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example Query
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#footprinting-using-advanced-google-hacking-techniques-with-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Footprinting Using Advanced Google Hacking Techniques with AI
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Footprinting Using Advanced Google Hacking Techniques with AI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#generated-shell-command" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Generated Shell Command
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#command-breakdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Command Breakdown
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#google-hacking-database-ghdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Google Hacking Database (GHDB)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Google Hacking Database (GHDB)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-ghdb-queries-uncover" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What GHDB Queries Uncover
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ghdb-categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GHDB Categories
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-attackers-leverage-the-ghdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How Attackers Leverage the GHDB
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#searchsploit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SearchSploit
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vpn-footprinting-through-google-hacking-database" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VPN Footprinting through Google Hacking Database
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="VPN Footprinting through Google Hacking Database">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#google-dorks-for-vpn-footprinting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Google Dorks for VPN Footprinting
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vpn-footprinting-through-ghdb-with-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VPN Footprinting through GHDB with AI
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="VPN Footprinting through GHDB with AI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#generated-shell-command_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Generated Shell Command
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#command-breakdown_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Command Breakdown
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#footprinting-through-shodan-search-engine" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Footprinting through SHODAN Search Engine
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-techniques-for-footprinting-through-search-engines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Other Techniques for Footprinting through Search Engines
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Other Techniques for Footprinting through Search Engines">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#google-advanced-search-advanced-image-search-and-reverse-image-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Google Advanced Search, Advanced Image Search, and Reverse Image Search
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gathering-information-from-video-search-engines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gathering Information from Video Search Engines
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gathering-information-from-meta-search-engines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gathering Information from Meta Search Engines
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gathering-information-from-ftp-search-engines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gathering Information from FTP Search Engines
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gathering Information from FTP Search Engines">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#google-dorks-for-ftp-servers-table-22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Google Dorks for FTP Servers (Table 2.2)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gathering-information-from-iot-search-engines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gathering Information from IoT Search Engines
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="footprinting-through-search-engines">Footprinting through Search Engines<a class="headerlink" href="#footprinting-through-search-engines" title="Permanent link">&para;</a></h1>
+<p>Search engines are a primary source of target information. <strong>Crawlers</strong> continuously scan active websites and store results in a massive indexed database. Queries return <strong>Search Engine Results Pages (SERPs)</strong> — ranked web pages, videos, images, and files. Search engines can expose technology platforms, employee details, login pages, intranet portals, and contact information — enabling social engineering and advanced system attacks.</p>
+<h2 id="footprinting-using-advanced-google-hacking-techniques">Footprinting Using Advanced Google Hacking Techniques<a class="headerlink" href="#footprinting-using-advanced-google-hacking-techniques" title="Permanent link">&para;</a></h2>
+<p>A simple search (e.g., "Microsoft") can reveal physical location, contact addresses, services, and employee count. Major search engines include Google, Bing, Yahoo, Baidu, Yandex, DuckDuckGo, and WolframAlpha.</p>
+<p><strong>Google hacking</strong> is the use of advanced Google search operators to build complex queries that extract sensitive or hidden information and identify vulnerable targets. Attackers also use the <strong>Google Hacking Database (GHDB)</strong> — a curated collection of queries for finding sensitive data.</p>
+<h3 id="operator-syntax">Operator Syntax<a class="headerlink" href="#operator-syntax" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code>operator:search_term
+</code></pre></div>
+No spaces between operator and query term.</p>
+<h3 id="popular-google-advanced-search-operators">Popular Google Advanced Search Operators<a class="headerlink" href="#popular-google-advanced-search-operators" title="Permanent link">&para;</a></h3>
+<p><em>Source: <a href="https://www.googleguide.com">googleguide.com</a></em></p>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Purpose</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>site:</code></td>
+<td>Restrict results to a domain</td>
+<td><code>games site:certifiedhacker.com</code></td>
+</tr>
+<tr>
+<td><code>allinurl:</code></td>
+<td>All query terms must appear in the URL</td>
+<td><code>allinurl: google career</code></td>
+</tr>
+<tr>
+<td><code>inurl:</code></td>
+<td>One query term must appear in the URL</td>
+<td><code>inurl:copy site:www.google.com</code></td>
+</tr>
+<tr>
+<td><code>intext:</code></td>
+<td>Term must appear in the page body</td>
+<td><code>intext:"vpn configuration"</code></td>
+</tr>
+<tr>
+<td><code>allintitle:</code></td>
+<td>All query terms in the page title</td>
+<td><code>allintitle: detect malware</code></td>
+</tr>
+<tr>
+<td><code>intitle:</code></td>
+<td>One term in the title</td>
+<td><code>malware detection intitle:help</code></td>
+</tr>
+<tr>
+<td><code>inanchor:</code></td>
+<td>One term in anchor text of inbound links</td>
+<td><code>Anti-virus inanchor:Norton</code></td>
+</tr>
+<tr>
+<td><code>allinanchor:</code></td>
+<td>All terms in anchor text of inbound links</td>
+<td><code>allinanchor: best cloud service provider</code></td>
+</tr>
+<tr>
+<td><code>cache:</code></td>
+<td>Google's cached version of a page</td>
+<td><code>cache:www.eff.org</code></td>
+</tr>
+<tr>
+<td><code>link:</code></td>
+<td>Pages linking to the specified URL</td>
+<td><code>link:www.googleguide.com</code></td>
+</tr>
+<tr>
+<td><code>related:</code></td>
+<td>Pages similar to the specified URL</td>
+<td><code>related:www.microsoft.com</code></td>
+</tr>
+<tr>
+<td><code>info:</code></td>
+<td>Information about a specific page</td>
+<td><code>info:gothotel.com</code></td>
+</tr>
+<tr>
+<td><code>location:</code></td>
+<td>Results for a specific location</td>
+<td><code>location: 4 seasons restaurant</code></td>
+</tr>
+<tr>
+<td><code>filetype:</code></td>
+<td>Results by file extension</td>
+<td><code>jasmine filetype:jpg</code></td>
+</tr>
+<tr>
+<td><code>source:</code></td>
+<td>Results from a specific source in Google News</td>
+<td><code>Malware news source:"Hacker News"</code></td>
+</tr>
+<tr>
+<td><code>phonebook:</code></td>
+<td>Residential/business phone numbers</td>
+<td><code>phonebook:Sundar Pichai</code></td>
+</tr>
+<tr>
+<td><code>before:</code></td>
+<td>Content published before a date</td>
+<td><code>ransomware before:2020-06-29</code></td>
+</tr>
+<tr>
+<td><code>after:</code></td>
+<td>Content published after a date</td>
+<td><code>site:wikipedia.org after:2023-01-01 artificial intelligence</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="what-attackers-extract-with-google-hacking-ghdb">What Attackers Extract with Google Hacking (GHDB)<a class="headerlink" href="#what-attackers-extract-with-google-hacking-ghdb" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Error messages containing sensitive information</li>
+<li>Files containing passwords</li>
+<li>Sensitive directories</li>
+<li>Login/logon portals</li>
+<li>Network or vulnerability data (IDS, firewall logs, configurations)</li>
+<li>Advisories and server vulnerabilities</li>
+<li>Software version information</li>
+<li>Web application source code</li>
+<li>Connected IoT devices and unprotected control panels</li>
+<li>Hidden web pages (intranet, VPN services)</li>
+</ul>
+<h3 id="example-query">Example Query<a class="headerlink" href="#example-query" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>intitle:intranet inurl:intranet +intext:&quot;human resources&quot;
+</code></pre></div>
+<p>Finds intranet pages related to human resources — revealing internal organizational structure for social engineering attacks.</p>
+<h2 id="footprinting-using-advanced-google-hacking-techniques-with-ai">Footprinting Using Advanced Google Hacking Techniques with AI<a class="headerlink" href="#footprinting-using-advanced-google-hacking-techniques-with-ai" title="Permanent link">&para;</a></h2>
+<p>Attackers can leverage AI-powered technologies to enhance and automate footprinting tasks. Tools such as <strong>ShellGPT</strong> allow attackers to generate precise shell commands from natural-language prompts.</p>
+<p><strong>Example prompt:</strong></p>
+<blockquote>
+<p>"Use filetype search operator to obtain pdf files on the target website eccouncil.org and store the result in the recon1.txt file"</p>
+</blockquote>
+<h3 id="generated-shell-command">Generated Shell Command<a class="headerlink" href="#generated-shell-command" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>lynx<span class="w"> </span>--dump<span class="w"> </span><span class="s2">&quot;http://www.google.com/search?q=site:eccouncil.org+filetype:pdf&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="s2">&quot;http&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="p">|</span><span class="w"> </span>cut<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;=&quot;</span><span class="w"> </span>-f2<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-o<span class="w"> </span><span class="s2">&quot;http[^&amp;]*&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>recon1.txt
+</code></pre></div>
+<h3 id="command-breakdown">Command Breakdown<a class="headerlink" href="#command-breakdown" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Segment</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>lynx --dump "..."</code></td>
+<td>Opens Google search results for PDFs on eccouncil.org in text/dump mode</td>
+</tr>
+<tr>
+<td><code>\| grep "http"</code></td>
+<td>Keeps only lines containing URLs</td>
+</tr>
+<tr>
+<td><code>\| cut -d "=" -f2</code></td>
+<td>Splits on <code>=</code> and takes the second field (the URL value)</td>
+</tr>
+<tr>
+<td><code>\| grep -o "http[^&amp;]*"</code></td>
+<td>Extracts the clean URL, stopping before any <code>&amp;</code> parameter</td>
+</tr>
+<tr>
+<td><code>&gt; recon1.txt</code></td>
+<td>Saves all results to <code>recon1.txt</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="google-hacking-database-ghdb">Google Hacking Database (GHDB)<a class="headerlink" href="#google-hacking-database-ghdb" title="Permanent link">&para;</a></h2>
+<p><em>Source: <a href="https://www.exploit-db.com/google-hacking-database">exploit-db.com/google-hacking-database</a></em></p>
+<p>The GHDB is a subset of the Exploit-DB focused on <strong>Google Dorks</strong> — advanced search queries that uncover sensitive information inadvertently exposed on the web.</p>
+<h3 id="what-ghdb-queries-uncover">What GHDB Queries Uncover<a class="headerlink" href="#what-ghdb-queries-uncover" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Sensitive files</strong> — configuration files, database dumps, log files with credentials</li>
+<li><strong>Exposed directories</strong> — open directories on web servers</li>
+<li><strong>Error messages</strong> — revealing server configurations or vulnerabilities</li>
+<li><strong>Vulnerable devices</strong> — specific device types or software versions with known vulnerabilities</li>
+</ul>
+<h3 id="ghdb-categories">GHDB Categories<a class="headerlink" href="#ghdb-categories" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Footholds</td>
+<td>Queries that help establish an initial access point into a target system or network</td>
+</tr>
+<tr>
+<td>Files Containing Usernames</td>
+<td>Pages or files that expose usernames, often found in config or log files</td>
+</tr>
+<tr>
+<td>Sensitive Directories</td>
+<td>Open or misconfigured directories on web servers exposing internal content</td>
+</tr>
+<tr>
+<td>Web Server Detection</td>
+<td>Queries that identify the type and version of a web server</td>
+</tr>
+<tr>
+<td>Vulnerable Files</td>
+<td>Files associated with known vulnerabilities, such as unpatched scripts or outdated components</td>
+</tr>
+<tr>
+<td>Vulnerable Servers</td>
+<td>Servers running software versions with known exploitable weaknesses</td>
+</tr>
+<tr>
+<td>Error Messages</td>
+<td>Server or application error pages that reveal configurations or stack traces</td>
+</tr>
+<tr>
+<td>Files Containing Juicy Info</td>
+<td>Files with miscellaneous sensitive data not covered by more specific categories</td>
+</tr>
+<tr>
+<td>Files Containing Passwords</td>
+<td>Files that directly expose passwords or hashed credentials</td>
+</tr>
+<tr>
+<td>Sensitive Online Shopping Info</td>
+<td>Exposed e-commerce data such as order details, customer records, or payment info</td>
+</tr>
+<tr>
+<td>Network or Vulnerability Data</td>
+<td>IDS/firewall logs, network maps, or vulnerability scan results left publicly accessible</td>
+</tr>
+<tr>
+<td>Pages Containing Login Portals</td>
+<td>Login pages for admin panels, VPNs, webmail, and other authenticated services</td>
+</tr>
+<tr>
+<td>Various Online Devices</td>
+<td>Publicly accessible IoT devices, cameras, routers, and industrial control panels</td>
+</tr>
+<tr>
+<td>Advisories and Vulnerabilities</td>
+<td>Pages referencing specific CVEs, security advisories, or known exploit details</td>
+</tr>
+</tbody>
+</table>
+<h3 id="how-attackers-leverage-the-ghdb">How Attackers Leverage the GHDB<a class="headerlink" href="#how-attackers-leverage-the-ghdb" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Reconnaissance</strong> — gather info on exposed files, directories, and devices</li>
+<li><strong>Exploiting Misconfigurations</strong> — gain unauthorized access via misconfigured servers</li>
+<li><strong>Finding Vulnerable Systems</strong> — locate outdated or unpatched software versions</li>
+<li><strong>Credential Harvesting</strong> — extract usernames and passwords for stuffing or brute force</li>
+<li><strong>Identifying Open Ports and Services</strong> — map potential entry points on a network</li>
+</ul>
+<h3 id="searchsploit">SearchSploit<a class="headerlink" href="#searchsploit" title="Permanent link">&para;</a></h3>
+<p><strong>SearchSploit</strong> is a command-line search tool for Exploit-DB that allows offline searching through a locally checked-out copy of the repository. Useful for assessments on <strong>air-gapped or segregated networks</strong> without Internet access.</p>
+<h2 id="vpn-footprinting-through-google-hacking-database">VPN Footprinting through Google Hacking Database<a class="headerlink" href="#vpn-footprinting-through-google-hacking-database" title="Permanent link">&para;</a></h2>
+<p>Google dorks can be used to footprint <strong>Virtual Private Networks (VPNs)</strong>, revealing login portals, key directories, and VPN server details.</p>
+<h3 id="google-dorks-for-vpn-footprinting">Google Dorks for VPN Footprinting<a class="headerlink" href="#google-dorks-for-vpn-footprinting" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Google Dork</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>inurl:"/sslvpn_logon.shtml" intitle:"User Authentication" "WatchGuard Technologies"</code></td>
+<td>Finds pages containing login portals</td>
+</tr>
+<tr>
+<td><code>inurl:/sslvpn/Login/Login</code></td>
+<td>Finds VPN login portals</td>
+</tr>
+<tr>
+<td><code>site:vpn.*.*/  intitle:"login"</code></td>
+<td>Finds VPN login portals</td>
+</tr>
+<tr>
+<td><code>inurl:weblogin</code> + <code>intitle:("USG20-VPN"\|"USG20W-VPN"\|USG40\|…\|"FLEX")</code></td>
+<td>Finds hosts with Zyxel hardcoded password vulnerability</td>
+</tr>
+<tr>
+<td><code>intext:Please Login SSL VPN inurl:remote/login</code> + <code>intext:FortiClient</code></td>
+<td>Finds Fortinet VPN login pages</td>
+</tr>
+<tr>
+<td><code>site:vpn.*.*/ intext:"login" intitle:"login"</code></td>
+<td>Retrieves various VPN login pages</td>
+</tr>
+<tr>
+<td><code>intitle:"index of" /etc/openvpn/</code></td>
+<td>Retrieves juicy info and sensitive directories</td>
+</tr>
+<tr>
+<td><code>"-----BEGIN OpenVPN Static key V1-----" ext:key</code></td>
+<td>Finds OpenVPN static keys</td>
+</tr>
+<tr>
+<td><code>intitle:"index of" "vpn-config.*"</code></td>
+<td>Retrieves juicy info about vpn-config files</td>
+</tr>
+<tr>
+<td><code>Index of / *.ovpn</code></td>
+<td>Finds OpenVPN config files, certificates, and keys</td>
+</tr>
+<tr>
+<td><code>inurl:"/vpn/tmindex.html" vpn</code></td>
+<td>Finds Netscaler and Citrix Gateway VPN login portals</td>
+</tr>
+<tr>
+<td><code>intitle:"SSL VPN Service" + intext:"Your system administrator provided the following information…"</code></td>
+<td>Finds Cisco ASA login web pages</td>
+</tr>
+</tbody>
+</table>
+<h2 id="vpn-footprinting-through-ghdb-with-ai">VPN Footprinting through GHDB with AI<a class="headerlink" href="#vpn-footprinting-through-ghdb-with-ai" title="Permanent link">&para;</a></h2>
+<p>Attackers can use AI tools such as <strong>ChatGPT</strong> to generate dork-based shell commands for VPN footprinting.</p>
+<p><strong>Example prompt:</strong></p>
+<blockquote>
+<p>"Use inurl search operator to obtain the Fortinet VPN login pages"</p>
+</blockquote>
+<h3 id="generated-shell-command_1">Generated Shell Command<a class="headerlink" href="#generated-shell-command_1" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>lynx<span class="w"> </span>--dump<span class="w"> </span><span class="s2">&quot;http://www.google.com/search?q=inurl:%22remote+login%22+fortinet+OR+fortigate+OR+%22ssl+vpn%22&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="s2">&quot;http&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="p">|</span><span class="w"> </span>cut<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;=&quot;</span><span class="w"> </span>-f2<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-o<span class="w"> </span><span class="s2">&quot;http[^&amp;]*&quot;</span>
+</code></pre></div>
+<h3 id="command-breakdown_1">Command Breakdown<a class="headerlink" href="#command-breakdown_1" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Segment</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>lynx --dump "..."</code></td>
+<td>Fetches Google results for pages with "remote login" in URL and Fortinet/Fortigate/SSL VPN in content</td>
+</tr>
+<tr>
+<td><code>\| grep "http"</code></td>
+<td>Filters lines containing URLs</td>
+</tr>
+<tr>
+<td><code>\| cut -d "=" -f2</code></td>
+<td>Splits on <code>=</code> and takes the URL value field</td>
+</tr>
+<tr>
+<td><code>\| grep -o "http[^&amp;]*"</code></td>
+<td>Extracts clean URLs, stopping before <code>&amp;</code> parameters</td>
+</tr>
+</tbody>
+</table>
+<h2 id="footprinting-through-shodan-search-engine">Footprinting through SHODAN Search Engine<a class="headerlink" href="#footprinting-through-shodan-search-engine" title="Permanent link">&para;</a></h2>
+<p><em>Source: <a href="https://www.shodan.io">shodan.io</a></em></p>
+<p><strong>Shodan</strong> is a search engine that enables attackers to perform footprinting at various levels. Unlike traditional search engines that index web content, Shodan scans and indexes <strong>internet-connected devices and services</strong>, detecting networks and devices with vulnerabilities.</p>
+<p>Searching Shodan for terms such as <strong>VoIP</strong> or <strong>VPN</strong> returns results that include exposed devices, open ports, service banners, and configuration details — providing attackers with actionable intelligence for targeting specific technologies.</p>
+<h2 id="other-techniques-for-footprinting-through-search-engines">Other Techniques for Footprinting through Search Engines<a class="headerlink" href="#other-techniques-for-footprinting-through-search-engines" title="Permanent link">&para;</a></h2>
+<h3 id="google-advanced-search-advanced-image-search-and-reverse-image-search">Google Advanced Search, Advanced Image Search, and Reverse Image Search<a class="headerlink" href="#google-advanced-search-advanced-image-search-and-reverse-image-search" title="Permanent link">&para;</a></h3>
+<p>When a normal search box is insufficient, attackers use Google's advanced search features to build complex, condition-based queries without memorizing operators.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>URL</th>
+<th>Use in Footprinting</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Advanced Search</td>
+<td><code>google.com/advanced_search</code></td>
+<td>Find sites linking to the target — revealing partners, vendors, clients, and affiliations</td>
+</tr>
+<tr>
+<td>Advanced Image Search</td>
+<td><code>google.com/advanced_image_search</code></td>
+<td>Search target images by color, domain, file type, size, or keyword</td>
+</tr>
+<tr>
+<td>Reverse Image Search</td>
+<td><code>google.com/imghp</code></td>
+<td>Upload or paste an image URL to find all online locations of that image — useful for tracking profile pictures, photos, and location details</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Reverse image search tools:</strong> Google Image Search, TinEye, Yahoo Image Search, Bing Image Search, Pinterest Reverse Image Search.</p>
+<h3 id="gathering-information-from-video-search-engines">Gathering Information from Video Search Engines<a class="headerlink" href="#gathering-information-from-video-search-engines" title="Permanent link">&para;</a></h3>
+<p>Video search engines crawl the web for video content and can reveal information about the target that is not available in text form. Attackers search for target-related videos on platforms such as <strong>YouTube, Google Videos, Yahoo Videos, and Bing Videos</strong> (filterable by format and duration).</p>
+<p>Video analysis tools — <strong>YouTube Metadata, YouTube DataViewer, MW Metadata, EZGif, VideoReverser.com</strong> — allow further extraction of hidden metadata such as upload time/date, thumbnails, and geolocation data embedded in video files.</p>
+<h3 id="gathering-information-from-meta-search-engines">Gathering Information from Meta Search Engines<a class="headerlink" href="#gathering-information-from-meta-search-engines" title="Permanent link">&para;</a></h3>
+<p>Meta search engines do not maintain their own index. They <strong>simultaneously query multiple third-party search engines</strong> (Google, Bing, Ask.com, etc.), aggregate the results, rank them by relevance, and filter duplicates — returning broader results with the same effort.</p>
+<p>They also <strong>hide the user's IP address</strong>, providing search privacy.</p>
+<p><strong>Examples:</strong> Startpage, MetaGer, eTools.ch</p>
+<p>Useful for gathering information from shopping sites, images, videos, blogs, news, and articles across multiple sources simultaneously.</p>
+<h3 id="gathering-information-from-ftp-search-engines">Gathering Information from FTP Search Engines<a class="headerlink" href="#gathering-information-from-ftp-search-engines" title="Permanent link">&para;</a></h3>
+<p>FTP search engines index files stored on FTP servers — often used by companies, universities, and institutions to share large archives. Many FTP servers are <strong>left unsecured</strong> and accessible directly through a web browser. A client such as <strong>FileZilla</strong> (<code>filezilla-project.org</code>) can also be used to access FTP accounts (upload, download, rename).</p>
+<p><strong>FTP search engine examples:</strong> NAPALM FTP Indexer, FreewareWeb FTP File Search, Mamont, Globalfilesearch.com</p>
+<p>Attackers use these to find: business strategies, financial records, employee records, tax documents, licensed software, and other confidential files.</p>
+<h4 id="google-dorks-for-ftp-servers-table-22">Google Dorks for FTP Servers (Table 2.2)<a class="headerlink" href="#google-dorks-for-ftp-servers-table-22" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Google Dork</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>site:.in \| .com \| .net intitle:"index of" ftp</code></td>
+<td>Finds files containing juicy information</td>
+</tr>
+<tr>
+<td><code>intitle:"index of" "*/ftp.txt"</code></td>
+<td>Finds files containing juicy information</td>
+</tr>
+<tr>
+<td><code>intext:"index of" "ftp"</code></td>
+<td>Finds files containing juicy information</td>
+</tr>
+<tr>
+<td><code>inurl:WS_FTP.log</code></td>
+<td>Finds files containing juicy information</td>
+</tr>
+<tr>
+<td><code>intitle:index.of /cftp /robots.txt</code></td>
+<td>Finds files containing juicy information</td>
+</tr>
+<tr>
+<td><code>intitle: "Index of ftp passwords"</code></td>
+<td>Finds files containing passwords</td>
+</tr>
+<tr>
+<td><code>inurl: /ftp intitle:"office"</code></td>
+<td>Detects the web server</td>
+</tr>
+<tr>
+<td><code>inurl:/web-ftp.cgi</code></td>
+<td>Finds pages containing login portals</td>
+</tr>
+<tr>
+<td><code>site:sftp.*.*/  intext:"login" intitle:"server login"</code></td>
+<td>Finds pages containing login portals</td>
+</tr>
+<tr>
+<td><code>intitle:"Index of" ws_ftp.ini</code></td>
+<td>Finds the <code>ws_ftp.ini</code> file containing FTP usernames and passwords</td>
+</tr>
+<tr>
+<td><code>inurl:ftp -inurl:(http\|https) intext:"@gmail.com" intext:subject fwd\|confidential\|important\|CARD\|cvv</code></td>
+<td>Finds archived emails revealing credit-card numbers, customer info, and private company emails</td>
+</tr>
+<tr>
+<td><code>allintitle:"CrushFTP WebInterface"</code></td>
+<td>Detects CrushFTP WebInterface login portals and password reset/recovery pages</td>
+</tr>
+<tr>
+<td><code>"ws_ftp.log" ext:log</code></td>
+<td>Finds sensitive directories</td>
+</tr>
+<tr>
+<td><code>intitle:"Monsta ftp" intext:"Lock session to IP"</code></td>
+<td>Shows websites using the Monsta FTP service</td>
+</tr>
+<tr>
+<td><code>"index of" /ftp/logs</code></td>
+<td>Finds potential log files</td>
+</tr>
+<tr>
+<td><code>intitle:"index of" inurl:ftp intext:admin</code></td>
+<td>Lists admin folders on FTP servers</td>
+</tr>
+</tbody>
+</table>
+<h3 id="gathering-information-from-iot-search-engines">Gathering Information from IoT Search Engines<a class="headerlink" href="#gathering-information-from-iot-search-engines" title="Permanent link">&para;</a></h3>
+<p>IoT search engines crawl the Internet for publicly accessible <strong>Internet of Things (IoT) devices</strong>. Many IoT devices are unsecured — no password or default credentials — making them easy targets.</p>
+<p>Through basic searches, attackers can gain control over:
+- SCADA (Supervisory Control and Data Acquisition) systems
+- Traffic control systems
+- Internet-connected household and industrial appliances
+- CCTV cameras</p>
+<p><strong>IoT search engine examples:</strong> Shodan, Censys, ZoomEye</p>
+<p>Information obtainable:
+- Manufacturer details
+- Geographical location and IP address
+- Hostname and open ports</p>
+<p>Attackers use this information to establish back doors into IoT devices and launch further attacks.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.indexes", "search.highlight"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/flashcards.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

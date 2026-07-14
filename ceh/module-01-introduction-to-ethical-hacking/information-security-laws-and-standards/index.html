@@ -1,0 +1,2392 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Study notes and flashcards for the CEH certification">
+      
+      
+      
+      
+        <link rel="prev" href="../information-security-controls/">
+      
+      
+        <link rel="next" href="../../module-02-footprinting-and-reconnaissance/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Information Security Laws and Standards - Certified Ethical Hacker (CEH)</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/flashcards.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link rel="manifest" href="../../../manifest.json">
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("../../../sw.js");
+    }
+  </script>
+
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#information-security-laws-and-standards" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Certified Ethical Hacker (CEH)" class="md-header__button md-logo" aria-label="Certified Ethical Hacker (CEH)" data-md-component="logo">
+      
+  <img src="../../../assets/android-chrome-192x192.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Certified Ethical Hacker (CEH)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Information Security Laws and Standards
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/adanze/certified-ethical-hacker" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    certified-ethical-hacker
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Notes
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../flashcards/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Flashcards
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Certified Ethical Hacker (CEH)" class="md-nav__button md-logo" aria-label="Certified Ethical Hacker (CEH)" data-md-component="logo">
+      
+  <img src="../../../assets/android-chrome-192x192.png" alt="logo">
+
+    </a>
+    Certified Ethical Hacker (CEH)
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/adanze/certified-ethical-hacker" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    certified-ethical-hacker
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Notes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Notes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Module 01 – Introduction to Ethical Hacking
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1" id="__nav_2_1_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Module 01 – Introduction to Ethical Hacking
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../information-security-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Information Security Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hacking-concepts-and-hacker-classes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hacking Concepts and Hacker Classes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ethical-hacking-concepts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ethical Hacking Concepts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hacking-methodologies-and-frameworks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hacking Methodologies and Frameworks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../information-security-controls/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Information Security Controls
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Information Security Laws and Standards
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Information Security Laws and Standards
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#payment-card-industry-data-security-standard-pci-dss" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Payment Card Industry Data Security Standard (PCI DSS)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Payment Card Industry Data Security Standard (PCI DSS)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pci-dss-requirements-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PCI DSS Requirements Overview
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compliance-and-penalties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Compliance and Penalties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#isoiec-standards" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ISO/IEC Standards
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ISO/IEC Standards">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#isoiec-270012022-information-security-management-system-isms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ISO/IEC 27001:2022 – Information Security Management System (ISMS)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-key-isoiec-standards" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Other Key ISO/IEC Standards
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#health-insurance-portability-and-accountability-act-hipaa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Health Insurance Portability and Accountability Act (HIPAA)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Health Insurance Portability and Accountability Act (HIPAA)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hipaa-administrative-simplification-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HIPAA Administrative Simplification Rules
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sarbanes-oxley-act-sox" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sarbanes-Oxley Act (SOX)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sarbanes-Oxley Act (SOX)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#soxs-11-titles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SOX's 11 Titles
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-digital-millennium-copyright-act-dmca" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Digital Millennium Copyright Act (DMCA)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Digital Millennium Copyright Act (DMCA)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dmcas-five-titles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DMCA's Five Titles
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#federal-information-security-management-act-fisma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Federal Information Security Management Act (FISMA)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Federal Information Security Management Act (FISMA)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fisma-framework-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FISMA Framework Components
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-data-protection-regulation-gdpr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        General Data Protection Regulation (GDPR)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="General Data Protection Regulation (GDPR)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gdpr-data-protection-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GDPR Data Protection Principles
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-protection-act-2018-dpa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Protection Act 2018 (DPA)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Protection Act 2018 (DPA)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dpa-protection-of-personal-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DPA Protection of Personal Data
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cyber-law-in-different-countries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cyber Law in Different Countries
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cyber Law in Different Countries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cyber-laws-by-country" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cyber Laws by Country
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../module-02-footprinting-and-reconnaissance/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Module 02 – Footprinting and Reconnaissance
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Module 02 – Footprinting and Reconnaissance
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-02-footprinting-and-reconnaissance/footprinting-concepts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footprinting Concepts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-02-footprinting-and-reconnaissance/footprinting-through-search-engines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footprinting through Search Engines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-02-footprinting-and-reconnaissance/footprinting-through-internet-research-services/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footprinting through Internet Research Services
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-02-footprinting-and-reconnaissance/footprinting-through-social-networking-sites/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footprinting through Social Networking Sites
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-02-footprinting-and-reconnaissance/whois-footprinting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Whois Footprinting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-02-footprinting-and-reconnaissance/dns-footprinting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DNS Footprinting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-02-footprinting-and-reconnaissance/network-and-email-footprinting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Network and Email Footprinting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-02-footprinting-and-reconnaissance/footprinting-through-social-engineering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footprinting through Social Engineering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-02-footprinting-and-reconnaissance/footprinting-tasks-using-advanced-tools-and-ai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footprinting Tasks using Advanced Tools and AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-02-footprinting-and-reconnaissance/footprinting-countermeasures/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footprinting Countermeasures
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Flashcards
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Flashcards
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../flashcards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Module 01 – Introduction to Ethical Hacking
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-02-footprinting-and-reconnaissance/flashcards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Module 02 – Footprinting and Reconnaissance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#payment-card-industry-data-security-standard-pci-dss" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Payment Card Industry Data Security Standard (PCI DSS)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Payment Card Industry Data Security Standard (PCI DSS)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pci-dss-requirements-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PCI DSS Requirements Overview
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compliance-and-penalties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Compliance and Penalties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#isoiec-standards" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ISO/IEC Standards
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ISO/IEC Standards">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#isoiec-270012022-information-security-management-system-isms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ISO/IEC 27001:2022 – Information Security Management System (ISMS)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-key-isoiec-standards" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Other Key ISO/IEC Standards
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#health-insurance-portability-and-accountability-act-hipaa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Health Insurance Portability and Accountability Act (HIPAA)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Health Insurance Portability and Accountability Act (HIPAA)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hipaa-administrative-simplification-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HIPAA Administrative Simplification Rules
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sarbanes-oxley-act-sox" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sarbanes-Oxley Act (SOX)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sarbanes-Oxley Act (SOX)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#soxs-11-titles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SOX's 11 Titles
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-digital-millennium-copyright-act-dmca" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Digital Millennium Copyright Act (DMCA)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Digital Millennium Copyright Act (DMCA)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dmcas-five-titles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DMCA's Five Titles
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#federal-information-security-management-act-fisma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Federal Information Security Management Act (FISMA)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Federal Information Security Management Act (FISMA)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fisma-framework-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FISMA Framework Components
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-data-protection-regulation-gdpr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        General Data Protection Regulation (GDPR)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="General Data Protection Regulation (GDPR)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gdpr-data-protection-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GDPR Data Protection Principles
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-protection-act-2018-dpa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Protection Act 2018 (DPA)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Protection Act 2018 (DPA)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dpa-protection-of-personal-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DPA Protection of Personal Data
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cyber-law-in-different-countries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cyber Law in Different Countries
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cyber Law in Different Countries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cyber-laws-by-country" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cyber Laws by Country
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="information-security-laws-and-standards">Information Security Laws and Standards<a class="headerlink" href="#information-security-laws-and-standards" title="Permanent link">&para;</a></h1>
+<p>Laws are systems of rules and guidelines enforced by particular countries or communities to govern behavior. Standards are documents established by consensus and approved by recognized bodies to provide rules, guidelines, and characteristics for activities. This section deals with the various laws and standards dealing with information security in different countries.</p>
+<h2 id="payment-card-industry-data-security-standard-pci-dss">Payment Card Industry Data Security Standard (PCI DSS)<a class="headerlink" href="#payment-card-industry-data-security-standard-pci-dss" title="Permanent link">&para;</a></h2>
+<p><strong>Source:</strong> https://www.pcisecuritystandards.org</p>
+<div class="admonition tip">
+<p class="admonition-title">Exam-critical 🎯</p>
+</div>
+<p><strong>PCI DSS</strong> is a proprietary information security standard for organizations handling cardholder information for debit, credit, prepaid, e-purse, ATM, and POS cards. It applies to <strong>all entities involved in payment card processing</strong>: merchants, processors, acquirers, issuers, service providers, and any entity that stores, processes, or transmits cardholder data.</p>
+<h3 id="pci-dss-requirements-overview">PCI DSS Requirements Overview<a class="headerlink" href="#pci-dss-requirements-overview" title="Permanent link">&para;</a></h3>
+<p>The standard comprises six key requirements:</p>
+<table>
+<thead>
+<tr>
+<th>Requirement</th>
+<th>Focus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Build and Maintain a Secure Network</strong></td>
+<td>Install firewalls, avoid vendor defaults, protect data with encryption</td>
+</tr>
+<tr>
+<td><strong>Protect Cardholder Data</strong></td>
+<td>Encrypt transmission across networks, protect stored data</td>
+</tr>
+<tr>
+<td><strong>Maintain a Vulnerability Management Program</strong></td>
+<td>Deploy anti-virus software, develop secure systems and applications</td>
+</tr>
+<tr>
+<td><strong>Implement Strong Access Control Measures</strong></td>
+<td>Restrict data access by business need, assign unique IDs, limit physical access</td>
+</tr>
+<tr>
+<td><strong>Regularly Monitor and Test Networks</strong></td>
+<td>Track and monitor network access, test security systems regularly</td>
+</tr>
+<tr>
+<td><strong>Maintain an Information Security Policy</strong></td>
+<td>Establish and maintain security policies for all personnel</td>
+</tr>
+</tbody>
+</table>
+<h3 id="compliance-and-penalties">Compliance and Penalties<a class="headerlink" href="#compliance-and-penalties" title="Permanent link">&para;</a></h3>
+<p><strong>Non-compliance consequences:</strong> Failure to meet PCI DSS requirements may result in fines or termination of payment card processing privileges.</p>
+<h2 id="isoiec-standards">ISO/IEC Standards<a class="headerlink" href="#isoiec-standards" title="Permanent link">&para;</a></h2>
+<p><strong>Source:</strong> https://www.iso.org</p>
+<div class="admonition tip">
+<p class="admonition-title">Exam-critical 🎯</p>
+</div>
+<h3 id="isoiec-270012022-information-security-management-system-isms">ISO/IEC 27001:2022 – Information Security Management System (ISMS)<a class="headerlink" href="#isoiec-270012022-information-security-management-system-isms" title="Permanent link">&para;</a></h3>
+<p><strong>ISO/IEC 27001:2022</strong> is an international standard specifying requirements and a framework for establishing, implementing, maintaining, and continually improving an Information Security Management System (ISMS). It ensures confidentiality, integrity, and availability of information and helps organizations manage security risks.</p>
+<p><strong>Key purposes:</strong>
+- Identify, assess, and manage information security risks systematically
+- Comply with regulatory, legal, and contractual obligations
+- Strengthen security posture and reduce breach risk
+- Continuously enhance security practices
+- Build stakeholder trust and competitive advantage
+- Address modern challenges (remote work, Bring Your Own Device (BYOD), cloud, Industry 4.0)</p>
+<h3 id="other-key-isoiec-standards">Other Key ISO/IEC Standards<a class="headerlink" href="#other-key-isoiec-standards" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Standard</th>
+<th>Focus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ISO/IEC 27701:2019</strong></td>
+<td>• Extends ISO/IEC 27001 to include privacy management<br>• Implements Privacy Information Management System (PIMS)<br>• Protects personally identifiable information (PII)<br>• Builds stakeholder trust and enables global privacy compliance</td>
+</tr>
+<tr>
+<td><strong>ISO/IEC 27002:2022</strong></td>
+<td>• Best practices and control objectives for critical cybersecurity areas<br>• Key focus: access control, cryptography, security personnel<br>• Comprehensive framework for effective security controls<br>• Protects sensitive information and ensures regulatory compliance</td>
+</tr>
+<tr>
+<td><strong>ISO/IEC 27005:2022</strong></td>
+<td>• Guidelines for information security risk management<br>• Supports ISMS requirements in ISO/IEC 27001<br>• Structured framework for thorough risk assessments<br>• Enables systematic management of security risks</td>
+</tr>
+<tr>
+<td><strong>ISO/IEC 27018:2019</strong></td>
+<td>• Code of practice for PII protection in public cloud environments<br>• Guidelines for implementing cloud-specific controls<br>• Safeguards personal data in cloud services<br>• Enhances data privacy measures</td>
+</tr>
+<tr>
+<td><strong>ISO/IEC 27032:2023</strong></td>
+<td>• Explains relationships among Internet, Web, network security, and cybersecurity<br>• Overview of Internet security and stakeholder roles<br>• Improves resilience against cyber threats<br>• Enables coordinated security efforts</td>
+</tr>
+<tr>
+<td><strong>ISO/IEC 27033-7:2023</strong></td>
+<td>• Guidelines for network virtualization security<br>• Secures and manages virtualization environments<br>• Mitigates risks specific to virtual networks<br>• Maintains high operational integrity</td>
+</tr>
+<tr>
+<td><strong>ISO/IEC 27036-3:2023</strong></td>
+<td>• Guidelines for securing hardware, software, and services supply chains<br>• Mitigates supply chain security risks<br>• Secure acquisition and integration of products<br>• Enhances resilience against third-party threats</td>
+</tr>
+<tr>
+<td><strong>ISO/IEC 27040:2024</strong></td>
+<td>• Technical requirements for data storage security<br>• Covers planning, design, documentation, and implementation<br>• Applies consistent security measures across storage devices and networks<br>• Ensures integrity, confidentiality, and availability of stored data</td>
+</tr>
+</tbody>
+</table>
+<h2 id="health-insurance-portability-and-accountability-act-hipaa">Health Insurance Portability and Accountability Act (HIPAA)<a class="headerlink" href="#health-insurance-portability-and-accountability-act-hipaa" title="Permanent link">&para;</a></h2>
+<p><strong>Source:</strong> https://www.hhs.gov</p>
+<div class="admonition tip">
+<p class="admonition-title">Exam-critical 🎯</p>
+</div>
+<p><strong>HIPAA</strong> is a federal law establishing national standards to protect individuals' health information privacy and security. It applies to <strong>covered entities</strong> (health plans, health care clearinghouses, and certain health care providers) and their <strong>business associates</strong> that handle electronic health information.</p>
+<h3 id="hipaa-administrative-simplification-rules">HIPAA Administrative Simplification Rules<a class="headerlink" href="#hipaa-administrative-simplification-rules" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Rule</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Electronic Transactions and Code Set Standards</strong></td>
+<td>• The Secretary of Health and Human Services (HHS) adopted certain standard transactions for Electronic Data Interchange (EDI) of health care data<br>• Every provider doing business electronically must use the same health care transactions, code sets, and identifiers<br>• Adopted standard transactions: claims, encounter information, payment, remittance advice, claim status, eligibility, enrollment/disenrollment, referrals, authorizations, coordination of benefits, premium payment<br>• Must use standards from ASC X12N or NCPDP (for pharmacy transactions)</td>
+</tr>
+<tr>
+<td><strong>Privacy Rule</strong></td>
+<td>• Establishes national standards to protect medical records and personal health information<br>• Requires appropriate safeguards to protect privacy<br>• Sets limits and conditions on uses and disclosures without patient authorization<br>• Gives patients rights: examine records, obtain copies, request corrections</td>
+</tr>
+<tr>
+<td><strong>Security Rule</strong></td>
+<td>• Establishes national standards for protecting electronically protected health information (ePHI)<br>• Requires administrative, physical, and technical safeguards<br>• Ensures confidentiality, integrity, and availability of ePHI<br>• Applies to creation, receipt, use, and maintenance of health information</td>
+</tr>
+<tr>
+<td><strong>Employer Identifier Standard</strong></td>
+<td>• Requires each employer to have a standard national number<br>• Identifies employers on standard transactions</td>
+</tr>
+<tr>
+<td><strong>National Provider Identifier (NPI) Standard</strong></td>
+<td>• Unique 10-position, intelligence-free numeric identifier for health care providers<br>• Required on all administrative and financial transactions under HIPAA<br>• Does not carry information about state or medical specialty<br>• Must be used by covered entities, health plans, and clearinghouses</td>
+</tr>
+<tr>
+<td><strong>Enforcement Rule</strong></td>
+<td>• Contains provisions for compliance and investigation<br>• Establishes civil monetary penalties for violations<br>• Defines procedures for hearings and appeals</td>
+</tr>
+</tbody>
+</table>
+<h2 id="sarbanes-oxley-act-sox">Sarbanes-Oxley Act (SOX)<a class="headerlink" href="#sarbanes-oxley-act-sox" title="Permanent link">&para;</a></h2>
+<p><strong>Source:</strong> https://www.sec.gov</p>
+<div class="admonition tip">
+<p class="admonition-title">Exam-critical 🎯</p>
+</div>
+<p><strong>SOX</strong>, enacted in 2002, aims to <strong>protect the public and investors</strong> by increasing the accuracy and reliability of corporate disclosures. The Act does not describe how organizations must store records, but specifies <strong>what records must be stored and for how long</strong>. SOX mandates reforms to enhance corporate responsibility, financial disclosures, and combat corporate and accounting fraud.</p>
+<h3 id="soxs-11-titles">SOX's 11 Titles<a class="headerlink" href="#soxs-11-titles" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Title I: Public Company Accounting Oversight Board (PCAOB)</strong></td>
+<td>• Establishes PCAOB to provide independent oversight of public accounting firms<br>• Registers audit services and defines compliance audit processes<br>• Inspects and polices conduct and quality control<br>• Enforces SOX compliance mandates</td>
+</tr>
+<tr>
+<td><strong>Title II: Auditor Independence</strong></td>
+<td>• Establishes standards for external auditor independence<br>• Limits conflicts of interest<br>• Requires audit partner rotation<br>• Restricts auditing firms from providing non-audit services (consulting) for same clients</td>
+</tr>
+<tr>
+<td><strong>Title III: Corporate Responsibility</strong></td>
+<td>• Mandates senior executives take individual responsibility for accuracy and completeness of financial reports<br>• Defines interaction between external auditors and corporate audit committees<br>• Specifies corporate officers' responsibility for accuracy and validity of reports<br>• Enumerates limits on corporate officer behavior and penalties for non-compliance</td>
+</tr>
+<tr>
+<td><strong>Title IV: Enhanced Financial Disclosures</strong></td>
+<td>• Requires enhanced reporting for financial transactions, off-balance-sheet transactions, pro-forma figures<br>• Requires disclosure of stock transactions of corporate officers<br>• Mandates internal controls to ensure accuracy of financial reports<br>• Requires audits and reports on internal controls<br>• Requires timely reporting of material changes in financial conditions</td>
+</tr>
+<tr>
+<td><strong>Title V: Analyst Conflicts of Interest</strong></td>
+<td>• Measures to restore investor confidence in securities analyst reporting<br>• Defines code of conduct for securities analysts<br>• Requires disclosure of any knowable conflicts of interest</td>
+</tr>
+<tr>
+<td><strong>Title VI: Commission Resources and Authority</strong></td>
+<td>• Defines practices to restore investor confidence in securities analysts<br>• Defines SEC authority to censure or bar securities professionals<br>• Defines conditions to bar persons from practicing as brokers, advisors, or dealers</td>
+</tr>
+<tr>
+<td><strong>Title VII: Studies and Reports</strong></td>
+<td>• Requires Comptroller General and SEC to perform various studies and report findings<br>• Studies include effects of accounting firm consolidation, role of credit rating agencies<br>• Reports on securities violations, enforcement actions<br>• Examines whether investment banks assisted companies to manipulate earnings</td>
+</tr>
+<tr>
+<td><strong>Title VIII: Corporate and Criminal Fraud Accountability</strong></td>
+<td>• Describes criminal penalties for manipulation, destruction, or alteration of financial records<br>• Penalties for interference with investigations<br>• Provides protections for whistle-blowers</td>
+</tr>
+<tr>
+<td><strong>Title IX: White-Collar Crime Penalty Enhancement</strong></td>
+<td>• Increases criminal penalties for white-collar crimes and conspiracies<br>• Strengthens sentencing guidelines<br>• Adds failure to certify corporate financial reports as criminal offense</td>
+</tr>
+<tr>
+<td><strong>Title X: Corporate Tax Returns</strong></td>
+<td>• Chief Executive Officer must sign company tax returns</td>
+</tr>
+<tr>
+<td><strong>Title XI: Corporate Fraud Accountability</strong></td>
+<td>• Identifies corporate fraud and records tampering as criminal offenses<br>• Revises sentencing guidelines and strengthens penalties<br>• Enables SEC to temporarily freeze "large" or "unusual" transactions or payments</td>
+</tr>
+</tbody>
+</table>
+<h2 id="the-digital-millennium-copyright-act-dmca">The Digital Millennium Copyright Act (DMCA)<a class="headerlink" href="#the-digital-millennium-copyright-act-dmca" title="Permanent link">&para;</a></h2>
+<p><strong>Source:</strong> https://www.copyright.gov</p>
+<div class="admonition tip">
+<p class="admonition-title">Exam-critical 🎯</p>
+</div>
+<p><strong>DMCA</strong> is an American copyright law implementing two 1996 World Intellectual Property Organization (WIPO) treaties. It defines <strong>legal prohibitions against circumvention of technological protection measures</strong> used by copyright owners and against removal or alteration of <strong>copyright management information</strong>.</p>
+<h3 id="dmcas-five-titles">DMCA's Five Titles<a class="headerlink" href="#dmcas-five-titles" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Title I: World Intellectual Property Organization (WIPO Treaty Implementation</strong></td>
+<td>• Implements World Intellectual Property Organization (WIPO) treaties with technical amendments to US law<br>• Creates prohibitions on circumvention of technological measures protecting copyrighted works<br>• Creates prohibitions on tampering with copyright management information<br>• Adds civil remedies and criminal penalties for violations</td>
+</tr>
+<tr>
+<td><strong>Title II: Online Copyright Infringement Liability Limitation</strong></td>
+<td>• Adds Section 512 to Copyright Act creating four liability limitations for online service providers<br>• Categories: transitory communications, system caching, user-directed storage, information location tools<br>• Includes special rules for nonprofit educational institutions</td>
+</tr>
+<tr>
+<td><strong>Title III: Computer Maintenance or Repair</strong></td>
+<td>• Allows computer owner to make reproductions or adaptations of programs for use with computer<br>• Permits owner or lessee to make or authorize copies during computer maintenance or repair</td>
+</tr>
+<tr>
+<td><strong>Title IV: Miscellaneous Provisions</strong></td>
+<td>• Clarification of Copyright Office authority<br>• Exemption for "ephemeral recordings"<br>• Promotes distance education study<br>• Exemption for Nonprofit Libraries and Archives<br>• Webcasting Amendments to Digital Performance Right<br>• Addresses residual payments for motion picture exploitation</td>
+</tr>
+<tr>
+<td><strong>Title V: Protection of Certain Original Designs</strong></td>
+<td>• Vessel Hull Design Protection Act (VHDPA)<br>• Protects original designs of useful articles (vessel hulls up to 200 feet)<br>• Creates system for protecting designs that make articles attractive or distinctive in appearance</td>
+</tr>
+</tbody>
+</table>
+<h2 id="federal-information-security-management-act-fisma">Federal Information Security Management Act (FISMA)<a class="headerlink" href="#federal-information-security-management-act-fisma" title="Permanent link">&para;</a></h2>
+<p><strong>Source:</strong> https://csrc.nist.gov</p>
+<div class="admonition tip">
+<p class="admonition-title">Exam-critical 🎯</p>
+</div>
+<p><strong>FISMA</strong>, enacted in 2002, provides a <strong>comprehensive framework for ensuring the effectiveness of information security controls</strong> over information resources supporting federal operations and assets. It requires each federal agency to develop, document, and implement an agency-wide information security program.</p>
+<h3 id="fisma-framework-components">FISMA Framework Components<a class="headerlink" href="#fisma-framework-components" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Standards for categorizing information and information systems</strong> by mission impact</li>
+<li><strong>Standards for minimum security requirements</strong> for information and information systems</li>
+<li><strong>Guidance for selecting appropriate security controls</strong> for information systems</li>
+<li><strong>Guidance for assessing security controls</strong> in information systems and determining their effectiveness</li>
+<li><strong>Guidance for security authorization</strong> of information systems</li>
+</ul>
+<h2 id="general-data-protection-regulation-gdpr">General Data Protection Regulation (GDPR)<a class="headerlink" href="#general-data-protection-regulation-gdpr" title="Permanent link">&para;</a></h2>
+<p><strong>Source:</strong> https://gdpr.eu</p>
+<div class="admonition tip">
+<p class="admonition-title">Exam-critical 🎯</p>
+</div>
+<p><strong>GDPR</strong> (Datenschutz-Grundverordnung / <strong>DSGVO</strong> in German) is <strong>one of the most stringent privacy and security laws globally</strong>. Enacted by the European Union on May 25, 2018, it imposes obligations on organizations anywhere that target or collect data of EU residents. GDPR levies <strong>harsh fines</strong> against violators, with <strong>penalties reaching tens of millions of euros</strong>. Applies to small and medium-sized enterprises (SMEs) and large organizations alike.</p>
+<h3 id="gdpr-data-protection-principles">GDPR Data Protection Principles<a class="headerlink" href="#gdpr-data-protection-principles" title="Permanent link">&para;</a></h3>
+<p>The GDPR includes <strong>seven protection and accountability principles</strong> (Article 5.1-2):</p>
+<table>
+<thead>
+<tr>
+<th>Principle</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Lawfulness, Fairness, and Transparency</strong></td>
+<td>Processing must be lawful, fair, and transparent to the data subject</td>
+</tr>
+<tr>
+<td><strong>Purpose Limitation</strong></td>
+<td>Data must be processed for legitimate purposes explicitly specified to data subject when collected</td>
+</tr>
+<tr>
+<td><strong>Data Minimization</strong></td>
+<td>Collect and process only as much data as necessary for specified purposes</td>
+</tr>
+<tr>
+<td><strong>Accuracy</strong></td>
+<td>Personal data must be accurate and kept up to date</td>
+</tr>
+<tr>
+<td><strong>Storage Limitation</strong></td>
+<td>Store personally identifying data only as long as necessary for specified purpose</td>
+</tr>
+<tr>
+<td><strong>Integrity and Confidentiality</strong></td>
+<td>Processing must ensure appropriate security, integrity, and confidentiality (e.g., encryption)</td>
+</tr>
+<tr>
+<td><strong>Accountability</strong></td>
+<td>Data controller is responsible for demonstrating GDPR compliance with all principles</td>
+</tr>
+</tbody>
+</table>
+<h2 id="data-protection-act-2018-dpa">Data Protection Act 2018 (DPA)<a class="headerlink" href="#data-protection-act-2018-dpa" title="Permanent link">&para;</a></h2>
+<p><strong>Source:</strong> https://www.legislation.gov.uk</p>
+<div class="admonition tip">
+<p class="admonition-title">Exam-critical 🎯</p>
+</div>
+<p><strong>DPA 2018</strong> sets out the framework for data protection law in the UK. It <strong>updates and replaces the Data Protection Act 1998</strong>, came into effect on <strong>25 May 2018</strong>, and was amended on <strong>01 January 2021</strong> to reflect the UK's status outside the EU. The Act regulates processing of information relating to individuals, establishes the <strong>Information Commissioner's functions</strong>, enables direct marketing code of practice, and extends data protection to law enforcement, national security, and defense.</p>
+<h3 id="dpa-protection-of-personal-data">DPA Protection of Personal Data<a class="headerlink" href="#dpa-protection-of-personal-data" title="Permanent link">&para;</a></h3>
+<p><strong>The DPA protects individuals by:</strong></p>
+<ul>
+<li>
+<p><strong>Requiring personal data to be processed lawfully and fairly</strong>, based on the data subject's consent or another specified basis</p>
+</li>
+<li>
+<p><strong>Conferring rights on the data subject</strong> to obtain information about personal data processing and to require inaccurate data to be rectified</p>
+</li>
+<li>
+<p><strong>Conferring functions on the Information Commissioner</strong>, giving responsibility to monitor and enforce DPA provisions</p>
+</li>
+</ul>
+<p><strong>The Commissioner must:</strong></p>
+<ul>
+<li>
+<p>Regard the importance of securing appropriate protection for personal data</p>
+</li>
+<li>
+<p>Consider interests of data subjects, controllers, and others</p>
+</li>
+<li>
+<p>Consider matters of general public interest when carrying out functions under GDPR, applied GDPR, and DPA</p>
+</li>
+</ul>
+<h2 id="cyber-law-in-different-countries">Cyber Law in Different Countries<a class="headerlink" href="#cyber-law-in-different-countries" title="Permanent link">&para;</a></h2>
+<p><strong>Cyberlaw</strong> (or Internet law) refers to <strong>any laws that deal with protecting the Internet and other online communication technologies</strong>. It covers Internet access, usage, privacy, freedom of expression, and jurisdiction. Cyber laws provide assurance of integrity, security, privacy, and confidentiality of information in governmental and private organizations.</p>
+<p>These laws have become prominent due to increased Internet usage globally. <strong>Cyber laws vary by jurisdiction and country</strong>, making implementation challenging. <strong>Violating these laws results in punishments ranging from fines to imprisonment</strong>.</p>
+<h3 id="cyber-laws-by-country">Cyber Laws by Country<a class="headerlink" href="#cyber-laws-by-country" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Country</th>
+<th>Law/Act</th>
+<th>Website</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>United States</strong></td>
+<td>• Section 107 of the Copyright Law ("fair use")<br>• Online Copyright Infringement Liability Limitation Act</td>
+<td>https://www.copyright.gov</td>
+</tr>
+<tr>
+<td><strong>United States</strong></td>
+<td>The Lanham (Trademark) Act (15 USC §§ 1051–1127)</td>
+<td>https://www.bitlaw.com</td>
+</tr>
+<tr>
+<td><strong>United States</strong></td>
+<td>• Electronic Communications Privacy Act<br>• Foreign Intelligence Surveillance Act</td>
+<td>https://bja.ojp.gov</td>
+</tr>
+<tr>
+<td><strong>United States</strong></td>
+<td>• Protect America Act of 2007<br>• Privacy Act of 1974</td>
+<td>https://www.justice.gov</td>
+</tr>
+<tr>
+<td><strong>United States</strong></td>
+<td>National Information Infrastructure Protection Act of 1996</td>
+<td>https://www.congress.gov</td>
+</tr>
+<tr>
+<td><strong>United States</strong></td>
+<td>Computer Security Act of 1987</td>
+<td>https://csrc.nist.gov</td>
+</tr>
+<tr>
+<td><strong>United States</strong></td>
+<td>Freedom of Information Act (FOIA)</td>
+<td>https://www.foia.gov</td>
+</tr>
+<tr>
+<td><strong>United States</strong></td>
+<td>Computer Fraud and Abuse Act</td>
+<td>https://www.energy.gov</td>
+</tr>
+<tr>
+<td><strong>United States</strong></td>
+<td>Identity Theft and Assumption Deterrence Act</td>
+<td>https://www.ftc.gov</td>
+</tr>
+<tr>
+<td><strong>United States</strong></td>
+<td>California Consumer Privacy Act (CCPA)</td>
+<td>https://oag.ca.gov</td>
+</tr>
+<tr>
+<td><strong>United States</strong></td>
+<td>California Privacy Rights Act</td>
+<td>https://thecpra.org</td>
+</tr>
+<tr>
+<td><strong>Australia</strong></td>
+<td>• Trade Marks Act 1995<br>• The Patents Act 1990<br>• The Copyright Act 1968</td>
+<td>https://www.legislation.gov.au</td>
+</tr>
+<tr>
+<td><strong>Australia</strong></td>
+<td>Cybercrime Act 2001</td>
+<td>https://www.cybercrimelaw.net</td>
+</tr>
+<tr>
+<td><strong>United Kingdom</strong></td>
+<td>• The Copyright, Etc. and Trademarks (Offenses And Enforcement) Act 2002<br>• Trademarks Act 1994<br>• Computer Misuse Act 1990<br>• The Network and Information Systems Regulations 2018<br>• Communications Act 2003<br>• The Privacy and Electronic Communications (EC Directive) Regulations 2003<br>• Investigatory Powers Act 2016<br>• Regulation of Investigatory Powers Act 2000</td>
+<td>https://www.legislation.gov.uk</td>
+</tr>
+<tr>
+<td><strong>China</strong></td>
+<td>• Copyright Law of the People's Republic of China (Amendments on October 27, 2001)<br>• Trademark Law of the People's Republic of China (Amendments on October 27, 2001)</td>
+<td>http://www.npc.gov.cn</td>
+</tr>
+<tr>
+<td><strong>India</strong></td>
+<td>• The Patents (Amendment) Act, 1999<br>• Trade Marks Act, 1999<br>• The Copyright Act, 1957</td>
+<td>https://www.ipindia.gov.in</td>
+</tr>
+<tr>
+<td><strong>India</strong></td>
+<td>Information Technology Act</td>
+<td>https://www.meity.gov.in</td>
+</tr>
+<tr>
+<td><strong>Germany</strong></td>
+<td>• Section 202a: Data Espionage<br>• Section 303a: Alteration of Data<br>• Section 303b: Computer Sabotage</td>
+<td>https://www.cybercrimelaw.net</td>
+</tr>
+<tr>
+<td><strong>Italy</strong></td>
+<td>Penal Code Article 615 ter</td>
+<td>https://www.cybercrimelaw.net</td>
+</tr>
+<tr>
+<td><strong>Japan</strong></td>
+<td>The Trademark Law (Law No. 127 of 1959)</td>
+<td>https://www.jpo.or.jp</td>
+</tr>
+<tr>
+<td><strong>Canada</strong></td>
+<td>• Copyright Act (R.S.C., 1985, c. C-42)<br>• Trademarks Act (R.S.C., 1985, c. T-13)<br>• Canadian Criminal Code Section 342.1</td>
+<td>https://laws-lois.justice.gc.ca</td>
+</tr>
+<tr>
+<td><strong>Canada</strong></td>
+<td>Personal Information Protection and Electronic Documents Act (PIPEDA)</td>
+<td>https://www.priv.gc.ca</td>
+</tr>
+<tr>
+<td><strong>Singapore</strong></td>
+<td>Computer Misuse Act</td>
+<td>https://sso.agc.gov.sg</td>
+</tr>
+<tr>
+<td><strong>South Africa</strong></td>
+<td>Trademarks Act 194 of 1993</td>
+<td>http://www.cipc.co.za</td>
+</tr>
+<tr>
+<td><strong>South Africa</strong></td>
+<td>Copyright Act of 1978</td>
+<td>https://www.wipo.int</td>
+</tr>
+<tr>
+<td><strong>South Korea</strong></td>
+<td>Copyright Act (amended up to Act No. 19597 of August 8, 2023)</td>
+<td>https://www.wipo.int</td>
+</tr>
+<tr>
+<td><strong>South Korea</strong></td>
+<td>Industrial Design Protection Act</td>
+<td>https://www.kipo.go.kr</td>
+</tr>
+<tr>
+<td><strong>Belgium</strong></td>
+<td>Copyright Law, 30/06/1994</td>
+<td>https://www.wipo.int</td>
+</tr>
+<tr>
+<td><strong>Belgium</strong></td>
+<td>Computer Hacking</td>
+<td>https://www.cybercrimelaw.net</td>
+</tr>
+<tr>
+<td><strong>Brazil</strong></td>
+<td>Brazilian General Data Protection Law (LGPD)</td>
+<td>https://iapp.org</td>
+</tr>
+<tr>
+<td><strong>Hong Kong</strong></td>
+<td>Article 139 of the Basic Law</td>
+<td>https://www.basiclaw.gov.hk</td>
+</tr>
+<tr>
+<td><strong>Philippines</strong></td>
+<td>Republic Act No. 10175</td>
+<td>https://lawphil.net</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.indexes", "search.highlight"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/flashcards.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

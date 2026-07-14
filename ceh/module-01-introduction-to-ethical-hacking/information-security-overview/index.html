@@ -1,0 +1,2082 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Study notes and flashcards for the CEH certification">
+      
+      
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../hacking-concepts-and-hacker-classes/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Information Security Overview - Certified Ethical Hacker (CEH)</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/flashcards.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link rel="manifest" href="../../../manifest.json">
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("../../../sw.js");
+    }
+  </script>
+
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#information-security-overview" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Certified Ethical Hacker (CEH)" class="md-header__button md-logo" aria-label="Certified Ethical Hacker (CEH)" data-md-component="logo">
+      
+  <img src="../../../assets/android-chrome-192x192.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Certified Ethical Hacker (CEH)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Information Security Overview
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/adanze/certified-ethical-hacker" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    certified-ethical-hacker
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Notes
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../flashcards/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Flashcards
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Certified Ethical Hacker (CEH)" class="md-nav__button md-logo" aria-label="Certified Ethical Hacker (CEH)" data-md-component="logo">
+      
+  <img src="../../../assets/android-chrome-192x192.png" alt="logo">
+
+    </a>
+    Certified Ethical Hacker (CEH)
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/adanze/certified-ethical-hacker" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    certified-ethical-hacker
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Notes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Notes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Module 01 – Introduction to Ethical Hacking
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1" id="__nav_2_1_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Module 01 – Introduction to Ethical Hacking
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Information Security Overview
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Information Security Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#elements-of-information-security" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Elements of Information Security
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-assets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What are Assets?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What are Assets?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#types-of-assets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Types of Assets
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#information-security-attacks-motives-goals-and-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Information Security Attacks: Motives, Goals, and Objectives
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Information Security Attacks: Motives, Goals, and Objectives">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#motives-behind-information-security-attacks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Motives Behind Information Security Attacks
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tactics-techniques-and-procedures-ttps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tactics, Techniques, and Procedures (TTPs)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vulnerability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vulnerability
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Vulnerability">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#weakness-vs-vulnerability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Weakness vs. Vulnerability
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-reasons-for-the-existence-of-vulnerabilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Reasons for the Existence of Vulnerabilities
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#technological-vulnerabilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Technological Vulnerabilities
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration-vulnerabilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration Vulnerabilities
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#classification-of-attacks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Classification of Attacks
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#information-warfare" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Information Warfare
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Information Warfare">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#categories-libicki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Categories (Libicki)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defensive-vs-offensive-information-warfare" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Defensive vs. Offensive Information Warfare
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hacking-concepts-and-hacker-classes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hacking Concepts and Hacker Classes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ethical-hacking-concepts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ethical Hacking Concepts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hacking-methodologies-and-frameworks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hacking Methodologies and Frameworks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../information-security-controls/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Information Security Controls
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../information-security-laws-and-standards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Information Security Laws and Standards
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../module-02-footprinting-and-reconnaissance/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Module 02 – Footprinting and Reconnaissance
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Module 02 – Footprinting and Reconnaissance
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-02-footprinting-and-reconnaissance/footprinting-concepts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footprinting Concepts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-02-footprinting-and-reconnaissance/footprinting-through-search-engines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footprinting through Search Engines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-02-footprinting-and-reconnaissance/footprinting-through-internet-research-services/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footprinting through Internet Research Services
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-02-footprinting-and-reconnaissance/footprinting-through-social-networking-sites/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footprinting through Social Networking Sites
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-02-footprinting-and-reconnaissance/whois-footprinting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Whois Footprinting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-02-footprinting-and-reconnaissance/dns-footprinting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DNS Footprinting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-02-footprinting-and-reconnaissance/network-and-email-footprinting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Network and Email Footprinting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-02-footprinting-and-reconnaissance/footprinting-through-social-engineering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footprinting through Social Engineering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-02-footprinting-and-reconnaissance/footprinting-tasks-using-advanced-tools-and-ai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footprinting Tasks using Advanced Tools and AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-02-footprinting-and-reconnaissance/footprinting-countermeasures/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footprinting Countermeasures
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Flashcards
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Flashcards
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../flashcards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Module 01 – Introduction to Ethical Hacking
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-02-footprinting-and-reconnaissance/flashcards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Module 02 – Footprinting and Reconnaissance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#elements-of-information-security" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Elements of Information Security
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-assets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What are Assets?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What are Assets?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#types-of-assets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Types of Assets
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#information-security-attacks-motives-goals-and-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Information Security Attacks: Motives, Goals, and Objectives
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Information Security Attacks: Motives, Goals, and Objectives">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#motives-behind-information-security-attacks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Motives Behind Information Security Attacks
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tactics-techniques-and-procedures-ttps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tactics, Techniques, and Procedures (TTPs)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vulnerability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vulnerability
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Vulnerability">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#weakness-vs-vulnerability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Weakness vs. Vulnerability
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-reasons-for-the-existence-of-vulnerabilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Reasons for the Existence of Vulnerabilities
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#technological-vulnerabilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Technological Vulnerabilities
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration-vulnerabilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration Vulnerabilities
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#classification-of-attacks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Classification of Attacks
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#information-warfare" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Information Warfare
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Information Warfare">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#categories-libicki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Categories (Libicki)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defensive-vs-offensive-information-warfare" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Defensive vs. Offensive Information Warfare
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="information-security-overview">Information Security Overview<a class="headerlink" href="#information-security-overview" title="Permanent link">&para;</a></h1>
+<p>Information is a critical organizational asset. When it falls into the wrong hands, the consequences are severe—financial losses, damaged reputation, lost customers. Understanding how to secure such vital resources requires knowledge of information security fundamentals. This section introduces the elements of information security, classification of attacks, and information warfare.</p>
+<h2 id="elements-of-information-security">Elements of Information Security<a class="headerlink" href="#elements-of-information-security" title="Permanent link">&para;</a></h2>
+<p>Information security is <em>"the state of well-being of information and infrastructure in which the possibility of theft, tampering, and disruption of information and services is low or tolerable."</em> It relies on five core elements:</p>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Definition</th>
+<th>Key Controls</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Confidentiality</strong></td>
+<td>Information accessible only to authorized users</td>
+<td>Data classification, encryption, secure disposal</td>
+</tr>
+<tr>
+<td><strong>Integrity</strong></td>
+<td>Trustworthiness of data; prevention of improper or unauthorized changes</td>
+<td>Checksums, access control</td>
+</tr>
+<tr>
+<td><strong>Availability</strong></td>
+<td>Systems accessible when required by authorized users</td>
+<td>Redundant disk arrays, clustered machines, DDoS prevention, antivirus</td>
+</tr>
+<tr>
+<td><strong>Authenticity</strong></td>
+<td>Ensures data/communications are genuine and uncorrupted</td>
+<td>Biometrics, smart cards, digital certificates</td>
+</tr>
+<tr>
+<td><strong>Non-Repudiation</strong></td>
+<td>Sender cannot deny sending; recipient cannot deny receiving</td>
+<td>Digital signatures</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Memory aid:</strong> CIA + AN — Confidentiality, Integrity, Availability, Authenticity, Non-Repudiation.</p>
+</blockquote>
+<h2 id="what-are-assets">What are Assets?<a class="headerlink" href="#what-are-assets" title="Permanent link">&para;</a></h2>
+<p>An <strong>asset</strong> is any physical device or digital resource belonging to an organization that holds or processes valuable information. Assets are the targets of security threats and attacks — protecting them is the core purpose of information security.</p>
+<h3 id="types-of-assets">Types of Assets<a class="headerlink" href="#types-of-assets" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Asset Type</th>
+<th>Examples</th>
+<th>Value/Risk</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Hardware</strong></td>
+<td>Servers, workstations, routers, firewalls, mobile devices</td>
+<td>Physical damage, theft, repurposing</td>
+</tr>
+<tr>
+<td><strong>Software</strong></td>
+<td>Applications, operating systems, firmware, databases</td>
+<td>Unauthorized access, data theft, manipulation</td>
+</tr>
+<tr>
+<td><strong>Data</strong></td>
+<td>Databases, files, credentials, intellectual property, customer information</td>
+<td>Confidentiality breaches, regulatory violations, financial loss</td>
+</tr>
+<tr>
+<td><strong>Network Resources</strong></td>
+<td>Internet connectivity, cloud services, communication channels</td>
+<td>Service disruption, interception, unavailability</td>
+</tr>
+<tr>
+<td><strong>People</strong></td>
+<td>Employees, contractors, users</td>
+<td>Social engineering, insider threats, compliance violations</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Key insight:</strong> The attack formula is fundamentally about attackers targeting valuable assets. Without assets worth stealing, there is no motive — and therefore no attack.</p>
+</blockquote>
+<h2 id="information-security-attacks-motives-goals-and-objectives">Information Security Attacks: Motives, Goals, and Objectives<a class="headerlink" href="#information-security-attacks-motives-goals-and-objectives" title="Permanent link">&para;</a></h2>
+<p>An attack is an action performed with the intent to breach an IT system's security by exploiting its vulnerabilities — obtaining, editing, removing, destroying, or revealing information without authorized access.</p>
+<p><strong>Attack formula:</strong></p>
+<div class="arithmatex">\[\text{Attack} = \text{Motive (Goal)} + \text{Method (TTP)} + \text{Vulnerability}\]</div>
+<ul>
+<li>A <strong>motive</strong> arises from the belief that the target system stores or processes something valuable.</li>
+<li>Attackers use tools and techniques (<strong>TTPs</strong>) to exploit vulnerabilities in systems, security policies, or controls.</li>
+</ul>
+<h3 id="motives-behind-information-security-attacks">Motives Behind Information Security Attacks<a class="headerlink" href="#motives-behind-information-security-attacks" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Disrupt business continuity</li>
+<li>Perform information theft or data manipulation</li>
+<li>Create fear and chaos by disrupting critical infrastructures</li>
+<li>Cause financial loss to the target</li>
+<li>Propagate religious or political beliefs</li>
+<li>Achieve a state's military objectives</li>
+<li>Damage the reputation of the target</li>
+<li>Take revenge</li>
+<li>Demand ransom</li>
+</ul>
+<h2 id="tactics-techniques-and-procedures-ttps">Tactics, Techniques, and Procedures (TTPs)<a class="headerlink" href="#tactics-techniques-and-procedures-ttps" title="Permanent link">&para;</a></h2>
+<p>TTPs refers to the <strong>patterns of activities and methods</strong> associated with specific threat actors or groups. Understanding TTPs enables security teams to profile adversaries, predict evolving threats, and strengthen defenses proactively.</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Definition</th>
+<th>Defensive Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Tactics</strong></td>
+<td>The overall <strong>strategy</strong> an attacker follows from beginning to end of an attack</td>
+<td>Predicts and detects evolving threats early</td>
+</tr>
+<tr>
+<td><strong>Techniques</strong></td>
+<td>The <strong>technical methods</strong> used to achieve intermediate results during an attack</td>
+<td>Identifies vulnerabilities; enables advance countermeasures</td>
+</tr>
+<tr>
+<td><strong>Procedures</strong></td>
+<td>The <strong>systematic approach</strong> threat actors use to launch an attack</td>
+<td>Reveals what the attacker is targeting within the infrastructure</td>
+</tr>
+</tbody>
+</table>
+<h2 id="vulnerability">Vulnerability<a class="headerlink" href="#vulnerability" title="Permanent link">&para;</a></h2>
+<p>A vulnerability is a weakness in the design or implementation of a system that can be exploited to compromise its security — often a loophole that allows an attacker to bypass authentication or other controls. The two primary root causes are <strong>misconfiguration</strong> and <strong>poor programming practices</strong>.</p>
+<h3 id="weakness-vs-vulnerability">Weakness vs. Vulnerability<a class="headerlink" href="#weakness-vs-vulnerability" title="Permanent link">&para;</a></h3>
+<div class="admonition tip">
+<p class="admonition-title">Exam-critical 🎯</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Weakness</strong></td>
+<td>A flaw in design, implementation, or operation that <em>reduces</em> security — not necessarily exploitable on its own.</td>
+</tr>
+<tr>
+<td><strong>Vulnerability</strong></td>
+<td>A weakness that <em>can be exploited</em> by a threat actor via a known method.</td>
+</tr>
+</tbody>
+</table>
+<p>Every vulnerability is a weakness, but not every weakness is a vulnerability. In the attack formula, the <strong>Vulnerability</strong> component is the exploitable gap — the point where motive meets method.</p>
+<h3 id="common-reasons-for-the-existence-of-vulnerabilities">Common Reasons for the Existence of Vulnerabilities<a class="headerlink" href="#common-reasons-for-the-existence-of-vulnerabilities" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Reason</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Hardware/software misconfiguration</strong></td>
+<td>Insecure configs create loopholes — e.g., unencrypted protocols leak data; misconfigured hardware grants network access; misconfigured software exposes applications and data</td>
+</tr>
+<tr>
+<td><strong>Insecure or poor network/application design</strong></td>
+<td>Improperly implemented firewalls, IDS, or VPNs expose the network to numerous threats</td>
+</tr>
+<tr>
+<td><strong>Inherent technology weaknesses</strong></td>
+<td>Hardware or software incapable of defending against certain attacks (e.g., DoS, MitM); outdated browsers prone to distributed attacks</td>
+</tr>
+<tr>
+<td><strong>End-user carelessness</strong></td>
+<td>Sharing credentials, connecting to insecure networks — exploitable via social engineering, leading to data loss or leakage</td>
+</tr>
+<tr>
+<td><strong>Intentional end-user acts</strong></td>
+<td>Ex-employees retaining access to shared drives and leaking sensitive information</td>
+</tr>
+</tbody>
+</table>
+<h3 id="technological-vulnerabilities">Technological Vulnerabilities<a class="headerlink" href="#technological-vulnerabilities" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>TCP/IP protocol</strong></td>
+<td>HTTP, FTP, ICMP, SNMP, SMTP are inherently insecure</td>
+</tr>
+<tr>
+<td><strong>Operating system</strong></td>
+<td>Inherently insecure OS; unpatched systems</td>
+</tr>
+<tr>
+<td><strong>Network devices</strong></td>
+<td>Routers, firewalls, switches lacking password protection, authentication, using insecure routing protocols, or containing firewall vulnerabilities</td>
+</tr>
+</tbody>
+</table>
+<h3 id="configuration-vulnerabilities">Configuration Vulnerabilities<a class="headerlink" href="#configuration-vulnerabilities" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>User account</strong></td>
+<td>Insecure transmission of usernames/passwords over the network</td>
+</tr>
+<tr>
+<td><strong>System account</strong></td>
+<td>Weak passwords set for system accounts</td>
+</tr>
+<tr>
+<td><strong>Internet service misconfiguration</strong></td>
+<td>Enabling JavaScript insecurely; misconfiguring IIS, Apache, FTP, or Terminal services</td>
+</tr>
+<tr>
+<td><strong>Default passwords/settings</strong></td>
+<td>Leaving devices at factory defaults</td>
+</tr>
+<tr>
+<td><strong>Network device misconfiguration</strong></td>
+<td>Incorrectly configured network devices</td>
+</tr>
+</tbody>
+</table>
+<h2 id="classification-of-attacks">Classification of Attacks<a class="headerlink" href="#classification-of-attacks" title="Permanent link">&para;</a></h2>
+<div class="admonition tip">
+<p class="admonition-title">🎯 Exam-critical</p>
+</div>
+<p>According to IATF, attacks fall into five categories:</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Passive</strong></td>
+<td>Intercept and monitor traffic without tampering — hard to detect, no active interaction</td>
+<td>Footprinting, sniffing, eavesdropping, network traffic analysis, decryption of weakly encrypted traffic</td>
+</tr>
+<tr>
+<td><strong>Active</strong></td>
+<td>Tamper with data in transit or disrupt communication — detectable, actively sends traffic</td>
+<td>DoS, MitM, session hijacking, spoofing, replay, SQL injection, XSS, malware, privilege escalation, DNS/ARP poisoning</td>
+</tr>
+<tr>
+<td><strong>Close-in</strong></td>
+<td>Attacker in physical proximity to gather, modify, or disrupt access to information</td>
+<td>Social engineering, shoulder surfing, eavesdropping, dumpster diving</td>
+</tr>
+<tr>
+<td><strong>Insider</strong></td>
+<td>Trusted persons with physical/privileged access misuse it to violate CIA — difficult to detect</td>
+<td>Wiretapping, data theft, pod slurping, planting keyloggers/backdoors/malware</td>
+</tr>
+<tr>
+<td><strong>Distribution</strong></td>
+<td>Hardware or software tampered with <strong>at source or in transit</strong> before installation</td>
+<td>Backdoors inserted by vendors during manufacture or manufacture or distribution</td>
+</tr>
+</tbody>
+</table>
+<h2 id="information-warfare">Information Warfare<a class="headerlink" href="#information-warfare" title="Permanent link">&para;</a></h2>
+<p><strong>Information warfare (InfoWar)</strong> refers to the use of information and communication technologies (ICT) to gain competitive advantages over an opponent. Weapons include viruses, worms, Trojans, logic bombs, trap doors, electronic jamming, and penetration tools.</p>
+<h3 id="categories-libicki">Categories (Libicki)<a class="headerlink" href="#categories-libicki" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Command &amp; Control (C2)</strong></td>
+<td>Impact an attacker has over a compromised system or network they control</td>
+</tr>
+<tr>
+<td><strong>Intelligence-based</strong></td>
+<td>Sensor-based technology that corrupts technological systems; design, protection, and denial of knowledge-seeking systems</td>
+</tr>
+<tr>
+<td><strong>Electronic</strong></td>
+<td>Uses radio-electronic and cryptographic techniques to degrade communication</td>
+</tr>
+<tr>
+<td><strong>Psychological</strong></td>
+<td>Propaganda and terror to demoralize adversaries</td>
+</tr>
+<tr>
+<td><strong>Hacker</strong></td>
+<td>System shutdown, data errors, theft of information/services, false messaging — uses viruses, logic bombs, Trojans, sniffers</td>
+</tr>
+<tr>
+<td><strong>Economic</strong></td>
+<td>Blocks information flow to damage the economy of a business or nation</td>
+</tr>
+<tr>
+<td><strong>Cyberwarfare</strong></td>
+<td>Broadest category; includes information terrorism, semantic attacks (taking over systems while appearing normal), and simula-warfare</td>
+</tr>
+</tbody>
+</table>
+<h3 id="defensive-vs-offensive-information-warfare">Defensive vs. Offensive Information Warfare<a class="headerlink" href="#defensive-vs-offensive-information-warfare" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Defensive</th>
+<th>Offensive</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Goal</strong></td>
+<td>Defend ICT assets against attacks</td>
+<td>Attack the ICT assets of an opponent</td>
+</tr>
+<tr>
+<td><strong>Strategies</strong></td>
+<td>Prevention, deterrence, alerts, detection, emergency preparedness, response</td>
+<td>Web application attacks, web server attacks, malware attacks, MitM attacks, system hacking</td>
+</tr>
+</tbody>
+</table>
+<pre class="mermaid"><code>flowchart LR
+    subgraph DEF["Defensive Warfare"]
+        direction TB
+        D1[Prevention]
+        D2[Deterrence]
+        D3[Alerts]
+        D4[Detection]
+        D5[Emergency Preparedness]
+        D6[Response]
+    end
+
+    subgraph OFF["Offensive Warfare"]
+        direction TB
+        O1[Web Application Attacks]
+        O2[Web Server Attacks]
+        O3[Malware Attacks]
+        O4[MITM Attacks]
+        O5[System Hacking]
+    end
+
+    DEF -- INFO SECURITY --&gt; OFF</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.indexes", "search.highlight"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/flashcards.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

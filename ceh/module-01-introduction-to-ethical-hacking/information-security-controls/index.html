@@ -1,0 +1,3430 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Study notes and flashcards for the CEH certification">
+      
+      
+      
+      
+        <link rel="prev" href="../hacking-methodologies-and-frameworks/">
+      
+      
+        <link rel="next" href="../information-security-laws-and-standards/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Information Security Controls - Certified Ethical Hacker (CEH)</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/flashcards.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link rel="manifest" href="../../../manifest.json">
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("../../../sw.js");
+    }
+  </script>
+
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#information-security-controls" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Certified Ethical Hacker (CEH)" class="md-header__button md-logo" aria-label="Certified Ethical Hacker (CEH)" data-md-component="logo">
+      
+  <img src="../../../assets/android-chrome-192x192.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Certified Ethical Hacker (CEH)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Information Security Controls
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/adanze/certified-ethical-hacker" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    certified-ethical-hacker
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Notes
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../flashcards/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Flashcards
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Certified Ethical Hacker (CEH)" class="md-nav__button md-logo" aria-label="Certified Ethical Hacker (CEH)" data-md-component="logo">
+      
+  <img src="../../../assets/android-chrome-192x192.png" alt="logo">
+
+    </a>
+    Certified Ethical Hacker (CEH)
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/adanze/certified-ethical-hacker" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    certified-ethical-hacker
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Notes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Notes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Module 01 – Introduction to Ethical Hacking
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1" id="__nav_2_1_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Module 01 – Introduction to Ethical Hacking
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../information-security-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Information Security Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hacking-concepts-and-hacker-classes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hacking Concepts and Hacker Classes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ethical-hacking-concepts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ethical Hacking Concepts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hacking-methodologies-and-frameworks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hacking Methodologies and Frameworks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Information Security Controls
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Information Security Controls
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#information-security-controls-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Information Security Controls Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#information-assurance-ia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Information Assurance (IA)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Information Assurance (IA)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#eight-key-ia-processes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eight Key IA Processes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#continualadaptive-security-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Continual/Adaptive Security Strategy
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#defense-in-depth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Defense-in-Depth
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Defense-in-Depth">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-benefits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Benefits
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#layers-of-defense" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Layers of Defense
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#risk-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Risk Management
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Risk Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-risk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is Risk?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#risk-levels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Risk Levels
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#risk-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Risk Matrix
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-risk-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Risk Concepts
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#risk-management-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Risk Management Process
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Risk Management Process">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#risk-management-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Risk Management Objectives
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#risk-management-phases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Risk Management Phases
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#risk-treatment-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Risk Treatment Considerations
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cyber-threat-intelligence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cyber Threat Intelligence
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cyber Threat Intelligence">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#purpose-and-benefits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Purpose and Benefits
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#types-of-threat-intelligence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Types of Threat Intelligence
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strategic-threat-intelligence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Strategic Threat Intelligence
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tactical-threat-intelligence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tactical Threat Intelligence
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operational-threat-intelligence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operational Threat Intelligence
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#technical-threat-intelligence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Technical Threat Intelligence
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#threat-intelligence-lifecycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Threat Intelligence Lifecycle
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Threat Intelligence Lifecycle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#phase-1-planning-and-direction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 1: Planning and Direction
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-2-collection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 2: Collection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-3-processing-and-exploitation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 3: Processing and Exploitation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-4-analysis-and-production" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 4: Analysis and Production
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-5-dissemination-and-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 5: Dissemination and Integration
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#threat-modeling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Threat Modeling
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Threat Modeling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#purpose-and-benefits_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Purpose and Benefits
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-principles-and-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Principles and Best Practices
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#threat-modeling-process-5-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Threat Modeling Process (5 Steps)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#application-overview-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Application Overview Components
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decomposition-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Decomposition Details
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#incident-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Incident Management
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Incident Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-incident-management-involves" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Incident Management Involves
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#incident-management-process-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Incident Management Process Objectives
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#organizational-roles-in-incident-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Organizational Roles in Incident Management
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#incident-management-structure-and-hierarchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Incident Management Structure and Hierarchy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#incident-response-incident-handling-and-incident-management-relationship" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Incident Response, Incident Handling, and Incident Management Relationship
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#incident-handling-and-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Incident Handling and Response
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Incident Handling and Response">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#purpose-and-scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Purpose and Scope
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-nine-steps-of-ihr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Nine Steps of IH&amp;R
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#role-of-ai-and-ml-in-cyber-security" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Role of AI and ML in Cyber Security
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Role of AI and ML in Cyber Security">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-are-ai-and-ml" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What are AI and ML?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ml-classification-techniques" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ML Classification Techniques
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ML Classification Techniques">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#supervised-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supervised Learning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unsupervised-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unsupervised Learning
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-do-ai-and-ml-prevent-cyber-attacks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How Do AI and ML Prevent Cyber Attacks?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../information-security-laws-and-standards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Information Security Laws and Standards
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../module-02-footprinting-and-reconnaissance/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Module 02 – Footprinting and Reconnaissance
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Module 02 – Footprinting and Reconnaissance
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-02-footprinting-and-reconnaissance/footprinting-concepts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footprinting Concepts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-02-footprinting-and-reconnaissance/footprinting-through-search-engines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footprinting through Search Engines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-02-footprinting-and-reconnaissance/footprinting-through-internet-research-services/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footprinting through Internet Research Services
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-02-footprinting-and-reconnaissance/footprinting-through-social-networking-sites/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footprinting through Social Networking Sites
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-02-footprinting-and-reconnaissance/whois-footprinting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Whois Footprinting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-02-footprinting-and-reconnaissance/dns-footprinting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DNS Footprinting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-02-footprinting-and-reconnaissance/network-and-email-footprinting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Network and Email Footprinting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-02-footprinting-and-reconnaissance/footprinting-through-social-engineering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footprinting through Social Engineering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-02-footprinting-and-reconnaissance/footprinting-tasks-using-advanced-tools-and-ai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footprinting Tasks using Advanced Tools and AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-02-footprinting-and-reconnaissance/footprinting-countermeasures/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footprinting Countermeasures
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Flashcards
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Flashcards
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../flashcards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Module 01 – Introduction to Ethical Hacking
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-02-footprinting-and-reconnaissance/flashcards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Module 02 – Footprinting and Reconnaissance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#information-security-controls-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Information Security Controls Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#information-assurance-ia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Information Assurance (IA)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Information Assurance (IA)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#eight-key-ia-processes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eight Key IA Processes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#continualadaptive-security-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Continual/Adaptive Security Strategy
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#defense-in-depth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Defense-in-Depth
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Defense-in-Depth">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-benefits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Benefits
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#layers-of-defense" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Layers of Defense
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#risk-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Risk Management
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Risk Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-risk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is Risk?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#risk-levels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Risk Levels
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#risk-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Risk Matrix
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-risk-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Risk Concepts
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#risk-management-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Risk Management Process
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Risk Management Process">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#risk-management-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Risk Management Objectives
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#risk-management-phases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Risk Management Phases
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#risk-treatment-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Risk Treatment Considerations
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cyber-threat-intelligence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cyber Threat Intelligence
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cyber Threat Intelligence">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#purpose-and-benefits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Purpose and Benefits
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#types-of-threat-intelligence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Types of Threat Intelligence
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strategic-threat-intelligence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Strategic Threat Intelligence
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tactical-threat-intelligence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tactical Threat Intelligence
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operational-threat-intelligence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operational Threat Intelligence
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#technical-threat-intelligence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Technical Threat Intelligence
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#threat-intelligence-lifecycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Threat Intelligence Lifecycle
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Threat Intelligence Lifecycle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#phase-1-planning-and-direction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 1: Planning and Direction
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-2-collection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 2: Collection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-3-processing-and-exploitation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 3: Processing and Exploitation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-4-analysis-and-production" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 4: Analysis and Production
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-5-dissemination-and-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 5: Dissemination and Integration
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#threat-modeling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Threat Modeling
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Threat Modeling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#purpose-and-benefits_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Purpose and Benefits
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-principles-and-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Principles and Best Practices
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#threat-modeling-process-5-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Threat Modeling Process (5 Steps)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#application-overview-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Application Overview Components
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decomposition-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Decomposition Details
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#incident-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Incident Management
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Incident Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-incident-management-involves" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Incident Management Involves
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#incident-management-process-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Incident Management Process Objectives
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#organizational-roles-in-incident-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Organizational Roles in Incident Management
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#incident-management-structure-and-hierarchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Incident Management Structure and Hierarchy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#incident-response-incident-handling-and-incident-management-relationship" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Incident Response, Incident Handling, and Incident Management Relationship
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#incident-handling-and-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Incident Handling and Response
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Incident Handling and Response">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#purpose-and-scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Purpose and Scope
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-nine-steps-of-ihr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Nine Steps of IH&amp;R
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#role-of-ai-and-ml-in-cyber-security" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Role of AI and ML in Cyber Security
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Role of AI and ML in Cyber Security">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-are-ai-and-ml" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What are AI and ML?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ml-classification-techniques" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ML Classification Techniques
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ML Classification Techniques">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#supervised-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supervised Learning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unsupervised-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unsupervised Learning
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-do-ai-and-ml-prevent-cyber-attacks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How Do AI and ML Prevent Cyber Attacks?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="information-security-controls">Information Security Controls<a class="headerlink" href="#information-security-controls" title="Permanent link">&para;</a></h1>
+<p>Information is the greatest asset of an organization and must be secured using policies, creating awareness, and employing security mechanisms. Information security controls prevent unwanted events and reduce risk. The basic security concepts are confidentiality, integrity, and availability; the concepts related to persons accessing information are authentication, authorization, and non-repudiation. This section deals with Information Assurance, continual and adaptive security strategy, defense-in-depth, risk management, cyber threat intelligence, threat modeling, incident management, and AI and ML concepts.</p>
+<h2 id="information-security-controls-overview">Information Security Controls Overview<a class="headerlink" href="#information-security-controls-overview" title="Permanent link">&para;</a></h2>
+<p>Information security controls prevent unwanted events and reduce risk to organizational information assets. Security controls include physical, technical, and administrative measures that protect the confidentiality, integrity, availability, authenticity, and non-repudiation of information during usage, processing, storage, and transmission.</p>
+<p>Controls are enforced through policies, awareness training, security mechanisms, and risk management strategies. The ultimate goal is to ensure information assurance — that only authorized personnel access and use information while maintaining business continuity.</p>
+<h2 id="information-assurance-ia">Information Assurance (IA)<a class="headerlink" href="#information-assurance-ia" title="Permanent link">&para;</a></h2>
+<p>Information Assurance refers to the assurance of the integrity, availability, confidentiality, and authenticity of information and information systems. Information Assurance and Information Risk Management (IRM) ensure that only authorized personnel can access and use information, achieving information security and business continuity.</p>
+<h3 id="eight-key-ia-processes">Eight Key IA Processes<a class="headerlink" href="#eight-key-ia-processes" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Process</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Develop local policy, process, and guidance</td>
+<td>Establish policies and procedures to maintain information systems at optimum security levels.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Design network and user authentication strategies</td>
+<td>Implement secure network infrastructure and robust user authentication to protect privacy and system data.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Identify network vulnerabilities and threats</td>
+<td>Conduct vulnerability assessments to understand security posture and identify areas requiring countermeasures.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Identify problems and resource requirements</td>
+<td>Determine gaps in current security controls and define what resources are needed to address them.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Create plans for identified resource requirements</td>
+<td>Allocate resources and establish priorities for security investments and improvements.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Apply appropriate information assurance controls</td>
+<td>Implement physical, technical, and administrative controls tailored to identified risks and requirements.</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Perform Certification and Accreditation (C&amp;A)</td>
+<td>Validate that systems meet security standards, identify remaining vulnerabilities, and implement remediation measures.</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Provide information assurance training</td>
+<td>Build organizational awareness and IT security knowledge across federal and private sector personnel.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="continualadaptive-security-strategy">Continual/Adaptive Security Strategy<a class="headerlink" href="#continualadaptive-security-strategy" title="Permanent link">&para;</a></h2>
+<p>Adaptive security strategy prescribes continuous <strong>Predict</strong>, <strong>Protect</strong>, <strong>Detect</strong>, and <strong>Respond</strong> actions to ensure comprehensive computer network defense. This cyclical approach enables organizations to anticipate threats, prevent compromise, identify intrusions, and remediate incidents in real time.</p>
+<table>
+<thead>
+<tr>
+<th>Pillar</th>
+<th>Activities</th>
+<th>Focus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Predict</strong></td>
+<td>Risk and vulnerability assessments, attack surface analysis, threat intelligence consumption</td>
+<td>Identify potential attacks, targets, and methods before they materialize into viable threats.</td>
+</tr>
+<tr>
+<td><strong>Protect</strong></td>
+<td>Security policies, physical security, host security, firewalls, Intrusion Detection Systems (IDS)</td>
+<td>Eliminate vulnerabilities and deploy prior countermeasures to prevent unauthorized access and compromise.</td>
+</tr>
+<tr>
+<td><strong>Detect</strong></td>
+<td>Network monitoring, packet sniffing, traffic analysis, anomaly detection</td>
+<td>Assess the network for abnormalities (attacks, unauthorized access, unauthorized modifications) and locate them.</td>
+</tr>
+<tr>
+<td><strong>Respond</strong></td>
+<td>Incident response, investigation, containment, eradication, impact mitigation</td>
+<td>Identify incidents, determine root causes, decide if incident is real or false positive, and execute remediation actions.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="defense-in-depth">Defense-in-Depth<a class="headerlink" href="#defense-in-depth" title="Permanent link">&para;</a></h2>
+<p>Defense-in-depth is a security strategy in which multiple <strong>protection layers</strong> are placed throughout an information system. It applies the military principle that a complex, multi-layered defense system is more difficult to defeat than a single barrier.</p>
+<h3 id="key-benefits">Key Benefits<a class="headerlink" href="#key-benefits" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Prevents direct attacks</strong> — A break in one layer only leads the attacker to the next protective layer.</li>
+<li><strong>Minimizes impact</strong> — If an attacker gains access to one layer, defense-in-depth limits the scope and severity of damage.</li>
+<li><strong>Provides time for response</strong> — Layered defenses give administrators and engineers time to deploy new or updated countermeasures before intrusion spreads.</li>
+</ul>
+<h3 id="layers-of-defense">Layers of Defense<a class="headerlink" href="#layers-of-defense" title="Permanent link">&para;</a></h3>
+<p>Defense-in-depth typically includes multiple layers spanning administrative, technical, and physical domains:</p>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Controls &amp; Measures</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Policies, Procedures, and Awareness</strong></td>
+<td>Organizational security guidelines and user training</td>
+</tr>
+<tr>
+<td><strong>Physical Security</strong></td>
+<td>Access controls, CCTV, locks, environmental controls</td>
+</tr>
+<tr>
+<td><strong>Perimeter Security</strong></td>
+<td>Firewalls, boundary protection, network segmentation</td>
+</tr>
+<tr>
+<td><strong>Internal Network</strong></td>
+<td>Intrusion Detection/Prevention Systems (IDS/IPS), network monitoring, access controls</td>
+</tr>
+<tr>
+<td><strong>Host Security</strong></td>
+<td>Operating System (OS) hardening, antivirus, host-based firewalls, patch management</td>
+</tr>
+<tr>
+<td><strong>Application Security</strong></td>
+<td>Secure coding, input validation, authentication/authorization</td>
+</tr>
+<tr>
+<td><strong>Data Security</strong></td>
+<td>Encryption, data classification, access controls, backup and recovery</td>
+</tr>
+</tbody>
+</table>
+<h2 id="risk-management">Risk Management<a class="headerlink" href="#risk-management" title="Permanent link">&para;</a></h2>
+<h3 id="what-is-risk">What is Risk?<a class="headerlink" href="#what-is-risk" title="Permanent link">&para;</a></h3>
+<p>Risk refers to the degree of <strong>uncertainty or expectation</strong> that an adverse event may cause damage to the system or its resources. It is the combination of the <strong>probability of a threat</strong> occurring and the <strong>consequence or impact</strong> of that event.</p>
+<p><strong>Risk Formula:</strong></p>
+<div class="arithmatex">\[\text{Risk} = \text{Threat} \times \text{Vulnerability} \times \text{Impact}\]</div>
+<p>Or alternatively:</p>
+<div class="arithmatex">\[\text{Risk} = \text{Threat} \times \text{Vulnerability} \times \text{Asset Value}\]</div>
+<p>Risk can be expressed as:</p>
+<div class="arithmatex">\[\text{Risk} = \text{Threat} \times \text{Vulnerability} \times \text{Impact}\]</div>
+<h3 id="risk-levels">Risk Levels<a class="headerlink" href="#risk-levels" title="Permanent link">&para;</a></h3>
+<p>Risks are categorized into different levels according to their estimated impact on the system. Organizations use risk levels to prioritize remediation efforts.</p>
+<p>The level of risk is calculated using:</p>
+<div class="arithmatex">\[\text{Level of Risk} = \text{Consequence} \times \text{Likelihood}\]</div>
+<table>
+<thead>
+<tr>
+<th>Risk Level</th>
+<th>Consequence</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Extreme or High</strong></td>
+<td>Serious or Imminent danger</td>
+<td>• Immediate measures required to combat risk<br>• Identify and impose controls to reduce risk to a reasonably low level</td>
+</tr>
+<tr>
+<td><strong>Medium</strong></td>
+<td>Moderate danger</td>
+<td>• Immediate action not required, but action should be implemented quickly<br>• Implement controls as soon as possible to reduce risk to a reasonably low level</td>
+</tr>
+<tr>
+<td><strong>Low</strong></td>
+<td>Negligible danger</td>
+<td>• Take preventive steps to mitigate the effects of risk</td>
+</tr>
+</tbody>
+</table>
+<h3 id="risk-matrix">Risk Matrix<a class="headerlink" href="#risk-matrix" title="Permanent link">&para;</a></h3>
+<p>The risk matrix is a graphical representation that scales <strong>likelihood (probability)</strong> against <strong>consequences (impact)</strong> to visualize and compare risks. It helps in decision-making and risk prioritization.</p>
+<table>
+<thead>
+<tr>
+<th>Probability</th>
+<th>Likelihood</th>
+<th>Insignificant</th>
+<th>Minor</th>
+<th>Moderate</th>
+<th>Major</th>
+<th>Severe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>81 - 100%</td>
+<td>Very High Probability</td>
+<td>Low</td>
+<td>Medium</td>
+<td>High</td>
+<td>Extreme</td>
+<td>Extreme</td>
+</tr>
+<tr>
+<td>61 - 80%</td>
+<td>High Probability</td>
+<td>Low</td>
+<td>Medium</td>
+<td>High</td>
+<td>High</td>
+<td>Extreme</td>
+</tr>
+<tr>
+<td>41 - 60%</td>
+<td>Equal Probability</td>
+<td>Low</td>
+<td>Medium</td>
+<td>Medium</td>
+<td>High</td>
+<td>High</td>
+</tr>
+<tr>
+<td>21 - 40%</td>
+<td>Low Probability</td>
+<td>Low</td>
+<td>Low</td>
+<td>Medium</td>
+<td>Medium</td>
+<td>High</td>
+</tr>
+<tr>
+<td>1 - 20%</td>
+<td>Very Low Probability</td>
+<td>Low</td>
+<td>Low</td>
+<td>Medium</td>
+<td>Medium</td>
+<td>High</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note:</strong> This is an example risk matrix. Organizations must create their own risk matrices based on their business needs and risk appetite.</p>
+<h3 id="key-risk-concepts">Key Risk Concepts<a class="headerlink" href="#key-risk-concepts" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Likelihood (Probability):</strong> The chance that a risk event will occur</li>
+<li><strong>Consequence (Impact):</strong> The severity or extent of damage if a risk event occurs</li>
+<li><strong>Control Measures:</strong> May decrease the level of risk, but do not always entirely eliminate it</li>
+</ul>
+<h2 id="risk-management-process">Risk Management Process<a class="headerlink" href="#risk-management-process" title="Permanent link">&para;</a></h2>
+<p>Risk management is the process of <strong>reducing and maintaining risk at an acceptable level</strong> by means of a well-defined and actively employed security program. It is a continuous and complex process that helps organizations identify, assess, respond to, and control potential effects of risk throughout all stages of operations.</p>
+<h3 id="risk-management-objectives">Risk Management Objectives<a class="headerlink" href="#risk-management-objectives" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Objective</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Identify potential risks</strong></td>
+<td>The main objective; identify sources, causes, and consequences of internal and external risks affecting organizational security</td>
+</tr>
+<tr>
+<td><strong>Assess risk impact</strong></td>
+<td>Develop better risk management strategies and plans based on estimated likelihood and consequences</td>
+</tr>
+<tr>
+<td><strong>Prioritize risks</strong></td>
+<td>Rank identified risks by severity and impact using established risk management methods and tools</td>
+</tr>
+<tr>
+<td><strong>Understand and analyze risks</strong></td>
+<td>Report identified risk events with thorough analysis and documentation</td>
+</tr>
+<tr>
+<td><strong>Control and mitigate</strong></td>
+<td>Reduce risk effects and consequences through appropriate countermeasures and controls</td>
+</tr>
+<tr>
+<td><strong>Create awareness</strong></td>
+<td>Develop strategies and build lasting risk management culture among security staff and personnel</td>
+</tr>
+</tbody>
+</table>
+<h3 id="risk-management-phases">Risk Management Phases<a class="headerlink" href="#risk-management-phases" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>Description</th>
+<th>Key Activities</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Risk Identification</strong></td>
+<td>Initial step to identify sources, causes, and consequences of internal and external risks before they cause harm</td>
+<td>• Identify risks affecting organization security<br>• Depends on skill set and differs by organization</td>
+</tr>
+<tr>
+<td><strong>Risk Assessment</strong></td>
+<td>• Assess organization's risks and estimate likelihood and impact<br>• Ongoing iterative process</td>
+<td>• Assign priorities for mitigation<br>• Determine quantitative/qualitative value<br>• Detect and prioritize risks</td>
+</tr>
+<tr>
+<td><strong>Risk Treatment</strong></td>
+<td>Select and implement appropriate controls to modify identified risks based on severity level</td>
+<td>• Identify treatment methods<br>• Determine responsibility, costs, benefits<br>• Prioritize order of treatment</td>
+</tr>
+<tr>
+<td><strong>Risk Tracking</strong></td>
+<td>Continuous monitoring and observation of implemented controls and risk status</td>
+<td>• Monitor control effectiveness<br>• Track risk indicators<br>• Maintain risk registers<br>• Observe for emerging risks</td>
+</tr>
+<tr>
+<td><strong>Risk Review</strong></td>
+<td>Periodic evaluation and assessment of risk management strategies and control effectiveness</td>
+<td>• Review control performance<br>• Verify procedures are understood and followed<br>• Identify improvement opportunities</td>
+</tr>
+</tbody>
+</table>
+<h3 id="risk-treatment-considerations">Risk Treatment Considerations<a class="headerlink" href="#risk-treatment-considerations" title="Permanent link">&para;</a></h3>
+<p>Before treating a risk, organizations must determine:
+- The appropriate method of treatment
+- People responsible for implementation
+- Costs and benefits involved
+- Likelihood of success
+- Ways to measure and assess treatment effectiveness</p>
+<h2 id="cyber-threat-intelligence">Cyber Threat Intelligence<a class="headerlink" href="#cyber-threat-intelligence" title="Permanent link">&para;</a></h2>
+<p><strong>Threat:</strong> A potential occurrence of an undesired event that can damage and interrupt organizational operational and functional activities, affecting integrity and availability of systems and assets.</p>
+<p><strong>Cyber Threat Intelligence (CTI):</strong> The collection and analysis of information about threats and adversaries, including patterns that enable knowledgeable decisions for preparedness, prevention, and response actions against cyber attacks. CTI converts unknown threats into known threats through research and analysis of emerging cyber threats, trends, and technical developments.</p>
+<h3 id="purpose-and-benefits">Purpose and Benefits<a class="headerlink" href="#purpose-and-benefits" title="Permanent link">&para;</a></h3>
+<p>CTI helps organizations:
+- <strong>Identify and mitigate</strong> various business risks by converting unknown threats into known threats
+- <strong>Develop proactive cybersecurity posture</strong> in advance of exploitation
+- <strong>Anticipate attacks</strong> before they occur, resulting in better and more secure systems
+- <strong>Handle threats effectively</strong> with proper planning and execution
+- <strong>Strengthen defense systems</strong> and create awareness about impending risks
+- <strong>Respond promptly</strong> with appropriate countermeasures</p>
+<p>CTI identifies risk factors responsible for malware, SQL injections, web application attacks, data leaks, phishing, and denial-of-service attacks.</p>
+<h3 id="types-of-threat-intelligence">Types of Threat Intelligence<a class="headerlink" href="#types-of-threat-intelligence" title="Permanent link">&para;</a></h3>
+<p>Threat intelligence is subdivided into four types based on <strong>consumers</strong> and <strong>goals</strong>. They differ in data collection, analysis, and consumption.</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Definition</th>
+<th>Consumers</th>
+<th>Key Focus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Strategic</strong></td>
+<td>High-level information on cybersecurity posture, threats, financial impact, and attack trends</td>
+<td>High-level executives, IT management, Chief Information Security Officer (CISO)</td>
+<td>Long-term issues, business strategies, high-level concepts</td>
+</tr>
+<tr>
+<td><strong>Tactical</strong></td>
+<td>Information on tactics, techniques, and procedures (TTPs) used by threat actors</td>
+<td>IT service managers, security managers, Network Operations Center (NOC) staff, administrators</td>
+<td>Adversary attack methods, detection and mitigation strategies</td>
+</tr>
+<tr>
+<td><strong>Operational</strong></td>
+<td>Information about specific threats with contextual details on security events and incidents</td>
+<td>Security managers, heads of incident response, network defenders, forensics teams</td>
+<td>Threat actor intentions and capabilities, early-stage attack detection</td>
+</tr>
+<tr>
+<td><strong>Technical</strong></td>
+<td>Information about resources (tools, command and control channels) attackers use, focused on Indicators of Compromise (IoCs)</td>
+<td>Security Operations Center (SOC) staff, incident response teams</td>
+<td>Specific technical implementations, rapid response to threats</td>
+</tr>
+</tbody>
+</table>
+<h3 id="strategic-threat-intelligence">Strategic Threat Intelligence<a class="headerlink" href="#strategic-threat-intelligence" title="Permanent link">&para;</a></h3>
+<p><strong>Information includes:</strong>
+- Financial impact of cyber activity
+- Attribution for intrusions and data breaches
+- Threat actors and attack trends
+- Threat landscape for industry sectors
+- Statistical information on breaches and malware
+- Geopolitical conflicts involving cyber attacks
+- Changes in adversary tactics, techniques, and procedures (TTPs) over time</p>
+<p><strong>Sources:</strong> Open Source Intelligence (OSINT), CTI vendors, Information Sharing and Analysis Organizations (ISAOs), Information Sharing and Analysis Centers (ISACs); requires highly skilled professionals</p>
+<h3 id="tactical-threat-intelligence">Tactical Threat Intelligence<a class="headerlink" href="#tactical-threat-intelligence" title="Permanent link">&para;</a></h3>
+<p><strong>Activities:</strong>
+- Develop detection and mitigation strategies
+- Update security products with identified indicators
+- Patch vulnerable systems
+- Analyze security incidents and events</p>
+<p><strong>Sources:</strong> Campaign reports, malware samples, incident reports, attack group reports, human intelligence, white papers, technical papers, third-party intelligence</p>
+<h3 id="operational-threat-intelligence">Operational Threat Intelligence<a class="headerlink" href="#operational-threat-intelligence" title="Permanent link">&para;</a></h3>
+<p><strong>Activities:</strong>
+- Identify past malicious activities
+- Perform efficient investigations
+- Deploy security assets to identify and stop upcoming attacks
+- Reduce damage to IT assets</p>
+<p><strong>Sources:</strong> Human intelligence, social media, chat rooms, real-world activities and events; typically collected by government organizations</p>
+<h3 id="technical-threat-intelligence">Technical Threat Intelligence<a class="headerlink" href="#technical-threat-intelligence" title="Permanent link">&para;</a></h3>
+<p><strong>Examples:</strong>
+- Specific malware implementations
+- IP addresses and domains used by malicious endpoints
+- Phishing email headers
+- Hash checksums of malware</p>
+<p><strong>Application:</strong> Added to defensive systems (Intrusion Detection/Prevention Systems (IDS/IPS), firewalls, endpoint security) to enhance detection mechanisms and identify malicious traffic at early stages</p>
+<h2 id="threat-intelligence-lifecycle">Threat Intelligence Lifecycle<a class="headerlink" href="#threat-intelligence-lifecycle" title="Permanent link">&para;</a></h2>
+<p>The threat intelligence lifecycle is a continuous process of developing intelligence from raw data that supports organizations in developing defensive mechanisms to thwart emerging risks and threats. Higher-level executives provide continuous support to the intelligence team by evaluating and giving feedback at every stage. The lifecycle consists of five phases: planning and direction, collection, processing and exploitation, analysis and production, and dissemination and integration.</p>
+<pre class="mermaid"><code>graph LR
+    A["&lt;b&gt;1. Planning&lt;br/&gt;and Direction&lt;/b&gt;&lt;br/&gt;Define requirements&lt;br/&gt;Form intelligence team"] 
+    B["&lt;b&gt;2. Collection&lt;/b&gt;&lt;br/&gt;Gather intelligence&lt;br/&gt;from various sources"]
+    C["&lt;b&gt;3. Processing&lt;br/&gt;and Exploitation&lt;/b&gt;&lt;br/&gt;Transform raw data&lt;br/&gt;into usable format"]
+    D["&lt;b&gt;4. Analysis&lt;br/&gt;and Production&lt;/b&gt;&lt;br/&gt;Extract intelligence&lt;br/&gt;Develop countermeasures"]
+    E["&lt;b&gt;5. Dissemination&lt;br/&gt;and Integration&lt;/b&gt;&lt;br/&gt;Deliver to consumers&lt;br/&gt;Gather feedback"]
+
+    A --&gt; B
+    B --&gt; C
+    C --&gt; D
+    D --&gt; E
+    E --&gt;|Feedback &amp; Continuous Improvement| A</code></pre>
+<h3 id="phase-1-planning-and-direction">Phase 1: Planning and Direction<a class="headerlink" href="#phase-1-planning-and-direction" title="Permanent link">&para;</a></h3>
+<p><strong>Purpose:</strong> Develop a proper plan based on strategic intelligence requirements and define the entire intelligence program.</p>
+<p><strong>Key Activities:</strong>
+- Define intelligence requirements (what information is needed, which data should be prioritized)
+- Make a collection plan
+- Identify data collection methods and requirements
+- Form an intelligence team with defined roles and responsibilities
+- Send requests for data collection from various internal and external sources
+- Set planning and requirements for later cycle phases</p>
+<p><strong>Objectives:</strong>
+- Establish effective and genuine intelligence data gathering using available resources
+- Ensure intelligence program supports organizational strategic needs
+- Provide foundation for complete intelligence process from collection to final delivery</p>
+<h3 id="phase-2-collection">Phase 2: Collection<a class="headerlink" href="#phase-2-collection" title="Permanent link">&para;</a></h3>
+<p><strong>Purpose:</strong> Gather desired intelligence from multiple sources using technical and human means.</p>
+<p><strong>Collection Methods:</strong>
+- <strong>Human Intelligence (HUMINT):</strong> Data collected from human sources
+- <strong>Imagery Intelligence (IMINT):</strong> Data collected through visual reconnaissance
+- <strong>Measurement and Signature Intelligence (MASINT):</strong> Data collected through technical measurements and signatures
+- <strong>Signal Intelligence (SIGINT):</strong> Data collected through interception of signals
+- <strong>Open Source Intelligence (OSINT):</strong> Data collected from publicly available sources
+- <strong>Indicators of Compromise (IoCs):</strong> Technical indicators of malicious activity
+- <strong>Third-party sources:</strong> External intelligence providers and data feeds</p>
+<p><strong>Data Collection Sources:</strong>
+- Critical applications and network infrastructure
+- Security infrastructure and systems
+- Internal and external data sources (direct or covert)</p>
+<p><strong>Outcome:</strong> Collected data transferred for processing in next phase</p>
+<h3 id="phase-3-processing-and-exploitation">Phase 3: Processing and Exploitation<a class="headerlink" href="#phase-3-processing-and-exploitation" title="Permanent link">&para;</a></h3>
+<p><strong>Purpose:</strong> Transform raw data into meaningful, usable information.</p>
+<p><strong>Key Activities:</strong>
+- Process raw data for exploitation
+- Convert raw data into useful information using sophisticated technology and tools
+- Interpret data using highly trained professionals
+- Convert interpreted data into usable format for analysis phase</p>
+<p><strong>Automated Processing Functions:</strong>
+- Data structuring, decryption, language translation
+- Parsing, data reduction, filtering
+- Data correlation and aggregation</p>
+<p><strong>Requirements for Effective Processing:</strong>
+- Proper understanding of data collection plan
+- Knowledge of consumer requirements
+- Clear analytical strategy
+- Understanding of data types being processed</p>
+<h3 id="phase-4-analysis-and-production">Phase 4: Analysis and Production<a class="headerlink" href="#phase-4-analysis-and-production" title="Permanent link">&para;</a></h3>
+<p><strong>Purpose:</strong> Analyze processed intelligence to extract refined information and identify threats.</p>
+<p><strong>Analysis Components:</strong>
+- Facts, findings, and forecasts that enable estimation and anticipation of attacks
+- Combination of information from various sources into single entity
+- Application of analysis techniques: qualitative, quantitative, machine-based, statistical methods</p>
+<p><strong>Analysis Characteristics (must be):</strong>
+- <strong>Objective:</strong> Unbiased and based on evidence
+- <strong>Timely:</strong> Delivered when needed
+- <strong>Accurate:</strong> Correct and verified
+- <strong>Actionable:</strong> Can be directly used for decision-making</p>
+<p><strong>Reasoning Techniques:</strong>
+- Deduction (general to specific)
+- Induction (specific to general)
+- Abduction (best explanation)
+- Scientific method (confidence-based analysis)</p>
+<p><strong>Outcome:</strong> Elevated raw data to intelligence when sufficient context exists for identifying threats; development of appropriate countermeasures</p>
+<h3 id="phase-5-dissemination-and-integration">Phase 5: Dissemination and Integration<a class="headerlink" href="#phase-5-dissemination-and-integration" title="Permanent link">&para;</a></h3>
+<p><strong>Purpose:</strong> Deliver analyzed intelligence to intended consumers and gather feedback for continuous improvement.</p>
+<p><strong>Dissemination Methods:</strong>
+- Automated means (digital feeds, dashboards)
+- Manual methods (reports, briefings, presentations)</p>
+<p><strong>Major Intelligence Information Types for Distribution:</strong>
+- Threat indicators and Indicators of Compromise (IoCs)
+- Adversary Tactics, Techniques, and Procedures (TTPs)
+- Security alerts
+- Threat intelligence reports
+- Tool configuration information</p>
+<p><strong>Intelligence Consumption by Level:</strong>
+- <strong>Strategic Level:</strong> High-level executives and management; focus on business strategies and risk-based decisions
+- <strong>Tactical Level:</strong> IT service and Security Operations Center (SOC) managers, administrators, architects; focus on adversary TTPs
+- <strong>Operational Level:</strong> Security managers and network defenders; focus on specific threats to organization
+- <strong>Technical Level:</strong> SOC staff and Incident Response (IR) teams; focus on identified Indicators of Compromise (IoCs)</p>
+<p><strong>Benefits of Dissemination:</strong>
+- Helps organizations build defensive and mitigation strategies
+- Internal sharing builds situational awareness
+- External sharing enhances industry security posture
+- Improves risk management processes</p>
+<p><strong>Feedback Loop:</strong>
+- Consumers provide assessment on intelligence relevance and accuracy
+- Feedback describes whether extracted intelligence meets consumer requirements
+- Continuous cycle improves intelligence accuracy through relevant and timely assessments
+- Cycle repeats with refined requirements and methods</p>
+<h2 id="threat-modeling">Threat Modeling<a class="headerlink" href="#threat-modeling" title="Permanent link">&para;</a></h2>
+<p><strong>Threat Modeling:</strong> A risk assessment approach for analyzing the security of an application by capturing, organizing, and analyzing all the information that affects it. Every application should have a developed and documented threat model that should be revisited as the application evolves and development progresses.</p>
+<h3 id="purpose-and-benefits_1">Purpose and Benefits<a class="headerlink" href="#purpose-and-benefits_1" title="Permanent link">&para;</a></h3>
+<p>Threat modeling helps to:
+- <strong>Identify relevant threats</strong> to a particular application scenario
+- <strong>Identify key vulnerabilities</strong> in an application's design
+- <strong>Improve security design</strong> through comprehensive threat analysis
+- Determine security objectives and constraints
+- Guide security efforts by understanding the application architecture and data flows</p>
+<h3 id="key-principles-and-best-practices">Key Principles and Best Practices<a class="headerlink" href="#key-principles-and-best-practices" title="Permanent link">&para;</a></h3>
+<p><strong>Focus on Approach, Not Rigidity:</strong>
+- Do not be rigid about specific steps or implementations
+- If any step becomes impassable, proceed to step 4 and identify the problem
+- Use iterative approach and add details as design and development continue</p>
+<p><strong>Use Existing Resources:</strong>
+- Use documented use cases, architectural diagrams, and data flow diagrams
+- Start with a whiteboard before capturing information in documents
+- Obtain input from system and network administrators about host/network constraints
+- Use scenarios to scope modeling activities</p>
+<p><strong>Information to Gather:</strong>
+- Host configurations and firewall policies
+- Allowed protocols and ports
+- End-to-end deployment details
+- Role-based access controls
+- Technology stack and components</p>
+<h3 id="threat-modeling-process-5-steps">Threat Modeling Process (5 Steps)<a class="headerlink" href="#threat-modeling-process-5-steps" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Process</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1</strong></td>
+<td><strong>Identify Security Objectives</strong></td>
+<td>Define goals and constraints related to confidentiality, integrity, and availability<br>• What data should be protected?<br>• Are there compliance requirements?<br>• What are quality-of-service requirements?<br>• What intangible assets need protection?</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td><strong>Application Overview</strong></td>
+<td>Understand the application structure and architecture<br>• Identify components, data flows, trust boundaries<br>• Draw end-to-end deployment topology<br>• Identify logical layers, key services, communication protocols<br>• Identify roles, usage scenarios, technologies, security mechanisms</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td><strong>Decompose the Application</strong></td>
+<td>Break down application to identify trust boundaries and data flows<br>• Identify trust boundaries (where trust levels change)<br>• Identify data flows from entry to exit<br>• Identify entry points (methods for intrusion)<br>• Identify exit points (data transfer to clients/external systems)</td>
+</tr>
+<tr>
+<td><strong>4</strong></td>
+<td><strong>Identify Threats</strong></td>
+<td>Find relevant threats to control scenario and context<br>• Use common threats grouped by vulnerability category<br>• Bring development and test teams together<br>• Use question-driven approach based on application overview and decomposition</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td><strong>Identify Vulnerabilities</strong></td>
+<td>Find weaknesses that allow attacker exploitation<br>• Identify weaknesses related to threats found<br>• Use vulnerability categories for identification<br>• Fix vulnerabilities beforehand to prevent breaches</td>
+</tr>
+</tbody>
+</table>
+<h3 id="application-overview-components">Application Overview Components<a class="headerlink" href="#application-overview-components" title="Permanent link">&para;</a></h3>
+<p>When identifying application overview, include:</p>
+<p><strong>Deployment Diagram Elements:</strong>
+- End-to-end deployment topology
+- Logical layers
+- Key components and services
+- Communication ports and protocols
+- Identities and external dependencies</p>
+<p><strong>Role Identification:</strong>
+- Higher-privileged user groups
+- Read, update, and delete permissions
+- Role-based access controls</p>
+<p><strong>Technology Stack:</strong>
+- Operating systems
+- Web server and database server software
+- Presentation, business, and data access layers
+- Development languages</p>
+<p><strong>Security Mechanisms:</strong>
+- Input and data validation
+- Authorization and authentication
+- Sensitive data handling
+- Configuration management
+- Session management
+- Parameter manipulation
+- Cryptography implementation
+- Exception management
+- Auditing and logging</p>
+<h3 id="decomposition-details">Decomposition Details<a class="headerlink" href="#decomposition-details" title="Permanent link">&para;</a></h3>
+<p><strong>Trust Boundaries:</strong>
+- Outer system boundaries
+- Access control points requiring extra privileges
+- Trust boundaries from data flow perspective</p>
+<p><strong>Data Flows:</strong>
+- Input from entry to exit
+- Communication with external systems and clients
+- Internal component interactions
+- Data validation at trust boundary entry points</p>
+<p><strong>Entry Points:</strong>
+- User interaction points (attack vectors)
+- Internal entry points for component communication
+- Critical functionalities requiring adequate defense</p>
+<p><strong>Exit Points:</strong>
+- Data transfer to clients or external systems
+- Priority on points writing untrusted data or client input
+- Shared database connections</p>
+<h2 id="incident-management">Incident Management<a class="headerlink" href="#incident-management" title="Permanent link">&para;</a></h2>
+<p><strong>Incident Management:</strong> A set of defined processes to <strong>identify, analyze, prioritize, and resolve</strong> security incidents to restore normal service operations as quickly as possible and prevent future recurrence. It involves responding to security events, triggering alerts to prevent potential risks and threats, and proactively identifying vulnerabilities before exploitation.</p>
+<h3 id="what-incident-management-involves">What Incident Management Involves<a class="headerlink" href="#what-incident-management-involves" title="Permanent link">&para;</a></h3>
+<p>Incident management encompasses multiple activities and functions:</p>
+<ul>
+<li><strong>Vulnerability Analysis</strong> — Identifying software and systems open to attacks before exploitation</li>
+<li><strong>Artifact Analysis</strong> — Examining forensic evidence and artifacts from security incidents</li>
+<li><strong>Security Awareness Training</strong> — Conducting training sessions to help users recognize suspicious events and report incidents</li>
+<li><strong>Intrusion Detection</strong> — Monitoring and identifying unauthorized access attempts and compromises</li>
+<li><strong>Public/Technology Monitoring</strong> — Tracking security announcements, alerts, and technology trends</li>
+</ul>
+<h3 id="incident-management-process-objectives">Incident Management Process Objectives<a class="headerlink" href="#incident-management-process-objectives" title="Permanent link">&para;</a></h3>
+<p>The incident management process is designed to achieve the following goals:</p>
+<ul>
+<li><strong>Improve service quality</strong> and system performance</li>
+<li><strong>Resolve problems proactively</strong> before they escalate</li>
+<li><strong>Reduce the impact</strong> of incidents on the organization or its business operations</li>
+<li><strong>Meet service availability requirements</strong> and maintain business continuity</li>
+<li><strong>Increase staff efficiency and productivity</strong> by streamlining response processes</li>
+<li><strong>Improve user and customer satisfaction</strong> through faster resolution</li>
+<li><strong>Assist in handling future incidents</strong> through lessons learned and documentation</li>
+</ul>
+<h3 id="organizational-roles-in-incident-management">Organizational Roles in Incident Management<a class="headerlink" href="#organizational-roles-in-incident-management" title="Permanent link">&para;</a></h3>
+<p>Different organizational functions play critical roles in incident management:</p>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Responsibilities</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Human Resources (HR)</strong></td>
+<td>Take steps to terminate employees suspected of harmful computer activities or security violations</td>
+</tr>
+<tr>
+<td><strong>Legal Counsel</strong></td>
+<td>Set rules and regulations for the organization; influence internal security policies and practices; provide guidance on compliance and legal implications of incidents</td>
+</tr>
+<tr>
+<td><strong>Firewall Manager</strong></td>
+<td>Maintain and manage firewall filters; monitor for denial-of-service (DoS) attacks and suspicious traffic patterns</td>
+</tr>
+<tr>
+<td><strong>Outsourced Service Provider</strong></td>
+<td>Repair and remediate systems infected by viruses, malware, and other security threats; provide technical recovery services</td>
+</tr>
+</tbody>
+</table>
+<h3 id="incident-management-structure-and-hierarchy">Incident Management Structure and Hierarchy<a class="headerlink" href="#incident-management-structure-and-hierarchy" title="Permanent link">&para;</a></h3>
+<pre class="mermaid"><code>graph TD
+    IM["Incident Management"]
+
+    IM --&gt; VH["Vulnerability Handling"]
+    IM --&gt; AH["Artifact Handling"]
+    IM --&gt; AN["Announcements"]
+    IM --&gt; AL["Alerts"]
+
+    IM --&gt; IH["Incident Handling"]
+    IH --&gt; TG["Triage"]
+    IH --&gt; RD["Reporting and Detection"]
+    IH --&gt; IR["Incident Response"]
+    IH --&gt; AN2["Analysis"]
+
+    IM --&gt; OIM["Other Incident Management Services"]</code></pre>
+<h3 id="incident-response-incident-handling-and-incident-management-relationship">Incident Response, Incident Handling, and Incident Management Relationship<a class="headerlink" href="#incident-response-incident-handling-and-incident-management-relationship" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Concept</th>
+<th>Definition</th>
+<th>Relationship</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Incident Response</strong></td>
+<td>Actions to respond to and contain identified security incidents</td>
+<td>One of the functions performed in incident handling</td>
+</tr>
+<tr>
+<td><strong>Incident Handling</strong></td>
+<td>Services that encompass detection, reporting, response, and analysis of incidents</td>
+<td>One of the services provided as part of incident management</td>
+</tr>
+<tr>
+<td><strong>Incident Management</strong></td>
+<td>Comprehensive set of processes to identify, analyze, prioritize, and resolve security incidents</td>
+<td>Overarching framework that includes incident handling</td>
+</tr>
+</tbody>
+</table>
+<h2 id="incident-handling-and-response">Incident Handling and Response<a class="headerlink" href="#incident-handling-and-response" title="Permanent link">&para;</a></h2>
+<p><strong>Incident Handling and Response (IH&amp;R):</strong> The process of taking organized and careful steps when reacting to a security incident or cyberattack. It is a set of procedures, actions, and measures taken against an unexpected event. IH&amp;R involves logging, recording, and resolving incidents while noting when they occurred, their impact, and their cause.</p>
+<h3 id="purpose-and-scope">Purpose and Scope<a class="headerlink" href="#purpose-and-scope" title="Permanent link">&para;</a></h3>
+<p>IH&amp;R is the practice of managing incident response processes — such as preparation, detection, containment, eradication, and recovery — to overcome incident impact quickly and efficiently. The IH&amp;R process provides a focused approach for restoring normal business operations as quickly as possible after an incident with minimal impact on the business. It includes defining user policies, developing protocols, building incident response teams, auditing organizational assets, planning response procedures, obtaining management approval, incident reporting, prioritization, and managing response. It also establishes proper communication between responders and guides them to detect, analyze, contain, recover, and prevent incidents.</p>
+<h3 id="the-nine-steps-of-ihr">The Nine Steps of IH&amp;R<a class="headerlink" href="#the-nine-steps-of-ihr" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Phase</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1</strong></td>
+<td><strong>Preparation</strong></td>
+<td>Audit resources and assets to determine security purpose. Define rules, policies, and procedures for the IH&amp;R process. Build and train incident response teams. Define incident readiness procedures. Gather required tools and train employees on system and account security.</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td><strong>Incident Recording and Assignment</strong></td>
+<td>Initial reporting and recording of the incident takes place. Identify the incident and define proper incident communication plans for employees. Include communication methods for informing IT support personnel or submitting appropriate tickets.</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td><strong>Incident Triage</strong></td>
+<td>Analyze, validate, categorize, and prioritize identified security incidents. Analyze the compromised device to find incident details: type of attack, severity, target, impact, propagation method, and vulnerabilities exploited.</td>
+</tr>
+<tr>
+<td><strong>4</strong></td>
+<td><strong>Notification</strong></td>
+<td>IH&amp;R team informs various stakeholders — including management, third-party vendors, and clients — about the identified incident.</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td><strong>Containment</strong></td>
+<td>Prevent spread of infection to other organizational assets. Stop additional damage and limit the incident's scope.</td>
+</tr>
+<tr>
+<td><strong>6</strong></td>
+<td><strong>Evidence Gathering and Forensic Analysis</strong></td>
+<td>Accumulate all possible evidence related to the incident. Submit evidence to forensic department for investigation. Forensic analysis reveals attack method, exploited vulnerabilities, averted security mechanisms, infected network devices, and compromised applications.</td>
+</tr>
+<tr>
+<td><strong>7</strong></td>
+<td><strong>Eradication</strong></td>
+<td>Remove or eliminate the root cause of the incident. Close all attack vectors to prevent similar incidents in the future.</td>
+</tr>
+<tr>
+<td><strong>8</strong></td>
+<td><strong>Recovery</strong></td>
+<td>Restore affected systems, services, resources, and data after eliminating incident causes. Ensure the incident causes no disruption to organizational services or business.</td>
+</tr>
+<tr>
+<td><strong>9</strong></td>
+<td><strong>Post-Incident Activities</strong></td>
+<td>Conduct final review and analysis before closing the matter. Include: incident documentation, incident impact assessment, and reviewing and revising policies.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="role-of-ai-and-ml-in-cyber-security">Role of AI and ML in Cyber Security<a class="headerlink" href="#role-of-ai-and-ml-in-cyber-security" title="Permanent link">&para;</a></h2>
+<p>Machine learning (ML) and Artificial Intelligence (AI) are now widely used across various industries due to <strong>increased computing power, data collection, and storage capabilities</strong>. In cybersecurity, AI and ML help <strong>identify new exploits and weaknesses</strong> that can be analyzed to mitigate further attacks, reducing pressure on security professionals and providing real-time alerts.</p>
+<h3 id="what-are-ai-and-ml">What are AI and ML?<a class="headerlink" href="#what-are-ai-and-ml" title="Permanent link">&para;</a></h3>
+<p><strong>Artificial Intelligence (AI)</strong> is a solution to defend networks against attacks that traditional antivirus scans cannot detect. Large amounts of collected data are fed into AI systems, which process and analyze it to understand patterns, details, and trends.</p>
+<p><strong>Machine Learning (ML)</strong> is a branch of artificial intelligence (AI) that enables systems to <strong>self-learn without explicit programming</strong>. This self-learning capability allows systems to define what normal network behavior and device operations look like, then identify and report deviations or anomalies in real-time.</p>
+<h3 id="ml-classification-techniques">ML Classification Techniques<a class="headerlink" href="#ml-classification-techniques" title="Permanent link">&para;</a></h3>
+<p>Machine learning uses two primary classification approaches:</p>
+<pre class="mermaid"><code>graph TD
+    ML["Machine Learning"]
+    ML --&gt; UL["Unsupervised Learning"]
+    ML --&gt; SL["Supervised Learning"]
+
+    UL --&gt; DR["Dimensionality Reduction"]
+    UL --&gt; CL["Clustering"]
+
+    SL --&gt; CF["Classification"]
+    SL --&gt; RG["Regression"]</code></pre>
+<h4 id="supervised-learning">Supervised Learning<a class="headerlink" href="#supervised-learning" title="Permanent link">&para;</a></h4>
+<p><strong>Definition:</strong> Uses algorithms that input a <strong>set of labeled training data</strong> to learn the differences between given labels.</p>
+<p><strong>Subcategories:</strong>
+- <strong>Classification</strong> — Data is completely divided into classes; the main task is to define the test sample and identify its class
+- <strong>Regression</strong> — Used when data classes are not separated (continuous data where values are not divided into distinct categories)</p>
+<h4 id="unsupervised-learning">Unsupervised Learning<a class="headerlink" href="#unsupervised-learning" title="Permanent link">&para;</a></h4>
+<p><strong>Definition:</strong> Uses algorithms that input <strong>unlabeled training data</strong> to deduce all categories without guidance.</p>
+<p><strong>Subcategories:</strong>
+- <strong>Clustering</strong> — Divides data into clusters based on similarities, regardless of class information
+- <strong>Dimensionality Reduction</strong> — The process of reducing the number of dimensions (attributes) in data while preserving relevant information</p>
+<h3 id="how-do-ai-and-ml-prevent-cyber-attacks">How Do AI and ML Prevent Cyber Attacks?<a class="headerlink" href="#how-do-ai-and-ml-prevent-cyber-attacks" title="Permanent link">&para;</a></h3>
+<p>AI and ML are widely adopted by large-scale industries such as automation, IT services, manufacturing, production, and finance. AI plays a crucial role in detecting imminent cyber threats by incorporating machine learning as a subset. The following table describes how AI and ML safeguard organizations from cybersecurity attacks:</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1</strong></td>
+<td><strong>Password Protection and Authentication</strong></td>
+<td>AI improves biometric validations and face recognition to prevent credential breaches. AI provides the latest models for recognizing individual faces by tracking key correlations and patterns, enhancing authentication security.</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td><strong>Phishing Detection and Prevention</strong></td>
+<td>• Scan emails to identify malicious attachments or payloads<br>• Differentiate between malicious and legitimate websites<br>• Identify and prevent phishing attacks far faster than humans</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td><strong>Threat Detection</strong></td>
+<td>• Detect cyber-attacks before systems are compromised<br>• Conduct logical data analysis to identify imminent threats<br>• Run algorithms on received data and perform deep learning for system safety</td>
+</tr>
+<tr>
+<td><strong>4</strong></td>
+<td><strong>Vulnerability Management</strong></td>
+<td>• Dynamically scan for all types of vulnerabilities<br>• Alert admins before exploitation occurs<br>• Provide attacker information and attack patterns<br>• Forecast how and when vulnerabilities might be exploited</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td><strong>Behavioral Analytics</strong></td>
+<td>• Generate specific user patterns based on regular usage<br>• Instantly alert admins on suspicious activity or usage deviations<br>• Detect and thwart attacks by compromised legitimate user credentials</td>
+</tr>
+<tr>
+<td><strong>6</strong></td>
+<td><strong>Network Security</strong></td>
+<td>• Generate comprehensive security policies automatically<br>• Map enterprise network topology<br>• Perform network traffic analysis and propose efficient security policies</td>
+</tr>
+<tr>
+<td><strong>7</strong></td>
+<td><strong>AI-based Antivirus</strong></td>
+<td>• Use anomaly detection to understand program behavior<br>• Detect suspicious behavior instead of signature matching<br>• Enable detection of new and unknown malware threats</td>
+</tr>
+<tr>
+<td><strong>8</strong></td>
+<td><strong>Fraud Detection</strong></td>
+<td>• Perform anomaly detection on payment transactions<br>• Perform automated pattern discovery across transactions<br>• Differentiate between authentic and illegitimate transactions<br>• Block fraudulent activity automatically</td>
+</tr>
+<tr>
+<td><strong>9</strong></td>
+<td><strong>Botnet Detection</strong></td>
+<td>AI and ML algorithms alert about suspicious network behavior and detect unauthorized intrusions that traditional IDS implementations would miss, even when botnets bypass signature matching using sophisticated code.</td>
+</tr>
+<tr>
+<td><strong>10</strong></td>
+<td><strong>AI to Combat AI Threats</strong></td>
+<td>AI software detects imminent AI-augmented attacks before the network is compromised, providing defense against AI-powered threats that attackers leverage to compromise organizational networks.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.indexes", "search.highlight"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/flashcards.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
