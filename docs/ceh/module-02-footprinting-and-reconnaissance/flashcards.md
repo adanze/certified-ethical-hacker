@@ -1990,4 +1990,116 @@
   </div>
 </div>
 
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What are footprinting countermeasures?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>Measures or actions taken to prevent or offset information disclosure to potential attackers. They span web infrastructure, published content, personnel behavior, network protocols, and physical location.</p>
+      <a class="flashcard-link" href="../footprinting-countermeasures/">&#x2192; Footprinting Countermeasures</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>Name four web and DNS hardening countermeasures against footprinting.</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>1. Configure web servers and IIS to avoid information leakage and banner grabbing.<br>2. Disable directory listings in web servers.<br>3. Use split DNS and restrict zone transfer to authorized servers only.<br>4. Avoid domain-level cross-linking for critical assets.</p>
+      <a class="flashcard-link" href="../footprinting-countermeasures/#web-and-dns-hardening">&#x2192; Web and DNS Hardening</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What publication and information control countermeasures prevent footprinting?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>Limit website content; avoid disclosing critical info in press releases and annual reports; prevent search engine caching; use anonymous registration services; request archive.org to remove site history; keep the domain name profile private; place critical documents offline; do not display sensitive plans on notice boards.</p>
+      <a class="flashcard-link" href="../footprinting-countermeasures/#information-and-publication-control">&#x2192; Information and Publication Control</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What two network-level countermeasures hide an organization's IP address from footprinters?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>1. Implement a <strong>VPN</strong> to mask the real IP address.<br>2. Keep the server behind a <strong>secure proxy</strong>.</p>
+      <a class="flashcard-link" href="../footprinting-countermeasures/#network-and-protocol-defense">&#x2192; Network and Protocol Defense</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What countermeasure prevents automated footprinting tools from rapidly collecting information from public-facing services?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>Implement <strong>captchas and rate limiting</strong> on public-facing services to slow or block automated collection tools.</p>
+      <a class="flashcard-link" href="../footprinting-countermeasures/#network-and-protocol-defense">&#x2192; Network and Protocol Defense</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>Name four personnel and awareness countermeasures against footprinting.</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>1. Restrict employee access to social networking sites from the organization's network.<br>2. Educate employees to use pseudonyms on blogs, groups, and forums.<br>3. Conduct periodic security awareness training about social engineering tricks.<br>4. Train employees to thwart social engineering attacks.</p>
+      <a class="flashcard-link" href="../footprinting-countermeasures/#personnel-and-awareness">&#x2192; Personnel and Awareness</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>Name three geolocation-specific countermeasures against footprinting.</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>1. Disable geo-tagging functionality on cameras to prevent geolocation tracking.<br>2. Avoid revealing location or travel plans on social networking sites.<br>3. Turn off geolocation access on all mobile devices when not required.</p>
+      <a class="flashcard-link" href="../footprinting-countermeasures/#physical-and-location-security">&#x2192; Physical and Location Security</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>How do honeypots and honeynets serve as a footprinting countermeasure?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>Deployed within the network, they <strong>attract and detect attackers</strong> while diverting potential footprinters away from critical systems — functioning as both a detection mechanism and a deception tool.</p>
+      <a class="flashcard-link" href="../footprinting-countermeasures/#detection-and-deception">&#x2192; Detection and Deception</a>
+    </div>
+  </div>
+</div>
+
 </div>

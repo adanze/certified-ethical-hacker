@@ -17,7 +17,7 @@ This module starts with an introduction to footprinting concepts and provides in
 | [Network and Email Footprinting](network-and-email-footprinting.md) | Network range discovery via ARIN, IANA private IP ranges, DNS misconfiguration, traceroute (ICMP/TCP/UDP), TTL mechanism, traceroute analysis, traceroute tools, AI-assisted tracerouting, email tracking, email header analysis, and email tracking tools |
 | [Footprinting through Social Engineering](footprinting-through-social-engineering.md) | Social engineering definition, goals, information gathered, technique overview table, social networking site-based collection (user and organizational activity), and detailed descriptions of eavesdropping, shoulder surfing, dumpster diving, and impersonation |
 | [Footprinting Tasks using Advanced Tools and AI](footprinting-tasks-using-advanced-tools-and-ai.md) | Overview of footprinting tool categories; Maltego, Recon-ng, FOCA, subfinder, OSINT Framework, Recon-Dog, and BillCipher; AI-powered OSINT use cases, benefits, Taranis AI, OSS Insight, additional AI tools, and custom Python scripting with AI |
-| [Footprinting Countermeasures](footprinting-countermeasures.md) | |
+| [Footprinting Countermeasures](footprinting-countermeasures.md) | Seven countermeasure categories: web/DNS hardening, information control, access and privacy, network defense, personnel and awareness, physical/location security, and detection/deception via honeypots |
 | [Flashcards](flashcards.md) | |
 
 ## Key Learning Objectives
@@ -32,3 +32,20 @@ This module starts with an introduction to footprinting concepts and provides in
 - Demonstrate footprinting through social engineering
 - Automate footprinting tasks using advanced tools and AI
 - Explain footprinting countermeasures
+
+## Module Summary
+
+This module presented footprinting concepts along with the objectives of footprinting:
+
+- **Search Engine Footprinting**: Techniques for extracting target information using search engines and advanced operators
+- **Internet Research Services & Social Networking**: Footprinting via Internet research services and social networking sites
+- **Whois & DNS Footprinting**: Detailed Whois lookups and DNS interrogation techniques
+- **Network Footprinting**: Network range discovery and traceroute analysis
+- **Email Footprinting**: Tracking and analyzing email headers to gather intelligence
+- **Social Engineering**: Footprinting through eavesdropping, shoulder surfing, dumpster diving, and impersonation
+- **Footprinting Tools**: Overview of key tools used to automate and enhance footprinting tasks
+- **Countermeasures**: How organizations can defend against footprinting and reconnaissance activities
+
+### What's Next
+
+Module 03 covers **Scanning Networks** — how attackers, ethical hackers, and pen testers perform network scanning to collect information about a target for evaluation before an attack or audit.
