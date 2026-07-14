@@ -72,10 +72,10 @@ mkdocs.yml              ← navigation must be updated when adding files
 
 ## Mermaid Diagrams
 
-- Add a **valid Mermaid diagram** when the topic benefits from visual structure or when the user provides an image of a diagram.
+- Add a Mermaid diagram **only when it makes something clearer than text or tables alone** — e.g., multi-step processes, relationships between components, or when the user provides an image of a diagram.
+- **Do not create a diagram if the content is already clear from prose or tables.** Avoid visual redundancy.
 - Prefer simple, readable types: `flowchart`, `mindmap`, `sequenceDiagram`, or `classDiagram`.
 - Use only compact, syntactically correct Mermaid blocks.
-- If a diagram adds no value, say so briefly and omit it.
 
 ## Flashcard Deck (`flashcards.md`)
 

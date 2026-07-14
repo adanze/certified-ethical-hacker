@@ -1444,4 +1444,214 @@
   </div>
 </div>
 
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>How does an attacker find the network range of a target using ARIN?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>Enter the target's server IP address (gathered during Whois footprinting) into the <strong>ARIN Whois database</strong> search tool. The result yields the full network range of the target.</p>
+      <a class="flashcard-link" href="../network-and-email-footprinting/#arin-whois-database">&#x2192; ARIN Whois Database</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What four types of information does the network range reveal to an attacker?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>1. <strong>Network structure</strong> — how the network is organized and which machines are alive<br>2. <strong>Network topology</strong> — layout of the target network<br>3. <strong>Access control devices</strong> — firewalls, routers, gateways<br>4. <strong>Operating systems</strong> — OS types in use</p>
+      <a class="flashcard-link" href="../network-and-email-footprinting/#what-network-range-reveals">&#x2192; What Network Range Reveals</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What are the three IANA-reserved private IP address ranges?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p><strong>10.0.0.0 – 10.255.255.255</strong> (10/8 prefix)<br><strong>172.16.0.0 – 172.31.255.255</strong> (172.16/12 prefix)<br><strong>192.168.0.0 – 192.168.255.255</strong> (192.168/16 prefix)</p>
+      <a class="flashcard-link" href="../network-and-email-footprinting/#iana-private-ip-address-ranges">&#x2192; IANA Private IP Ranges</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>Name two widely used traceroute tools in network footprinting.</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p><strong>NetScanTools Pro</strong> and <strong>PingPlotter</strong>.</p>
+      <a class="flashcard-link" href="../network-and-email-footprinting/#traceroute-and-dns-misconfiguration">&#x2192; Traceroute and DNS Misconfiguration</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>How can improperly configured DNS servers and traceroute aid an attacker during network footprinting?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p><strong>Misconfigured DNS servers</strong> may expose a list of internal machines in the network. <strong>Traceroute</strong> can reveal the internal IP address of the gateway, providing further internal network details.</p>
+      <a class="flashcard-link" href="../network-and-email-footprinting/#dns-misconfiguration">&#x2192; DNS Misconfiguration</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What protocol and IP header field does traceroute use, and what four types of information does it reveal?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>Uses <strong>ICMP protocol</strong> and the <strong>TTL field</strong>. Reveals: number of hops, round-trip time (RTT) between routers, router names and network affiliation, and geographic locations of intermediate hops.</p>
+      <a class="flashcard-link" href="../network-and-email-footprinting/#traceroute">&#x2192; Traceroute</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>How does the TTL mechanism work in traceroute?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>Each router decrements TTL by 1. When TTL=0, the router discards the packet and returns an <strong>ICMP error message</strong> to the source. Traceroute starts with TTL=1 and increments by 1 per probe, recording each hop until the destination responds with an <strong>ICMP reply</strong>.</p>
+      <a class="flashcard-link" href="../network-and-email-footprinting/#how-ttl-works">&#x2192; How TTL Works</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What are the three traceroute types, their protocols, and their commands?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p><strong>ICMP</strong> (Windows default): <code>tracert &lt;target&gt;</code><br><strong>TCP</strong> (Layer 4, Linux): <code>sudo tcptraceroute &lt;target&gt;</code><br><strong>UDP</strong> (Linux default): <code>traceroute &lt;target&gt;</code><br>TCP/UDP are used when ICMP is blocked by network devices.</p>
+      <a class="flashcard-link" href="../network-and-email-footprinting/#traceroute-types">&#x2192; Traceroute Types</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>How can AI assist an attacker in performing tracerouting?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>An attacker prompts an AI tool (e.g., ChatGPT) with a natural-language request such as <em>"Perform network tracerouting to discover the routers on the path to a target host."</em> The AI generates and executes the appropriate command: <code>traceroute &lt;target&gt;</code>.</p>
+      <a class="flashcard-link" href="../network-and-email-footprinting/#traceroute-with-ai">&#x2192; Traceroute with AI</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What does traceroute analysis across multiple runs reveal about a target network?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>By comparing last few hops across multiple traceroutes to different hosts, an attacker identifies <strong>intermediate routers and firewalls</strong> and reconstructs the <strong>network topology</strong> — including device positions and DMZ structure.</p>
+      <a class="flashcard-link" href="../network-and-email-footprinting/#traceroute-analysis">&#x2192; Traceroute Analysis</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What distinguishes NetScanTools Pro from PingPlotter?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p><strong>NetScanTools Pro:</strong> Supports ICMP, UDP, or TCP traceroute; identifies intermediate devices; maps country per IPv4 hop.<br><strong>PingPlotter:</strong> Tracks latency and packet loss <em>over time</em>; visualizes data in graphs; identifies bandwidth bottlenecks, WiFi interference, and hardware faults.</p>
+      <a class="flashcard-link" href="../network-and-email-footprinting/#traceroute-tools">&#x2192; Traceroute Tools</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What is email tracking and what do attackers use it for?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>Email tracking monitors delivery and opening of emails via digitally time-stamped records. Attackers use it to collect <strong>IP addresses, mail servers, and service provider details</strong> to build a hacking strategy and perform social engineering.</p>
+      <a class="flashcard-link" href="../network-and-email-footprinting/#tracking-email-communications">&#x2192; Tracking Email Communications</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>Name five types of information gathered from a target via email tracking tools.</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>Recipient's IP address · Geolocation · Whether email was read (and read duration) · OS and browser version · Device type (desktop/mobile/laptop) · Path travelled through email transfer agents · Whether links were clicked · Whether the email was forwarded</p>
+      <a class="flashcard-link" href="../network-and-email-footprinting/#information-gathered-via-email-tracking">&#x2192; Information Gathered via Email Tracking</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What seven fields does an email header expose to an attacker?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>1. Sender's mail server<br>2. Date/time received by originator's email servers<br>3. Authentication system used by sender's mail server<br>4. Date/time message was sent<br>5. Unique message ID<br>6. Sender's full name<br>7. Sender's IP address and sending address</p>
+      <a class="flashcard-link" href="../network-and-email-footprinting/#collecting-information-from-email-header">&#x2192; Email Header</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What distinguishes eMailTrackerPro from IP2LOCATION's Email Header Tracer?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p><strong>eMailTrackerPro:</strong> Analyzes email headers to extract geographical location and IP; saves past traces for later review.<br><strong>IP2LOCATION Email Header Tracer:</strong> Open-source service; traces email path and mail servers using IP addresses in the header.</p>
+      <a class="flashcard-link" href="../network-and-email-footprinting/#email-tracking-tools">&#x2192; Email Tracking Tools</a>
+    </div>
+  </div>
+</div>
+
 </div>
