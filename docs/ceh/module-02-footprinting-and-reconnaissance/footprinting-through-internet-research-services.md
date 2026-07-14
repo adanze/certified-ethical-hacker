@@ -324,7 +324,3 @@ Sites such as GitHub, GitLab, SourceForge, and BitBucket may expose confidential
 | Tool | Source | Details |
 |---|---|---|
 | **Recon-ng** | [github.com/lanmaster53/recon-ng](https://github.com/lanmaster53/recon-ng) | Full-featured web reconnaissance framework for discovering public repository data |
-
-## Further Reference
-
-The **OSINT Framework** ([osintframework.com](https://osintframework.com)) is a community-maintained directory of OSINT tools organized by category (usernames, emails, IP addresses, social networks, dark web, etc.) — useful for finding the right tool for a specific footprinting task.

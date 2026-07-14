@@ -1836,4 +1836,158 @@
   </div>
 </div>
 
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What is Maltego used for in footprinting?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>Determining <strong>relationships and real-world links</strong> between people, groups, organizations, websites, Internet infrastructure, and documents. Attackers add a Website entity with the target's domain to extract email addresses, phone numbers, DNS names, Netblocks, and IP addresses.</p>
+      <a class="flashcard-link" href="../footprinting-tasks-using-advanced-tools-and-ai/#maltego">&#x2192; Maltego</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What is Recon-ng and which module do attackers use to enumerate target hosts?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>A <strong>web reconnaissance framework</strong> with independent modules for open-source, web-based reconnaissance. Attackers use the <code>recon/domains-hosts/brute_hosts</code> module to extract a list of hosts associated with a target URL.</p>
+      <a class="flashcard-link" href="../footprinting-tasks-using-advanced-tools-and-ai/#recon-ng">&#x2192; Recon-ng</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What does FOCA stand for and what is its primary purpose?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p><strong>Fingerprinting Organizations with Collected Archives</strong> — a tool used mainly to find <strong>metadata and hidden information</strong> in scanned documents (Microsoft Office, Open Office, PDF). Also performs web search, DNS search, IP resolution, PTR scanning, and dictionary attacks against DNS.</p>
+      <a class="flashcard-link" href="../footprinting-tasks-using-advanced-tools-and-ai/#foca">&#x2192; FOCA</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What are the four OSINT Framework tool indicators and what does each mean?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p><strong>(T)</strong> – must be installed and run locally · <strong>(D)</strong> – Google Dork · <strong>(R)</strong> – requires registration · <strong>(M)</strong> – URL containing the search term that must be edited manually</p>
+      <a class="flashcard-link" href="../footprinting-tasks-using-advanced-tools-and-ai/#osint-framework">&#x2192; OSINT Framework</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What distinguishes subfinder from FOCA as footprinting tools?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p><strong>subfinder</strong> is a passive <strong>subdomain discovery</strong> tool that finds valid subdomains using online sources (supports JSON, file, stdout output).<br><strong>FOCA</strong> finds <strong>metadata and hidden information</strong> inside scanned documents and performs DNS/IP resolution and PTR scanning.</p>
+      <a class="flashcard-link" href="../footprinting-tasks-using-advanced-tools-and-ai/#subfinder">&#x2192; subfinder</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>Name the six AI use cases in OSINT and what each does.</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p><strong>Web Scraping</strong> – automates data extraction from social media, blogs, deep web · <strong>Pattern Recognition</strong> – ML identifies entities and relationships · <strong>Content Summarization</strong> – NLP extracts key info from large datasets · <strong>Sentiment Analysis</strong> – interprets emotions from text · <strong>Image Recognition</strong> – face ID, metadata, deepfake detection · <strong>AI Detection</strong> – identifies AI-generated content</p>
+      <a class="flashcard-link" href="../footprinting-tasks-using-advanced-tools-and-ai/#ai-use-cases-in-osint">&#x2192; AI Use Cases in OSINT</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What are the four benefits of integrating AI in OSINT?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p><strong>Improved Efficiency</strong> – automates scraping and extraction · <strong>Greater Scope</strong> – covers surface, deep, and dark web · <strong>Enhanced Visibility</strong> – connects data points into graphical networks · <strong>Increased Investigator Safety</strong> – enables anonymized, automated investigations</p>
+      <a class="flashcard-link" href="../footprinting-tasks-using-advanced-tools-and-ai/#benefits-of-integrating-ai-in-osint">&#x2192; Benefits of AI in OSINT</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What is Taranis AI and what are its four key features?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>An advanced OSINT tool using NLP and AI to collect unstructured news articles and transform them into reports and PDFs.<br>Features: <strong>Advanced OSINT Capabilities</strong> · <strong>AI-Enhanced Analysis</strong> · <strong>Multi-Format Output</strong> · <strong>Seamless Publishing</strong></p>
+      <a class="flashcard-link" href="../footprinting-tasks-using-advanced-tools-and-ai/#taranis-ai">&#x2192; Taranis AI</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What is OSS Insight and what dataset does it analyze?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>An AI-powered tool that analyzes over <strong>five billion GitHub events</strong> to provide insights into repositories, developer productivity, and collaboration patterns. Its GPT-Powered Data Explorer lets users query GitHub data using natural language.</p>
+      <a class="flashcard-link" href="../footprinting-tasks-using-advanced-tools-and-ai/#oss-insight">&#x2192; OSS Insight</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What is DorkGPT and how does it differ from DorkGenius?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p>Both are AI-powered Google Dorking tools.<br><strong>DorkGPT</strong> uses GPT models to generate and refine advanced search queries for finding sensitive information and hidden pages.<br><strong>DorkGenius</strong> automates Google Dorking to uncover hidden files, directories, and security vulnerabilities.</p>
+      <a class="flashcard-link" href="../footprinting-tasks-using-advanced-tools-and-ai/#additional-ai-powered-osint-tools">&#x2192; Additional AI-Powered OSINT Tools</a>
+    </div>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="flashcard-inner">
+    <div class="flashcard-front">
+      <span class="flashcard-label">Question</span>
+      <p>What four functions does an AI-generated Python footprinting script typically define, and what tool does each use?</p>
+    </div>
+    <div class="flashcard-back">
+      <span class="flashcard-label">Answer</span>
+      <p><code>dns_lookup</code> – <strong>dig</strong> · <code>whois_lookup</code> – <strong>whois</strong> · <code>email_enumeration</code> – <strong>theHarvester</strong> · <code>run_footprinting</code> – orchestrates and prints results of all three</p>
+      <a class="flashcard-link" href="../footprinting-tasks-using-advanced-tools-and-ai/#custom-python-scripts-with-ai">&#x2192; Custom Python Scripts with AI</a>
+    </div>
+  </div>
+</div>
+
 </div>
