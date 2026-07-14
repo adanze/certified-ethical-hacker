@@ -72,6 +72,15 @@ nav:
       - Footprinting through Social Engineering: ceh/module-02-footprinting-and-reconnaissance/footprinting-through-social-engineering.md
       - Footprinting Tasks using Advanced Tools and AI: ceh/module-02-footprinting-and-reconnaissance/footprinting-tasks-using-advanced-tools-and-ai.md
       - Footprinting Countermeasures: ceh/module-02-footprinting-and-reconnaissance/footprinting-countermeasures.md
+    - Module 03 – Scanning Networks:
+      - ceh/module-03-scanning-networks/index.md
+      - Network Scanning Concepts: ceh/module-03-scanning-networks/network-scanning-concepts.md
+      - Host Discovery: ceh/module-03-scanning-networks/host-discovery.md
+      - Port and Service Discovery: ceh/module-03-scanning-networks/port-and-service-discovery.md
+      - OS Discovery: ceh/module-03-scanning-networks/os-discovery.md
+      - Scanning Beyond IDS and Firewall: ceh/module-03-scanning-networks/scanning-beyond-ids-and-firewall.md
+      - Network Scanning Countermeasures: ceh/module-03-scanning-networks/network-scanning-countermeasures.md
   - Flashcards:
     - Module 01 – Introduction to Ethical Hacking: ceh/module-01-introduction-to-ethical-hacking/flashcards.md
     - Module 02 – Footprinting and Reconnaissance: ceh/module-02-footprinting-and-reconnaissance/flashcards.md
+    - Module 03 – Scanning Networks: ceh/module-03-scanning-networks/flashcards.md
