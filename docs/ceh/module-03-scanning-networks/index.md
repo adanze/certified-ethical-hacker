@@ -8,7 +8,7 @@ This module starts with an overview of network scanning and provides insights in
 
 | Topic | Content |
 |---|---|
-| [Network Scanning Concepts](network-scanning-concepts.md) | *TODO* |
+| [Network Scanning Concepts](network-scanning-concepts.md) | Overview of network scanning and objectives, port/network/vulnerability scanning types, TCP communication flags, TCP/IP three-way handshake and session termination, and key scanning tools |
 | [Host Discovery](host-discovery.md) | *TODO* |
 | [Port and Service Discovery](port-and-service-discovery.md) | *TODO* |
 | [OS Discovery](os-discovery.md) | *TODO* |
