@@ -9,7 +9,7 @@ This module starts with an overview of network scanning and provides insights in
 | Topic | Content |
 |---|---|
 | [Network Scanning Concepts](network-scanning-concepts.md) | Overview of network scanning and objectives, port/network/vulnerability scanning types, TCP communication flags, TCP/IP three-way handshake and session termination, and key scanning tools |
-| [Host Discovery](host-discovery.md) | *TODO* |
+| [Host Discovery](host-discovery.md) | ARP, UDP, ICMP (ECHO, timestamp, address mask), TCP (SYN, ACK), and IP protocol ping scans with mechanics and advantages; ping sweep tools; an Nmap/Zenmap flag reference; and AI-assisted host discovery examples |
 | [Port and Service Discovery](port-and-service-discovery.md) | *TODO* |
 | [OS Discovery](os-discovery.md) | *TODO* |
 | [Scanning Beyond IDS and Firewall](scanning-beyond-ids-and-firewall.md) | *TODO* |
