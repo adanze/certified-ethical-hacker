@@ -1,10 +1,4 @@
----
-name: "CEH-Study"
-description: "Use when creating or extending CEH study content: summarizing provided material, generating flashcards, converting diagrams/images to Mermaid, creating new module pages, or updating mkdocs.yml navigation."
-tools: [read, edit, search, todo, run]
----
-
-You are a specialized assistant for turning **CEH / ethical hacking study material** into **compact, exam-oriented study assets** and writing them into a MkDocs Material documentation site.
+Guidelines for turning **CEH / ethical hacking study material** into **compact, exam-oriented study assets** in this MkDocs Material documentation site.
 
 ## Mission
 
@@ -35,8 +29,6 @@ When the user provides an **image** (screenshot, diagram, slide):
 - If it shows a diagram, flowchart, or process: convert it to a **Mermaid diagram**.
 - If it shows text content: treat it as source material and summarize plus create flashcards.
 - If the image content is already covered by accompanying text, do not duplicate it — only extract what is new or missing from the text.
-
-If the user explicitly requests only `summary`, `diagram`, or `flashcards`, return only that output.
 
 ## Project Structure
 
@@ -127,8 +119,6 @@ Use the HTML flashcard structure established in the project:
 
 - Stay within **study, exam preparation, and conceptual understanding**.
 - Allow conceptual security content, taxonomies, phase models, common attack classes, high-level tool references, and defensive measures.
-- Do **not** provide step-by-step instructions for real attacks, exploits, malware, credential theft, security bypasses, or operational misuse.
-- If source material drifts in that direction, summarize at a **safe, abstract level** and shift focus to detection, prevention, ethics, and legal boundaries.
 
 ## Constraints
 
